@@ -12,10 +12,6 @@ export default function Home() {
           We help brands define and communicate their purpose xcfghjkl
         </h1>
       </main>
-
-      {/* <Sidebar /> */}
-      {/* <ContactUsSection/>  */}
-      <Footer />
     </>
   );
 }

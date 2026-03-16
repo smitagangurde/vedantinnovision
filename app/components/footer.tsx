@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 // import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
-import { ABOUT, CONTACT } from "../const/routes.const";
+import { ABOUT, CAREER, CONTACT } from "../const/routes.const";
 
 export default function Footer() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
@@ -46,7 +46,7 @@ export default function Footer() {
             <li><Link href={ABOUT} className="hover:text-yellow-400">About</Link></li>
             <li><Link href="/blog" className="hover:text-yellow-400">Blog</Link></li>
             <li><Link href="/awards" className="hover:text-yellow-400">News & Awards</Link></li>
-            <li><Link href="/career" className="hover:text-yellow-400">Career</Link></li>
+            <li><Link href={CAREER} className="hover:text-yellow-400">Career</Link></li>
             <li><Link href={CONTACT} className="hover:text-yellow-400">Contact</Link></li>
           </ul>
         </nav>
