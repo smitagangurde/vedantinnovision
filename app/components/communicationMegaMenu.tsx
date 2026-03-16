@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import { BRANDENTITY } from "../const/routes.const";
+
 export default function CommunicationMegaMenu() {
   return (
     <div className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[850px] bg-[#0f0f0f] border border-purple-900 rounded-xl shadow-xl p-10 grid grid-cols-2 gap-10">
@@ -20,7 +23,7 @@ export default function CommunicationMegaMenu() {
 
       <div className="space-y-4">
         <div>
-          <h4 className="font-semibold">Brand Identity</h4>
+          <Link href={BRANDENTITY} className="hover:text-yellow-400">Brand Identity</Link>
           <p className="text-sm text-gray-400">
             Craft compelling brand stories.
           </p>

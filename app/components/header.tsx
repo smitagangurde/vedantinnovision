@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CommunicationMegaMenu from "./communicationMegaMenu";
 import EmployerMegaMenu from "./employerMegaMenu";
+import { ABOUT, HOME } from "../const/routes.const";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -12,11 +13,11 @@ export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
   return (
-   <header className="w-full bg-brand-black border-b border-brand-purple text-white">
+    <header className="w-full bg-brand-black border-b border-brand-purple text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/">
+          <Link href={HOME}>
             <Image
               src="/Vedant Innovation Logo.png"
               alt="Vedant Innovision"
