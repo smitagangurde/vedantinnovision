@@ -121,7 +121,7 @@ export default function Footer() {
               type="submit"
               className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold px-6 py-2 rounded hover:opacity-90 transition"
             >
-              SUBMIT →
+              SUBMIT →  
             </button>
 
           </form>

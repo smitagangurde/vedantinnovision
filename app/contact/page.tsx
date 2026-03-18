@@ -23,7 +23,7 @@ export default function ContactPage() {
       city: "Bengaluru",
       address: [
         "42, 2nd & 3rd Floor, 100 Feet Rd,",
-        "Koramangala 4th Block, Koramangala,",
+        "Koramangala 4th Block,",
         "Bengaluru – 560 034.",
         "Karnataka, India",
       ],
@@ -33,7 +33,7 @@ export default function ContactPage() {
       address: [
         "M-806, Ridgewood Estate,",
         "DLF Phase 5, Near Galleria Market,",
-        "Gurugram, Haryana – 122002.",
+        "Gurugram – 122002.",
         "India",
       ],
     },
@@ -46,98 +46,88 @@ export default function ContactPage() {
   ];
 
   return (
-    <main id="top" className="bg-[#f3f3f3]">
+    <main id="top" className="bg-black text-gray-300">
       {/* CONTACT SECTION */}
-      <section className="min-h-screen bg-[#2f4aa0] text-white">
-        <div className="max-w-6xl mx-auto px-6 py-14 md:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* LEFT */}
-            <div>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold italic leading-snug">
-                If you are on this page, you might be seriously considering us.
-                <br />
-                Go ahead, we&apos;d love to connect!
-              </h1>
+      <section className="border-t border-purple-900 py-16 px-4 sm:px-6 md:px-10 lg:px-16">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+          
+          {/* LEFT */}
+          <div>
+            <h1 className="text-2xl md:text-4xl font-semibold italic text-purple-400 leading-snug">
+              If you are on this page, you might be seriously considering us.
+              <br />
+              Go ahead, we&apos;d love to connect!
+            </h1>
 
-              <p className="mt-6 text-sm md:text-base font-medium">
-                Hello@VelocittaIndia.com
-                <span className="mx-2">|</span>
-                +91 8956 437 437
-              </p>
+            <p className="mt-6 text-sm md:text-base text-gray-400">
+              hello@velocitindia.com
+              <span className="mx-2">|</span>
+              +91 8956 437 437
+            </p>
 
-              {/* FORM */}
-              <form className="mt-8 space-y-5">
+            {/* FORM */}
+            <form className="mt-10 space-y-6">
+              {["Name", "Email Id", "Mobile No."].map((field) => (
                 <input
+                  key={field}
                   type="text"
-                  placeholder="Name"
-                  className="w-full bg-transparent border-b border-white/60 pb-2 text-sm placeholder:text-white/60 focus:outline-none"
+                  placeholder={field}
+                  className="w-full bg-transparent border-b border-purple-900 pb-2 text-sm placeholder:text-gray-500 focus:outline-none focus:border-yellow-400 transition"
                 />
+              ))}
 
-                <input
-                  type="email"
-                  placeholder="Email Id"
-                  className="w-full bg-transparent border-b border-white/60 pb-2 text-sm placeholder:text-white/60 focus:outline-none"
-                />
+              <textarea
+                placeholder="Message"
+                rows={2}
+                className="w-full bg-transparent border-b border-purple-900 pb-2 text-sm placeholder:text-gray-500 focus:outline-none focus:border-yellow-400 transition resize-none"
+              />
 
-                <input
-                  type="tel"
-                  placeholder="Mobile No."
-                  className="w-full bg-transparent border-b border-white/60 pb-2 text-sm placeholder:text-white/60 focus:outline-none"
-                />
-
-                <textarea
-                  placeholder="Message"
-                  rows={2}
-                  className="w-full bg-transparent border-b border-white/60 pb-2 text-sm placeholder:text-white/60 focus:outline-none resize-none"
-                />
-
-                {/* Captcha UI */}
-                <div className="w-full max-w-[280px] bg-white text-black rounded p-2 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 border border-gray-600" />
-                    <span className="text-xs">I&apos;m not a robot</span>
-                  </div>
-                  <span className="text-[8px] text-gray-500">reCAPTCHA</span>
+              {/* CAPTCHA (styled to match theme) */}
+              <div className="w-full max-w-[280px] bg-zinc-900 border border-purple-900 rounded p-3 flex items-center justify-between text-xs">
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 border border-gray-400" />
+                  <span>I&apos;m not a robot</span>
                 </div>
+                <span className="opacity-60">reCAPTCHA</span>
+              </div>
 
-                <button className="bg-[#12B4F6] text-white px-5 py-2 text-sm font-semibold hover:bg-[#0fa4df] transition">
-                  SUBMIT →
-                </button>
-              </form>
-            </div>
+              <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs px-6 py-3 font-semibold hover:opacity-90 transition">
+                SUBMIT →
+              </button>
+            </form>
+          </div>
 
-            {/* RIGHT */}
-            <div>
-              <h2 className="text-xl md:text-2xl font-semibold mb-5">
-                Discover the Power of Creative Collaboration
-              </h2>
+          {/* RIGHT */}
+          <div>
+            <h2 className="text-xl md:text-2xl font-semibold text-purple-400 mb-6">
+              Discover the Power of Creative Collaboration
+            </h2>
 
-              <ul className="space-y-3 text-sm md:text-base list-disc pl-5">
-                <li>Embark on a Design Journey with Our Team</li>
-                <li>Experience Tailored Design Solutions</li>
-                <li>Unleash Your Project&apos;s Full Potential</li>
-                <li>Transform Your Vision into Reality</li>
-              </ul>
-            </div>
+            <ul className="space-y-3 text-sm md:text-base list-disc pl-5 text-gray-400">
+              <li>Embark on a Design Journey with Our Team</li>
+              <li>Experience Tailored Design Solutions</li>
+              <li>Unleash Your Project&apos;s Full Potential</li>
+              <li>Transform Your Vision into Reality</li>
+            </ul>
           </div>
         </div>
       </section>
 
       {/* LOCATIONS */}
-      <section className="py-14">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-semibold italic text-[#2346a0]">
+      <section className="border-t border-purple-900 py-16 px-4 sm:px-6 md:px-10 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-semibold italic text-purple-400">
             Our locations
           </h2>
 
-          <div className="border-t mt-8 pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {locations.map((loc) => (
               <div key={loc.city}>
-                <h3 className="text-lg font-semibold text-[#2346a0] mb-3">
+                <h3 className="text-lg font-semibold text-white mb-3">
                   {loc.city}
                 </h3>
 
-                <div className="text-sm text-[#2f3f73] space-y-1">
+                <div className="text-sm text-gray-400 space-y-1">
                   {loc.address.map((line, i) => (
                     <p key={i}>{line}</p>
                   ))}
@@ -149,33 +139,25 @@ export default function ContactPage() {
       </section>
 
       {/* STATS */}
-      <section className="pb-14">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-3xl italic text-[#2346a0] font-semibold">
+      <section className="border-t border-purple-900 py-16 px-4 sm:px-6 md:px-10">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-base italic text-purple-400 mb-10">
             The numbers say it all!
-          </h2>
+          </p>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, i) => (
-              <div key={i} className="text-center">
-                <h3 className="text-3xl md:text-4xl font-semibold italic text-[#3a4a7d]">
+              <div key={i}>
+                <h3 className="text-3xl font-semibold text-white">
                   {stat.value}
                 </h3>
-                <p className="mt-2 text-sm italic text-[#3a4a7d]">
-                  {stat.label}
-                </p>
+                <p className="text-gray-400 text-sm">{stat.label}</p>
               </div>
             ))}
-          </div>
-
-          {/* Scroll Top */}
-          <div className="mt-8">
-            <a href="#top" className="text-2xl hover:opacity-70">
-              ↑
-            </a>
-          </div>
+          </div>  
         </div>
       </section>
+      
     </main>
   );
 }

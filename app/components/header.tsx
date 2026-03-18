@@ -1,21 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
+
 import CommunicationMegaMenu from "./communicationMegaMenu";
 import EmployerMegaMenu from "./employerMegaMenu";
-import { ABOUT, CONTACT, HOME } from "../const/routes.const";
+
+import {
+  BRANDCONSULTING,
+  CONTACT,
+  HOME,
+} from "../const/routes.const";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (menu: string) => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setActiveMenu(menu);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setActiveMenu(null);
+    }, 200);
+  };
 
   return (
-    <header className="w-full bg-brand-black border-b border-brand-purple text-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <header className="w-full bg-black border-b border-purple-900 text-white relative z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <div className="flex items-center justify-between h-20">
+
           {/* Logo */}
           <Link href={HOME}>
             <Image
@@ -28,115 +47,104 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-10">
-            <Link href="#" className="hover:text-yellow-400">
+
+            <Link href={BRANDCONSULTING} className="hover:text-yellow-400 transition">
               Brand Consulting
             </Link>
 
-            {/* Mega Menu */}
-            <div className="relative group">
-              <div
-                onMouseEnter={() => setActiveMenu("communication")}
-                onMouseLeave={() => setActiveMenu(null)}
-                className="relative"
-              >
-                <button className="hover:text-brand-gold">
-                  Brand Communication
-                </button>
+            {/* Brand Communication */}
+            <div
+              className="relative"
+              onMouseEnter={() => handleMouseEnter("communication")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button className="hover:text-yellow-400 transition">
+                Brand Communication
+              </button>
 
-                {activeMenu === "communication" && <CommunicationMegaMenu />}
-              </div>
-              {/* Mega Dropdown */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[850px] bg-[#0f0f0f] border border-purple-900 rounded-xl shadow-xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
-                <div className="grid grid-cols-2 gap-10 p-10">
-                  {/* Left Section */}
-                  <div>
-                    <h3 className="text-2xl font-semibold text-purple-400 mb-4">
-                      Our Portfolio - Where ideas come to life!
-                    </h3>
-
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                      Every brand has unique goals and needs — we understand
-                      this well. Our services amplify your brand, engage
-                      audiences, and ensure your message hits home.
-                    </p>
-
-                    <Link
-                      href="/contact"
-                      className="inline-block mt-6 text-yellow-400 hover:underline"
-                    >
-                      Contact Us
-                    </Link>
-                  </div>
-
-                  {/* Right Section */}
-                  <div className="space-y-5">
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Brand Identity
-                      </h4>
-                      <p className="text-sm text-gray-400">
-                        Craft compelling brand stories that resonate.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Marketing Communication
-                      </h4>
-                      <p className="text-sm text-gray-400">
-                        Shape narratives that drive marketing success.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Annual Reporting
-                      </h4>
-                      <p className="text-sm text-gray-400">
-                        Build trust through impactful communication.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Website & UI/UX
-                      </h4>
-                      <p className="text-sm text-gray-400">
-                        Elevate digital experiences with intuitive design.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-white">Social Media</h4>
-                      <p className="text-sm text-gray-400">
-                        Transform your social media presence.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {activeMenu === "communication" && <CommunicationMegaMenu />}
             </div>
 
+            {/* Employer Brand */}
             <div
-              onMouseEnter={() => setActiveMenu("employer")}
-              onMouseLeave={() => setActiveMenu(null)}
               className="relative"
+              onMouseEnter={() => handleMouseEnter("employer")}
+              onMouseLeave={handleMouseLeave}
             >
-              <button className="hover:text-yellow-400">Employer Brand</button>
+              <button className="hover:text-yellow-400 transition">
+                Employer Brand
+              </button>
 
               {activeMenu === "employer" && <EmployerMegaMenu />}
             </div>
 
-            <Link href="#" className="hover:text-yellow-400">
+            <Link href="#" className="hover:text-yellow-400 transition">
               Films
             </Link>
 
-            <Link href={CONTACT} className="hover:text-yellow-400">
+            <Link href={CONTACT} className="hover:text-yellow-400 transition">
               Contact
             </Link>
+
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <X size={28} /> : <Menu size={28} />}
+          </button>
+
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {open && (
+        <div className="md:hidden bg-black border-t border-purple-900 px-6 py-6 space-y-4">
+
+          <Link
+            href={BRANDCONSULTING}
+            className="block hover:text-yellow-400"
+            onClick={() => setOpen(false)}
+          >
+            Brand Consulting
+          </Link>
+
+          <Link
+            href="#"
+            className="block hover:text-yellow-400"
+            onClick={() => setOpen(false)}
+          >
+            Brand Communication
+          </Link>
+
+          <Link
+            href="#"
+            className="block hover:text-yellow-400"
+            onClick={() => setOpen(false)}
+          >
+            Employer Brand
+          </Link>
+
+          <Link
+            href="#"
+            className="block hover:text-yellow-400"
+            onClick={() => setOpen(false)}
+          >
+            Films
+          </Link>
+
+          <Link
+            href={CONTACT}
+            className="block hover:text-yellow-400"
+            onClick={() => setOpen(false)}
+          >
+            Contact
+          </Link>
+
+        </div>
+      )}
     </header>
   );
 }
