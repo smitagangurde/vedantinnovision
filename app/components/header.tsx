@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CommunicationMegaMenu from "./communicationMegaMenu";
 import EmployerMegaMenu from "./employerMegaMenu";
-import { ABOUT, HOME } from "../const/routes.const";
+import { ABOUT, CONTACT, HOME } from "../const/routes.const";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -131,7 +131,7 @@ export default function Header() {
               Films
             </Link>
 
-            <Link href="#contact" className="hover:text-yellow-400">
+            <Link href={CONTACT} className="hover:text-yellow-400">
               Contact
             </Link>
           </nav>
