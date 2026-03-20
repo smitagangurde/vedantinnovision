@@ -45,7 +45,7 @@ const brands = [
 export default function Home() {
   const [openIndex, setOpenIndex] = useState(3);
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: any) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
