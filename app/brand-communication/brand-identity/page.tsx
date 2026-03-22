@@ -139,7 +139,7 @@ const testimonials = [
 export default function BrandIdentitySection() {
   const [openIndex, setOpenIndex] = useState(3); // last one open by default
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: any) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
