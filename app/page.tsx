@@ -2,60 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
-import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
 import { CONTACT } from "./const/routes.const";
-
-const testimonials = [
-  {
-    text: `"Honestly I don’t look at Velocita as simply being our agency. They’re more like partners who always have our best interests in mind. An excellent team, with fantastic support! Feels like an extension of our own team. Love it and kudos to Samarth, Ankita, Gaurav & the rest of the team for making our experience so wonderful. I want to offer my congratulations once again to their team for the excellent realisation of our intentions with the design of our collaterals with rocket speed turnaround times. All the best!"`,
-    role: "Marketing Manager",
-    logo: "/brands/bajaj.png",
-  },
-  {
-    text: `"Working with this team has been seamless. Their creativity and execution are top-notch. We saw real impact across campaigns and brand visibility."`,
-    name: "Ankita Mehta",
-    role: "Brand Lead",
-    logo: "/brands/bcg.png",
-  },
-  {
-    text: `"Exceptional service and dedication. They truly understand business goals and deliver beyond expectations. Highly recommended."`,
-    name: "Gaurav Patel",
-    role: "Product Head",
-    logo: "/Amazon_logo.svg.png",
-  },
-];
-
-const brands = [
-  "Atlas Copco.jpg",
-  "Ferrero.jpg",
-  "Group Surya.jpg",
-  "Dan Foss.jpg",
-  "JSW Steel.jpg",
-  "Just Porta.jpg",
-  "Grass Roote.jpg",
-  "OP Mobility.jpg",
-  "WIKUS.jpg",
-  "Life Care.jpg",
-  "Atlas.jpg",
-  "Vastushaili.jpg",
-];
+import Testimonial from "./component/Testimonial";
+import BrandSection from "./component/BrandSection";
 
 export default function Home() {
-  const [openIndex, setOpenIndex] = useState(3);
-
-  const toggleFAQ = (index: any) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  const [tIndex, setTIndex] = useState(0);
-  const t = testimonials[tIndex];
   return (
     <main className="bg-black text-white" role="main">
       {/* HERO TEXT */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-16 md:pt-20 pb-10">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight text-purple-400 max-w-5xl">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-8 md:pt-12 pb-10">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight text-[var(--brand-purple)] max-w-5xl">
           We help brands define and communicate{" "}
           <br className="hidden md:block" />
           their purpose with clarity and impact
@@ -68,9 +24,9 @@ export default function Home() {
           <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[540px] overflow-hidden border border-gray-200">
             <Image
               src="/hero.jpg"
-              alt="Team standing in front of Michelin branding"
+              alt="Brand storytelling team"
               fill
-              priority
+              sizes="(max-width: 768px) 100vw, 1200px"
               className="object-cover"
             />
           </div>
@@ -87,7 +43,7 @@ export default function Home() {
                 We are Velocita
               </h2>
 
-              <p className="text-gray-400 text-sm leading-relaxed max-w-full sm:max-w-xl mb-6">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-6">
                 In every project we undertake, our aim is to inspire and be
                 inspired. As experts in branding, marketing communication, and
                 employer branding, we take pride in our 17 year legacy of
@@ -108,10 +64,10 @@ export default function Home() {
             {/* IMAGE */}
             <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[580px]">
               <Image
-                src="/Home Page Image 2.jpg"
+                src="/Home-Page-02.jpg"
                 alt="Client visuals"
                 fill
-                className="object-cover opacity-90"
+                className="object-contain opacity-90"
               />
             </div>
 
@@ -121,7 +77,7 @@ export default function Home() {
                 Latest Case Study
               </h3>
 
-              <p className="text-gray-400 text-sm leading-relaxed max-w-full sm:max-w-xl mb-4">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
                 We are delighted to share one of our most successful
                 collaborations with Knight Frank, where we infused their
                 workplace with the richness of Indian art and culture. Guided by
@@ -142,10 +98,10 @@ export default function Home() {
             {/* IMAGE */}
             <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[580px]">
               <Image
-                src="/Home Page Images 4.jpg"
+                src="/Home-Page-04.jpg"
                 alt="Case study"
                 fill
-                className="object-cover opacity-90"
+                className="object-contain opacity-90"
               />
             </div>
 
@@ -155,7 +111,7 @@ export default function Home() {
                 Films
               </h3>
 
-              <p className="text-gray-400 text-sm leading-relaxed max-w-full sm:max-w-xl mb-4">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
                 Our expertise in the realm of videos and films is dedicated to
                 bringing your vision to life. From concept development to
                 post-production, we meticulously craft each frame with precision
@@ -180,10 +136,10 @@ export default function Home() {
             {/* IMAGE */}
             <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[580px]">
               <Image
-                src="/Home Page Image 1.jpg"
+                src="/Home-Page-01.jpg"
                 alt="Branding"
                 fill
-                className="object-cover opacity-90"
+                className="object-contain opacity-90"
               />
             </div>
 
@@ -193,7 +149,7 @@ export default function Home() {
                 Brand Communication
               </h2>
 
-              <p className="text-gray-400 text-sm leading-relaxed max-w-full sm:max-w-xl">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
                 Our mission is to elevate your brand’s voice and narrative,
                 crafting compelling messages that resonate deeply with your
                 target audience. Through strategic storytelling and tailored
@@ -215,10 +171,10 @@ export default function Home() {
             {/* IMAGE */}
             <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[580px]">
               <Image
-                src="/Home Page Image 3.jpg"
+                src="/Home-Page-03.jpg"
                 alt="Employer branding"
                 fill
-                className="object-cover opacity-90"
+                className="object-contain opacity-90"
               />
             </div>
 
@@ -228,7 +184,7 @@ export default function Home() {
                 Employer Brand
               </h2>
 
-              <p className="text-gray-400 text-sm leading-relaxed max-w-full sm:max-w-xl">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
                 Employer branding revolves around the art of showcasing a
                 company’s culture, values, and mission to potential employees,
                 all while cultivating a favorable perception among job seekers.
@@ -249,7 +205,7 @@ export default function Home() {
         </div>
 
         {/* STATS */}
-        <div className="max-w-5xl mx-auto text-center border-t border-purple-900 pt-12 mt-20 mb-16">
+        <div className="max-w-5xl mx-auto text-center pt-14 mt-12 mb-8">
           <p className="text-base italic text-purple-400 mb-8">
             The numbers say it all!
           </p>
@@ -273,99 +229,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-black text-gray-300 py-12 sm:py-14 md:py-16 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-16 border-t border-purple-900">
-        <div className="max-w-7xl mx-auto">
-          {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-purple-400 mb-4">
-            Trusted by Leading Brands
-          </h2>
+      <BrandSection />
 
-          {/* Description */}
-          <p className="text-gray-400 max-w-4xl text-sm md:text-base mb-10">
-            Since 2008, we’ve been creative partners to 100+ global brands and
-            Fortune 500 companies, delivering 10,000+ projects.
-          </p>
-
-          {/* Logos Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 border border-purple-900">
-            {[
-              "/Atlas Copco.jpg",
-              "/Ferrero.jpg",
-              "/Group Surya.jpg",
-              "/Dan Foss.jpg",
-              "/JSW Steel.jpg",
-              "/Just Porta.jpg",
-              "/Grass Roote.jpg",
-              "/OP Mobility.jpg",
-              "/WIKUS.jpg",
-              "/Life Care.jpg",
-              "/Atlas.jpg",
-              "/Vastushaili.jpg",
-            ].map((logo, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-center h-32 md:h-40 lg:h-44 p-4 border border-purple-900 bg-zinc-900 hover:border-yellow-400 transition duration-300"
-              >
-                <Image
-                  src={logo}
-                  alt="brand logo"
-                  width={200}
-                  height={100}
-                  className="object-contain w-full h-full max-h-20 md:max-h-28 opacity-80 hover:opacity-100 transition"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[var(--brand-black)] border-t border-white/10 py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold text-[var(--brand-purple)] italic mb-6">
-            World’s leading brands have chosen us. Don’t miss the bus.
-          </h2>
-
-          <p className="text-[var(--brand-purple)] mb-6">Collaborate, today!</p>
-
-          <p className="text-gray-300 text-lg mb-10">"{t.text}"</p>
-
-          <div className="flex items-center gap-6">
-            <Image src={t.logo} alt="" width={120} height={60} />
-
-            {(t.name || t.role) && (
-              <>
-                <div className="w-px h-12 bg-white/20"></div>
-                <div>
-                  <h3 className="font-semibold">{t.name}</h3>
-                  <p className="text-gray-500 italic">{t.role}</p>
-                </div>
-              </>
-            )}
-          </div>
-
-          <div className="flex justify-center gap-3 mt-10">
-            {testimonials.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setTIndex(i)}
-                className={`w-3 h-3 rounded-full ${
-                  i === tIndex ? "bg-[var(--brand-purple)]" : "bg-gray-400"
-                }`}
-                aria-label={`Go to testimonial ${i + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <Testimonial />
 
       <section className="w-full border-t border-purple-900">
-        <div className="bg-gradient-to-r from-purple-900 to-black py-14 sm:py-12 sm:py-14 md:py-16 lg:py-20 md:py-20 px-4 sm:px-4 sm:px-6 md:px-10 lg:px-16">
+        <div className="bg-gradient-to-r from-purple-900 to-black py-10 sm:py-12 md:py-14 px-4 sm:px-6 md:px-10 lg:px-16">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold italic mb-8 leading-snug text-white">
+            <p className="text-sm text-white/80 font-bold mb-3">Contact Us</p>
+
+            <h2 className="text-lg sm:text-xl md:text-3xl font-semibold italic mb-6 leading-snug text-white">
               We&apos;re easy to talk to. Explore how we can work together!
             </h2>
 
-            <div className="space-y-4 text-base sm:text-lg md:text-xl text-gray-300">
+            <div className="space-y-3 text-sm sm:text-base md:text-lg text-gray-300">
               <p>
                 <a
                   href="mailto:hello@velocitindia.com"
@@ -375,7 +252,7 @@ export default function Home() {
                 </a>
               </p>
 
-              <p className="text-sm opacity-70">Or</p>
+              <p className="text-xs opacity-70">Or</p>
 
               <p>
                 <a
@@ -392,7 +269,7 @@ export default function Home() {
       <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
         <Link
           href={CONTACT}
-          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-sm md:text-base font-bold tracking-widest px-4 py-5 rounded-l-md shadow-lg hover:opacity-90 transition writing-mode-vertical"
+          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
         >
           CONTACT
         </Link>

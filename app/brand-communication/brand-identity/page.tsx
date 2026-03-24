@@ -16,6 +16,9 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { CONTACT } from "@/app/const/routes.const";
+import Testimonial from "@/app/component/Testimonial";
+import BrandSection from "@/app/component/BrandSection";
 
 const projects = [
   { title: "Nivas" },
@@ -115,27 +118,6 @@ const services = [
   },
 ];
 
-const testimonials = [
-  {
-    text: "Amazing experience working with this team.",
-    logo: "/logos/client1.png",
-    name: "John Doe",
-    role: "CEO, Company",
-  },
-  {
-    text: "Highly professional and creative.",
-    logo: "/logos/client2.png",
-    name: "Jane Smith",
-    role: "Marketing Head",
-  },
-  {
-    text: "sjioejpoiageje redjaiuodfe.",
-    logo: "/logos/client2.png",
-    name: "Jane Smith",
-    role: "Marketing Head",
-  },
-];
-
 export default function BrandIdentitySection() {
   const [openIndex, setOpenIndex] = useState(3); // last one open by default
 
@@ -144,7 +126,6 @@ export default function BrandIdentitySection() {
   };
 
   const [tIndex, setTIndex] = useState(0);
-  const t = testimonials[tIndex];
   return (
     <>
       {/* Section #1 */}
@@ -186,22 +167,11 @@ export default function BrandIdentitySection() {
               We don’t just design logos; we build visual legacies. As a premier
               <strong> brand identity design company</strong> with over{" "}
               <strong>17 years of excellence</strong> and{" "}
-              <strong>10,000+ projects delivered</strong>, we help businesses
-              cut through the noise with cohesive and impactful design.
+              <strong>10,000+ projects delivered</strong>,Velocitta Brands helps
+              businesses cut through the noise with cohesive, strategic, and
+              impactful design. We transform your vision into a powerful brand
+              identity that commands attention and fosters immediate trust.
             </p>
-
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">
-              We transform your vision into a powerful brand identity that
-              commands attention and builds trust instantly.
-            </p>
-
-            {/* CTA */}
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold px-6 py-2 rounded hover:opacity-90 transition"
-            >
-              Contact Us
-            </Link>
           </div>
         </div>
       </section>
@@ -380,7 +350,7 @@ export default function BrandIdentitySection() {
         </div>
 
         {/* ===== STATS ===== */}
-        <div className="max-w-5xl mx-auto text-center border-t border-gray-200 pt-12 mb-16">
+        <div className="max-w-5xl mx-auto text-center pt-8 mb-12">
           <p className="text-base italic text-blue-700 mb-8">
             The numbers say it all!
           </p>
@@ -402,93 +372,11 @@ export default function BrandIdentitySection() {
             </div>
           </div>
         </div>
-
-        {/* ===== TRUSTED BRANDS (MOVED BELOW STATS) ===== */}
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-7xl mx-auto">
-            {/* Heading */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-[var(--brand-purple)] mb-4">
-              Trusted by Leading Brands
-            </h2>
-
-            {/* Description */}
-            <p className="text-gray-400 max-w-4xl text-sm md:text-base mb-10">
-              Since 2008, we’ve been creative partners to 100+ global brands and
-              Fortune 500 companies, delivering 10,000+ projects.
-            </p>
-
-            {/* Logos Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 border border-purple-900">
-              {[
-                "/Atlas Copco.jpg",
-                "/Ferrero.jpg",
-                "/Group Surya.jpg",
-                "/Dan Foss.jpg",
-                "/JSW Steel.jpg",
-                "/Just Porta.jpg",
-                "/Grass Roote.jpg",
-                "/OP Mobility.jpg",
-                "/WIKUS.jpg",
-                "/Life Care.jpg",
-                "/Atlas.jpg",
-                "/Vastushaili.jpg",
-              ].map((logo, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-center h-32 md:h-40 lg:h-44 p-4 border border-purple-900 bg-zinc-900 hover:border-yellow-400 transition duration-300"
-                >
-                  <Image
-                    src={logo}
-                    alt="brand logo"
-                    width={200}
-                    height={100}
-                    className="object-contain w-full h-full max-h-20 md:max-h-28 opacity-80 hover:opacity-100 transition"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </section>
-      {/* Section #6 */}
-      <section className="bg-[var(--brand-black)] border-t border-white/10 py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold text-[var(--brand-purple)] italic mb-6">
-            World’s leading brands have chosen us. Don’t miss the bus.
-          </h2>
 
-          <p className="text-[var(--brand-purple)] mb-6">Collaborate, today!</p>
+      <BrandSection />
 
-          <p className="text-gray-300 text-lg mb-10">"{t.text}"</p>
-
-          <div className="flex items-center gap-6">
-            <Image src={t.logo} alt="" width={120} height={60} />
-
-            {(t.name || t.role) && (
-              <>
-                <div className="w-px h-12 bg-white/20"></div>
-                <div>
-                  <h3 className="font-semibold">{t.name}</h3>
-                  <p className="text-gray-500 italic">{t.role}</p>
-                </div>
-              </>
-            )}
-          </div>
-
-          <div className="flex justify-center gap-3 mt-10">
-            {testimonials.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setTIndex(i)}
-                className={`w-3 h-3 rounded-full ${
-                  i === tIndex ? "bg-[var(--brand-purple)]" : "bg-gray-400"
-                }`}
-                aria-label={`Go to testimonial ${i + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <Testimonial />
 
       {/* Section # 7 */}
       <section
@@ -544,47 +432,47 @@ export default function BrandIdentitySection() {
       </section>
 
       {/* Section #8 */}
-      <section
-        aria-labelledby="contact-heading"
-        className="relative w-full py-16 px-6 md:px-12 lg:px-20 overflow-hidden"
-        style={{
-          background:
-            "linear-gradient(90deg, #2f3f8f 0%, #1d4ed8 40%, #06b6d4 100%)",
-        }}
-      >
-        <div className="max-w-6xl mx-auto">
-          {/* HEADING */}
-          <h2
-            id="contact-heading"
-            className="text-2xl md:text-4xl font-semibold italic mb-8 leading-snug"
-          >
-            We&apos;re easy to talk to. Explore how we can work together!
-          </h2>
+      <section className="w-full border-t border-purple-900">
+        <div className="bg-gradient-to-r from-purple-900 to-black py-10 sm:py-12 md:py-14 px-4 sm:px-6 md:px-10 lg:px-16">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-sm text-white/80 font-bold mb-3">Contact Us</p>
 
-          {/* CONTACT INFO */}
-          <div className="space-y-4 text-lg md:text-xl">
-            <p>
-              <a
-                href="mailto:hello@velocitindia.com"
-                className="underline hover:text-[var(--brand-gold)] transition"
-              >
-                Hello@VelocitIndia.com
-              </a>
-            </p>
+            <h2 className="text-lg sm:text-xl md:text-3xl font-semibold italic mb-6 leading-snug text-white">
+              We&apos;re easy to talk to. Explore how we can work together!
+            </h2>
 
-            <p className="text-sm opacity-80">Or</p>
+            <div className="space-y-3 text-sm sm:text-base md:text-lg text-gray-300">
+              <p>
+                <a
+                  href="mailto:hello@velocitindia.com"
+                  className="underline hover:text-yellow-400 transition"
+                >
+                  hello@velocitindia.com
+                </a>
+              </p>
 
-            <p>
-              <a
-                href="tel:+918956437437"
-                className="hover:text-[var(--brand-gold)] transition"
-              >
-                +91 8956 437 437
-              </a>
-            </p>
+              <p className="text-xs opacity-70">Or</p>
+
+              <p>
+                <a
+                  href="tel:+918956437437"
+                  className="hover:text-yellow-400 transition"
+                >
+                  +91 8956 437 437
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
+      <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
+        <Link
+          href={CONTACT}
+          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+        >
+          CONTACT
+        </Link>
+      </div>
     </>
   );
 }

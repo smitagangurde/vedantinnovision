@@ -8,11 +8,7 @@ import { Menu, X } from "lucide-react";
 import CommunicationMegaMenu from "./communicationMegaMenu";
 import EmployerMegaMenu from "./employerMegaMenu";
 
-import {
-  BRANDCONSULTING,
-  CONTACT,
-  HOME,
-} from "../const/routes.const";
+import { BRANDCONSULTING, CONTACT, FILMS, HOME } from "../const/routes.const";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -34,7 +30,6 @@ export default function Header() {
     <header className="w-full bg-black border-b border-purple-900 text-white relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <div className="flex items-center justify-between h-20">
-
           {/* Logo */}
           <Link href={HOME}>
             <Image
@@ -47,8 +42,10 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-10">
-
-            <Link href={BRANDCONSULTING} className="hover:text-yellow-400 transition">
+            <Link
+              href={BRANDCONSULTING}
+              className="hover:text-yellow-400 transition"
+            >
               Brand Consulting
             </Link>
 
@@ -78,14 +75,16 @@ export default function Header() {
               {activeMenu === "employer" && <EmployerMegaMenu />}
             </div>
 
-            <Link href="#" className="hover:text-yellow-400 transition">
+            <Link
+              href={FILMS}
+              className="hover:text-yellow-400 transition"
+            >
               Films
             </Link>
 
             <Link href={CONTACT} className="hover:text-yellow-400 transition">
               Contact
             </Link>
-
           </nav>
 
           {/* Mobile Menu Button */}
@@ -95,14 +94,12 @@ export default function Header() {
           >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
-
         </div>
       </div>
 
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-black border-t border-purple-900 px-6 py-6 space-y-4">
-
           <Link
             href={BRANDCONSULTING}
             className="block hover:text-yellow-400"
@@ -142,7 +139,6 @@ export default function Header() {
           >
             Contact
           </Link>
-
         </div>
       )}
     </header>
