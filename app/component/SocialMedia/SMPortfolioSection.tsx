@@ -20,7 +20,7 @@ export default function SMPortfolioSection() {
               className="group relative overflow-hidden rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-purple-400 transition"
             >
               {/* Background Layer (optional dynamic bg like ARreport) */}
-              <div className={`absolute inset-0 ${"bg" in item ? item.bg : ""} opacity-90`} />
+              <div className={`absolute inset-0 ${"bg" in item ? item.bg : "" } opacity-90`} />
 
               {/* Image */}
               <div className="relative p-5 sm:p-6">

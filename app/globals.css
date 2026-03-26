@@ -1,38 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  /* ===== BASE ===== */
+  /* ===== BASE COLORS ===== */
   --brand-black: #000000;
   --brand-white: #ffffff;
 
-  /* ===== PRIMARY (PURPLE) ===== */
-  --brand-purple: #a855f7;        /* used for headings */
-  --brand-purple-dark: #581c87;   /* borders, gradients */
-  --brand-purple-light: #c084fc;
+  /* ===== PRIMARY (PURPLE THEME) ===== */
+  --brand-purple: #a855f7;        /* headings / highlights */
+  --brand-purple-dark: #581c87;   /* borders / deep accents */
+  --brand-purple-light: #c084fc;  /* subtle accents / hover */
 
-  /* ===== ACCENT (GOLD) ===== */
-  --brand-gold: #facc15;          /* headings highlight */
-  --brand-orange: #f59e0b;        /* gradient end */
+  /* ===== ACCENT (GOLD / CTA) ===== */
+  --brand-gold: #facc15;          /* buttons / emphasis */
+  --brand-gold-dark: #f59e0b;     /* gradient depth */
+  --brand-gold-light: #fde68a;
 
-  /* ===== TEXT COLORS ===== */
+  /* ===== BACKGROUND SYSTEM ===== */
+  --bg-primary: var(--brand-black);
+  --bg-secondary: #0a0a0a;        /* cards / sections */
+  --bg-tertiary: #111111;         /* elevated layers */
+
+  /* ===== TEXT SYSTEM ===== */
   --text-primary: #ffffff;
   --text-secondary: #d1d5db;      /* gray-300 */
-  --text-muted: rgba(255,255,255,0.8);
-  --text-faded: rgba(255,255,255,0.6);
+  --text-muted: #9ca3af;          /* gray-400 */
+  --text-subtle: #6b7280;         /* gray-500 */
 
-  /* ===== BACKGROUND ===== */
-  --bg-primary: #000000;
-  --bg-overlay-light: rgba(255,255,255,0.05);  /* cards */
-  --bg-overlay-hover: rgba(255,255,255,0.1);
-
-  /* ===== BORDER ===== */
-  --border-default: rgba(255,255,255,0.1);
-  --border-strong: #581c87;       /* purple-900 */
+  /* ===== BORDER COLORS ===== */
+  --border-primary: #581c87;      /* purple-900 */
+  --border-secondary: #27272a;    /* subtle dark border */
 
   /* ===== GRADIENTS ===== */
-  --gradient-primary: linear-gradient(to right, #581c87, #000000);
-  --gradient-accent: linear-gradient(to right, #facc15, #f59e0b);
-  --gradient-vertical-accent: linear-gradient(to bottom, #facc15, #f59e0b);
+  --gradient-primary: linear-gradient(
+    to right,
+    var(--brand-purple-dark),
+    var(--brand-black)
+  );
+
+  --gradient-accent: linear-gradient(
+    to bottom,
+    var(--brand-gold),
+    var(--brand-gold-dark)
+  );
+
+  /* ===== SHADOWS (OPTIONAL UI DEPTH) ===== */
+  --shadow-purple: 0 0 20px rgba(168, 85, 247, 0.15);
 }
 
 body {

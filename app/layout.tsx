@@ -14,12 +14,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "Careers | Vedant Innovision",
   description:
     "Join Vendant Innovision and work with a creative branding and marketing team.",
+  icons: {
+    icon: [
+      { url: "/Vedant_logo.jpg", sizes: "32x32" },
+    ],
+  },
   keywords: [
     "Vendant careers",
     "branding agency jobs",

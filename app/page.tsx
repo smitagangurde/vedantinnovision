@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { CONTACT } from "./const/routes.const";
+import { ABOUT, BRANDIDENTITY, CONTACT, EMPLOYERBRANDING, FILMS, NEWS } from "./const/routes.const";
 import Testimonial from "./component/Testimonial";
 import BrandSection from "./component/BrandSection";
 import ContactDiv from "./component/ContactDiv";
@@ -55,10 +55,10 @@ export default function Home() {
               </p>
 
               <Link
-                href="#"
+                href={ABOUT}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs px-5 py-3 font-semibold hover:opacity-90 transition"
               >
-                LEARN MORE →
+                LEARN MORE  →
               </Link>
             </div>
 
@@ -89,7 +89,7 @@ export default function Home() {
               </p>
 
               <Link
-                href="#"
+                href={NEWS}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs px-5 py-2 font-semibold"
               >
                 LEARN MORE →
@@ -124,7 +124,7 @@ export default function Home() {
               </p>
 
               <Link
-                href="#"
+                href={FILMS}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs px-5 py-2 font-semibold"
               >
                 LEARN MORE →
@@ -162,7 +162,7 @@ export default function Home() {
               </p>
 
               <Link
-                href="#"
+                href={BRANDIDENTITY}
                 className="inline-flex mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs px-5 py-2 font-semibold"
               >
                 LEARN MORE →
@@ -196,7 +196,7 @@ export default function Home() {
               </p>
 
               <Link
-                href="#"
+                href={EMPLOYERBRANDING}
                 className="inline-flex mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs px-5 py-2 font-semibold"
               >
                 LEARN MORE →
