@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CONTACT } from "../const/routes.const";
 
 const blogPosts = [
   {
@@ -78,7 +79,8 @@ const blogPosts = [
   {
     id: 6,
     date: "August 5, 2025",
-    title: "How Employer Branding Agencies in the UK Help Attract and Retain Talent",
+    title:
+      "How Employer Branding Agencies in the UK Help Attract and Retain Talent",
     excerpt:
       "In today's competitive talent landscape, UK organisations are facing unprecedented challenges in attracting and retaining top talent. With skills shortages across key sectors and employee expectations evolving rapidly, businesses are turning to employer branding agencies.",
     image: "/blog6.png",
@@ -93,7 +95,8 @@ const blogPosts = [
   {
     id: 7,
     date: "July 22, 2025",
-    title: "How to Position Your B2B Brand as an Industry Leader on Social Media",
+    title:
+      "How to Position Your B2B Brand as an Industry Leader on Social Media",
     excerpt:
       "In the dynamic world of B2B, simply having a product or service isn't enough. To truly stand out and attract the right clients, your brand needs to be recognized as an authority and go-to source for insights and solutions.",
     image: "/blog7.png",
@@ -112,11 +115,7 @@ const blogPosts = [
       "Is your B2B social media strategy feeling stagnant? In today's dynamic digital landscape, social media isn't just for consumer brands anymore. It's a powerful engine for growth and visibility.",
     image: "/blog8.png",
     slug: "how-social-media-agencies-are-transforming-b2b-marketing",
-    overlay: [
-      "How Social Media",
-      "Agencies Are Transforming",
-      "B2B Marketing",
-    ],
+    overlay: ["How Social Media", "Agencies Are Transforming", "B2B Marketing"],
   },
   {
     id: 9,
@@ -150,88 +149,74 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <section className="bg-gradient-to-b from-[#f5f7fb] to-[#f1f1f1] py-10 md:py-16">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
-        {/* Heading */}
-        <div className="mb-8 md:mb-12">
-          <h1 className="text-[#2447A5] text-4xl sm:text-5xl md:text-6xl font-bold italic tracking-tight leading-tight">
-            Blog
-          </h1>
+    <main className="bg-black text-gray-300">
+      <section className="w-full px-4 sm:px-6 md:px-10 lg:px-16 py-8 border-t border-purple-900">
+        <div className="max-w-7xl mx-auto space-y-12">
+          {/* Heading */}
+          <div className="max-w-3xl space-y-3">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold italic text-[var(--brand-purple)]">
+              Blog
+            </h1>
 
-          <p className="mt-4 text-[#2f467d] text-lg sm:text-2xl md:text-4xl italic leading-snug max-w-5xl">
-            A curated collection of information in this fast-paced advertising
-            world
-          </p>
-        </div>
+            <p className="text-gray-400 text-lg md:text-xl italic">
+              A curated collection of information in this fast-paced advertising
+              world
+            </p>
+          </div>
 
-        {/* Banner */}
-        <div className="w-full overflow-hidden mb-10 md:mb-14 rounded-2xl shadow-md">
-          <Image
-            src="/blog.png"
-            alt="Be inspired be inspiring"
-            width={1600}
-            height={700}
-            className="w-full h-auto object-cover"
-            priority
-          />
-        </div>
+          {/* Banner */}
+          <div className="relative w-full h-[260px] sm:h-[360px] md:h-[460px] lg:h-[520px] rounded-md overflow-hidden">
+            <Image
+              src="/blog.png"
+              alt="Be inspired be inspiring"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
 
-        {/* Blog Cards */}
-        <div className="space-y-8 md:space-y-10">
-          {blogPosts.map((post) => (
-            <article
-              key={post.id}
-              className="group grid grid-cols-1 md:grid-cols-[48%_52%] bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300"
-            >
-              {/* Left Image */}
-              <div className="relative min-h-[240px] sm:min-h-[280px] md:min-h-[320px] overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-
-                <div className="absolute top-4 left-4 sm:top-5 sm:left-5 space-y-1.5">
-                  {post.overlay.map((line, index) => (
-                    <div
-                      key={index}
-                      className="w-fit bg-[#2447A5]/95 px-2.5 py-1 rounded-sm shadow"
-                    >
-                      <p className="text-white text-xs sm:text-sm md:text-base leading-tight">
-                        {line}
-                      </p>
-                    </div>
-                  ))}
+          {/* Blog Cards */}
+          <div className="space-y-10">
+            {blogPosts.map((post) => (
+              <article
+                key={post.id}
+                className="group grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  pb-10"
+              >
+                {/* Image */}
+                <div className="relative w-full h-[260px] sm:h-[300px] md:h-[360px] rounded-md overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
-              </div>
 
-              {/* Right Content */}
-              <div className="p-5 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-center">
-                <p className="text-[#9a9a9a] text-sm sm:text-base mb-3">
-                  {post.date}
-                </p>
+                {/* Content */}
+                <div className="space-y-4 max-w-xl">
+                  <p className="text-gray-500 text-sm">{post.date}</p>
 
-                <h2 className="text-[#2447A5] text-xl sm:text-2xl md:text-3xl font-semibold leading-snug mb-4 transition-colors duration-300 group-hover:text-[#173a86]">
-                  {post.title}
-                </h2>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[var(--brand-purple)] leading-snug group-hover:opacity-80 transition">
+                    {post.title}
+                  </h2>
 
-                <p className="text-[#666] text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-6">
-                  {post.excerpt}
-                </p>
-
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="inline-flex items-center gap-2 bg-[#12a8e0] hover:bg-[#0d95ca] text-white text-sm sm:text-base font-medium px-5 py-3 rounded-md w-fit transition-all duration-300 hover:translate-y-[-2px]"
-                >
-                  Read more dgeg3e
-                  <span aria-hidden="true">→</span>
-                </Link>
-              </div>
-            </article>
-          ))}
+                  <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
+      </section>
+      <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
+        <Link
+          href={CONTACT}
+          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+        >
+          CONTACT
+        </Link>
       </div>
-    </section>
+    </main>
   );
 }

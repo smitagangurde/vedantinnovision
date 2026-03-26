@@ -7,6 +7,29 @@ export default function BrandSection() {
       className="w-full bg-black text-white py-16 px-4 sm:px-6 lg:px-16 border-t border-purple-900"
       aria-labelledby="brands-heading"
     >
+      <div className="max-w-5xl mx-auto text-center mb-28">
+        <p className="text-base italic text-purple-400 mb-8">
+          The numbers say it all!
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+          <div>
+            <h3 className="text-3xl font-semibold text-white">17+</h3>
+            <p className="text-gray-400 text-sm">Years of experience</p>
+          </div>
+
+          <div className="sm:border-x sm:border-purple-900">
+            <h3 className="text-3xl font-semibold text-white">10,000+</h3>
+            <p className="text-gray-400 text-sm">Projects delivered</p>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-semibold text-white">5,000+</h3>
+            <p className="text-gray-400 text-sm">Satisfied clients</p>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2
@@ -40,7 +63,6 @@ export default function BrandSection() {
                 />
               </div>
             </div>
-            
           ))}
         </div>
       </div>

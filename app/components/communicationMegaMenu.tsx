@@ -13,6 +13,7 @@ import {
   BRANDIDENTITY,
   CONTACT,
   MARKETINGCOMMUNICATION,
+  SOCIALMEDIA,
   WEBSITEUIUX,
 } from "../const/routes.const";
 
@@ -114,7 +115,7 @@ export default function CommunicationMegaMenu() {
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
-                href={WEBSITEUIUX}
+                href={SOCIALMEDIA}
                 className="text-white hover:text-yellow-400 hover:underline"
               >
                 Social Media

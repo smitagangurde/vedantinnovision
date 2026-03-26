@@ -4,8 +4,31 @@ import Image from "next/image";
 import Link from "next/link";
 // import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
-import { ABOUT, BLOG, CAREER, CONTACT, FILMS, NEWS } from "../const/routes.const";
-import { Home, FileText, Briefcase,Phone, InfoIcon, Newspaper, Instagram, Linkedin, Megaphone, Film, Building2, Building } from "lucide-react";
+import {
+  ABOUT,
+  BLOG,
+  BRANDIDENTITY,
+  CAREER,
+  CONTACT,
+  EMPLOYERBRANDING,
+  FILMS,
+  NEWS,
+} from "../const/routes.const";
+import {
+  Home,
+  FileText,
+  Briefcase,
+  Phone,
+  InfoIcon,
+  Newspaper,
+  Instagram,
+  Linkedin,
+  Megaphone,
+  Film,
+  Building2,
+  Building,
+} from "lucide-react";
+import BrandConsulting from "../brand-consulting/page";
 
 export default function Footer() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
@@ -43,38 +66,56 @@ export default function Footer() {
           <h3 className="font-semibold mb-4 text-purple-400">Company</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/" className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-              <Home size={16} />
+              <Link
+                href="/"
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <Home size={16} />
                 Home
               </Link>
             </li>
             <li>
-              <Link href={ABOUT} className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-              <InfoIcon size={16} />
+              <Link
+                href={ABOUT}
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <InfoIcon size={16} />
                 About
               </Link>
             </li>
             <li>
-              <Link href={BLOG} className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-              <FileText size={16} />
+              <Link
+                href={BLOG}
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <FileText size={16} />
                 Blog
               </Link>
             </li>
             <li>
-              <Link href={NEWS} className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-              <Newspaper size={16} />
+              <Link
+                href={NEWS}
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <Newspaper size={16} />
                 News & Awards
               </Link>
             </li>
             <li>
-              <Link href={CAREER} className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-              <Briefcase size={16}/>
+              <Link
+                href={CAREER}
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <Briefcase size={16} />
                 Career
               </Link>
             </li>
             <li>
-              <Link href={CONTACT} className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-               <Phone size={16} />
+              <Link
+                href={CONTACT}
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <Phone size={16} />
                 Contact
               </Link>
             </li>
@@ -87,22 +128,28 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link
-                href="/brand-communication"
+                href={BRANDIDENTITY}
                 className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
               >
-                <Megaphone size={16}/>
+                <Megaphone size={16} />
                 Brand Communication
               </Link>
             </li>
             <li>
-              <Link href="/employer-brand" className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-              <Building2 size={16} />
+              <Link
+                href={EMPLOYERBRANDING}
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <Building2 size={16} />
                 Employer Brand
               </Link>
             </li>
             <li>
-              <Link href={FILMS} className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition">
-              <Film size={16} />
+              <Link
+                href={FILMS}
+                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+              >
+                <Film size={16} />
                 Films
               </Link>
             </li>
@@ -115,11 +162,11 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/search/results/all/?keywords=Vedant%20Innovision&origin=RICH_QUERY_TYPEAHEAD_HISTORY&heroEntityKey=urn%3Ali%3Aorganization%3A99472291&position=0"
                 target="_blank"
                 className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
               >
-                 <Linkedin size={16} />
+                <Linkedin size={16} />
                 LinkedIn
               </Link>
             </li>

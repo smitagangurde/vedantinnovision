@@ -1,92 +1,174 @@
 import Image from "next/image";
+import Link from "next/link";
+import ContactDiv from "../component/ContactDiv";
+import Testimonial from "../component/Testimonial";
+import { CONTACT } from "../const/routes.const";
 
-export default function AwardWinningMilestones() {
+const milestones = [
+  {
+    year: "2025",
+    title: "Most Renowned Employer Branding Agency",
+    desc: `Recognised for delivering high-impact branding solutions that transform organisational reputations and drive elite talent engagement. This award celebrates our passion for creating authentic brand experiences that inspire and retain the world's top professionals.`,
+    image: "/award1.png",
+  },
+  {
+    year: "2024",
+    title: "The afaqs! Marketers’ Excellence Award",
+    desc: `Recognised for excellence in shaping powerful employer brands that drive measurable organisational growth. This award highlights the agency’s leadership in crafting strategic narratives that strengthen our clientele’s position and presence in the industry.`,
+    image: "/award2.png",
+  },
+];
+
+const announcements = [
+  {
+    date: "January 22, 2026",
+    title:
+      "Employer Branding in India: Why the Next Five Years Will Redefine the Talent Landscape",
+    desc: `In this article, Samarth Singh, Director and Employer Brand Expert at Velocitta India, explains that employer branding in India is becoming a strategic imperative, driven by changing talent expectations, AI-led role shifts, GCC growth, and the need for authentic, consistent, long-term brand narratives.`,
+  },
+  {
+    date: "May 10, 2025",
+    title:
+      "Unlocking business Potential Through Effective Employer Branding and Talent Solutions",
+    desc: `In today’s rapidly evolving market, technological advancements and heightened competition have made it critical for companies to not only establish a strong presence but also to build a compelling brand.`,
+  },
+];
+
+export default function News() {
   return (
-    <section className="bg-[#f3f3f3] py-12 md:py-16">
-      <div className="mx-auto max-w-[1350px] px-4 sm:px-6 md:px-8 lg:px-10">
-        {/* Heading */}
-        <h2 className="mb-8 text-3xl font-bold italic text-[#2447A5] sm:text-4xl md:mb-10 md:text-5xl">
-          Award-Winning Milestones
-        </h2>
-
-        {/* Cards Row */}
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {/* Card 1 */}
-          <div className="grid overflow-hidden bg-[#f7f7f7] md:grid-cols-2">
-            {/* Text */}
-            <div className="p-8 sm:p-10">
-              <h3 className="text-5xl font-bold text-[#2447A5] sm:text-6xl">
-                2025
-              </h3>
-
-              <h4 className="mt-4 text-3xl font-semibold leading-tight text-[#233f7a]">
-                Most Renowned
-                <br />
-                Employer Branding
-                <br />
-                Agency
-              </h4>
-
-              <div className="my-4 h-[2px] w-12 bg-[#2d3d63]" />
-
-              <p className="text-xl leading-10 text-[#506080]">
-                Recognised for delivering high-impact branding solutions that
-                transform organisational reputations and drive elite talent
-                engagement. This award celebrates our passion for creating
-                authentic brand experiences that inspire and retain the world’s
-                top professionals.
-              </p>
-            </div>
-
-            {/* Image */}
-            <div className="relative min-h-[420px] bg-[#efefef]">
-              <Image
-                src="/award-left.png"
-                alt="2025 award"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
+    <main className="bg-black text-gray-300">
+      {/* STATS */}
+      <section className="w-full bg-black text-gray-300 py-16 px-4 sm:px-6 md:px-10 lg:px-16 border-t border-purple-900">
+        <div className="max-w-7xl mx-auto space-y-10">
+          {/* HEADING */}
+          <div className="space-y-3 max-w-3xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-purple-400 italic">
+              News & Awards
+            </h1>
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl">
+              Discover insights, opinions and ideas from our experts
+            </p>
           </div>
 
-          {/* Card 2 */}
-          <div className="grid overflow-hidden bg-[#f7f7f7] md:grid-cols-2">
-            {/* Text */}
-            <div className="p-8 sm:p-10">
-              <h3 className="text-5xl font-bold text-[#2447A5] sm:text-6xl">
-                2024
-              </h3>
+          {/* BANNER */}
+          <div className="w-full relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] rounded-md overflow-hidden">
+            <Image
+              src="/banner-awards.png"
+              alt="Awards Banner"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
 
-              <h4 className="mt-4 text-3xl font-semibold leading-tight text-[#233f7a]">
-                The afaqs! Marketers’
-                <br />
-                Excellence Award
-              </h4>
+          {/* SUB HEADING */}
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-400">
+            Award-Winning Milestones
+          </h2>
 
-              <div className="my-4 h-[2px] w-12 bg-[#2d3d63]" />
+          {/* MILESTONES */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {milestones.map((item, i) => (
+              <div
+                key={i}
+                className="bg-[#111] p-6 sm:p-8 rounded-md border border-purple-900 flex flex-col lg:flex-row items-center gap-6"
+              >
+                {/* TEXT */}
+                <div className="flex-1 space-y-3">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-purple-400">
+                    {item.year}
+                  </h3>
 
-              <p className="text-xl leading-10 text-[#506080]">
-                Recognised for excellence in shaping powerful employer brands
-                that drive measurable organisational growth. This award
-                highlights the agency’s leadership in crafting strategic
-                narratives that strengthen our clientele’s position and
-                presence in the industry.
-              </p>
-            </div>
+                  <h4 className="text-base sm:text-lg font-semibold text-white">
+                    {item.title}
+                  </h4>
 
-            {/* Image */}
-            <div className="relative min-h-[420px] bg-[#efefef]">
-              <Image
-                src="/award-right.png"
-                alt="2024 award"
-                fill
-                className="object-contain"
-              />
+                  <div className="w-10 h-[2px] bg-purple-900 my-2" />
+
+                  <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+
+                {/* IMAGE */}
+                <div className="relative w-full sm:w-[220px] h-[220px]">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* ANNOUNCEMENTS */}
+          <div className="space-y-10">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-400 italic">
+              Latest Announcements
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {announcements.map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-[#111] p-6 sm:p-8 md:p-10 rounded-md border border-purple-900"
+                >
+                  {/* Date */}
+                  <p className="text-sm text-gray-500 mb-3">{item.date}</p>
+
+                  {/* Title */}
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-purple-400 leading-snug mb-4">
+                    {item.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
+
+        <div className="max-w-7xl mx-auto text-center mt-16 mb-8">
+          <p className="text-base italic text-purple-400 mb-8">
+            The numbers say it all!
+          </p>
+
+          <div className="grid sm:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-3xl font-semibold">17+</h3>
+              <p className="text-gray-400 text-sm">Years of experience</p>
+            </div>
+
+            <div className="sm:border-x sm:border-purple-900">
+              <h3 className="text-3xl font-semibold">10,000+</h3>
+              <p className="text-gray-400 text-sm">Projects delivered</p>
+            </div>
+
+            <div>
+              <h3 className="text-3xl font-semibold">5,000+</h3>
+              <p className="text-gray-400 text-sm">Satisfied clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Testimonial />
+
+      <ContactDiv />
+
+      <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
+        <Link
+          href={CONTACT}
+          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+        >
+          CONTACT
+        </Link>
       </div>
-    </section>
+    </main>
   );
 }

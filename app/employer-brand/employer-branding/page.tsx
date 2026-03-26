@@ -8,45 +8,51 @@ import BrandGrid from "@/app/component/BrandGrid";
 import Image from "next/image";
 import { EmployerEVP } from "@/app/data/EmployerEVP";
 import Testimonial from "@/app/component/Testimonial";
+import BrandSection from "@/app/component/BrandSection";
+import ContactDiv from "@/app/component/ContactDiv";
+import Link from "next/link";
+import { CONTACT } from "@/app/const/routes.const";
 
 export default function ServicesSection() {
   return (
     <main>
-      <section className="w-full bg-[var(--brand-black)] text-white py-16 border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center justify-items-center text-center md:text-left">
-          {/* LEFT SIDE (IMAGE STYLE MATCHED) */}
-          <div className="w-full max-w-md h-[320px] md:h-[420px] relative rounded-xl overflow-hidden bg-[var(--brand-purple)]/10 border border-white/10 mx-auto">
-            {/* Background Glow */}
-            <div className="absolute inset-0 bg-[var(--brand-purple)]/20 blur-2xl opacity-30"></div>
+      <section className="w-full bg-[var(--brand-black)] text-white py-14 sm:py-14 md:py-16 lg:py-20 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* LEFT SIDE */}
+            <div className="w-full max-w-md h-[320px] md:h-[420px] relative rounded-xl overflow-hidden bg-[var(--brand-purple)]/10 border border-white/10 mx-auto md:mx-0">
+              {/* Background Glow */}
+              <div className="absolute inset-0 bg-[var(--brand-purple)]/20 blur-2xl opacity-30"></div>
 
-            {/* Image */}
-            <Image
-              src="/hero/laptop.png"
-              alt="Employer branding digital experience"
-              fill
-              priority
-              className="object-contain p-6"
-            />
-          </div>
+              {/* Image */}
+              <Image
+                src="/hero/laptop.png"
+                alt="Employer branding digital experience"
+                fill
+                priority
+                className="object-contain p-6"
+              />
+            </div>
 
-          {/* RIGHT SIDE */}
-          <div className="max-w-xl mx-auto">
-            <h1 className="text-2xl md:text-3xl font-semibold text-[var(--brand-purple)] mb-4">
-              A Powerful Employer Brand
-            </h1>
+            {/* RIGHT SIDE */}
+            <div className="max-w-xl">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[var(--brand-purple)] mb-4 leading-snug">
+                A Powerful Employer Brand
+              </h1>
 
-            <h2 className="text-lg md:text-xl text-[var(--brand-gold)] font-medium mb-4">
-              Where Current Stars Shine and Future Talent Flocks to Join
-            </h2>
+              <h2 className="text-base sm:text-lg md:text-xl text-[var(--brand-gold)] font-medium mb-4">
+                Where Current Stars Shine and Future Talent Flocks to Join
+              </h2>
 
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-              In a desert, when was the last time you witnessed a rose bloom?
-              Just as rare, finding top talent requires nurturing the right
-              environment. Our employer branding services transcend mere
-              connections; they foster a bond where talent feels not just cared
-              for, but truly valued and heard. We assist you in building
-              resonance with your employees, both current and prospective.
-            </p>
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
+                In a desert, when was the last time you witnessed a rose bloom?
+                Just as rare, finding top talent requires nurturing the right
+                environment. Our employer branding services transcend mere
+                connections; they foster a bond where talent feels not just
+                cared for, but truly valued and heard. We assist you in building
+                resonance with your employees, both current and prospective.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -124,7 +130,7 @@ export default function ServicesSection() {
       <section className="w-full bg-black text-white py-16 px-4 sm:px-6 lg:px-16 border-t border-purple-900">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-[var(--brand-purple)] font-semibold mb-4">
             Creating High-Impact Cultures and a Robust Employer Brands
           </h2>
 
@@ -145,68 +151,20 @@ export default function ServicesSection() {
         </div>
       </section>
 
-      <section className="w-full bg-black text-white py-16 px-4 sm:px-6 lg:px-16 border-t border-purple-900">
-        <div className="max-w-7xl mx-auto text-center">
-          {/* Top Text */}
-          <p className="text-purple-400 font-medium mb-6 italic">
-            The numbers say it all!
-          </p>
-
-          {/* Stats */}
-          <EmployerBrandingStats stats={EmployerBrandingStat} />
-
-          {/* Heading */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mt-16 text-left">
-            Building Stronger Employer Brands
-          </h2>
-
-          {/* Description */}
-          <p className="text-gray-400 mt-3 text-left max-w-7xl">
-            Since 2008, we’ve been creative partners to 100+ global brands and
-            Fortune 500 companies, collaborated with numerous businesses and
-            delivered 10,000+ projects.
-          </p>
-
-          {/* Brand Logos */}
-          <div className="mt-10">
-            <BrandGrid brands={brands} />
-          </div>
-        </div>
-      </section>
+      <BrandSection />
 
       <Testimonial />
 
-      <section className="w-full border-t border-purple-900">
-        <div className="bg-gradient-to-r from-purple-900 to-black py-14 sm:py-12 sm:py-14 md:py-16 lg:py-20 md:py-20 px-4 sm:px-4 sm:px-6 md:px-10 lg:px-16">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold italic mb-8 leading-snug text-white">
-              We&apos;re easy to talk to. Explore how we can work together!
-            </h2>
+      <ContactDiv />
 
-            <div className="space-y-4 text-base sm:text-lg md:text-xl text-gray-300">
-              <p>
-                <a
-                  href="mailto:hello@velocitindia.com"
-                  className="underline hover:text-yellow-400 transition"
-                >
-                  hello@velocitindia.com
-                </a>
-              </p>
-
-              <p className="text-sm opacity-70">Or</p>
-
-              <p>
-                <a
-                  href="tel:+918956437437"
-                  className="hover:text-yellow-400 transition"
-                >
-                  +91 8956 437 437
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
+        <Link
+          href={CONTACT}
+          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+        >
+          CONTACT
+        </Link>
+      </div>
     </main>
   );
 }

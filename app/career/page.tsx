@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Testimonial from "../component/Testimonial";
+import Link from "next/link";
+import { CONTACT } from "../const/routes.const";
 
 type JobType = {
   title: string;
@@ -173,61 +176,57 @@ export default function CareerPage() {
 
   return (
     <main className="bg-[#f5f5f5] text-[#2f3f63]">
-      {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-800 to-blue-500 px-6 py-24 text-white">
-        <div className="mx-auto max-w-6xl">
-          <h1 className="mb-6 text-4xl font-bold md:text-5xl">
-            Calling all creative minds!
-          </h1>
+      {/* HERO + WHY + IMAGE GRID */}
+      <section className="w-full bg-black text-gray-300 py-16 px-4 sm:px-6 md:px-10 lg:px-16 border-t border-purple-900">
+        <div className="max-w-7xl mx-auto space-y-16">
+          {/* HERO */}
+          <div className="space-y-6 max-w-3xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-purple-400 italic">
+              Calling all creative minds!
+            </h1>
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl">
+              We’re always open to new ideas, new people & new experiences.
+            </p>
 
-          <p className="max-w-2xl text-lg">
-            We’re always open to new ideas, new people & new experiences.
-          </p>
-
-          <div className="mt-10">
-            <Image
-              src="/firstimage.jpg"
-              alt="Creative team"
-              width={1200}
-              height={600}
-              className="w-full rounded-xl object-cover shadow-xl"
-            />
+            {/* BANNER */}
+            <div className="w-full relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] rounded-md overflow-hidden mt-6">
+              <Image
+                src="/banner-awards.png"
+                alt="Banner"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* WHY */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-6 text-3xl font-bold italic text-[#1f4aa0]">
-            Why Vedant Innovision?
-          </h2>
+          {/* WHY SECTION */}
+          <div className="max-w-7xl space-y-6">
+            <h2 className="text-2xl md:text-3xl font-semibold italic text-purple-400">
+              Why Vedant Innovision?
+            </h2>
 
-          <p className="mb-4 text-gray-700">
-            Having a place where you are valued, nurtured and given the freedom
-            to stretch your creative boundaries is important. Velocita strives
-            to be that place for you!
-          </p>
+            <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed">
+              Having a place where you are valued, nurtured and given the
+              freedom to stretch your creative boundaries is important. Velocita
+              strives to be that place for you!
+            </p>
 
-          <p className="text-gray-700">
-            We welcome people who have a flair for creativity, a passion for
-            excellence and who can take projects to a whole new level of
-            awesome. At Velocita, we create a warm, nurturing environment where
-            everyone, from freshers to experienced employees, can grow their
-            careers on their own terms.
-          </p>
-        </div>
-      </section>
+            <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed">
+              We welcome people who have a flair for creativity, a passion for
+              excellence and who can take projects to a whole new level. At
+              Velocita, we create a warm, nurturing environment where everyone
+              can grow their careers on their own terms.
+            </p>
+          </div>
 
-      {/* IMAGE GRID */}
-      <section className="bg-[#f3f3f3] py-10 md:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-12">
+          {/* IMAGE GRID */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-7">
-              <div className="overflow-hidden rounded-2xl">
+              <div className="overflow-hidden rounded-xl">
                 <Image
                   src="/scr1.jpg"
-                  alt="Team working together"
+                  alt="Team working"
                   width={1200}
                   height={800}
                   className="h-[300px] w-full object-cover md:h-[420px]"
@@ -236,7 +235,7 @@ export default function CareerPage() {
             </div>
 
             <div className="md:col-span-5">
-              <div className="overflow-hidden rounded-2xl">
+              <div className="overflow-hidden rounded-xl">
                 <Image
                   src="/scr1.jpg"
                   alt="Team meeting"
@@ -248,10 +247,10 @@ export default function CareerPage() {
             </div>
 
             <div className="md:col-span-4 md:ml-10">
-              <div className="overflow-hidden rounded-2xl">
+              <div className="overflow-hidden rounded-xl">
                 <Image
                   src="/scr1.jpg"
-                  alt="Woman using phone"
+                  alt="Phone usage"
                   width={800}
                   height={600}
                   className="h-[260px] w-full object-cover md:h-[320px]"
@@ -260,10 +259,10 @@ export default function CareerPage() {
             </div>
 
             <div className="md:col-span-8">
-              <div className="overflow-hidden rounded-2xl">
+              <div className="overflow-hidden rounded-xl">
                 <Image
                   src="/scr1.jpg"
-                  alt="Office collaboration"
+                  alt="Office"
                   width={1200}
                   height={600}
                   className="h-[260px] w-full object-cover md:h-[320px]"
@@ -274,260 +273,289 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* CULTURE */}
-      <section className="bg-white px-6 py-20">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2">
-          <div className="rounded-xl bg-gray-50 p-6 shadow-sm">
-            <h2 className="mb-4 text-2xl font-bold italic text-blue-800">
-              We’re learning every day
-            </h2>
+      {/* VALUES SECTION */}
+      <section className="w-full border-t border-purple-900">
+        <div className="bg-gradient-to-r from-purple-900 to-black py-16 px-4 sm:px-6 md:px-10 lg:px-16">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+              {/* LEFT */}
+              <div className="max-w-xl space-y-5">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-300">
+                  We’re learning every day
+                </h2>
 
-            <p className="text-gray-700">
-              In the creative world, there’s always something new to learn,
-              explore and experience. Here at Velocita, we believe in never
-              growing up.
-            </p>
+                <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
+                  In the creative world, there’s always something new to learn,
+                  explore and experience
+                  <span className="italic"> (Thanks, Social Media!)</span>. Here
+                  at Velocita, we believe in never growing up. We plan to remain
+                  forever hungry for knowledge, full of wide-eyed curiosity
+                  <span className="italic"> (giggles)</span> and imagination
+                  that can never be put to rest. So we always encourage everyone
+                  to lend each other a hand, but more importantly, give each
+                  other the nudge to bring newer and crazier ideas into the
+                  meeting rooms.
+                </p>
+              </div>
 
-            <p className="mt-4 text-gray-700">
-              So we always encourage everyone to lend each other a hand, but
-              more importantly, give each other the nudge to bring newer and
-              crazier ideas into the meeting rooms.
-            </p>
-          </div>
+              {/* RIGHT */}
+              <div className="max-w-xl space-y-5">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-300">
+                  We’re all for complete inclusivity
+                </h2>
 
-          <div className="rounded-xl bg-gray-50 p-6 shadow-sm">
-            <h2 className="mb-4 text-2xl font-bold italic text-blue-800">
-              We’re all for complete inclusivity
-            </h2>
-
-            <p className="text-gray-700">
-              Ideas can come from anywhere if you keep your hearts and minds
-              open to them.
-            </p>
-
-            <p className="mt-4 text-gray-700">
-              If your skills and abilities fit the job, we make sure the rest
-              just falls into place.
-            </p>
+                <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
+                  Ideas can come from anywhere if you keep your hearts and minds
+                  open to them. This is why we keep our doors ajar for people
+                  from all walks of life. If your skills and abilities fit the
+                  job, we make sure the rest just falls into place. At the end
+                  of the day, creating impactful work for our clients is where
+                  our focus lies.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* OPEN POSITIONS + APPLY NOW */}
-      <section className="px-3 py-12 md:px-6">
-        <div className="mx-auto max-w-[1700px]">
-          <div className="mb-6">
-            <h2 className="text-3xl font-semibold italic text-[#1f4aa0] md:text-4xl">
-              Open positions
+      <section
+        className="w-full px-4 sm:px-6 md:px-10 lg:px-16 py-14 border-t border-purple-900 bg-black"
+        aria-labelledby="open-positions-heading"
+      >
+        <div className="max-w-7xl mx-auto space-y-10">
+          {/* Heading */}
+          <header>
+            <h2
+              id="open-positions-heading"
+              className="text-2xl sm:text-3xl md:text-4xl font-semibold italic text-purple-400"
+            >
+              Open Positions
             </h2>
-          </div>
+          </header>
 
-          <div className="grid grid-cols-1 gap-8 xl:grid-cols-[1.95fr_0.95fr]">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-10">
             {/* LEFT SIDE */}
-            <div className="rounded-sm bg-[#f3f3f3]">
-              <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr]">
+            <div className="xl:col-span-2 border border-purple-900 rounded-lg overflow-hidden">
+              <div className="grid lg:grid-cols-[250px_1fr]">
                 {/* Job List */}
-                <div className="border border-[#dfdfdf] border-r-0 bg-[#f3f3f3]">
+                <nav className="border-r border-purple-900">
                   {jobDetails.map((job, index) => (
                     <button
                       key={job.title}
                       onClick={() => setSelectedIndex(index)}
-                      className={`flex w-full items-center border-b border-[#dfdfdf] px-5 py-4 text-left text-[17px] transition ${
-                        selectedIndex === index
-                          ? "bg-white font-medium text-[#2b5db2]"
-                          : "bg-[#f3f3f3] text-[#4a5c82] hover:bg-white"
-                      }`}
+                      className={`w-full text-left px-5 py-4 text-sm sm:text-base border-b border-purple-900 transition
+                ${
+                  selectedIndex === index
+                    ? "bg-purple-900 text-white font-semibold"
+                    : "text-gray-300 hover:bg-purple-900/30"
+                }`}
+                      aria-pressed={selectedIndex === index}
                     >
                       {job.title}
                     </button>
                   ))}
-                </div>
+                </nav>
 
                 {/* Job Content */}
-                <div className="border border-[#dfdfdf] bg-[#f3f3f3] px-7 py-6 md:px-8">
-                  <p className="mb-4 text-[18px] font-medium text-[#41557f]">
-                    Job Location: {selectedJob.location}
+                <article className="p-6 sm:p-8 text-gray-300 space-y-5">
+                  <p className="text-sm sm:text-base text-purple-400">
+                    📍 {selectedJob.location}
                   </p>
 
-                  <h3 className="mb-4 text-[20px] font-semibold text-[#1f4aa0] md:text-[22px]">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
                     {selectedJob.title}
                   </h3>
 
-                  <h4 className="mb-3 text-[18px] font-medium text-[#3f5177]">
-                    About Us:
-                  </h4>
+                  <section>
+                    <h4 className="font-semibold text-purple-400 mb-2">
+                      About Us
+                    </h4>
+                    <p className="text-sm sm:text-base leading-relaxed">
+                      {selectedJob.about}
+                    </p>
+                  </section>
 
-                  <p className="mb-6 text-[15px] leading-8 text-[#4c5f87] md:text-[16px]">
-                    {selectedJob.about}
-                  </p>
+                  <section>
+                    <h4 className="font-semibold text-purple-400 mb-2">
+                      Responsibilities
+                    </h4>
+                    <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+                      {selectedJob.responsibilities.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
 
-                  <h4 className="mb-3 text-[18px] font-semibold text-[#3f5177]">
-                    What You Will Actually Get to Do and Grow Into:
-                  </h4>
-
-                  <ul className="mb-8 list-disc space-y-2 pl-5 text-[15px] leading-8 text-[#4c5f87] md:text-[16px]">
-                    {selectedJob.responsibilities.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-
-                  <h4 className="mb-3 text-[18px] font-semibold text-[#3f5177]">
-                    Who This Role Is Perfect For:
-                  </h4>
-
-                  <ul className="mb-6 list-disc space-y-2 pl-5 text-[15px] leading-8 text-[#4c5f87] md:text-[16px]">
-                    {selectedJob.perfectFor.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
+                  <section>
+                    <h4 className="font-semibold text-purple-400 mb-2">
+                      Ideal Candidate
+                    </h4>
+                    <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+                      {selectedJob.perfectFor.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
 
                   {selectedJob.note && (
-                    <p className="mb-5 text-[16px] font-semibold text-[#3f5177]">
+                    <p className="font-medium text-purple-300">
                       {selectedJob.note}
                     </p>
                   )}
 
+                  {/* Email CTA */}
                   {selectedJob.email && (
-                    <p className="text-[16px] leading-8 text-[#4c5f87]">
-                      Think you fit in?
-                      <br />
-                      Drop us an email with your resume and few links to your
-                      recent work at{" "}
-                      <a
-                        href={`mailto:${selectedJob.email}`}
-                        className="text-[#2b5db2] underline"
-                      >
-                        {selectedJob.email}
-                      </a>
-                    </p>
+                    <div>
+                      <p className="text-sm sm:text-base">Think you fit in?</p>
+                      <p className="text-sm sm:text-base">
+                        Drop us an email with your resume and few links to your
+                        recent work at{" "}
+                        <a
+                          href={`mailto:${selectedJob.email}`}
+                          className="text-purple-400 underline hover:text-purple-300"
+                        >
+                          {selectedJob.email}
+                        </a>
+                      </p>
+                    </div>
                   )}
-                </div>
+                </article>
               </div>
             </div>
 
-            {/* RIGHT SIDE APPLY FORM */}
-            <div className="rounded-2xl bg-[#ececec] px-7 py-8 md:px-8">
-              <h3 className="mb-8 text-[26px] font-semibold text-[#1f4aa0]">
-                Apply Now
-              </h3>
+            {/* RIGHT SIDE FORM */}
+            <aside className="border border-purple-900/50 rounded-xl p-6 sm:p-7 bg-[#0a0a0a] h-fit shadow-[0_0_20px_rgba(168,85,247,0.08)]">
+              {/* Heading */}
+              <div className="mb-6">
+                <h3 className="text-2xl font-semibold text-white">Apply Now</h3>
+                <div className="h-[2px] w-10 bg-purple-500 mt-2 rounded-full"></div>
+                <p className="text-sm text-gray-400 mt-2">
+                  Fill in your details and we’ll get back to you.
+                </p>
+              </div>
 
               <form className="space-y-4">
+                {/* Inputs */}
                 <input
                   type="text"
-                  placeholder="Name*"
-                  className="h-[44px] w-full border border-[#e1e1e1] bg-white px-5 text-[16px] text-[#4b5e84] outline-none placeholder:text-[#7f8aa3]"
+                  placeholder="Full Name*"
+                  required
+                  className="input-modern"
                 />
 
                 <input
                   type="email"
-                  placeholder="Email Id*"
-                  className="h-[44px] w-full border border-[#e1e1e1] bg-white px-5 text-[16px] text-[#4b5e84] outline-none placeholder:text-[#7f8aa3]"
+                  placeholder="Email Address*"
+                  required
+                  className="input-modern"
                 />
 
                 <input
                   type="tel"
-                  placeholder="Mobile No.*"
-                  className="h-[44px] w-full border border-[#e1e1e1] bg-white px-5 text-[16px] text-[#4b5e84] outline-none placeholder:text-[#7f8aa3]"
+                  placeholder="Mobile Number*"
+                  required
+                  className="input-modern"
                 />
 
-                <select
-                  defaultValue=""
-                  className="h-[44px] w-full border border-[#e1e1e1] bg-white px-5 text-[16px] text-[#6d7893] outline-none"
-                >
-                  <option value="" disabled>
-                    -- Select Position --
-                  </option>
+                <select required className="input-modern text-gray-400">
+                  <option value="">Select Position</option>
                   {jobDetails.map((job) => (
-                    <option key={job.title} value={job.title}>
-                      {job.title}
-                    </option>
+                    <option key={job.title}>{job.title}</option>
                   ))}
                 </select>
 
                 <textarea
-                  placeholder="Message"
-                  className="h-[110px] w-full resize-none border border-[#e1e1e1] bg-white px-5 py-4 text-[16px] text-[#4b5e84] outline-none placeholder:text-[#7f8aa3]"
+                  placeholder="Tell us about yourself..."
+                  className="input-modern h-24 resize-none"
                 />
 
-                <div className="pt-2">
-                  <label className="mr-2 text-[16px] text-[#4b5e84]">
-                    Resume:*
+                {/* File Upload */}
+                <div className="pt-3 border-t border-purple-900/40">
+                  <label className="text-sm text-gray-400 block mb-2">
+                    Resume*
                   </label>
-                  <input type="file" className="text-[15px] text-[#4b5e84]" />
+                  <input
+                    type="file"
+                    required
+                    className="text-sm text-gray-400 file:mr-3 file:px-3 file:py-1.5
+        file:border file:border-purple-800 file:bg-[#111]
+        file:text-gray-300 hover:file:bg-purple-900/30 cursor-pointer rounded-md"
+                  />
                 </div>
 
+                {/* Button */}
                 <button
                   type="submit"
-                  className="mt-3 inline-flex items-center gap-4 bg-[#0e9ad6] px-11 py-3 text-[20px] font-semibold uppercase tracking-wide text-white transition hover:bg-[#0b89be]"
+                  className="w-full mt-2 bg-purple-600 hover:bg-purple-700
+      text-white py-2.5 font-medium rounded-md transition shadow-md"
                 >
-                  Submit
-                  <span className="text-2xl leading-none">→</span>
+                  Submit Application →
                 </button>
               </form>
+            </aside>
+          </div>
+        </div>
+        <section className="w-full bg-black text-gray-300 pt-12 pb-6 px-4 sm:px-6 md:px-10 lg:px-16">
+          <div className="max-w-7xl mx-auto text-center">
+            {/* Subtitle */}
+            <p className="text-base italic text-purple-400 mb-4">
+              The numbers say it all!
+            </p>
+
+            {/* Stats Grid */}
+            <div className="grid sm:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-3xl font-semibold text-white">17+</h3>
+                <p className="text-gray-400 text-sm">Years of experience</p>
+              </div>
+
+              <div className="sm:border-x sm:border-purple-900">
+                <h3 className="text-3xl font-semibold text-white">10,000+</h3>
+                <p className="text-gray-400 text-sm">Projects delivered</p>
+              </div>
+
+              <div>
+                <h3 className="text-3xl font-semibold text-white">5,000+</h3>
+                <p className="text-gray-400 text-sm">Satisfied clients</p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
 
-      {/* STATS */}
-      <section className="bg-white px-6 py-20 text-center">
-        <h2 className="mb-12 text-3xl font-semibold italic text-blue-700">
-          The numbers say it all!
-        </h2>
+      <Testimonial />
 
-        <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-3">
-          <div>
-            <h3 className="text-4xl font-bold text-blue-900">17+</h3>
-            <p>Years of experience</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold text-blue-900">10,000+</h3>
-            <p>Projects delivered</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold text-blue-900">5,000+</h3>
-            <p>Satisfied clients</p>
+      <section className="w-full border-t border-purple-900">
+        <div className="bg-gradient-to-r from-purple-900 to-black py-5 sm:py-6 md:py-8 px-4 sm:px-6 md:px-10 lg:px-16">
+          <div className="max-w-7xl mx-auto text-center space-y-1">
+            {/* Heading */}
+            <h2 className="text-white text-sm sm:text-base md:text-lg font-semibold">
+              Want to join the team?
+            </h2>
+
+            {/* Contact Info */}
+            <p className="text-white/90 text-xs sm:text-sm md:text-base">
+              Job/internship enquiries:{" "}
+              <a
+                href="mailto:Jobs@VelocittaIndia.com"
+                className="underline hover:text-white"
+              >
+                Jobs@VelocittaIndia.com
+              </a>{" "}
+              <span className="hidden sm:inline">|</span>{" "}
+              <span className="block sm:inline mt-1 sm:mt-0">
+                +91 8799 909 616
+              </span>
+            </p>
           </div>
         </div>
-      </section>
-
-      {/* TESTIMONIAL */}
-      <section className="bg-gray-100 px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-6 text-3xl font-semibold italic text-blue-800">
-            World’s leading brands have chosen us. Don’t miss the bus.
-          </h2>
-
-          <p className="mb-6 text-blue-700">Collaborate, today!</p>
-
-          <p className="mb-10 text-lg text-gray-700">"{t.text}"</p>
-
-          <div className="flex items-center gap-6">
-            <Image src={t.logo} alt="" width={120} height={60} />
-
-            {(t.name || t.role) && (
-              <>
-                <div className="h-12 w-px bg-gray-300"></div>
-                <div>
-                  <h3 className="font-semibold">{t.name}</h3>
-                  <p className="italic text-gray-500">{t.role}</p>
-                </div>
-              </>
-            )}
-          </div>
-
-          <div className="mt-10 flex justify-center gap-3">
-            {testimonials.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setTIndex(i)}
-                className={`h-3 w-3 rounded-full ${
-                  i === tIndex ? "bg-blue-600" : "bg-gray-400"
-                }`}
-                aria-label={`Go to testimonial ${i + 1}`}
-              />
-            ))}
-          </div>
+        <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
+          <Link
+            href={CONTACT}
+            className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+          >
+            CONTACT
+          </Link>
         </div>
       </section>
     </main>

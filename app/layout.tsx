@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Careers | Vendat Innovision",
+  title: "Careers | Vedant Innovision",
   description:
-    "Join Vendat Innovision and work with a creative branding and marketing team.",
+    "Join Vendant Innovision and work with a creative branding and marketing team.",
   keywords: [
-    "Vendat careers",
+    "Vendant careers",
     "branding agency jobs",
     "creative jobs Pune",
     "marketing agency careers",
