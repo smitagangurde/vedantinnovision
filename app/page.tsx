@@ -172,7 +172,7 @@ export default function Home() {
             {/* IMAGE */}
             <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[580px]">
               <Image
-                src="/Home-Page-04.jpg"
+                src="/Home-Page-03.jpg"
                 alt="Employer branding"
                 fill
                 className="object-contain opacity-90"
