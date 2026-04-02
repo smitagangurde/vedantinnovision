@@ -2,10 +2,10 @@ import { ARCompilance, feature } from "../data/ARCompilance";
 
 export default function ARCompilanceSection() {
   return (
-    <section className="w-full bg-[var(--brand-black)] text-white py-12 md:py-16 border-b border-purple-900">
+    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-12 md:py-16 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* ===== HEADING ===== */}
-        <h2 className="text-center text-xl md:text-2xl font-semibold text-[var(--brand-purple)] mb-10">
+        <h2 className="text-center text-xl md:text-2xl font-semibold text-purple-700 mb-10">
           Range of Compliance Report Services for Every Business Need
         </h2>
 
@@ -14,17 +14,15 @@ export default function ARCompilanceSection() {
           {ARCompilance.map((item, index) => (
             <div
               key={index}
-              className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-sm hover:border-purple-400 transition"
+              className="bg-white border border-black/10 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-purple-400 transition"
             >
-              <div className="text-3xl mb-4 text-[var(--brand-purple)]">
-                {item.icon}
-              </div>
+              <div className="text-3xl mb-4 text-purple-700">{item.icon}</div>
 
-              <h3 className="text-sm md:text-base font-semibold text-white mb-2">
+              <h3 className="text-sm md:text-base font-semibold text-black mb-2">
                 {item.title}
               </h3>
 
-              <p className="text-sm text-white/70 mb-4 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed mb-4">
                 {item.desc}
               </p>
             </div>
@@ -33,21 +31,21 @@ export default function ARCompilanceSection() {
 
         {/* ===== WHY SECTION ===== */}
         <div className="max-w-6xl mx-auto text-left">
-          <h3 className="text-lg md:text-xl text-center font-semibold text-[var(--brand-purple)] mb-6">
-            Why Choose Velocitta India as Your Integrated/ Annual Report Design
-            Partner
+          <h3 className="text-lg md:text-xl text-center font-semibold text-purple-700 mb-6">
+            Why Choose Vedant Innovision India as Your Integrated/ Annual Report
+            Design Partner
           </h3>
 
-          <p className="text-sm text-white/70 mb-4 leading-relaxed">
-            As a leading name in corporate communications, Velocitta India
-            transforms complex data into engaging, visually compelling
+          <p className="text-sm text-black mb-4 leading-relaxed">
+            As a leading name in corporate communications, Vedant Innovision
+            India transforms complex data into engaging, visually compelling
             narratives that truly resonate with stakeholders. We combine
             strategic storytelling, thoughtful design, and interactive elements
             to create reports that are not just informative, but memorable and
             impactful.
           </p>
 
-          <p className="text-sm text-white/70 mb-4 leading-relaxed">
+          <p className="text-sm text-black mb-4 leading-relaxed">
             Our expertise spans integrated annual report design, corporate
             sustainability report design, and ESG compliance report design,
             enabling you to meet evolving disclosure standards and rising
@@ -58,14 +56,14 @@ export default function ARCompilanceSection() {
             lassen for data-driven insights.
           </p>
 
-          <p className="text-sm text-white/70 mb-6 leading-relaxed">
+          <p className="text-sm text-black mb-6 leading-relaxed">
             From eye-catching infographics to immersive digital experiences, we
             go beyond design to deliver powerful communication tools that
             elevate your message and strengthen your corporate reputation.
           </p>
 
-          <p className="text-sm text-white/70 mb-6 leading-relaxed">
-            At Velocitta India, we don’t just create reports—we curate a
+          <p className="text-sm text-black mb-6 leading-relaxed">
+            At Vedant Innovision India, we don’t just create reports—we curate a
             complete stakeholder experience. From engaging websites or
             microsites that provide seamless access, to professionally designed
             stakeholder presentations that deliver impact, we ensure every touch
@@ -78,18 +76,18 @@ export default function ARCompilanceSection() {
           </p>
 
           {/* ===== SUB HEADING ===== */}
-          <h4 className="text-sm md:text-base font-semibold text-[var(--brand-gold)] mb-4">
+          <h4 className="text-sm md:text-base font-semibold text-yellow-500 mb-4">
             An Annual Report Design Agency That Crafts with Purpose
           </h4>
 
-          <p className="text-sm text-white/60 mb-8">
+          <p className="text-sm text-black mb-8">
             We don’t just design reports; we go the extra mile by creating:
           </p>
 
           {/* ===== FEATURES ===== */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-left">
             {feature.map((item, i) => (
-              <p key={i} className="text-sm text-white/70">
+              <p key={i} className="text-sm text-purple-700">
                 {item}
               </p>
             ))}

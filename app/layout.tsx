@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Careers | Vedant Innovision",
+  title: "Vedant Innovision",
   description:
     "Join Vendant Innovision and work with a creative branding and marketing team.",
   icons: {

@@ -18,16 +18,16 @@ export default function Testimonial() {
   }, []);
 
   return (
-    <section className="w-full bg-black text-white border-t border-purple-900">
+    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-16 min-h-[420px] flex flex-col justify-between">
         {/* TOP CONTENT */}
         <div>
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium italic text-purple-500 mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium italic text-purple-600 mb-6">
             World’s leading brands have chosen us. Don’t miss the bus.
           </h2>
 
-          <p className="text-purple-400 mb-6">Collaborate, today!</p>
+          <p className="text-purple-500 mb-6">Collaborate, today!</p>
 
           {/* QUOTE SLIDER */}
           <div className="min-h-[120px] overflow-hidden relative">
@@ -37,7 +37,7 @@ export default function Testimonial() {
             >
               {testimonials.map((item, i) => (
                 <div key={i} className="w-full flex-shrink-0">
-                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-3xl">
                     {item.text}
                   </p>
                 </div>
@@ -58,9 +58,9 @@ export default function Testimonial() {
               className="object-contain"
             />
 
-            <div className="border-l border-gray-600 pl-4">
-              <p className="text-white font-medium">{current.name}</p>
-              <p className="text-sm text-gray-400 italic">{current.role}</p>
+            <div className="border-l border-gray-300 pl-4">
+              <p className="text-black font-medium">{current.name}</p>
+              <p className="text-sm text-gray-600 italic">{current.role}</p>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export default function Testimonial() {
                 key={i}
                 onClick={() => setIndex(i)}
                 className={`w-3 h-3 rounded-full transition ${
-                  i === index ? "bg-purple-500" : "bg-gray-500"
+                  i === index ? "bg-purple-500" : "bg-gray-400"
                 }`}
               />
             ))}

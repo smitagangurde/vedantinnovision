@@ -1,52 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  /* ===== BASE COLORS ===== */
-  --brand-black: #000000;
-  --brand-white: #ffffff;
+  /* Brand Colors */
+  --brand-purple: #a855f7;
+  --brand-purple-light: #c084fc;
+  --brand-yellow: #facc15;
+  --brand-orange: #f97316;
 
-  /* ===== PRIMARY (PURPLE THEME) ===== */
-  --brand-purple: #a855f7;        /* headings / highlights */
-  --brand-purple-dark: #581c87;   /* borders / deep accents */
-  --brand-purple-light: #c084fc;  /* subtle accents / hover */
+  /* Background gradients */
+  --bg-gradient-header: linear-gradient(to bottom, #d1d5db, #f3f4f6, #ffffff);
+  --bg-gradient-hero: linear-gradient(to bottom, #d1d5db, #f3f4f6, #ffffff);
+  --bg-gradient-footer: linear-gradient(to bottom, #d1d5db, #f3f4f6, #ffffff);
+  --bg-gradient-button: linear-gradient(to right, var(--brand-yellow), var(--brand-orange));
+  --bg-gradient-contact-vertical: linear-gradient(to bottom, var(--brand-yellow), var(--brand-orange));
 
-  /* ===== ACCENT (GOLD / CTA) ===== */
-  --brand-gold: #facc15;          /* buttons / emphasis */
-  --brand-gold-dark: #f59e0b;     /* gradient depth */
-  --brand-gold-light: #fde68a;
+  /* Text colors */
+  --text-black: #000000;
+  --text-black-light: #1f1f1f;
+  --text-white: #ffffff;
+  --text-purple: var(--brand-purple);
+  --text-purple-light: var(--brand-purple-light);
+  --text-yellow: var(--brand-yellow);
 
-  /* ===== BACKGROUND SYSTEM ===== */
-  --bg-primary: var(--brand-black);
-  --bg-secondary: #0a0a0a;        /* cards / sections */
-  --bg-tertiary: #111111;         /* elevated layers */
-
-  /* ===== TEXT SYSTEM ===== */
-  --text-primary: #ffffff;
-  --text-secondary: #d1d5db;      /* gray-300 */
-  --text-muted: #9ca3af;          /* gray-400 */
-  --text-subtle: #6b7280;         /* gray-500 */
-
-  /* ===== BORDER COLORS ===== */
-  --border-primary: #581c87;      /* purple-900 */
-  --border-secondary: #27272a;    /* subtle dark border */
-
-  /* ===== GRADIENTS ===== */
-  --gradient-primary: linear-gradient(
-    to right,
-    var(--brand-purple-dark),
-    var(--brand-black)
-  );
-
-  --gradient-accent: linear-gradient(
-    to bottom,
-    var(--brand-gold),
-    var(--brand-gold-dark)
-  );
-
-  /* ===== SHADOWS (OPTIONAL UI DEPTH) ===== */
-  --shadow-purple: 0 0 20px rgba(168, 85, 247, 0.15);
+  /* Footer link color */
+  --footer-link: #000000;
+  --footer-link-hover: var(--brand-yellow);
 }
-
 body {
   background: var(--brand-black);
   color: white;

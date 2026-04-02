@@ -4,18 +4,18 @@ export default function BIDiscoverySection() {
   return (
     <section
       aria-labelledby="work-heading"
-      className="w-full bg-[var(--brand-black)] text-white pt-12 pb-6 md:pt-14 md:pb-8"
+      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-12 pb-6 md:pt-14 md:pb-8"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         {/* Heading */}
         <header className="max-w-5xl mb-10">
           <h2
             id="work-heading"
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--brand-purple)]"
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-600"
           >
             How Our Brand Identity Design Company Works for You
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-white/70 leading-relaxed">
+          <p className="mt-4 text-sm sm:text-base text-gray-800 leading-relaxed">
             Our approach blends creativity with strategy.
           </p>
         </header>
@@ -27,15 +27,15 @@ export default function BIDiscoverySection() {
             return (
               <article
                 key={i}
-                className="border border-white/10 rounded-xl p-6 hover:border-[var(--brand-purple)] transition duration-300"
+                className="border border-gray-300 rounded-xl p-6 hover:border-purple-600 transition duration-300"
               >
-                <Icon className="w-8 h-8 text-[var(--brand-purple)] mb-4" />
+                <Icon className="w-8 h-8 text-purple-600 mb-4" />
 
-                <h3 className="text-lg font-semibold text-[var(--brand-purple)] mb-2">
+                <h3 className="text-lg font-semibold text-purple-600 mb-2">
                   {step.title}
                 </h3>
 
-                <p className="text-sm text-white/70 leading-relaxed">
+                <p className="text-gray-800 text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </article>
@@ -48,7 +48,7 @@ export default function BIDiscoverySection() {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="bg-white/5 rounded-lg h-28 flex items-center justify-center text-sm text-white/80 hover:bg-white/10 transition"
+              className="bg-white/10 rounded-lg h-28 flex items-center justify-center text-sm text-gray-800 hover:bg-white/20 transition"
             >
               {project.title}
             </div>

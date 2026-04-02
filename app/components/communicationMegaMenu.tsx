@@ -19,13 +19,18 @@ import {
 
 export default function CommunicationMegaMenu() {
   return (
-    <div className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] bg-[var(--brand-black)] text-white border border-purple-900 rounded-2xl shadow-2xl p-8 grid grid-cols-2 gap-8 z-50">
+    <div
+      className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] 
+    bg-gradient-to-b from-gray-300 via-gray-100 to-white 
+    text-gray-800 border border-gray-200 rounded-2xl shadow-xl p-8 grid grid-cols-2 gap-8 z-50"
+    >
       {/* LEFT SECTION */}
-      <div className="pr-6 border-r border-purple-900">
-        <h3 className="text-xl font-semibold text-purple-400 mb-3">
+      <div className="pr-6 border-r border-gray-200">
+        <h3 className="text-xl font-semibold text-[var(--brand-purple)] mb-3">
           Our Portfolio - <br /> Where ideas come to life!
         </h3>
-        <p className="text-gray-400 text-sm leading-relaxed">
+
+        <p className="text-gray-600 text-sm leading-relaxed">
           Every brand has unique goals and needs — we understand this well. Our
           services are specifically designed to amplify your brand, engage the
           audience, and ensure your message hits home.
@@ -33,7 +38,7 @@ export default function CommunicationMegaMenu() {
 
         <Link
           href={CONTACT}
-          className="mt-6 inline-block text-yellow-400 font-medium hover:underline"
+          className="mt-50 inline-block text-[var(--brand-purple)] font-medium hover:underline"
         >
           Contact Us
         </Link>
@@ -42,86 +47,85 @@ export default function CommunicationMegaMenu() {
       {/* RIGHT SECTION */}
       <div className="space-y-6">
         <div className="flex gap-4 items-start">
-          <PenTool className="w-5 h-5 text-purple-400 mt-1" />
+          <PenTool className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={BRANDIDENTITY}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Brand Identity
               </Link>
             </h4>
-
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               We craft compelling brand stories that captivate and resonate.
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
-          <Megaphone className="w-5 h-5 text-purple-400 mt-1" />
+          <Megaphone className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={MARKETINGCOMMUNICATION}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Marketing Communication
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Shaping narratives that fuel marketing success.
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
-          <FileText className="w-5 h-5 text-purple-400 mt-1" />
+          <FileText className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={ANNUALREPORTING}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Annual Reporting
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Build trust with impactful communication.
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
-          <Monitor className="w-5 h-5 text-purple-400 mt-1" />
+          <Monitor className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={WEBSITEUIUX}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Website & UI/UX
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Elevate digital experiences through intuitive design.
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
-          <MessageCircle className="w-5 h-5 text-purple-400 mt-1" />
+          <MessageCircle className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={SOCIALMEDIA}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Social Media
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Amplify and transform your social media presence.
             </p>
           </div>

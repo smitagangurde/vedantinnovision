@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full bg-black border-b border-purple-900 text-white relative z-50">
+    <header className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white border-b border-gray-300 text-black relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -44,7 +44,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-10">
             <Link
               href={BRANDCONSULTING}
-              className="hover:text-yellow-400 transition"
+              className="hover:text-yellow-500 transition"
             >
               Brand Consulting
             </Link>
@@ -55,7 +55,7 @@ export default function Header() {
               onMouseEnter={() => handleMouseEnter("communication")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="hover:text-yellow-400 transition">
+              <button className="hover:text-yellow-500 transition">
                 Brand Communication
               </button>
 
@@ -68,28 +68,25 @@ export default function Header() {
               onMouseEnter={() => handleMouseEnter("employer")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="hover:text-yellow-400 transition">
+              <button className="hover:text-yellow-500 transition">
                 Employer Brand
               </button>
 
               {activeMenu === "employer" && <EmployerMegaMenu />}
             </div>
 
-            <Link
-              href={FILMS}
-              className="hover:text-yellow-400 transition"
-            >
+            <Link href={FILMS} className="hover:text-yellow-500 transition">
               Films
             </Link>
 
-            <Link href={CONTACT} className="hover:text-yellow-400 transition">
+            <Link href={CONTACT} className="hover:text-yellow-500 transition">
               Contact
             </Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-black"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={28} /> : <Menu size={28} />}
@@ -99,10 +96,10 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-black border-t border-purple-900 px-6 py-6 space-y-4">
+        <div className="md:hidden bg-gradient-to-b from-gray-300 via-gray-100 to-white border-t border-gray-300 px-6 py-6 space-y-4 text-black">
           <Link
             href={BRANDCONSULTING}
-            className="block hover:text-yellow-400"
+            className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
             Brand Consulting
@@ -110,7 +107,7 @@ export default function Header() {
 
           <Link
             href="#"
-            className="block hover:text-yellow-400"
+            className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
             Brand Communication
@@ -118,7 +115,7 @@ export default function Header() {
 
           <Link
             href="#"
-            className="block hover:text-yellow-400"
+            className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
             Employer Brand
@@ -126,7 +123,7 @@ export default function Header() {
 
           <Link
             href="#"
-            className="block hover:text-yellow-400"
+            className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
             Films
@@ -134,7 +131,7 @@ export default function Header() {
 
           <Link
             href={CONTACT}
-            className="block hover:text-yellow-400"
+            className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
             Contact

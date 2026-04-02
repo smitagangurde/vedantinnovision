@@ -10,8 +10,8 @@ import OBAdvantageSection from "@/app/component/OfficeBranding/OBAdvantagesSecti
 
 export default function OfficeBranding() {
   return (
-    <main className="bg-black text-white" role="main">
-      <section className="w-full bg-[var(--brand-black)] text-white py-8 md:py-10 border-b border-purple-900">
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-8 md:py-10 border-b border-purple-200">
         <div className="max-w-7xl mx-auto grid items-center gap-10 px-4 sm:px-6 md:px-10 md:grid-cols-2">
           {/* Image */}
           <div className="flex justify-center md:justify-start">
@@ -20,47 +20,45 @@ export default function OfficeBranding() {
               alt="Website and UI UX design"
               width={900}
               height={650}
-              className="h-auto w-full max-w-[650px] object-contain"
+              className="h-auto w-full max-w-[650px] object-contain opacity-90"
               priority
             />
           </div>
 
           {/* Content */}
           <div className="max-w-xl">
-            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--brand-purple)] leading-snug">
+            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
               Office Branding Agency
             </h1>
 
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              At Velocitta Brands, we believe your workspace should be more than
-              just a place to work; it should be a powerful physical
+            <p className="text-sm sm:text-base text-black leading-relaxed">
+              At Vedant Innovision Brands, we believe your workspace should be
+              more than just a place to work; it should be a powerful physical
               manifestation of your brand’s soul. As a leading office branding
               agency, we specialize in turning corporate environments into
               inspiring, high-performance hubs through strategic design and
-              storytelling
+              storytelling.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="relative w-full border-t border-purple-900">
-        <div className="bg-gradient-to-r from-purple-900 to-black py-14 sm:py-14 md:py-16 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
-          <div className="max-w-7xl mx-auto text-center">
-            {/* Heading */}
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug text-white">
-              Why Choose a Specialized Workplace Branding Agency?
-            </h2>
+      <section className="relative w-full bg-gradient-to-r from-purple-900 via-gray-100 py-14 sm:py-14 md:py-16 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-16 text-black">
+        <div className="max-w-7xl mx-auto text-center">
+          {/* Heading */}
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug">
+            Why Choose a Specialized Workplace Branding Agency?
+          </h2>
 
-            {/* Description */}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-5xl mx-auto">
-              In today’s competitive landscape, your office is your most
-              significant touchpoint for both employees and clients. Choosing a
-              dedicated <strong> workplace branding agency </strong> ensures
-              that every square inch of your office reinforces your company
-              values, boosts employee morale, and leaves a lasting impression on
-              every visitor.
-            </p>
-          </div>
+          {/* Description */}
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-5xl mx-auto">
+            In today’s competitive landscape, your office is your most
+            significant touchpoint for both employees and clients. Choosing a
+            dedicated <strong> workplace branding agency </strong> ensures that
+            every square inch of your office reinforces your company values,
+            boosts employee morale, and leaves a lasting impression on every
+            visitor.
+          </p>
         </div>
       </section>
 

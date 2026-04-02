@@ -1,14 +1,14 @@
 export const EmployerBrandingStat = [
   {
-    value: "17+",
+    value: "4 +",
     label: "Years of experience",
   },
   {
-    value: "10,000+",
+    value: "1000+",
     label: "Projects delivered",
   },
   {
-    value: "5,000+",
+    value: "50+",
     label: "Satisfied clients",
   },
 ];

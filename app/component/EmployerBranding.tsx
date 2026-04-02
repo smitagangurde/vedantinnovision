@@ -14,11 +14,11 @@ export default function EmployerBrandingCard({ title, description, icon }: Props
         <Image src={icon} alt={title} width={50} height={50} />
       </div>
 
-      <h3 className="text-lg font-semibold text-white mb-2">
+      <h3 className="text-lg font-semibold text-purple-700 mb-2">
         {title}
       </h3>
 
-      <p className="text-gray-400 text-sm leading-relaxed">
+      <p className="text-black text-sm leading-relaxed">
         {description}
       </p>
     </div>

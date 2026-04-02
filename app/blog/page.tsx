@@ -149,23 +149,23 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <main className="bg-black text-gray-300">
-      <section className="w-full px-4 sm:px-6 md:px-10 lg:px-16 py-8 border-t border-purple-900">
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white px-4 sm:px-6 md:px-10 lg:px-16 py-8 text-black">
         <div className="max-w-7xl mx-auto space-y-12">
           {/* Heading */}
           <div className="max-w-3xl space-y-3">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold italic text-[var(--brand-purple)]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold italic text-purple-700">
               Blog
             </h1>
 
-            <p className="text-gray-400 text-lg md:text-xl italic">
+            <p className="text-gray-700 text-lg md:text-xl italic">
               A curated collection of information in this fast-paced advertising
               world
             </p>
           </div>
 
           {/* Banner */}
-          <div className="relative w-full h-[260px] sm:h-[360px] md:h-[460px] lg:h-[520px] rounded-md overflow-hidden">
+          <div className="relative w-full h-[260px] sm:h-[360px] md:h-[460px] lg:h-[520px] rounded-md overflow-hidden shadow-sm">
             <Image
               src="/blog.png"
               alt="Be inspired be inspiring"
@@ -180,7 +180,7 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article
                 key={post.id}
-                className="group grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  pb-10"
+                className="group grid grid-cols-1 lg:grid-cols-2 gap-10 items-center pb-10 "
               >
                 {/* Image */}
                 <div className="relative w-full h-[260px] sm:h-[300px] md:h-[360px] rounded-md overflow-hidden">
@@ -196,11 +196,11 @@ export default function BlogPage() {
                 <div className="space-y-4 max-w-xl">
                   <p className="text-gray-500 text-sm">{post.date}</p>
 
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[var(--brand-purple)] leading-snug group-hover:opacity-80 transition">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-700 leading-snug group-hover:opacity-80 transition">
                     {post.title}
                   </h2>
 
-                  <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed">
+                  <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
                     {post.excerpt}
                   </p>
                 </div>

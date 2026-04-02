@@ -3,18 +3,14 @@ import { Portfolio } from "../data/Portfolio";
 
 export default function PortfolioSection() {
   return (
-    <section
-      aria-labelledby="portfolio-heading"
-      className="w-full bg-[var(--brand-black)] text-white pt-12 pb-6 md:pt-14 md:pb-8 border-t border-purple-900"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        
+    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 lg:px-16">
+      <div className="max-w-7xl mx-auto">
         {/* GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {Portfolio.map((item, index) => (
             <article
               key={index}
-              className="relative group overflow-hidden rounded-lg border border-white/10"
+              className="relative group overflow-hidden rounded-lg border border-gray-300 bg-white hover:bg-gray-100 transition duration-300"
             >
               {/* Image */}
               <div className="relative w-full h-64">
@@ -26,8 +22,8 @@ export default function PortfolioSection() {
                 />
               </div>
 
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition duration-300" />
+              {/* Light Overlay (adjusted to match theme) */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-70 group-hover:opacity-80 transition duration-300" />
 
               {/* Bottom Label */}
               <div className="absolute bottom-0 left-0 w-full px-4 py-3">

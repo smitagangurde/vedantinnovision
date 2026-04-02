@@ -4,51 +4,47 @@ import { CONTACT } from "@/app/const/routes.const";
 import Link from "next/link";
 import Image from "next/image";
 import PortfolioSection from "@/app/component/PortfolioSection";
+import ContactDiv from "@/app/component/ContactDiv";
 
 export default function MarketingCommunication() {
   return (
-    <main className="bg-black text-white" role="main">
-      <section className="w-full bg-[var(--brand-black)] text-white pt-12 pb-10 md:pt-14 md:pb-12 border-b border-purple-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 lg:px-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* LEFT: Images */}
           <div className="relative flex justify-center md:justify-start">
-            {/* Billboard */}
-            <div className="relative z-10">
+            <div className="relative z-10 group">
               <Image
                 src="/images/billboard.png"
                 alt="Marketing Billboard"
                 width={580}
                 height={420}
-                className="rounded-xl border border-white/10 shadow-lg"
+                className="rounded-xl border border-gray-300 shadow-md transition duration-300 group-hover:scale-[1.02]"
               />
             </div>
           </div>
 
-          {/* RIGHT: Content */}  
+          {/* RIGHT: Content */}
           <div className="max-w-xl">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--brand-purple)] leading-snug mb-5">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-600 leading-snug mb-5">
               Embrace Excellence:
             </h1>
 
-            <h2 className="text-lg sm:text-xl md:text-2xl font-medium text-white mb-5 leading-relaxed">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-medium mb-5 leading-relaxed text-black">
               Unleash Your Brand’s Dominance with Our Marketing Communications
             </h2>
 
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed mb-4">
+            <p className="text-sm sm:text-base text-black leading-relaxed mb-4">
               Imagine your brand had a voice, one that resonated deeply with
               your audience. It’s not just about the message itself; it’s about
-              the way that message is conveyed. At our core, we excel in the art
-              of crafting your brand’s persona, communicating in ways that make
-              it memorable, and even working with a ghostwriter to perfect your
-              narrative. We specialize in uncovering the distinctive qualities
-              that captivate your audience’s attention.
+              how that message is delivered. We specialize in crafting impactful
+              brand communication that is memorable and strategically aligned.
             </p>
 
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              Whether it’s your go-to-market communication strategy, managing
-              social media presence and reputation, events participation or the
-              meticulous handling of compliance reporting – we are here to
-              ensure your brand radiates brilliance in every facet.
+            <p className="text-sm sm:text-base text-black leading-relaxed">
+              From go-to-market strategies to social media, events, and
+              compliance reporting, we ensure your brand communicates with
+              clarity and consistency across every touchpoint.
             </p>
           </div>
         </div>
@@ -60,39 +56,8 @@ export default function MarketingCommunication() {
 
       <Testimonial />
 
-      <section className="w-full border-t border-purple-900">
-        <div className="bg-gradient-to-r from-purple-900 to-black py-10 sm:py-12 md:py-14 px-4 sm:px-6 md:px-10 lg:px-16">
-          <div className="max-w-7xl mx-auto">
-            <p className="text-sm text-white/80 font-bold mb-3">Contact Us</p>
+      <ContactDiv />
 
-            <h2 className="text-lg sm:text-xl md:text-3xl font-semibold italic mb-6 leading-snug text-white">
-              We&apos;re easy to talk to. Explore how we can work together!
-            </h2>
-
-            <div className="space-y-3 text-sm sm:text-base md:text-lg text-gray-300">
-              <p>
-                <a
-                  href="mailto:hello@velocitindia.com"
-                  className="underline hover:text-yellow-400 transition"
-                >
-                  hello@velocitindia.com
-                </a>
-              </p>
-
-              <p className="text-xs opacity-70">Or</p>
-
-              <p>
-                <a
-                  href="tel:+918956437437"
-                  className="hover:text-yellow-400 transition"
-                >
-                  +91 8956 437 437
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
         <Link
           href={CONTACT}

@@ -49,7 +49,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-black text-gray-300 pt-16 pb-8 border-t border-purple-900">
+    <footer className="bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-10">
         {/* Logo */}
         <div>
@@ -63,12 +63,12 @@ export default function Footer() {
 
         {/* Company */}
         <nav>
-          <h3 className="font-semibold mb-4 text-purple-400">Company</h3>
+          <h3 className="font-semibold mb-4 text-purple-600">Company</h3>
           <ul className="space-y-2">
             <li>
               <Link
                 href="/"
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Home size={16} />
                 Home
@@ -77,7 +77,7 @@ export default function Footer() {
             <li>
               <Link
                 href={ABOUT}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <InfoIcon size={16} />
                 About
@@ -86,7 +86,7 @@ export default function Footer() {
             <li>
               <Link
                 href={BLOG}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <FileText size={16} />
                 Blog
@@ -95,7 +95,7 @@ export default function Footer() {
             <li>
               <Link
                 href={NEWS}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Newspaper size={16} />
                 News & Awards
@@ -104,7 +104,7 @@ export default function Footer() {
             <li>
               <Link
                 href={CAREER}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Briefcase size={16} />
                 Career
@@ -113,7 +113,7 @@ export default function Footer() {
             <li>
               <Link
                 href={CONTACT}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Phone size={16} />
                 Contact
@@ -124,12 +124,12 @@ export default function Footer() {
 
         {/* Work */}
         <nav>
-          <h3 className="font-semibold mb-4 text-purple-400">Work</h3>
+          <h3 className="font-semibold mb-4 text-purple-600">Work</h3>
           <ul className="space-y-2">
             <li>
               <Link
                 href={BRANDIDENTITY}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Megaphone size={16} />
                 Brand Communication
@@ -138,7 +138,7 @@ export default function Footer() {
             <li>
               <Link
                 href={EMPLOYERBRANDING}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Building2 size={16} />
                 Employer Brand
@@ -147,7 +147,7 @@ export default function Footer() {
             <li>
               <Link
                 href={FILMS}
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Film size={16} />
                 Films
@@ -158,13 +158,13 @@ export default function Footer() {
 
         {/* Social */}
         <nav>
-          <h3 className="font-semibold mb-4 text-purple-400">Social</h3>
+          <h3 className="font-semibold mb-4 text-purple-600">Social</h3>
           <ul className="space-y-2">
             <li>
               <Link
-                href="https://www.linkedin.com/search/results/all/?keywords=Vedant%20Innovision&origin=RICH_QUERY_TYPEAHEAD_HISTORY&heroEntityKey=urn%3Ali%3Aorganization%3A99472291&position=0"
+                href="https://www.linkedin.com"
                 target="_blank"
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Linkedin size={16} />
                 LinkedIn
@@ -174,7 +174,7 @@ export default function Footer() {
               <Link
                 href="https://instagram.com"
                 target="_blank"
-                className="hover:text-yellow-400 flex items-center gap-2 text-gray-300 transition"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Instagram size={16} />
                 Instagram
@@ -185,41 +185,35 @@ export default function Footer() {
 
         {/* Enquiry */}
         <div>
-          <h3 className="font-semibold mb-4 text-purple-400">Enquiry</h3>
+          <h3 className="font-semibold mb-4 text-purple-600">Enquiry</h3>
 
           <form className="space-y-3" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Name"
               required
-              className="w-full bg-zinc-900 border border-purple-800 px-3 py-2 rounded focus:outline-none focus:border-yellow-400"
+              className="w-full bg-white border border-gray-300 px-3 py-2 rounded focus:outline-none focus:border-yellow-400 text-black"
             />
 
             <input
               type="email"
               placeholder="Email Id"
               required
-              className="w-full bg-zinc-900 border border-purple-800 px-3 py-2 rounded focus:outline-none focus:border-yellow-400"
+              className="w-full bg-white border border-gray-300 px-3 py-2 rounded focus:outline-none focus:border-yellow-400 text-black"
             />
 
             <input
               type="tel"
               placeholder="Mobile No."
               required
-              className="w-full bg-zinc-900 border border-purple-800 px-3 py-2 rounded focus:outline-none focus:border-yellow-400"
+              className="w-full bg-white border border-gray-300 px-3 py-2 rounded focus:outline-none focus:border-yellow-400 text-black"
             />
 
             <textarea
               placeholder="Message"
               required
-              className="w-full bg-zinc-900 border border-purple-800 px-3 py-2 rounded focus:outline-none focus:border-yellow-400"
+              className="w-full bg-white border border-gray-300 px-3 py-2 rounded focus:outline-none focus:border-yellow-400 text-black"
             />
-
-            {/* Google reCAPTCHA */}
-            {/* <ReCAPTCHA
-                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-                onChange={handleCaptchaChange}
-                /> */}
 
             <button
               type="submit"
@@ -232,14 +226,14 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-purple-900 mt-15 pt-6">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-sm text-gray-400">
+      <div className="border-t border-gray-300 mt-12 pt-6">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-sm text-black">
           <div className="space-x-4">
-            <Link href="/privacy-policy" className="hover:text-yellow-400">
+            <Link href="/privacy-policy" className="hover:text-yellow-500">
               Privacy Policy
             </Link>
             <span>|</span>
-            <Link href="/terms" className="hover:text-yellow-400">
+            <Link href="/terms" className="hover:text-yellow-500">
               Terms and Services
             </Link>
           </div>

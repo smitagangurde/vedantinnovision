@@ -10,12 +10,11 @@ type PortfolioItem = {
 
 export default function EBSMPortfolioSection() {
   return (
-    <section className="w-full bg-[var(--brand-black)] text-white pt-12 pb-10 md:pt-14 md:pb-12 border-b border-purple-900">
+    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-12 pb-10 md:pt-14 md:pb-12 border-b border-purple-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
-        
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-[var(--brand-purple)] mb-3">
+          <h2 className="text-xl md:text-2xl font-semibold text-purple-700 mb-3">
             Brands We Have Helped Strengthen Through Strategic Social Media
           </h2>
         </div>
@@ -25,7 +24,7 @@ export default function EBSMPortfolioSection() {
           {(EBSMPortfolio as PortfolioItem[]).map((item, index: number) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-purple-400 transition"
+              className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-purple-400 transition shadow-sm"
             >
               {/* Background Layer */}
               <div

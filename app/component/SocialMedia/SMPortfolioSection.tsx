@@ -3,11 +3,11 @@ import { SMPortfolio } from "@/app/data/SocialMedia/SMPortfolio";
 
 export default function SMPortfolioSection() {
   return (
-    <section className="w-full bg-[var(--brand-black)] text-white pt-12 pb-10 md:pt-14 md:pb-12 border-b border-purple-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
+    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-12 sm:py-14 md:py-16 px-4 sm:px-6 md:px-10 lg:px-16 border-b border-purple-200">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-[var(--brand-purple)] mb-3">
+          <h2 className="text-xl md:text-2xl font-semibold text-purple-700 mb-3">
             See How We’ve Helped Brands Grow with Data-Backed Strategies
           </h2>
         </div>
@@ -17,10 +17,12 @@ export default function SMPortfolioSection() {
           {SMPortfolio.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-purple-400 transition"
+              className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-purple-400 transition shadow-sm"
             >
-              {/* Background Layer (optional dynamic bg like ARreport) */}
-              <div className={`absolute inset-0 ${"bg" in item ? item.bg : "" } opacity-90`} />
+              {/* Background Layer */}
+              <div
+                className={`absolute inset-0 ${"bg" in item ? item.bg : ""} opacity-90`}
+              />
 
               {/* Image */}
               <div className="relative p-5 sm:p-6">

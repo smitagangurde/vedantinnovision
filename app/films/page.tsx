@@ -34,7 +34,6 @@ const services = [
   },
 ];
 
-
 export default function Films() {
   const [openIndex, setOpenIndex] = useState(3);
 
@@ -44,8 +43,8 @@ export default function Films() {
 
   const [tIndex, setTIndex] = useState(0);
   return (
-    <main className="bg-black text-white" role="main">
-      <section className="w-full bg-[var(--brand-black)] text-white py-8 md:py-10 border-b border-purple-900">
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-8 md:py-10 border-b border-purple-200">
         <div className="max-w-7xl mx-auto grid items-center gap-10 px-4 sm:px-6 md:px-10 md:grid-cols-2">
           {/* Image */}
           <div className="flex justify-center md:justify-start">
@@ -54,18 +53,18 @@ export default function Films() {
               alt="Website and UI UX design"
               width={900}
               height={650}
-              className="h-auto w-full max-w-[650px] object-contain"
+              className="h-auto w-full max-w-[650px] object-contain opacity-90"
               priority
             />
           </div>
 
           {/* Content */}
           <div className="max-w-xl">
-            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--brand-purple)] leading-snug">
+            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
               Films / Corporate Videos
             </h1>
 
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
+            <p className="text-sm sm:text-base text-black leading-relaxed">
               Engaging videos and films remain a favorite among audiences and
               serve as a potent communication tool for brands. Whether it’s
               corporate films, advertisements, TV commercials, social media

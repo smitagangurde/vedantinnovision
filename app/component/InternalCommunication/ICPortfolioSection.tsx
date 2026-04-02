@@ -4,17 +4,15 @@ import { ICPortfolio } from "@/app/data/InternalCommunication/ICPortfolio";
 export default function ICPortfolioSection() {
   return (
     <section
-      aria-labelledby="portfolio-heading"
-      className="w-full bg-[var(--brand-black)] text-white pt-12 pb-6 md:pt-14 md:pb-8 border-t border-purple-900"
+      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-12 pb-6 md:pt-14 md:pb-8"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        
         {/* GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {ICPortfolio.map((item, index) => (
             <article
               key={index}
-              className="relative group overflow-hidden rounded-lg border border-white/10"
+              className="relative group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
             >
               {/* Image */}
               <div className="relative w-full h-64">
@@ -27,7 +25,7 @@ export default function ICPortfolioSection() {
               </div>
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition duration-300" />
 
               {/* Bottom Label */}
               <div className="absolute bottom-0 left-0 w-full px-4 py-3">

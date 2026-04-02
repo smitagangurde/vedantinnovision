@@ -2,36 +2,36 @@ import Image from "next/image";
 import { BITransformed } from "../data/BITransformed";
 
 export default function BiTrasnformedSection() {
-   return (
+  return (
     <section
       aria-labelledby="portfolio-heading"
-      className="w-full bg-[var(--brand-black)] text-white pt-12 pb-8 md:pt-16 md:pb-10"
+      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-12 pb-8 md:pt-16 md:pb-10"
     >
       {/* ===== HEADING ===== */}
-      <div className="max-w-4xl mx-auto text-center mb-14 px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto text-center mb-14 px-6 sm:px-8">
         <h2
           id="portfolio-heading"
-          className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[var(--brand-purple)] mb-4"
+          className="text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 mb-4"
         >
           Brands We’ve Transformed
         </h2>
 
-        <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-          Witness the evolution of identity across industries. From Real
-          Estate and Tech to FMCG and FinTech, we bring stories to life
-          through impactful brand identity design.
+        <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+          Witness the evolution of identity across industries. From Real Estate
+          and Tech to FMCG and FinTech, we bring stories to life through
+          impactful brand identity design.
         </p>
       </div>
 
       {/* ===== GRID ===== */}
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+      <div className="max-w-[1280px] mx-auto px-6 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
         {BITransformed.map((item, index) => (
           <article
             key={index}
-            className="group relative overflow-hidden rounded-md border border-gray-200/20 bg-white/5 hover:shadow-lg transition duration-300"
+            className="group relative overflow-hidden rounded-md border border-gray-300 bg-white/10 hover:border-purple-600 hover:shadow-lg transition duration-300"
           >
             {/* IMAGE / PREVIEW */}
-            <div className="relative w-full aspect-square bg-white/5 flex items-center justify-center">
+            <div className="relative w-full aspect-square bg-white/10 flex items-center justify-center">
               {item.image ? (
                 <Image
                   src={item.image}

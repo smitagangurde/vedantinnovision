@@ -2,26 +2,31 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ABOUT, BRANDIDENTITY, CONTACT, EMPLOYERBRANDING, FILMS, NEWS } from "./const/routes.const";
+import {
+  ABOUT,
+  BRANDIDENTITY,
+  CONTACT,
+  EMPLOYERBRANDING,
+  FILMS,
+  NEWS,
+} from "./const/routes.const";
 import Testimonial from "./component/Testimonial";
 import BrandSection from "./component/BrandSection";
 import ContactDiv from "./component/ContactDiv";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white" role="main">
-      {/* HERO TEXT */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-8 md:pt-12 pb-10">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight text-[var(--brand-purple)] max-w-5xl">
-          We help brands define and communicate{" "}
-          <br className="hidden md:block" />
-          their purpose with clarity and impact
-        </h1>
-      </section>
-
-      {/* IMAGE SECTION */}
-      <section className="w-full px-4 sm:px-6 md:px-10 pb-16">
+    <main>
+      <section className="bg-gradient-to-b from-gray-300 via-gray-100 to-white px-4 sm:px-6 md:px-10 pt-8 md:pt-12 pb-16">
         <div className="max-w-7xl mx-auto">
+          {/* HERO TEXT */}
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight text-purple-700 max-w-5xl mb-10">
+            We help brands define and communicate{" "}
+            <br className="hidden md:block" />
+            their purpose with clarity and impact
+          </h1>
+
+          {/* IMAGE */}
           <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[540px] overflow-hidden border border-gray-200">
             <Image
               src="/hero.jpg"
@@ -34,20 +39,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-black text-gray-300 py-12 sm:py-14 md:py-16 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-16 border-t border-purple-900">
+      <section className="bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-12 sm:py-14 md:py-16 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
           {/* LEFT SIDE */}
           <div className="space-y-16">
             {/* SECTION 1 */}
             <div>
-              <h2 className="text-2xl font-semibold text-purple-400 mb-4">
-                We are Velocita
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+                We are Vedant Innovision
               </h2>
 
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-6">
+              <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-6">
                 In every project we undertake, our aim is to inspire and be
                 inspired. As experts in branding, marketing communication, and
-                employer branding, we take pride in our 17 year legacy of
+                employer branding, we take pride in our 4+ legacy of
                 serving clients. By fusing the resources of a large agency with
                 the agility of a startup, we empower businesses to shine a
                 spotlight on their values and communicate the significance of
@@ -58,7 +63,7 @@ export default function Home() {
                 href={ABOUT}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs px-5 py-3 font-semibold hover:opacity-90 transition"
               >
-                LEARN MORE  →
+                LEARN MORE →
               </Link>
             </div>
 
@@ -74,11 +79,11 @@ export default function Home() {
 
             {/* SECTION 2 */}
             <div>
-              <h3 className="text-purple-400 font-semibold text-base mb-2">
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
                 Latest Case Study
-              </h3>
+              </h2>
 
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
+              <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
                 We are delighted to share one of our most successful
                 collaborations with Knight Frank, where we infused their
                 workplace with the richness of Indian art and culture. Guided by
@@ -108,11 +113,11 @@ export default function Home() {
 
             {/* SECTION 3 */}
             <div>
-              <h3 className="text-purple-400 font-semibold text-base mb-2">
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
                 Films
-              </h3>
+              </h2>
 
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
+              <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
                 Our expertise in the realm of videos and films is dedicated to
                 bringing your vision to life. From concept development to
                 post-production, we meticulously craft each frame with precision
@@ -146,11 +151,12 @@ export default function Home() {
 
             {/* TEXT */}
             <div>
-              <h2 className="text-xl font-semibold text-purple-400 mb-3">
+              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
                 Brand Communication
               </h2>
-
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
+              
+              
+              <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
                 Our mission is to elevate your brand’s voice and narrative,
                 crafting compelling messages that resonate deeply with your
                 target audience. Through strategic storytelling and tailored
@@ -181,11 +187,11 @@ export default function Home() {
 
             {/* TEXT */}
             <div>
-              <h2 className="text-xl font-semibold text-purple-400 mb-3">
-                Employer Brand
+               <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+                 Employer Brand
               </h2>
 
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
+              <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
                 Employer branding revolves around the art of showcasing a
                 company’s culture, values, and mission to potential employees,
                 all while cultivating a favorable perception among job seekers.

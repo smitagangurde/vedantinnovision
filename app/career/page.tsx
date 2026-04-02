@@ -22,7 +22,7 @@ export default function CareerPage() {
       title: "Client Engagement",
       location: "Pune",
       about:
-        "For over 17 years, we have helped organizations define who they truly are and bring that identity to life from the inside out. We are a leading employer branding and communications agency, partnering with ambitious companies to shape authentic employer brands, align leadership narratives, and build engaged, high-performing cultures. From employer value propositions to change and leadership communications, we turn strategy into stories that people understand, believe, and act on. When people connect to a shared purpose, performance follows. We are strategy-led. Story-obsessed. Impact-focused. Join us to help build cultures that shape how people feel, how they show up, and how organizations are perceived by the people who power them.",
+        "For over 4+ yearss, we have helped organizations define who they truly are and bring that identity to life from the inside out. We are a leading employer branding and communications agency, partnering with ambitious companies to shape authentic employer brands, align leadership narratives, and build engaged, high-performing cultures. From employer value propositions to change and leadership communications, we turn strategy into stories that people understand, believe, and act on. When people connect to a shared purpose, performance follows. We are strategy-led. Story-obsessed. Impact-focused. Join us to help build cultures that shape how people feel, how they show up, and how organizations are perceived by the people who power them.",
       responsibilities: [
         "Build and maintain strong client relationships across ongoing branding and communication projects.",
         "Understand client goals, gather briefs, and translate requirements into actionable creative and strategic plans.",
@@ -46,7 +46,7 @@ export default function CareerPage() {
       title: "Graphic Design",
       location: "Pune",
       about:
-        "For over 17 years, we have helped organizations define who they truly are and bring that identity to life from the inside out. We are a leading employer branding and communications agency, partnering with ambitious companies to shape authentic employer brands, align leadership narratives, and build engaged, high-performing cultures. From employer value propositions to change and leadership communications, we turn strategy into stories that people understand, believe, and act on. When people connect to a shared purpose, performance follows. We are strategy-led. Story-obsessed. Impact-focused. Join us to help build cultures that shape how people feel, how they show up, and how organizations are perceived by the people who power them.",
+        "For over 4+ yearss, we have helped organizations define who they truly are and bring that identity to life from the inside out. We are a leading employer branding and communications agency, partnering with ambitious companies to shape authentic employer brands, align leadership narratives, and build engaged, high-performing cultures. From employer value propositions to change and leadership communications, we turn strategy into stories that people understand, believe, and act on. When people connect to a shared purpose, performance follows. We are strategy-led. Story-obsessed. Impact-focused. Join us to help build cultures that shape how people feel, how they show up, and how organizations are perceived by the people who power them.",
       responsibilities: [
         "Team up with client engagement leads, copywriters, and designers to spark bold ideas for campaigns and employer branding initiatives. You will not just execute visuals, you will help shape the thinking behind them.",
         "Bring brands to life across print and digital. From high-impact marketing campaigns to internal communications, leadership decks, and employee engagement content, you will design work that people actually want to look at and engage with.",
@@ -175,21 +175,21 @@ export default function CareerPage() {
   const t = testimonials[tIndex];
 
   return (
-    <main className="bg-[#f5f5f5] text-[#2f3f63]">
-      {/* HERO + WHY + IMAGE GRID */}
-      <section className="w-full bg-black text-gray-300 py-16 px-4 sm:px-6 md:px-10 lg:px-16 border-t border-purple-900">
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto space-y-16">
           {/* HERO */}
           <div className="space-y-6 max-w-3xl">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-purple-400 italic">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-purple-700 italic">
               Calling all creative minds!
             </h1>
-            <p className="text-gray-400 text-base sm:text-lg md:text-xl">
+
+            <p className="text-gray-700 text-base sm:text-lg md:text-xl">
               We’re always open to new ideas, new people & new experiences.
             </p>
 
             {/* BANNER */}
-            <div className="w-full relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] rounded-md overflow-hidden mt-6">
+            <div className="w-full relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] rounded-md overflow-hidden mt-6 shadow-sm">
               <Image
                 src="/banner-awards.png"
                 alt="Banner"
@@ -202,17 +202,17 @@ export default function CareerPage() {
 
           {/* WHY SECTION */}
           <div className="max-w-7xl space-y-6">
-            <h2 className="text-2xl md:text-3xl font-semibold italic text-purple-400">
+            <h2 className="text-2xl md:text-3xl font-semibold italic text-purple-700">
               Why Vedant Innovision?
             </h2>
 
-            <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
               Having a place where you are valued, nurtured and given the
               freedom to stretch your creative boundaries is important. Velocita
               strives to be that place for you!
             </p>
 
-            <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
               We welcome people who have a flair for creativity, a passion for
               excellence and who can take projects to a whole new level. At
               Velocita, we create a warm, nurturing environment where everyone
@@ -223,7 +223,7 @@ export default function CareerPage() {
           {/* IMAGE GRID */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-7">
-              <div className="overflow-hidden rounded-xl">
+              <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
                   src="/scr1.jpg"
                   alt="Team working"
@@ -235,7 +235,7 @@ export default function CareerPage() {
             </div>
 
             <div className="md:col-span-5">
-              <div className="overflow-hidden rounded-xl">
+              <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
                   src="/scr1.jpg"
                   alt="Team meeting"
@@ -247,7 +247,7 @@ export default function CareerPage() {
             </div>
 
             <div className="md:col-span-4 md:ml-10">
-              <div className="overflow-hidden rounded-xl">
+              <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
                   src="/scr1.jpg"
                   alt="Phone usage"
@@ -259,7 +259,7 @@ export default function CareerPage() {
             </div>
 
             <div className="md:col-span-8">
-              <div className="overflow-hidden rounded-xl">
+              <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
                   src="/scr1.jpg"
                   alt="Office"
@@ -274,52 +274,48 @@ export default function CareerPage() {
       </section>
 
       {/* VALUES SECTION */}
-      <section className="w-full border-t border-purple-900">
-        <div className="bg-gradient-to-r from-purple-900 to-black py-16 px-4 sm:px-6 md:px-10 lg:px-16">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
-              {/* LEFT */}
-              <div className="max-w-xl space-y-5">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-300">
-                  We’re learning every day
-                </h2>
+      <section className="w-full bg-gradient-to-r from-purple-900 via-gray-100 py-16 px-4 sm:px-6 md:px-10 lg:px-16 text-black ">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+            {/* LEFT */}
+            <div className="max-w-xl space-y-5">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-700">
+                We’re learning every day
+              </h2>
 
-                <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-                  In the creative world, there’s always something new to learn,
-                  explore and experience
-                  <span className="italic"> (Thanks, Social Media!)</span>. Here
-                  at Velocita, we believe in never growing up. We plan to remain
-                  forever hungry for knowledge, full of wide-eyed curiosity
-                  <span className="italic"> (giggles)</span> and imagination
-                  that can never be put to rest. So we always encourage everyone
-                  to lend each other a hand, but more importantly, give each
-                  other the nudge to bring newer and crazier ideas into the
-                  meeting rooms.
-                </p>
-              </div>
+              <p className="text-black/70 text-sm sm:text-base md:text-lg leading-relaxed">
+                In the creative world, there’s always something new to learn,
+                explore and experience
+                <span className="italic"> (Thanks, Social Media!)</span>. Here
+                at Velocita, we believe in never growing up. We plan to remain
+                forever hungry for knowledge, full of wide-eyed curiosity
+                <span className="italic"> (giggles)</span> and imagination that
+                can never be put to rest. So we always encourage everyone to
+                lend each other a hand, but more importantly, give each other
+                the nudge to bring newer and crazier ideas into the meeting
+                rooms.
+              </p>
+            </div>
 
-              {/* RIGHT */}
-              <div className="max-w-xl space-y-5">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-300">
-                  We’re all for complete inclusivity
-                </h2>
+            {/* RIGHT */}
+            <div className="max-w-xl space-y-5">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-700">
+                We’re all for complete inclusivity
+              </h2>
 
-                <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-                  Ideas can come from anywhere if you keep your hearts and minds
-                  open to them. This is why we keep our doors ajar for people
-                  from all walks of life. If your skills and abilities fit the
-                  job, we make sure the rest just falls into place. At the end
-                  of the day, creating impactful work for our clients is where
-                  our focus lies.
-                </p>
-              </div>
+              <p className="text-black/70 text-sm sm:text-base md:text-lg leading-relaxed">
+                Ideas can come from anywhere if you keep your hearts and minds
+                open to them. This is why we keep our doors ajar for people from
+                all walks of life. If your skills and abilities fit the job, we
+                make sure the rest just falls into place. At the end of the day,
+                creating impactful work for our clients is where our focus lies.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
       <section
-        className="w-full px-4 sm:px-6 md:px-10 lg:px-16 py-14 border-t border-purple-900 bg-black"
+        className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-14 px-4 sm:px-6 md:px-10 lg:px-16 "
         aria-labelledby="open-positions-heading"
       >
         <div className="max-w-7xl mx-auto space-y-10">
@@ -335,19 +331,19 @@ export default function CareerPage() {
 
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-10">
             {/* LEFT SIDE */}
-            <div className="xl:col-span-2 border border-purple-900 rounded-lg overflow-hidden">
+            <div className="xl:col-span-2 border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
               <div className="grid lg:grid-cols-[250px_1fr]">
                 {/* Job List */}
-                <nav className="border-r border-purple-900">
+                <nav className="border-r border-gray-200">
                   {jobDetails.map((job, index) => (
                     <button
                       key={job.title}
                       onClick={() => setSelectedIndex(index)}
-                      className={`w-full text-left px-5 py-4 text-sm sm:text-base border-b border-purple-900 transition
+                      className={`w-full text-left px-5 py-4 text-sm sm:text-base border-b border-gray-200 transition
                 ${
                   selectedIndex === index
-                    ? "bg-purple-900 text-white font-semibold"
-                    : "text-gray-300 hover:bg-purple-900/30"
+                    ? "bg-purple-100 text-purple-700 font-semibold"
+                    : "text-gray-700 hover:bg-purple-50"
                 }`}
                       aria-pressed={selectedIndex === index}
                     >
@@ -357,12 +353,12 @@ export default function CareerPage() {
                 </nav>
 
                 {/* Job Content */}
-                <article className="p-6 sm:p-8 text-gray-300 space-y-5">
-                  <p className="text-sm sm:text-base text-purple-400">
+                <article className="p-6 sm:p-8 text-gray-700 space-y-5">
+                  <p className="text-sm sm:text-base text-purple-500">
                     📍 {selectedJob.location}
                   </p>
 
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-black">
                     {selectedJob.title}
                   </h3>
 
@@ -398,7 +394,7 @@ export default function CareerPage() {
                   </section>
 
                   {selectedJob.note && (
-                    <p className="font-medium text-purple-300">
+                    <p className="font-medium text-purple-500">
                       {selectedJob.note}
                     </p>
                   )}
@@ -408,11 +404,10 @@ export default function CareerPage() {
                     <div>
                       <p className="text-sm sm:text-base">Think you fit in?</p>
                       <p className="text-sm sm:text-base">
-                        Drop us an email with your resume and few links to your
-                        recent work at{" "}
+                        Drop us an email with your resume at{" "}
                         <a
                           href={`mailto:${selectedJob.email}`}
-                          className="text-purple-400 underline hover:text-purple-300"
+                          className="text-purple-500 underline hover:text-purple-700"
                         >
                           {selectedJob.email}
                         </a>
@@ -424,70 +419,93 @@ export default function CareerPage() {
             </div>
 
             {/* RIGHT SIDE FORM */}
-            <aside className="border border-purple-900/50 rounded-xl p-6 sm:p-7 bg-[#0a0a0a] h-fit shadow-[0_0_20px_rgba(168,85,247,0.08)]">
+            <aside className="border border-gray-200 rounded-xl p-6 sm:p-7 bg-white h-fit shadow-sm">
               {/* Heading */}
               <div className="mb-6">
-                <h3 className="text-2xl font-semibold text-white">Apply Now</h3>
-                <div className="h-[2px] w-10 bg-purple-500 mt-2 rounded-full"></div>
-                <p className="text-sm text-gray-400 mt-2">
+                <h3 className="text-2xl font-semibold text-black">Apply Now</h3>
+                <div className="h-[2px] w-10 bg-purple-400 mt-2 rounded-full"></div>
+                <p className="text-sm text-gray-600 mt-2">
                   Fill in your details and we’ll get back to you.
                 </p>
               </div>
 
               <form className="space-y-4">
-                {/* Inputs */}
+                {/* Full Name */}
                 <input
                   type="text"
                   placeholder="Full Name*"
                   required
-                  className="input-modern"
+                  className="w-full px-3 py-2 border border-gray-200 rounded-lg 
+      bg-white text-sm text-gray-900 placeholder-gray-400 
+      focus:outline-none focus:ring-2 focus:ring-purple-400 
+      focus:border-purple-400 transition"
                 />
 
+                {/* Email */}
                 <input
                   type="email"
                   placeholder="Email Address*"
                   required
-                  className="input-modern"
+                  className="w-full px-3 py-2 border border-gray-200 rounded-lg 
+      bg-white text-sm text-gray-900 placeholder-gray-400 
+      focus:outline-none focus:ring-2 focus:ring-purple-400 
+      focus:border-purple-400 transition"
                 />
 
+                {/* Mobile */}
                 <input
                   type="tel"
                   placeholder="Mobile Number*"
                   required
-                  className="input-modern"
+                  className="w-full px-3 py-2 border border-gray-200 rounded-lg 
+      bg-white text-sm text-gray-900 placeholder-gray-400 
+      focus:outline-none focus:ring-2 focus:ring-purple-400 
+      focus:border-purple-400 transition"
                 />
 
-                <select required className="input-modern text-gray-400">
+                {/* Select Position */}
+                <select
+                  required
+                  className="w-full px-3 py-2 border border-gray-200 rounded-lg 
+      bg-white text-sm text-gray-600 
+      focus:outline-none focus:ring-2 focus:ring-purple-400 
+      focus:border-purple-400 transition"
+                >
                   <option value="">Select Position</option>
                   {jobDetails.map((job) => (
                     <option key={job.title}>{job.title}</option>
                   ))}
                 </select>
 
+                {/* About */}
                 <textarea
                   placeholder="Tell us about yourself..."
-                  className="input-modern h-24 resize-none"
+                  className="w-full px-3 py-2 border border-gray-200 rounded-lg 
+      bg-white text-sm text-gray-900 placeholder-gray-400 
+      focus:outline-none focus:ring-2 focus:ring-purple-400 
+      focus:border-purple-400 transition h-24 resize-none"
                 />
 
                 {/* File Upload */}
-                <div className="pt-3 border-t border-purple-900/40">
-                  <label className="text-sm text-gray-400 block mb-2">
+                <div className="pt-3 border-t border-gray-200">
+                  <label className="text-sm text-gray-600 block mb-2">
                     Resume*
                   </label>
                   <input
                     type="file"
                     required
-                    className="text-sm text-gray-400 file:mr-3 file:px-3 file:py-1.5
-        file:border file:border-purple-800 file:bg-[#111]
-        file:text-gray-300 hover:file:bg-purple-900/30 cursor-pointer rounded-md"
+                    className="w-full text-sm text-gray-600 cursor-pointer
+        file:mr-3 file:px-3 file:py-1.5 file:rounded-md
+        file:border file:border-gray-300 file:bg-gray-100
+        file:text-gray-700 hover:file:bg-purple-100"
                   />
                 </div>
 
-                {/* Button */}
+                {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full mt-2 bg-purple-600 hover:bg-purple-700
-      text-white py-2.5 font-medium rounded-md transition shadow-md"
+                  className="w-full mt-2 bg-purple-500 hover:bg-purple-600
+      text-white py-2.5 font-medium rounded-lg transition shadow-sm"
                 >
                   Submit Application →
                 </button>
@@ -495,60 +513,58 @@ export default function CareerPage() {
             </aside>
           </div>
         </div>
-        <section className="w-full bg-black text-gray-300 pt-12 pb-6 px-4 sm:px-6 md:px-10 lg:px-16">
-          <div className="max-w-7xl mx-auto text-center">
-            {/* Subtitle */}
-            <p className="text-base italic text-purple-400 mb-4">
-              The numbers say it all!
-            </p>
 
-            {/* Stats Grid */}
-            <div className="grid sm:grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-3xl font-semibold text-white">17+</h3>
-                <p className="text-gray-400 text-sm">Years of experience</p>
-              </div>
+        {/* STATS */}
+        <div className="max-w-7xl mx-auto text-center mt-16 mb-8">
+          <p className="text-base italic text-purple-400 mb-4">
+            The numbers say it all!
+          </p>
 
-              <div className="sm:border-x sm:border-purple-900">
-                <h3 className="text-3xl font-semibold text-white">10,000+</h3>
-                <p className="text-gray-400 text-sm">Projects delivered</p>
-              </div>
+          <div className="grid sm:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-3xl font-semibold text-black">4+ </h3>
+              <p className="text-gray-600 text-sm">Years of experience</p>
+            </div>
 
-              <div>
-                <h3 className="text-3xl font-semibold text-white">5,000+</h3>
-                <p className="text-gray-400 text-sm">Satisfied clients</p>
-              </div>
+            <div className="sm:border-x sm:border-purple-200">
+              <h3 className="text-3xl font-semibold text-black">1000+</h3>
+              <p className="text-gray-600 text-sm">Projects delivered</p>
+            </div>
+
+            <div>
+              <h3 className="text-3xl font-semibold text-black">50+</h3>
+              <p className="text-gray-600 text-sm">Satisfied clients</p>
             </div>
           </div>
-        </section>
+        </div>
       </section>
 
       <Testimonial />
 
-      <section className="w-full border-t border-purple-900">
-        <div className="bg-gradient-to-r from-purple-900 to-black py-5 sm:py-6 md:py-8 px-4 sm:px-6 md:px-10 lg:px-16">
-          <div className="max-w-7xl mx-auto text-center space-y-1">
-            {/* Heading */}
-            <h2 className="text-white text-sm sm:text-base md:text-lg font-semibold">
-              Want to join the team?
-            </h2>
+      <section className="w-full bg-gradient-to-r from-purple-900 via-gray-100 py-5 sm:py-6 md:py-8 px-4 sm:px-6 md:px-10 lg:px-16 text-black">
+        <div className="max-w-7xl mx-auto text-center space-y-1">
+          {/* Heading */}
+          <h2 className="text-sm sm:text-base md:text-lg font-semibold">
+            Want to join the team?
+          </h2>
 
-            {/* Contact Info */}
-            <p className="text-white/90 text-xs sm:text-sm md:text-base">
-              Job/internship enquiries:{" "}
-              <a
-                href="mailto:Jobs@VelocittaIndia.com"
-                className="underline hover:text-white"
-              >
-                Jobs@VelocittaIndia.com
-              </a>{" "}
-              <span className="hidden sm:inline">|</span>{" "}
-              <span className="block sm:inline mt-1 sm:mt-0">
-                +91 8799 909 616
-              </span>
-            </p>
-          </div>
+          {/* Contact Info */}
+          <p className="text-black/70 text-xs sm:text-sm md:text-base">
+            Job/internship enquiries:{" "}
+            <a
+              href="mailto:jobs@vedantinnovisionindia.com"
+              className="underline hover:text-yellow-400 transition"
+            >
+              amitkumar@vedantinnovision.com
+            </a>{" "}
+            <span className="hidden sm:inline">|</span>{" "}
+            <span className="block sm:inline mt-1 sm:mt-0">
+              +91 8799 909 616
+            </span>
+          </p>
         </div>
+
+        {/* Floating Contact Button (unchanged - already matches theme) */}
         <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
           <Link
             href={CONTACT}

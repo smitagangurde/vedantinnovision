@@ -27,7 +27,7 @@ export const AREdge = [
 ];
 
 export const stat = [
-  { value: "17+", label: "Years of experience" },
-  { value: "10,000+", label: "Projects delivered" },
-  { value: "5,000+", label: "Satisfied clients" },
+  { value: "4+", label: "Years of experience" },
+  { value: "1000+", label: "Projects delivered" },
+  { value: "50+", label: "Satisfied clients" },
 ];

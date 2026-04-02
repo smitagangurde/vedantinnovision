@@ -11,35 +11,35 @@ import SMServicesSection from "@/app/component/SocialMedia/SMServiceSection";
 
 export default function SocialMedia() {
   return (
-    <main className="bg-black text-white" role="main">
-      <section className="w-full bg-[var(--brand-black)] text-white pt-12 pb-10 md:pt-14 md:pb-12 border-b border-purple-900">
-          <div className="max-w-7xl mx-auto grid items-center gap-10 px-4 sm:px-6 md:px-10 md:grid-cols-2">
-            {/* Image */}
-            <div className="flex justify-center md:justify-start">
-              <Image
-                src="/uiux.png"
-                alt="Website and UI UX design"
-                width={900}
-                height={650}
-                className="h-auto w-full max-w-[650px] object-contain"
-                priority
-              />
-            </div>
-
-            {/* Content */}
-            <div className="max-w-xl">
-              <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--brand-purple)] leading-snug">
-                Accelerate Your Brand Growth with the Best Social Media Marketing
-                Agency in India
-              </h1>
-
-              <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-                As a top-rated social media management company in Pune, Velocitta
-                helps brands go viral, build loyalty, and convert clicks into
-                customers.
-              </p>
-            </div>
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-12 sm:py-14 md:py-16 px-4 sm:px-6 md:px-10 lg:px-16 border-b border-purple-200">
+        <div className="max-w-7xl mx-auto grid items-center gap-10 md:grid-cols-2">
+          {/* Image */}
+          <div className="flex justify-center md:justify-start">
+            <Image
+              src="/uiux.png"
+              alt="Website and UI UX design"
+              width={900}
+              height={650}
+              className="h-auto w-full max-w-[650px] object-contain opacity-90"
+              priority
+            />
           </div>
+
+          {/* Content */}
+          <div className="max-w-xl">
+            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
+              Accelerate Your Brand Growth with the Best Social Media Marketing
+              Agency in India
+            </h1>
+
+            <p className="text-sm sm:text-base text-black leading-relaxed">
+              As a top-rated social media management company in Pune, Vedant
+              Innovision helps brands go viral, build loyalty, and convert
+              clicks into customers.
+            </p>
+          </div>
+        </div>
       </section>
 
       <SMPortfolioSection />

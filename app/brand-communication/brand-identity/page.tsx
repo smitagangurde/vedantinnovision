@@ -13,7 +13,7 @@ import FaqSection from "@/app/component/FaqsSection";
 
 export default function BrandIdentitySection() {
   return (
-    <>
+    <main>
       {/* Section #1 */}
       <section
         aria-labelledby="brand-identity-heading"
@@ -49,77 +49,62 @@ export default function BrandIdentitySection() {
               Professional Brand <br /> Identity Design Services
             </h1>
 
-            <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+            <p className="text-black text-base md:text-lg leading-relaxed mb-6">
               We don’t just design logos; we build visual legacies. As a premier
               <strong> brand identity design company</strong> with over{" "}
-              <strong>17 years of excellence</strong> and{" "}
-              <strong>10,000+ projects delivered</strong>,Velocitta Brands helps
-              businesses cut through the noise with cohesive, strategic, and
-              impactful design. We transform your vision into a powerful brand
-              identity that commands attention and fosters immediate trust.
+              <strong>4+s of excellence</strong> and{" "}
+              <strong>1000+ projects delivered</strong>, Vedant Innovision
+              Brands helps businesses cut through the noise with cohesive,
+              strategic, and impactful design. We transform your vision into a
+              powerful brand identity that commands attention and fosters
+              immediate trust.
             </p>
           </div>
         </div>
       </section>
       {/* Section #2x */}
-      <section className="w-full border-t border-purple-900">
-        <div className="bg-gradient-to-r from-purple-900 to-black py-10 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-16">
+      <section className="w-full ">
+        <div className="bg-gradient-to-r from-purple-900 via-gray-100 py-10 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-16 text-black">
           <div className="max-w-7xl mx-auto">
+            {/* Heading */}
             <h2
               id="branding-why-heading"
-              className="text-2xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug"
+              className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug"
             >
               Why Your Business Needs Strategic Branding and Identity Design
               Services
             </h2>
 
-            <div className="space-y-3 text-sm sm:text-base md:text-lg text-gray-300">
-              <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-6 opacity-95">
+            {/* Content */}
+            <div className="space-y-4 text-sm sm:text-base md:text-lg">
+              <p className="leading-relaxed">
                 In a crowded market, being “good” isn’t enough—you must be
                 recognizable. Any agency can create a logo, but effectively
                 bringing an idea to life requires a robust strategic foundation.
                 Our{" "}
-                <strong className="text-white font-semibold">
-                  brand design services
-                </strong>{" "}
+                <strong className="font-semibold">brand design services</strong>{" "}
                 bridge the gap between who you are and how the world perceives
                 you.
               </p>
 
-              <p className="text-sm md:text-base lg:text-lg leading-relaxed opacity-95">
-                At Velocitta Brands, we believe a brand is a living ecosystem.
-                We combine consumer psychology with world-class aesthetics to
-                create a visual language that speaks to your audience before you
-                even say a word. Whether you are a disruptive startup or a
-                Fortune 500 enterprise, we ensure your identity is your greatest
-                competitive advantage.
+              <p className="leading-relaxed">
+                At Vedant Innovision Brands, we believe a brand is a living
+                ecosystem. We combine consumer psychology with world-class
+                aesthetics to create a visual language that speaks to your
+                audience before you even say a word. Whether you are a
+                disruptive startup or a Fortune 500 enterprise, we ensure your
+                identity is your greatest competitive advantage.
               </p>
             </div>
           </div>
         </div>
       </section>
-      {/* Section #3/ */}
-      <section
-        aria-labelledby="portfolio-heading"
-        className="w-full bg-[var(--brand-black)] border-t  border-purple-900 py-12 px-4 sm:px-6 lg:px-16 relative overflow-hidden"
-      >
-        <BiTrasnformedSection />
-      </section>
 
-      {/* Section # 4 */}
-      <section
-        aria-labelledby="brand-services-heading"
-        className="w-full bg-[var(--brand-black)] border-t border-purple-900 py-6 md:py-4 px-4 sm:px-6 lg:px-16 relative overflow-hidden"
-      >
-        <BiComprehensive />
-      </section>
+      <BiTrasnformedSection />
 
-      <section
-        aria-labelledby="process-heading"
-        className="w-full bg-[var(--brand-black)] border-t border-purple-900 py-6 md:py-4 px-4 sm:px-6 lg:px-16 relative overflow-hidden"
-      >
-        <BIDiscoverySection />
-      </section>
+      <BiComprehensive />
+
+      <BIDiscoverySection />
 
       <BrandSection />
 
@@ -137,6 +122,6 @@ export default function BrandIdentitySection() {
           CONTACT
         </Link>
       </div>
-    </>
+    </main>
   );
 }

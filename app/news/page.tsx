@@ -24,7 +24,7 @@ const announcements = [
     date: "January 22, 2026",
     title:
       "Employer Branding in India: Why the Next Five Years Will Redefine the Talent Landscape",
-    desc: `In this article, Samarth Singh, Director and Employer Brand Expert at Velocitta India, explains that employer branding in India is becoming a strategic imperative, driven by changing talent expectations, AI-led role shifts, GCC growth, and the need for authentic, consistent, long-term brand narratives.`,
+    desc: `In this article, Samarth Singh, Director and Employer Brand Expert at  Vedant Innovision India, explains that employer branding in India is becoming a strategic imperative, driven by changing talent expectations, AI-led role shifts, GCC growth, and the need for authentic, consistent, long-term brand narratives.`,
   },
   {
     date: "May 10, 2025",
@@ -36,22 +36,21 @@ const announcements = [
 
 export default function News() {
   return (
-    <main className="bg-black text-gray-300">
-      {/* STATS */}
-      <section className="w-full bg-black text-gray-300 py-16 px-4 sm:px-6 md:px-10 lg:px-16 border-t border-purple-900">
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto space-y-10">
           {/* HEADING */}
           <div className="space-y-3 max-w-3xl">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-purple-400 italic">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-purple-700 italic">
               News & Awards
             </h1>
-            <p className="text-gray-400 text-base sm:text-lg md:text-xl">
+            <p className="text-gray-700 text-base sm:text-lg md:text-xl">
               Discover insights, opinions and ideas from our experts
             </p>
           </div>
 
           {/* BANNER */}
-          <div className="w-full relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] rounded-md overflow-hidden">
+          <div className="w-full relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] rounded-md overflow-hidden shadow-sm">
             <Image
               src="/banner-awards.png"
               alt="Awards Banner"
@@ -62,7 +61,7 @@ export default function News() {
           </div>
 
           {/* SUB HEADING */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-400">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-700">
             Award-Winning Milestones
           </h2>
 
@@ -71,21 +70,21 @@ export default function News() {
             {milestones.map((item, i) => (
               <div
                 key={i}
-                className="bg-[#111] p-6 sm:p-8 rounded-md border border-purple-900 flex flex-col lg:flex-row items-center gap-6"
+                className="bg-white p-6 sm:p-8 rounded-xl border border-gray-200 flex flex-col lg:flex-row items-center gap-6 hover:border-purple-400 hover:shadow-md transition"
               >
                 {/* TEXT */}
                 <div className="flex-1 space-y-3">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-purple-400">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-purple-700">
                     {item.year}
                   </h3>
 
-                  <h4 className="text-base sm:text-lg font-semibold text-white">
+                  <h4 className="text-base sm:text-lg font-semibold text-black">
                     {item.title}
                   </h4>
 
-                  <div className="w-10 h-[2px] bg-purple-900 my-2" />
+                  <div className="w-10 h-[2px] bg-purple-200 my-2" />
 
-                  <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -105,7 +104,7 @@ export default function News() {
 
           {/* ANNOUNCEMENTS */}
           <div className="space-y-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-400 italic">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-700 italic">
               Latest Announcements
             </h2>
 
@@ -113,18 +112,18 @@ export default function News() {
               {announcements.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-[#111] p-6 sm:p-8 md:p-10 rounded-md border border-purple-900"
+                  className="bg-white p-6 sm:p-8 md:p-10 rounded-xl border border-gray-200 hover:border-purple-400 hover:shadow-md transition"
                 >
                   {/* Date */}
                   <p className="text-sm text-gray-500 mb-3">{item.date}</p>
 
                   {/* Title */}
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-purple-400 leading-snug mb-4">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-purple-700 leading-snug mb-4">
                     {item.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -133,25 +132,26 @@ export default function News() {
           </div>
         </div>
 
+        {/* STATS */}
         <div className="max-w-7xl mx-auto text-center mt-16 mb-8">
-          <p className="text-base italic text-purple-400 mb-8">
+          <p className="text-base italic text-purple-700 mb-8">
             The numbers say it all!
           </p>
 
           <div className="grid sm:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-3xl font-semibold">17+</h3>
-              <p className="text-gray-400 text-sm">Years of experience</p>
+              <h3 className="text-3xl font-semibold text-black">4+</h3>
+              <p className="text-gray-600 text-sm">Years of experience</p>
             </div>
 
-            <div className="sm:border-x sm:border-purple-900">
-              <h3 className="text-3xl font-semibold">10,000+</h3>
-              <p className="text-gray-400 text-sm">Projects delivered</p>
+            <div className="sm:border-x sm:border-purple-200">
+              <h3 className="text-3xl font-semibold text-black">1000+</h3>
+              <p className="text-gray-600 text-sm">Projects delivered</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold">5,000+</h3>
-              <p className="text-gray-400 text-sm">Satisfied clients</p>
+              <h3 className="text-3xl font-semibold text-black">50+</h3>
+              <p className="text-gray-600 text-sm">Satisfied clients</p>
             </div>
           </div>
         </div>

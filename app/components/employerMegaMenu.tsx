@@ -16,26 +16,27 @@ export default function EmployerMegaMenu() {
       role="menu"
       aria-label="Employer Brand Menu"
       className="absolute left-1/2 -translate-x-1/2 top-full mt-6 
-  w-[720px]
-  bg-[var(--brand-black)] text-white 
-  border border-purple-900 rounded-2xl shadow-2xl 
-  p-8 
-  grid grid-cols-2 gap-8 z-50"
+      w-[720px]
+      bg-gradient-to-b from-gray-300 via-gray-100 to-white
+      text-gray-800 
+      border border-gray-200 rounded-2xl shadow-xl 
+      p-8 
+      grid grid-cols-2 gap-8 z-50"
     >
       {/* LEFT SECTION */}
-      <div className="md:pr-6 md:border-r border-purple-900">
-        <h3 className="text-lg md:text-xl font-semibold text-purple-400 mb-3 leading-snug">
+      <div className="md:pr-6 md:border-r border-gray-200">
+        <h3 className="text-lg md:text-xl font-semibold text-[var(--brand-purple)] mb-3 leading-snug">
           Want to Step Inside Our Creative Universe?
         </h3>
 
-        <p className="text-gray-400 text-sm leading-relaxed">
+        <p className="text-gray-600 text-sm leading-relaxed">
           Whether it’s our latest creations or innovative solutions, we’re ready
           to unveil it all for you.
         </p>
 
         <Link
           href={CONTACT}
-          className="mt-6 inline-block text-yellow-400 font-medium hover:underline"
+          className="mt-40 inline-block text-[var(--brand-purple)] font-medium hover:underline"
         >
           Contact Us
         </Link>
@@ -44,68 +45,68 @@ export default function EmployerMegaMenu() {
       {/* RIGHT SECTION */}
       <div className="space-y-6">
         <div className="flex gap-4 items-start">
-          <Briefcase className="w-5 h-5 text-purple-400 mt-1" />
+          <Briefcase className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={EMPLOYERBRANDING}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Employer Branding
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Strengthening your brand image to attract talent.
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
-          <Building2 className="w-5 h-5 text-purple-400 mt-1" />
+          <Building2 className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={OFFICEBRANDING}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Office Branding
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Workspaces reflecting your brand values.
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
-          <MessageSquare className="w-5 h-5 text-purple-400 mt-1" />
+          <MessageSquare className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
-             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
+            <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={INTERNALCOMMUNICATION}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Internal Communication
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Empower your workforce with impactful communication.
             </p>
           </div>
         </div>
 
         <div className="flex gap-4 items-start">
-          <Users className="w-5 h-5 text-purple-400 mt-1" />
+          <Users className="w-5 h-5 text-[var(--brand-purple)] mt-1" />
           <div>
             <h4 className="font-semibold text-sm sm:text-base md:text-lg">
               <Link
                 href={EMPLOYERBRANDSM}
-                className="text-white hover:text-yellow-400 hover:underline"
+                className="hover:text-[var(--brand-purple)] hover:underline"
               >
                 Employer Brand Social Media
               </Link>
             </h4>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               Showcase your culture and attract the right talent.
             </p>
           </div>

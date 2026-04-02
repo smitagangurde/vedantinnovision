@@ -10,9 +10,8 @@ import Link from "next/link";
 
 export default function EmployerBrandSocialMedia() {
   return (
-    <main className="bg-black text-white" role="main">
-      {/* Hero */}
-      <section className="w-full bg-[var(--brand-black)] text-white py-8 md:py-10 border-b border-purple-900">
+    <main>
+      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-8 md:py-10 border-b border-purple-200">
         <div className="max-w-7xl mx-auto grid items-center gap-10 px-4 sm:px-6 md:px-10 md:grid-cols-2">
           {/* Image */}
           <div className="flex justify-center md:justify-start">
@@ -21,22 +20,22 @@ export default function EmployerBrandSocialMedia() {
               alt="Website and UI UX design"
               width={900}
               height={650}
-              className="h-auto w-full max-w-[650px] object-contain"
+              className="h-auto w-full max-w-[650px] object-contain opacity-90"
               priority
             />
           </div>
 
           {/* Content */}
           <div className="max-w-xl">
-            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--brand-purple)] leading-snug">
+            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
               Employer Branding Social Media Services
             </h1>
 
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
+            <p className="text-sm sm:text-base text-black leading-relaxed">
               As a leading employer-branding & recruitment social media agency,
-              Velocitta transforms workplace culture into high-impact content
-              that attracts top talent, strengthens trust, and makes candidates
-              choose your brand before competitors.
+              Vedant Innovision transforms workplace culture into high-impact
+              content that attracts top talent, strengthens trust, and makes
+              candidates choose your brand before competitors.
             </p>
           </div>
         </div>
