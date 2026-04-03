@@ -231,12 +231,12 @@ export default function AboutPage() {
             </div>
 
             <div className="sm:border-x sm:border-purple-200">
-              <h3 className="text-3xl font-semibold text-black">1000+</h3>
+              <h3 className="text-3xl font-semibold text-black">800+</h3>
               <p className="text-gray-600 text-sm">Projects delivered</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold text-black">50+</h3>
+              <h3 className="text-3xl font-semibold text-black">40+</h3>
               <p className="text-gray-600 text-sm">Satisfied clients</p>
             </div>
           </div>

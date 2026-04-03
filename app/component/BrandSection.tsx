@@ -19,12 +19,12 @@ export default function BrandSection() {
           </div>
 
           <div className="sm:border-x sm:border-gray-300">
-            <h3 className="text-3xl font-semibold text-black">1000+</h3>
+            <h3 className="text-3xl font-semibold text-black">800+</h3>
             <p className="text-black text-sm">Projects delivered</p>
           </div>
 
           <div>
-            <h3 className="text-3xl font-semibold text-black">50+</h3>
+            <h3 className="text-3xl font-semibold text-black">40+</h3>
             <p className="text-black text-sm">Satisfied clients</p>
           </div>
         </div>
@@ -36,14 +36,15 @@ export default function BrandSection() {
           id="brands-heading"
           className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-600 mb-4"
         >
-          Trusted by Leading Brands
+          Chosen by Brands That Build
         </h2>
 
         {/* Description */}
         <p className="text-black max-w-7xl mb-12 text-sm sm:text-base">
-          Since 2008, we’ve been creative partners to 100+ global brands and
-          Fortune 500 companies, collaborating with businesses and delivering
-          100+ projects.
+          Since 2021, Vedant Innovision has delivered 800+ projects for 40+
+          brands across branding, performance marketing, visual content,
+          material supply, and IT solutions — focused on scalable execution and
+          measurable ROI.
         </p>
 
         {/* Grid */}

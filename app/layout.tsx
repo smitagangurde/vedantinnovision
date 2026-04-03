@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Join Vendant Innovision and work with a creative branding and marketing team.",
   icons: {
     icon: [
-      { url: "/vedant_logo.jpg", sizes: "32x32" },
+      { url: "/VI Favicon2.png", sizes: "32x32" },
     ],
   },
   keywords: [

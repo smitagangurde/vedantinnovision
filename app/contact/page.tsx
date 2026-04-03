@@ -177,12 +177,12 @@ export default function ContactPage() {
             </div>
 
             <div className="sm:border-x sm:border-purple-900">
-              <h3 className="text-3xl font-semibold">1000+</h3>
+              <h3 className="text-3xl font-semibold">800+</h3>
               <p className="text-black/70 text-sm">Projects delivered</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold">50+</h3>
+              <h3 className="text-3xl font-semibold">40+</h3>
               <p className="text-black/70 text-sm">Satisfied clients</p>
             </div>
           </div>

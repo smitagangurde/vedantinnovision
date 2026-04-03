@@ -52,8 +52,8 @@ export default function BrandIdentitySection() {
             <p className="text-black text-base md:text-lg leading-relaxed mb-6">
               We don’t just design logos; we build visual legacies. As a premier
               <strong> brand identity design company</strong> with over{" "}
-              <strong>4+s of excellence</strong> and{" "}
-              <strong>1000+ projects delivered</strong>, Vedant Innovision
+              <strong>4+ year of excellence</strong> and{" "}
+              <strong>800+ projects delivered</strong>, Vedant Innovision
               Brands helps businesses cut through the noise with cohesive,
               strategic, and impactful design. We transform your vision into a
               powerful brand identity that commands attention and fosters

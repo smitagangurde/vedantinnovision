@@ -13,6 +13,8 @@ import {
   EMPLOYERBRANDING,
   FILMS,
   NEWS,
+  PRIVACYPOLICY,
+  TERMS,
 } from "../const/routes.const";
 import {
   Home,
@@ -229,17 +231,17 @@ export default function Footer() {
       <div className="border-t border-gray-300 mt-12 pt-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-sm text-black">
           <div className="space-x-4">
-            <Link href="/privacy-policy" className="hover:text-yellow-500">
+            <Link href={PRIVACYPOLICY} className="hover:text-yellow-500">
               Privacy Policy
             </Link>
             <span>|</span>
-            <Link href="/terms" className="hover:text-yellow-500">
+            <Link href={TERMS} className="hover:text-yellow-500">
               Terms and Services
             </Link>
           </div>
 
           <p className="mt-4 md:mt-0">
-            © 2026 Vedant Innovision Private Limited - All rights reserved.
+            © 2026 Vedant Innovision - All rights reserved.
           </p>
         </div>
       </div>

@@ -21,8 +21,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           {/* HERO TEXT */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight text-purple-700 max-w-5xl mb-10">
-            We help brands define and communicate{" "}
-            <br className="hidden md:block" />
+            Infinite Solutions <br className="hidden md:block" />
             their purpose with clarity and impact
           </h1>
 
@@ -45,18 +44,21 @@ export default function Home() {
           <div className="space-y-16">
             {/* SECTION 1 */}
             <div>
-              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+              <h2 className="text-3xl font-semibold text-purple-700 mb-4">
                 We are Vedant Innovision
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-6">
-                In every project we undertake, our aim is to inspire and be
-                inspired. As experts in branding, marketing communication, and
-                employer branding, we take pride in our 4+ legacy of
-                serving clients. By fusing the resources of a large agency with
-                the agility of a startup, we empower businesses to shine a
-                spotlight on their values and communicate the significance of
-                their work through the captivating art of storytelling.
+                Vedant Innovision is a digital marketing, IT, and branding
+                company driven by proven expertise and measurable success. With
+                over 4+ years of experience, 800+ projects delivered, and 40+
+                satisfied clients, we specialize in building impactful brand
+                communication that delivers results. By combining strategic
+                storytelling, data-driven marketing, and advanced technology, we
+                create meaningful connections with your audience. From content
+                creation to seamless brand integration, we ensure consistent,
+                high-quality experiences that enhance engagement and accelerate
+                business growth.
               </p>
 
               <Link
@@ -79,18 +81,20 @@ export default function Home() {
 
             {/* SECTION 2 */}
             <div>
-              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
+              <h2 className="text-3xl font-semibold text-purple-700 mb-4">
                 Latest Case Study
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
-                We are delighted to share one of our most successful
-                collaborations with Knight Frank, where we infused their
-                workplace with the richness of Indian art and culture. Guided by
-                their global presence and strong Indian identity, we created a
-                space that feels authentic, contemporary and deeply connected to
-                their ethos. This project remains a milestone, showing how
-                meaningful design can bring a brand’s story to life.
+                We executed end-to-end branding for Atlas Copco across outdoor,
+                indoor, and factory environments, ensuring a consistent and
+                high-impact brand presence. From gate branding, pylon signages,
+                and external visibility elements to indoor wall branding, flex
+                installations, and directional signages, every touchpoint was
+                designed for clarity and consistency. Within the factory, we
+                implemented industrial signages, safety boards, and branding
+                elements aligned with operational requirements - creating a
+                seamless brand experience across all spaces.
               </p>
 
               <Link
@@ -113,19 +117,21 @@ export default function Home() {
 
             {/* SECTION 3 */}
             <div>
-              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
-                Films
+              <h2 className="text-3xl font-semibold text-purple-700 mb-4">
+                Visual Stories
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
-                Our expertise in the realm of videos and films is dedicated to
-                bringing your vision to life. From concept development to
-                post-production, we meticulously craft each frame with precision
-                and creativity, ensuring that your story is told with depth and
-                impact. With a focus on cinematic excellence and storytelling
-                prowess, we collaborate closely with you to capture the essence
-                of your narrative and translate it into an unforgettable visual
-                experience.
+                We create videos and animations that communicate clearly and
+                serve real business needs. Our services include corporate video
+                production, 2D - 3D animation, and digital content creation
+                designed to improve engagement and brand visibility. From
+                induction videos and safety LMS animations to event videos and
+                branded content, we focus on delivering clear, engaging, and
+                functional communication. We handle everything from concept and
+                storyboarding to video shoots, animation, photo shoots,
+                stock-based edits, and AI-generated videos - ensuring scalable,
+                high-quality content aligned with your business objectives.
               </p>
 
               <Link
@@ -151,20 +157,18 @@ export default function Home() {
 
             {/* TEXT */}
             <div>
-              <h2 className="text-2xl font-semibold text-purple-700 mb-4">
-                Brand Communication
+              <h2 className="text-3xl font-semibold text-purple-700 mb-4">
+                Brand Strategy
               </h2>
-              
-              
+
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
-                Our mission is to elevate your brand’s voice and narrative,
-                crafting compelling messages that resonate deeply with your
-                target audience. Through strategic storytelling and tailored
-                communication strategies, we ensure that every interaction with
-                your brand leaves a lasting impression. From captivating content
-                creation to seamless brand integration, we meticulously curate
-                your communication to foster meaningful connections and drive
-                engagement.
+                Vedant Innovision is a digital marketing, IT, and branding
+                company focused on building strong and impactful brand
+                communication. We combine strategic storytelling, data-driven
+                marketing, and technology to create meaningful connections with
+                your audience. From content creation to seamless brand
+                integration, we deliver consistent experiences that enhance
+                engagement and drive growth.
               </p>
 
               <Link
@@ -187,18 +191,17 @@ export default function Home() {
 
             {/* TEXT */}
             <div>
-               <h2 className="text-2xl font-semibold text-purple-700 mb-4">
-                 Employer Brand
+              <h2 className="text-3xl font-semibold text-purple-700 mb-4">
+                Employer Brand
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
-                Employer branding revolves around the art of showcasing a
-                company’s culture, values, and mission to potential employees,
-                all while cultivating a favorable perception among job seekers.
-                As seasoned employer branding experts, we are your trusted
-                partners in this journey, helping you craft a compelling EVP and
-                effectively communicate your distinct employer brand, ultimately
-                positioning you as the employer of choice.
+                Instead of employer branding-Workplace Identity- We build strong
+                brand identities that stand out and stay consistent across every
+                platform. From logo design and visual systems to brand
+                guidelines, we create identities that reflect your business and
+                connect with your audience. Our focus is on clarity,
+                consistency, and long - term usability.
               </p>
 
               <Link
