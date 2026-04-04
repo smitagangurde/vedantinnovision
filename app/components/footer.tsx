@@ -143,7 +143,7 @@ export default function Footer() {
                 className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Building2 size={16} />
-                Employer Brand
+                Organizational Brand
               </Link>
             </li>
             <li>

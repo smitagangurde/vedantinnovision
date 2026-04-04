@@ -28,7 +28,7 @@ export default function OfficeBranding() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
-              Office Branding Agency
+              Spatial Branding Agency
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">

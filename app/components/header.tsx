@@ -46,37 +46,37 @@ export default function Header() {
               href={BRANDCONSULTING}
               className="hover:text-yellow-500 transition"
             >
-              Brand Consulting
+              Brand Evolution
             </Link>
 
-            {/* Brand Communication */}
+            {/* Brand Strategy */}
             <div
               className="relative"
               onMouseEnter={() => handleMouseEnter("communication")}
               onMouseLeave={handleMouseLeave}
             >
               <button className="hover:text-yellow-500 transition">
-                Brand Communication
+                Brand Strategy
               </button>
 
               {activeMenu === "communication" && <CommunicationMegaMenu />}
             </div>
 
-            {/* Employer Brand */}
+            {/* Organizational Brand */}
             <div
               className="relative"
               onMouseEnter={() => handleMouseEnter("employer")}
               onMouseLeave={handleMouseLeave}
             >
               <button className="hover:text-yellow-500 transition">
-                Employer Brand
+                Organizational Brand
               </button>
 
               {activeMenu === "employer" && <EmployerMegaMenu />}
             </div>
 
             <Link href={FILMS} className="hover:text-yellow-500 transition">
-              Films
+              Visual Stories
             </Link>
 
             <Link href={CONTACT} className="hover:text-yellow-500 transition">
@@ -102,7 +102,7 @@ export default function Header() {
             className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
-            Brand Consulting
+            Brand Evolution
           </Link>
 
           <Link
@@ -110,7 +110,7 @@ export default function Header() {
             className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
-            Brand Communication
+            Brand Strategy
           </Link>
 
           <Link
@@ -118,7 +118,7 @@ export default function Header() {
             className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
-            Employer Brand
+            Organizational Brand
           </Link>
 
           <Link
@@ -126,7 +126,7 @@ export default function Header() {
             className="block hover:text-yellow-500"
             onClick={() => setOpen(false)}
           >
-            Films
+            Visual Stories
           </Link>
 
           <Link

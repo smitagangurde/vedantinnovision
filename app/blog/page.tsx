@@ -13,7 +13,7 @@ const blogPosts = [
     slug: "why-neglecting-office-branding-weakens-brand-identity-over-time",
     overlay: [
       "Why Neglecting",
-      "Office Branding",
+      "Spatial Branding",
       "Weakens Brand Identity",
       "Over Time",
     ],

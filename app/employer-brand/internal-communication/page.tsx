@@ -27,11 +27,11 @@ export default function InternalCommunication() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
-              Internal Communication
+              Corporate Communication
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
-              Crafting Connections: Elevate Your Internal Communication
+              Crafting Connections: Elevate Your Corporate Communication
               Experience. At the heart of every thriving organization lies
               seamless and inspiring communication. Introducing our Internal
               Communication Design service, where we transform mere information

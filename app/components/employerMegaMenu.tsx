@@ -52,7 +52,7 @@ export default function EmployerMegaMenu() {
                 href={EMPLOYERBRANDING}
                 className="hover:text-[var(--brand-purple)] hover:underline"
               >
-                Employer Branding
+                Workforce Identity
               </Link>
             </h4>
             <p className="text-sm text-gray-600">
@@ -69,7 +69,7 @@ export default function EmployerMegaMenu() {
                 href={OFFICEBRANDING}
                 className="hover:text-[var(--brand-purple)] hover:underline"
               >
-                Office Branding
+                Spatial Branding
               </Link>
             </h4>
             <p className="text-sm text-gray-600">
@@ -86,7 +86,7 @@ export default function EmployerMegaMenu() {
                 href={INTERNALCOMMUNICATION}
                 className="hover:text-[var(--brand-purple)] hover:underline"
               >
-                Internal Communication
+                Corporate Communication
               </Link>
             </h4>
             <p className="text-sm text-gray-600">
@@ -103,7 +103,7 @@ export default function EmployerMegaMenu() {
                 href={EMPLOYERBRANDSM}
                 className="hover:text-[var(--brand-purple)] hover:underline"
               >
-                Employer Brand Social Media
+                Talent Marketing
               </Link>
             </h4>
             <p className="text-sm text-gray-600">

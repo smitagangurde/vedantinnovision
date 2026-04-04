@@ -30,7 +30,7 @@ export const EmployerBrandingGrid = [
     icon: "/icons/social.svg",
   },
   {
-    title: "Internal Communication",
+    title: "Corporate Communication",
     description:
       "Connecting with your internal talent and giving them a first-hand experience of your EVP, will strengthen your reputation as a Great place to work.",
     icon: "/icons/internal.svg",
