@@ -69,7 +69,8 @@ export default function Header() {
               onMouseLeave={handleMouseLeave}
             >
               <button className="hover:text-yellow-500 transition">
-                Organizational Brand
+                {/* Organizational Brand */}
+                Workplace Identity
               </button>
 
               {activeMenu === "employer" && <EmployerMegaMenu />}

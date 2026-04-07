@@ -26,12 +26,13 @@ export default function EmployerMegaMenu() {
       {/* LEFT SECTION */}
       <div className="md:pr-6 md:border-r border-gray-200">
         <h3 className="text-lg md:text-xl font-semibold text-[var(--brand-purple)] mb-3 leading-snug">
-          Want to Step Inside Our Creative Universe?
+          Want to Explore Our Solutions?
         </h3>
 
         <p className="text-gray-600 text-sm leading-relaxed">
-          Whether it’s our latest creations or innovative solutions, we’re ready
-          to unveil it all for you.
+          From innovative concepts to complete execution, Vedant Innovision
+          delivers solutions that bring your brand vision to life with precision
+          and creativity.
         </p>
 
         <Link
@@ -52,11 +53,12 @@ export default function EmployerMegaMenu() {
                 href={EMPLOYERBRANDING}
                 className="hover:text-[var(--brand-purple)] hover:underline"
               >
-                Workforce Identity
+                Corporate Branding
               </Link>
             </h4>
             <p className="text-sm text-gray-600">
-              Strengthening your brand image to attract talent.
+              Enhancing your brand presence through impactful corporate branding
+              solutions.
             </p>
           </div>
         </div>
@@ -69,11 +71,12 @@ export default function EmployerMegaMenu() {
                 href={OFFICEBRANDING}
                 className="hover:text-[var(--brand-purple)] hover:underline"
               >
-                Spatial Branding
+                Industrial & Spatial Solutions
               </Link>
             </h4>
             <p className="text-sm text-gray-600">
-              Workspaces reflecting your brand values.
+              Designing functional and visually strong industrial spaces and
+              branding environments.
             </p>
           </div>
         </div>
@@ -90,7 +93,8 @@ export default function EmployerMegaMenu() {
               </Link>
             </h4>
             <p className="text-sm text-gray-600">
-              Empower your workforce with impactful communication.
+              Delivering clear and effective communication across all business
+              touchpoints.
             </p>
           </div>
         </div>
@@ -103,11 +107,12 @@ export default function EmployerMegaMenu() {
                 href={EMPLOYERBRANDSM}
                 className="hover:text-[var(--brand-purple)] hover:underline"
               >
-                Talent Marketing
+                Brand Promotion & Outreach
               </Link>
             </h4>
             <p className="text-sm text-gray-600">
-              Showcase your culture and attract the right talent.
+              Showcasing your brand through strategic marketing, campaigns, and
+              promotional activities.
             </p>
           </div>
         </div>

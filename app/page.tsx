@@ -22,7 +22,7 @@ export default function Home() {
           {/* HERO TEXT */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight text-purple-700 max-w-5xl mb-10">
             Infinite Solutions <br className="hidden md:block" />
-            their purpose with clarity and impact
+            {/* their purpose with clarity and impact */}
           </h1>
 
           {/* IMAGE */}
@@ -51,7 +51,7 @@ export default function Home() {
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-6">
                 Vedant Innovision is a digital marketing, IT, and branding
                 company driven by proven expertise and measurable success. With
-                over 4+ years of experience, 1000+ projects delivered, and 50+
+                over 4+ years of experience, 800+ projects delivered, and 40+
                 satisfied clients, we specialize in building impactful brand
                 communication that delivers results. By combining strategic
                 storytelling, data-driven marketing, and advanced technology, we
@@ -122,16 +122,16 @@ export default function Home() {
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl mb-4">
-                Vedant Innovision is a digital marketing, IT, and branding
-                company that specializes in creating impactful video and film
-                experiences. We transform your ideas into compelling visual
-                narratives through a seamless blend of creativity, technology,
-                and strategic storytelling. From concept development to
-                post-production, our team ensures every frame aligns with your
-                brand identity and business goals. With a strong focus on
-                cinematic quality and brand communication, we deliver engaging
-                visual content that captures attention, strengthens your brand
-                presence, and leaves a lasting impression.
+                We create videos and animations that communicate clearly and
+                serve real business needs. Our services include corporate video
+                production, 2D–3D animation, and digital content creation
+                designed to improve engagement and brand visibility. From
+                induction videos and safety LMS animations to event videos and
+                branded content, we focus on delivering clear, engaging, and
+                functional communication. We handle everything from concept and
+                storyboarding to video shoots, animation, photo shoots,
+                stock-based edits, and AI-generated videos — ensuring scalable,
+                high-quality content aligned with your business objectives.
               </p>
 
               <Link
@@ -192,16 +192,15 @@ export default function Home() {
             {/* TEXT */}
             <div>
               <h2 className="text-2xl font-semibold text-purple-700 mb-4">
-                Employer Brand
+                Workplace Identity
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed max-w-full sm:max-w-xl">
-                Instead of employer branding-Workplace Identity- We build strong
-                brand identities that stand out and stay consistent across every
-                platform. From logo design and visual systems to brand
-                guidelines, we create identities that reflect your business and
-                connect with your audience. Our focus is on clarity,
-                consistency, and long - term usability.
+                We build strong brand identities that stand out and stay
+                consistent across every platform. From logo design and visual
+                systems to brand guidelines, we create identities that reflect
+                your business and connect with your audience. Our focus is on
+                clarity, consistency, and long - term usability.
               </p>
 
               <Link
