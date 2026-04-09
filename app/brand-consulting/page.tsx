@@ -12,9 +12,10 @@ export default function BrandConsulting() {
       <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-6 sm:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           {/* HEADING */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight text-purple-600 max-w-5xl mb-8">
-            Craft a Brand That Resonates: <br className="hidden md:block" />
-            Strategic Consulting for Lasting Impact
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-purple-600 max-w-5xl mb-8">
+            Build Brands That Perform
+            <br className="hidden md:block" />
+            Strategic Thinking. Creative Execution. Lasting Impact.
           </h1>
 
           {/* IMAGE */}
@@ -31,21 +32,24 @@ export default function BrandConsulting() {
           {/* PARAGRAPH */}
           <div className="text-black text-sm md:text-base leading-relaxed space-y-4 text-center md:text-left max-w-5xl">
             <p>
-              We are trusted experts in guiding businesses in defining and
-              clearly expressing their core principles and identity—values,
-              mission, vision, and purpose. Our consulting approach is not only
-              strategic but also deeply rooted in ensuring that every aspect of
-              your brand’s identity is integrated, aligned, and resonates
-              powerfully with both internal teams and external stakeholders.
+              At Vedant Innovision, we help businesses define and express their
+              brand with clarity and purpose. From values and vision to
+              positioning and communication, we ensure every element of your
+              brand is aligned, consistent, and impactful across all
+              touchpoints.
             </p>
 
             <p>
-              We collaborate closely with leadership teams to clarify and
-              position your brand for market distinction. Our expertise extends
-              to crafting a compelling Employee Value Proposition (EVP) that not
-              only attracts top talent but also drives retention by creating
-              meaningful connections between employees and the company’s core
-              ethos.
+              Our approach combines strategy with execution—transforming ideas
+              into meaningful brand experiences that connect with both internal
+              teams and external audiences.
+            </p>
+            <p>
+              We work closely with leadership to shape strong brand positioning
+              and create distinct market presence. Our expertise also extends to
+              developing compelling Employee Value Propositions (EVP) that not
+              only attract the right talent but also strengthen engagement and
+              long-term retention.
             </p>
           </div>
         </div>
@@ -69,59 +73,62 @@ export default function BrandConsulting() {
             {/* RIGHT CONTENT */}
             <div className="max-w-xl">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 mb-6 leading-snug">
-                Defining Your Mission, Vision, Values, and Purpose
+                Brand Strategy: Mission, Vision, Values & Purpose
               </h2>
 
+              <p className="text-black text-sm sm:text-base leading-relaxed mb-2">
+                At Vedant Innovision, we help businesses build a strong brand
+                foundation by clearly defining their mission, vision, values,
+                and purpose. Our approach ensures that your brand is not only
+                well-structured but also consistently communicated across
+                design, messaging, and overall brand experience.
+              </p>
               <p className="text-black text-sm sm:text-base leading-relaxed mb-6">
-                We offer comprehensive consulting services to help organizations
-                define and integrate their core values, purpose, vision, and
-                mission. Our expert approach ensures that these foundational
-                elements resonate authentically with both your internal culture
-                and external brand perception, guiding your strategic direction
-                and fostering trust among stakeholders.
+                We focus on creating a foundation that aligns with your business
+                goals while connecting effectively with both internal teams and
+                your target audience.
               </p>
 
               <h3 className="text-base sm:text-lg font-semibold text-yellow-500 mb-4">
-                Our Services Include:
+                What We Deliver:
               </h3>
 
               <ul className="space-y-3 text-black text-sm sm:text-base leading-relaxed">
                 <li>
                   <strong className="text-black">
-                    Identifying Core Values:
+                    Core Values Identification:
                   </strong>{" "}
-                  We collaborate with your team to uncover the fundamental
-                  beliefs that drive your organization, ensuring they align with
-                  your culture and are effectively communicated to your
-                  audience.
+                  We work closely with your team to define the principles that
+                  shape your brand and culture, ensuring consistency across
+                  communication and operations.
                 </li>
                 <li>
-                  <strong className="text-black">Defining Your ‘Why’:</strong>{" "}
-                  We explore the core reasons your organization exists beyond
-                  profit, identifying your commitment to societal or
-                  environmental impact and articulating a compelling brand
-                  purpose.
+                  <strong className="text-black">
+                    Brand Purpose & Positioning:
+                  </strong>{" "}
+                  We help you define your “why” and translate it into a clear
+                  brand direction that differentiates you in the market.
                 </li>
                 <li>
-                  <strong className="text-black">Vision Formulation:</strong> We
-                  work with leadership to craft a compelling vision statement
-                  that captures your organization’s long-term aspirations and
-                  strategic direction.
+                  <strong className="text-black">
+                    Vision & Mission Development:
+                  </strong>{" "}
+                  We craft clear and impactful vision and mission statements
+                  that guide your long-term growth and daily decision-making.
                 </li>
                 <li>
-                  <strong className="text-black">Mission Definition:</strong> We
-                  assist in articulating a clear mission statement outlining
-                  your core purpose, target audience, and unique value, guiding
-                  daily operations and decisions.
+                  <strong className="text-black">
+                    Brand Communication Alignment:
+                  </strong>{" "}
+                  We ensure your brand foundation is reflected across all
+                  touchpoints—design, content, and overall brand presence.
                 </li>
               </ul>
 
               <p className="text-black text-sm sm:text-base leading-relaxed mt-6">
-                By integrating these elements, we help establish a cohesive and
-                authentic brand identity that differentiates you in the
-                marketplace and fosters a genuine connection with your audience.
-                Partner with us to build a purpose-driven brand that inspires
-                and makes a meaningful impact.
+                By aligning strategy with execution, we create a cohesive brand
+                identity that is clear, consistent, and built to scale—helping
+                your business stand out and grow with purpose.
               </p>
             </div>
           </div>
@@ -134,40 +141,43 @@ export default function BrandConsulting() {
             {/* LEFT CONTENT */}
             <div className="max-w-xl">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 mb-6 leading-snug">
-                Strategic Brand Positioning: Your Path to Market Leadership
+                Strategic Brand Positioning & Market Differentiation
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed mb-6">
-                We understand that a strong brand positioning strategy is the
-                cornerstone of lasting business success. It’s not just about
-                standing out—it’s about owning a meaningful space in the market
-                and in the hearts of your audience. Our approach ensures your
-                brand differentiates itself and resonates deeply with your
-                target audience, driving loyalty and growth.
+                At Vedant Innovision, we build brand positioning strategies that
+                go beyond visibility—focusing on clarity, differentiation, and
+                real market impact. We help your brand stand out with a strong
+                identity that connects with the right audience and supports
+                long-term business growth.
+              </p>
+              <p className="text-black text-sm sm:text-base leading-relaxed mb-6">
+                Our approach ensures your brand is not just seen, but remembered
+                and preferred.
               </p>
 
               <h3 className="text-base sm:text-lg font-semibold text-yellow-500 mb-4">
-                Our Process:
+                Our Approach:
               </h3>
 
               <ul className="space-y-4 text-black text-sm sm:text-base leading-relaxed">
                 <li>
-                  <strong className="text-black">Market Research:</strong> We
-                  dive deep into your market landscape, uncovering insights
-                  about competitors, audience behaviors, and emerging trends.
-                  This data forms the foundation of a strategy tailored to your
-                  brand.
+                  <strong className="text-black">
+                    Market & Competitor Analysis:
+                  </strong>{" "}
+                  We analyze your industry, competitors, and audience behavior
+                  to identify opportunities and define a strong positioning
+                  direction.
                 </li>
 
                 <li>
                   <strong className="text-black">
-                    STP (Segmentation, Targeting, Positioning):
+                    Segmentation, Targeting & Positioning (STP):
                   </strong>
                   <ul className="list-disc ml-5 mt-2 space-y-1">
                     <li>
                       <strong className="text-black">Segmentation:</strong>{" "}
-                      Breaking down your market into distinct segments based on
-                      demographics, behaviors, and preferences.
+                      Understanding different audience groups
                     </li>
                     <li>
                       <strong className="text-black">Targeting:</strong>{" "}
@@ -175,30 +185,30 @@ export default function BrandConsulting() {
                     </li>
                     <li>
                       <strong className="text-black">Positioning:</strong>{" "}
-                      Crafting a value proposition that speaks directly to your
-                      target segments.
+                      Defining how your brand stands out
                     </li>
                   </ul>
                 </li>
 
                 <li>
-                  <strong className="text-black">Perceptual Mapping:</strong>{" "}
-                  Using perceptual maps to visualize how your brand is perceived
-                  against competitors and identify areas for differentiation.
+                  <strong className="text-black">
+                    Brand Perception & Differentiation :
+                  </strong>{" "}
+                  We map how your brand is perceived in the market and identify
+                  key areas to create a distinct and competitive edge.
                 </li>
 
                 <li>
-                  <strong className="text-black">Positioning Statement:</strong>
-                  <p className="mt-2">
-                    Aligning your offerings with your mission, vision, and
-                    values to create a consistent and authentic brand.
-                  </p>
+                  <strong className="text-black">
+                    Positioning Strategy Framework :
+                  </strong>
+                  <p className="mt-2">We align your brand positioning with:</p>
                   <ul className="list-disc ml-5 mt-2 space-y-1">
-                    <li>Who your target customers are.</li>
-                    <li>Their specific needs.</li>
-                    <li>Your product or service category.</li>
-                    <li>The key benefits your brand delivers.</li>
-                    <li>What sets you apart from the competition.</li>
+                    <li>Your target audience</li>
+                    <li>Market needs and expectations</li>
+                    <li>Your offerings and services</li>
+                    <li>Key brand benefits</li>
+                    <li>Your unique differentiators</li>
                   </ul>
                 </li>
               </ul>
@@ -208,12 +218,9 @@ export default function BrandConsulting() {
               </h3>
 
               <p className="text-black text-sm sm:text-base leading-relaxed">
-                A strategic brand positioning framework aligns your offerings
-                with customer preferences, builds recognition, fosters loyalty,
-                and drives sustainable growth. With our expertise, your brand
-                won’t just exist—it will thrive. Let us help you position your
-                brand to lead, inspire, and grow in today’s competitive
-                environment.
+                A strong brand positioning strategy builds recognition, improves
+                customer recall, and drives consistent growth. With the right
+                positioning, your brand doesn’t just compete—it leads.
               </p>
             </div>
 
@@ -252,67 +259,73 @@ export default function BrandConsulting() {
                 id="evp-heading"
                 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 mb-6 leading-snug"
               >
-                Creating a Compelling EVP
+                Employee Value Proposition (EVP) Strategy & Development
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed mb-6">
-                We specialize in crafting compelling Employee Value Propositions
-                (EVPs) that help organizations attract, engage, and retain top
-                talent. Our EVP consulting services align your company’s unique
-                culture, values, and goals with the needs and aspirations of
-                your employees.
+                At Vedant Innovision, we create strong Employee Value
+                Propositions (EVPs) that help brands attract, engage, and retain
+                the right talent. Our approach focuses on aligning your company
+                culture, values, and growth opportunities with what today’s
+                workforce truly values.
+              </p>
+              <p className="text-black text-sm sm:text-base leading-relaxed mb-6">
+                We ensure your EVP is not just a statement—but a consistent
+                experience across your brand, communication, and workplace.
               </p>
 
               <h3 className="text-base sm:text-lg font-semibold text-yellow-500 mb-4">
-                Our EVP Crafting Services Include:
+                Our EVP Services:
               </h3>
 
               <ul className="space-y-3 text-black text-sm sm:text-base leading-relaxed list-disc pl-5">
                 <li>
                   <strong className="text-black">
-                    Comprehensive Employee Research:
+                    Employee Insights & Research:
                   </strong>{" "}
-                  We conduct surveys, interviews, and focus groups to understand
-                  employees’ perceptions, motivations, and expectations.
+                  We gather insights through research and analysis to understand
+                  employee expectations, motivations, and workplace experience.
                 </li>
                 <li>
                   <strong className="text-black">Market Benchmarking:</strong>{" "}
-                  We analyze industry trends and benchmark your current EVP
-                  against competitors to identify strengths and opportunities
-                  for improvement.
-                </li>
-                <li>
-                  <strong className="text-black">EVP Development:</strong> Based
-                  on our research, we collaborate with leadership to create a
-                  compelling EVP communicating your unique benefits and
-                  experiences.
+                  We evaluate your EVP against industry standards and
+                  competitors to identify gaps and opportunities for
+                  differentiation.
                 </li>
                 <li>
                   <strong className="text-black">
-                    Alignment with Brand Values:
+                    EVP Strategy & Messaging:
                   </strong>{" "}
-                  Ensuring your EVP aligns with your mission, vision, and values
-                  for a consistent, authentic employer brand.
+                  We craft a clear and compelling EVP that communicates your
+                  unique strengths, culture, and employee benefits.
                 </li>
                 <li>
                   <strong className="text-black">
-                    Implementation Strategy:
+                    Brand & Culture Alignment:
                   </strong>{" "}
-                  We provide a strategic plan to integrate the EVP across
-                  recruitment, onboarding, internal communications, and employee
-                  engagement.
+                  We ensure your EVP aligns with your overall brand identity,
+                  values, and organizational goals.
                 </li>
                 <li>
                   <strong className="text-black">
-                    Measurement and Optimization:
+                    Implementation & Communication:
                   </strong>{" "}
-                  Establishing key metrics to measure EVP effectiveness with
-                  ongoing refinement support.
+                  We help integrate your EVP across recruitment, onboarding,
+                  internal communication, and employer branding touchpoints.
+                </li>
+                <li>
+                  <strong className="text-black">
+                    Performance Tracking & Optimization:
+                  </strong>{" "}
+                  A well-defined EVP strengthens your employer brand, improves
+                  talent acquisition, and drives long-term employee
+                  engagement—helping your organization grow with the right
+                  people.
                 </li>
               </ul>
 
               <p className="mt-6 text-sm sm:text-base font-medium text-yellow-500">
-                Let’s Build Your Employer Brand Together
+                Start Your Brand Transformation Today
               </p>
             </div>
           </div>
@@ -331,16 +344,20 @@ export default function BrandConsulting() {
                 id="culture-heading"
                 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 mb-6 leading-snug"
               >
-                Building a Thriving Company Culture
+                Organizational Culture Development & Employer Branding
               </h2>
 
               <p className="text-black text-sm sm:text-base leading-relaxed mb-6">
-                We believe that culture isn’t just a buzzword—it’s the heartbeat
-                of your organization. A thriving culture aligns with your
-                values, drives engagement, and fosters growth and collaboration.
-                Our culture-building solutions help your organization unlock its
-                true potential by creating an environment where people and
-                business flourish together.
+                At Vedant Innovision, we help businesses build strong,
+                performance-driven workplace cultures that align with their
+                brand values and business goals. A well-defined culture enhances
+                employee experience, improves collaboration, and drives
+                long-term growth.
+              </p>
+              <p className="text-black text-sm sm:text-base leading-relaxed mb-6">
+                Our approach focuses on creating a culture that is not only
+                aligned internally but also reflected across your brand and
+                communication.
               </p>
 
               <h3 className="text-base sm:text-lg font-semibold text-yellow-500 mb-4">
@@ -350,39 +367,34 @@ export default function BrandConsulting() {
               <ul className="space-y-4 text-black text-sm sm:text-base leading-relaxed">
                 <li>
                   <strong className="text-black">
-                    Comprehensive Culture Assessment:
+                    Culture Assessment & Insights:
                   </strong>{" "}
-                  We start by understanding the DNA of your current
-                  organizational culture. Through surveys, interviews, and
-                  observational techniques, we analyze the beliefs, attitudes,
-                  and behaviors that define your workplace.
+                  We analyze your existing workplace culture to identify
+                  strengths, gaps, and opportunities for improvement.
                 </li>
 
                 <li>
                   <strong className="text-black">
-                    Strategic Culture Design:
+                    Culture Strategy & Framework:
                   </strong>{" "}
-                  Partnering closely with leadership, we craft a culture
-                  blueprint aligned with your mission, values, and business
-                  objectives, mapping an actionable roadmap for transformation.
+                  We develop a structured culture framework aligned with your
+                  mission, values, and long-term business objectives.
                 </li>
 
                 <li>
                   <strong className="text-black">
-                    Leadership Development and Alignment:
+                    Leadership Alignment & Development:
                   </strong>{" "}
-                  Leaders are the architects of culture. Tailored programs
-                  empower them to model, communicate, and reinforce the desired
-                  traits, ensuring a cohesive cultural foundation.
+                  We help leadership teams define, communicate, and reinforce
+                  the desired culture across the organization.
                 </li>
 
                 <li>
                   <strong className="text-black">
-                    Employee Engagement Initiatives:
+                    Employee Engagement Strategy:
                   </strong>{" "}
-                  Programs engage employees in shaping and embracing the new
-                  culture, fostering ownership, inspiration, and commitment to
-                  organizational values.
+                  We design initiatives that improve engagement, ownership, and
+                  collaboration within teams.
                 </li>
               </ul>
 
@@ -391,12 +403,11 @@ export default function BrandConsulting() {
               </h3>
 
               <p className="text-black text-sm sm:text-base leading-relaxed">
-                A strong, intentional company culture attracts top talent,
-                boosts satisfaction, and drives performance. Whether navigating
-                change, scaling, or redefining your vision, we help you build a
-                culture that reflects who you are and propels you toward your
-                goals. Let’s create a thriving culture that inspires excellence
-                at every level.
+                A strong organizational culture improves employee satisfaction,
+                strengthens employer branding, and supports business
+                performance. It helps attract the right talent and creates an
+                environment where teams can grow, collaborate, and deliver
+                better results.
               </p>
             </div>
 

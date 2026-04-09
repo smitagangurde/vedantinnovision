@@ -12,7 +12,7 @@ export default function ProcessSection() {
           id="process-heading"
           className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 text-center mb-12"
         >
-          Our comprehensive, expert-driven process involves
+          Our Brand Strategy & Execution Process
         </h2>
 
         {/* Grid */}

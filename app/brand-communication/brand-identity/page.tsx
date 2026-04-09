@@ -46,18 +46,16 @@ export default function BrandIdentitySection() {
               id="brand-identity-heading"
               className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[var(--brand-purple)] leading-tight mb-6"
             >
-              Professional Brand <br /> Identity Design Services
+              Brand Strategy & <br /> Identity Design Services
             </h1>
 
             <p className="text-black text-base md:text-lg leading-relaxed mb-6">
-              We don’t just design logos; we build visual legacies. As a premier
-              <strong> brand identity design company</strong> with over{" "}
-              <strong>4+ year of excellence</strong> and{" "}
-              <strong>800+ projects delivered</strong>, Vedant Innovision
-              Brands helps businesses cut through the noise with cohesive,
-              strategic, and impactful design. We transform your vision into a
-              powerful brand identity that commands attention and fosters
-              immediate trust.
+              Logos don’t build brands—strategy does. At Vedant Innovision
+              <strong></strong> we combine{" "}
+              <strong>design and strategy to create brand identities</strong>{" "}
+              that stand out, connect, and perform. With{" "}
+              <strong>800+ projects delivered</strong>, we help you turn your
+              vision into a powerful brand.
             </p>
           </div>
         </div>
@@ -71,29 +69,23 @@ export default function BrandIdentitySection() {
               id="branding-why-heading"
               className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug"
             >
-              Why Your Business Needs Strategic Branding and Identity Design
-              Services
+              Brand Strategy & Identity Design Services
             </h2>
 
             {/* Content */}
             <div className="space-y-4 text-sm sm:text-base md:text-lg">
               <p className="leading-relaxed">
-                In a crowded market, being “good” isn’t enough—you must be
-                recognizable. Any agency can create a logo, but effectively
-                bringing an idea to life requires a robust strategic foundation.
-                Our{" "}
-                <strong className="font-semibold">brand design services</strong>{" "}
-                bridge the gap between who you are and how the world perceives
-                you.
+                We create strategic and impactful brand identities that go
+                beyond visuals—helping your business stand out with clarity,
+                consistency, and strong market presence.
               </p>
 
               <p className="leading-relaxed">
-                At Vedant Innovision Brands, we believe a brand is a living
-                ecosystem. We combine consumer psychology with world-class
-                aesthetics to create a visual language that speaks to your
-                audience before you even say a word. Whether you are a
-                disruptive startup or a Fortune 500 enterprise, we ensure your
-                identity is your greatest competitive advantage.
+                We don’t just design logos—we build strong brand identities that
+                create lasting impact. As a creative brand identity partner with
+                4+ years of experience and 800+ projects delivered, Vedant
+                Innovision helps businesses stand out through strategic,
+                cohesive, and impactful design.
               </p>
             </div>
           </div>

@@ -13,13 +13,14 @@ export default function BiTrasnformedSection() {
           id="portfolio-heading"
           className="text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 mb-4"
         >
-          Brands We’ve Transformed
+          Brands We’ve Worked With
         </h2>
 
         <p className="text-gray-800 text-sm md:text-base leading-relaxed">
-          Witness the evolution of identity across industries. From Real Estate
-          and Tech to FMCG and FinTech, we bring stories to life through
-          impactful brand identity design.
+          We partner with businesses across industries to build strong,
+          strategic brand identities. From manufacturing and FMCG to healthcare
+          and educational institutes, we transform ideas into impactful brand
+          experiences through thoughtful design and execution.
         </p>
       </div>
 
