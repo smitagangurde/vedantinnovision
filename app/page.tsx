@@ -22,17 +22,17 @@ export default function Home() {
           {/* HERO TEXT */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight text-purple-700 max-w-5xl mb-10">
             Infinite Solutions <br className="hidden md:block" />
-            {/* their purpose with clarity and impact */}
           </h1>
 
-          {/* IMAGE */}
           <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[540px] overflow-hidden border border-gray-200">
-            <Image
-              src="/hero.jpg"
-              alt="Brand storytelling team"
-              fill
-              sizes="(max-width: 768px) 100vw, 1200px"
-              className="object-cover"
+            <video
+              src="/Vedant_Video.mp4"
+              poster="/fallback.jpg"
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
         </div>
