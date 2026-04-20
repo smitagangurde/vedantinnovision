@@ -27,24 +27,29 @@ export default function MarketingCommunication() {
           {/* RIGHT: Content */}
           <div className="max-w-xl">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-600 leading-snug mb-5">
-              Embrace Excellence:
+              Build Powerful Brand Communication
             </h1>
 
             <h2 className="text-lg sm:text-xl md:text-2xl font-medium mb-5 leading-relaxed text-black">
-              Unleash Your Brand’s Dominance with Our Marketing Communications
+              Drive Impact with Strategic Marketing Communication
             </h2>
 
             <p className="text-sm sm:text-base text-black leading-relaxed mb-4">
-              Imagine your brand had a voice, one that resonated deeply with
-              your audience. It’s not just about the message itself; it’s about
-              how that message is delivered. We specialize in crafting impactful
-              brand communication that is memorable and strategically aligned.
+              At Vedant Innovision, we help your brand communicate with clarity,
+              consistency, and purpose. It’s not just about what you say—it’s
+              about how effectively your message connects with your audience.
+            </p>
+
+            <p className="text-sm sm:text-base text-black leading-relaxed">
+              We create strategic brand communication that is clear, engaging,
+              and aligned with your overall brand identity—ensuring your message
+              stands out and leaves a lasting impact.
             </p>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
               From go-to-market strategies to social media, events, and
-              compliance reporting, we ensure your brand communicates with
-              clarity and consistency across every touchpoint.
+              corporate communication, we ensure your brand delivers a
+              consistent experience across every touchpoint.
             </p>
           </div>
         </div>

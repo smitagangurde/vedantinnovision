@@ -13,12 +13,12 @@ export default function BiComprehensive() {
             id="services-heading"
             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-600"
           >
-            Comprehensive Brand Design Services Under One Roof
+            Complete Brand Strategy & Design Solutions Under One Roof
           </h2>
           <p className="mt-4 text-sm sm:text-base text-gray-800 leading-relaxed">
-            We provide a holistic suite of branding and identity design
-            services, ensuring every touchpoint—from digital to print—is
-            professional, polished, and aligned with your core values.
+            We offer end-to-end branding and design solutions—from strategy to
+            execution—ensuring every touchpoint, digital or physical, is
+            consistent, impactful, and aligned with your brand identity.
           </p>
         </header>
 

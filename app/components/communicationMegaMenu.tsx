@@ -38,7 +38,7 @@ export default function CommunicationMegaMenu() {
 
         <Link
           href={CONTACT}
-          className="mt-50 inline-block text-[var(--brand-purple)] font-medium hover:underline"
+          className="mt-35 inline-block text-[var(--brand-purple)] font-medium hover:underline"
         >
           Contact Us
         </Link>

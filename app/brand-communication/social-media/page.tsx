@@ -29,15 +29,16 @@ export default function SocialMedia() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
-              Accelerate Your Brand Growth with the Best Social Media Marketing
-              Agency in India
+              Grow Your Brand with Strategic Social Media Marketing
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
-              As a top-rated social media management company in Pune, Vedant
-              Innovision helps brands go viral, build loyalty, and convert
-              clicks into customers.
+              At Vedant Innovision, we help brands build a strong digital
+              presence through consistent, creative, and strategy-driven social
+              media marketing. From increasing visibility to driving engagement,
+              we focus on delivering real, measurable results.
             </p>
+            
           </div>
         </div>
       </section>

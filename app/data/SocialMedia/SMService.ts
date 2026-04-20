@@ -1,45 +1,45 @@
 export const SMService = [
   {
-    title: "Social Media Strategy Development",
-    desc: "More than online presence, we define your purpose across the digital landscape. Our approach goes beyond planning, we create unique, personalized strategies.",
+    title: "Social Media Strategy & Planning",
+    desc: "We define clear strategies aligned with your business goals to build a strong and consistent online presence.",
     icon: "📊",
   },
   {
-    title: "Content Creation & Calendar Planning",
-    desc: "We transform your vision into engaging content and precisely planned calendars, ensuring a powerful presence across every platform.",
+    title: "Content Creation & Calendar Management",
+    desc: "We create engaging content and structured calendars to ensure consistency and relevance across platforms.",
     icon: "📝",
   },
   {
-    title: "Reputation & Community Management",
-    desc: "We actively foster a thriving, positive community around your brand while managing engagement and communication.",
+    title: "Community & Reputation Management",
+    desc: "We manage audience interactions, build engagement, and maintain a positive brand image online.",
     icon: "💬",
   },
   {
-    title: "Performance Tracking & Analytics",
-    desc: "We analyze performance metrics to continuously optimize campaigns, ensuring maximum impact and growth.",
+    title: "Performance Tracking & Optimization",
+    desc: "We monitor performance and optimize campaigns to improve reach, engagement, and overall results.",
     icon: "📈",
   },
 ];
 
 export const whyPoints = [
   {
-    title: "16+ years in branding & communications",
-    desc: "We bring deep expertise, consistently delivering campaigns that stick.",
+    title: "Proven Experience in Branding & Communication",
+    desc: "Delivering consistent and effective campaigns across industries.",
     icon: "👥",
   },
   {
-    title: "End-to-end management from strategy to reporting",
-    desc: "We handle everything from strategy to reporting for seamless success.",
+    title: "End-to-End Execution",
+    desc: "From strategy and content to reporting and optimization—we manage everything.",
     icon: "📋",
   },
   {
-    title: "Real-time campaign monitoring",
-    desc: "Stay agile with 24/7 monitoring across platforms.",
+    title: "Real-Time Monitoring",
+    desc: "Continuous tracking to keep campaigns agile and performance-driven.",
     icon: "🖥️",
   },
   {
-    title: "Proven success across industries",
-    desc: "Our adaptable strategies deliver success across sectors.",
+    title: "Industry Versatility",
+    desc: "Experience across multiple sectors, adapting strategies for different business needs.",
     icon: "📊",
   },
 ];

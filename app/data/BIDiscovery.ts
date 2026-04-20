@@ -2,23 +2,23 @@ import { Lightbulb, GitBranch, Sparkles, Truck } from "lucide-react";
 
 export const steps = [
   {
-    title: "Discovery & Research",
-    desc: "We dive deep into your industry, competitor landscape, and target audience behaviors.",
+    title: "Discovery & Insights",
+    desc: "We understand your business, industry, competitors, and target audience to build a strong foundation.",
     icon: Lightbulb,
   },
   {
-    title: "Strategy & DNA",
-    desc: "Defining the core messaging, brand voice, and visual “vibe” of your organization.",
+    title: "Brand Strategy & Direction",
+    desc: "We define your brand positioning, messaging, and visual direction to ensure clarity and consistency.",
     icon: GitBranch,
   },
   {
-    title: "Conceptualization",
-    desc: "Translating strategy into sketches and diverse visual directions for your review.",
+    title: "Creative Concept Development",
+    desc: "We translate strategy into multiple design concepts that align with your brand vision.",
     icon: Sparkles,
   },
   {
-    title: "Finalization & Delivery",
-    desc: "Providing launch-ready, high-res assets in all required print and digital formats.",
+    title: "Execution & Delivery",
+    desc: "We deliver high-quality, ready-to-use brand assets across digital and print platforms.",
     icon: Truck,
   },
 ];

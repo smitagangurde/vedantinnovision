@@ -58,20 +58,35 @@ export default function WebsiteUiUxPage() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-400 leading-snug">
-              Website &amp; UI/UX
+              Software & Digital Solutions
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
-              Websites and UI/UX design hold the key to the amount of time your
-              customers invest in your brand. With our extensive experience in
-              crafting digital footprints for numerous brands, we possess the
-              expertise to fashion the ideal, captivating online platform for
-              your business.
+              At Vedant Innovision, we deliver end-to-end software and digital
+              solutions designed to streamline operations and drive business
+              efficiency. From industry-specific ERP systems to custom-built
+              platforms, we create scalable solutions tailored to your
+              requirements.
             </p>
 
             <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
-              Here’s a glimpse of our track record in helping clients showcase
-              their unique brand narratives.
+              Our expertise includes Hospital ERP, School ERP, and Learning
+              Management Systems (LMS) that simplify management, improve
+              workflows, and enhance user experience. We also design and develop
+              custom web and mobile applications built for performance,
+              usability, and growth.
+            </p>
+
+            <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
+              We develop solutions compatible across devices—kiosks, tablets,
+              desktops, and laptops—ensuring seamless accessibility and
+              consistent functionality across all platforms.
+            </p>
+
+            <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
+              With a focus on reliability, integration, and user-centric design,
+              we help businesses adopt digital solutions that are practical,
+              efficient, and built to scale.
             </p>
           </div>
         </div>

@@ -13,10 +13,11 @@ export default function BIDiscoverySection() {
             id="work-heading"
             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-600"
           >
-            How Our Brand Identity Design Company Works for You
+            Our Brand Strategy & Design Process
           </h2>
           <p className="mt-4 text-sm sm:text-base text-gray-800 leading-relaxed">
-            Our approach blends creativity with strategy.
+            We combine strategic thinking with creative execution to deliver
+            impactful and result-driven brand identities.
           </p>
         </header>
 

@@ -37,7 +37,7 @@ export default function EmployerMegaMenu() {
 
         <Link
           href={CONTACT}
-          className="mt-40 inline-block text-[var(--brand-purple)] font-medium hover:underline"
+          className="mt-50 inline-block text-[var(--brand-purple)] font-medium hover:underline"
         >
           Contact Us
         </Link>

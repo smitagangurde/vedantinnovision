@@ -14,8 +14,7 @@ export default function SMServicesSection() {
               id="services-heading"
               className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-700"
             >
-              Full-Suite Social Media Marketing Services in India That Deliver
-              Real Results
+              End-to-End Social Media Marketing Services
             </h2>
           </header>
 
@@ -48,12 +47,11 @@ export default function SMServicesSection() {
           {/* Heading */}
           <header className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-purple-700 mb-4">
-              Why We’re the Preferred Social Media Management Company in India
+              Why Choose Vedant Innovision
             </h2>
 
             <p className="text-sm text-black">
-              Vedant Innovision brings a sharp mix of creativity, consistency
-              and platform expertise to every brand we work with.
+              Vedant Innovision combines creativity with consistency and platform expertise to deliver impactful social media results.
             </p>
           </header>
 
