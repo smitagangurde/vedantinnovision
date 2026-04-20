@@ -40,7 +40,7 @@ export default function CareerPage() {
         "Comfortable working independently and closely with cross-functional teams.",
       ],
       note: "We would prefer individuals who can join immediately.",
-      email: "Jobs@VelocitaIndia.com",
+      email: "amitkumar@vedantinnovision.com",
     },
     {
       title: "Graphic Design",
@@ -65,7 +65,7 @@ export default function CareerPage() {
         "Receptive to feedback, adaptable to evolving briefs, and capable of working under tight deadlines.",
       ],
       note: "We would prefer individuals who can join immediately.",
-      email: "Jobs@VelocitaIndia.com",
+      email: "amitkumar@vedantinnovision.com",
     },
     {
       title: "Video Editing & Motion Graphics",
@@ -88,7 +88,7 @@ export default function CareerPage() {
         "Ability to handle feedback positively and improve outputs quickly.",
       ],
       note: "We would prefer individuals who can join immediately.",
-      email: "Jobs@VelocitaIndia.com",
+      email: "amitkumar@vedantinnovision.com",
     },
     {
       title: "Copywriting",
@@ -111,7 +111,7 @@ export default function CareerPage() {
         "Comfortable working across multiple formats and fast timelines.",
       ],
       note: "We would prefer individuals who can join immediately.",
-      email: "Jobs@VelocitaIndia.com",
+      email: "amitkumar@vedantinnovision.com",
     },
     {
       title: "Business Development",
@@ -134,7 +134,7 @@ export default function CareerPage() {
         "Self-driven, proactive, and target-oriented.",
       ],
       note: "We would prefer individuals who can join immediately.",
-      email: "Jobs@VelocitaIndia.com",
+      email: "amitkumar@vedantinnovision.com",
     },
   ];
 

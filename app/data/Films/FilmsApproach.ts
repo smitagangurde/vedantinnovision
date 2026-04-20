@@ -2,29 +2,29 @@ export const FilmsApproach = {
   heading: "Our Approach",
 
   description: [
-    "We craft compelling narratives that resonate, ensuring your brand stands out in a crowded marketplace. Our films are meticulously designed to reflect and enhance your brand's identity, fostering a strong and authentic connection with your target audience. By tapping into the power of emotions, we create memorable experiences that inspire action and build lasting relationships between your brand and consumers.",
-    "Partner with us to elevate your brand through films that captivate, connect, and convert.",
+    "We follow a structured and execution-focused approach to deliver high-quality visual content. From concept and storyboarding to video shoots, animation, and final delivery, every stage is aligned with your business goals.",
+    "Our capabilities include video production, animation, photo shoots, stock-based edits, and AI-generated videos—ensuring flexible and scalable solutions for different communication needs.",
   ],
 
   cards: [
     {
       title: "Corporate Videos",
-      desc: "Showcase your brand story and mission with compelling and informative videos.",
+      desc: "Professional videos to showcase your company, processes, and brand communication effectively.",
       icon: "/icons/corporate.png",
     },
     {
-      title: "Employer Brand Videos",
-      desc: "Attract top talent with engaging employer brand videos that showcase your culture.",
+      title: "Animation & LMS Content",
+      desc: "2D–3D animations and training content including induction and safety modules for better understanding and engagement.",
       icon: "/icons/employer.png",
     },
     {
-      title: "Testimonial/Advocacy Videos",
-      desc: "Let your satisfied stakeholders speak for themselves with powerful testimonial videos.",
+      title: "Testimonial & Event Videos",
+      desc: "Capturing real experiences, client stories, and events to build trust and brand credibility.",
       icon: "/icons/testimonial.png",
     },
     {
-      title: "Brand Films",
-      desc: "Build lasting relationships between your brand and consumers.",
+      title: "Branded Digital Content",
+      desc: "Creative video content for marketing, social media, and digital platforms to improve visibility and engagement.",
       icon: "/icons/brand.png",
     },
   ],

@@ -28,14 +28,21 @@ export default function EmployerBrandSocialMedia() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
-              Employer Branding Social Media Services
+              Brand Promotion & Outreach Services
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
-              As a leading employer-branding & recruitment social media agency,
-              Vedant Innovision transforms workplace culture into high-impact
-              content that attracts top talent, strengthens trust, and makes
-              candidates choose your brand before competitors.
+              At Vedant Innovision, we help businesses amplify their brand
+              presence through strategic promotion and consistent outreach. Our
+              approach focuses on building visibility, strengthening brand
+              perception, and creating meaningful engagement across digital
+              platforms.
+            </p>
+
+            <p className="text-sm sm:text-base text-black leading-relaxed">
+              We combine content, communication, and platform strategy to ensure
+              your brand reaches the right audience with clarity and
+              impact—driving awareness, trust, and long-term growth.
             </p>
           </div>
         </div>

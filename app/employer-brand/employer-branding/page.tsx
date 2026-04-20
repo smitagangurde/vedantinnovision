@@ -37,20 +37,25 @@ export default function ServicesSection() {
             {/* RIGHT SIDE */}
             <div className="max-w-xl">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-700 mb-4 leading-snug">
-                A Powerful Employer Brand
+                Corporate Branding Solutions
               </h1>
 
               <h2 className="text-base sm:text-lg md:text-xl text-yellow-500 font-medium mb-4">
-                Where Current Stars Shine and Future Talent Flocks to Join
+                Build a Strong, Consistent Corporate Identity
               </h2>
 
               <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
-                In a desert, when was the last time you witnessed a rose bloom?
-                Just as rare, finding top talent requires nurturing the right
-                environment. Our employer branding services transcend mere
-                connections; they foster a bond where talent feels not just
-                cared for, but truly valued and heard. We assist you in building
-                resonance with your employees, both current and prospective.
+                At Vedant Innovision, we help businesses create a strong
+                corporate brand that reflects their vision, values, and
+                professionalism. A well-defined corporate identity ensures
+                consistency across communication, builds credibility, and
+                strengthens your market presence.
+              </p>
+
+              <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+                We focus on aligning your brand strategy, visual identity, and
+                communication to create a cohesive and impactful corporate
+                image-both internally and externally.
               </p>
             </div>
           </div>
@@ -61,25 +66,24 @@ export default function ServicesSection() {
         <div className="max-w-7xl mx-auto text-center">
           {/* Heading */}
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug">
-            We collaborate with you to bring your Employer Brand to life -
-            inside and out - using global insights, in-depth research, and
-            creative strategies to help you stand out and succeed in the race
-            for top talent.
+            We collaborate with you to build a unified corporate brand across
+            all touchpoints—combining strategic thinking, structured design
+            systems, and consistent communication to enhance brand perception
+            and business growth.
           </h2>
 
           {/* Description */}
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-5xl mx-auto">
-            In today’s hyper-competitive talent market, where growth,
-            innovation, and culture have become overused promises, Vedant
-            Innovision India helps organizations cut through the noise with
-            employer branding that is authentic, distinctive, and deeply human.
-            We’ve partnered with organizations across India to redefine their
-            employer brands by aligning culture with the aspirations of top
-            talent. Leveraging data-driven insights and creative storytelling,
-            we craft strategies that attract, engage, and retain the best
-            people—enhancing brand perception, strengthening employer-employee
-            relationships, and helping our clients stand out in competitive
-            markets.
+            From brand positioning and visual identity to corporate
+            communication and internal branding, we ensure your organization
+            presents a clear, professional, and trusted image in the market.
+          </p>
+
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-5xl mx-auto">
+            A strong corporate brand builds trust, improves recognition, and
+            creates a consistent experience for clients, employees, and
+            stakeholders—helping your business stand out and grow with
+            confidence.
           </p>
         </div>
       </section>
@@ -88,16 +92,22 @@ export default function ServicesSection() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-semibold text-purple-700 leading-snug max-w-4xl mx-auto">
-            As a leading employer branding agency in India, we believe a strong
-            Employer Value Proposition (EVP) is more than a marketing
-            statement—it’s the foundation of a powerful employer brand.
+            Build a Strong Corporate Brand Foundation
           </h2>
 
           {/* Description */}
           <p className="text-sm md:text-base text-black mt-4 max-w-4xl mx-auto leading-relaxed">
-            We help you craft and sustain a reputation that is authentic,
-            data-driven, and designed to attract, recruit, retain, and inspire
-            the right talent.
+            At Vedant Innovision, we believe a strong brand is built on clarity,
+            consistency, and purpose. Your brand is more than just
+            communication—it reflects your organization’s values, culture, and
+            credibility in the market.
+          </p>
+
+          <p className="text-sm md:text-base text-black mt-4 max-w-4xl mx-auto leading-relaxed">
+            We help you define and strengthen your brand foundation through
+            strategic thinking, structured design, and consistent
+            communication—ensuring your business attracts the right audience,
+            builds trust, and sustains long-term growth.
           </p>
 
           {/* MASONRY GRID */}
@@ -129,15 +139,14 @@ export default function ServicesSection() {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-purple-700 font-semibold mb-4">
-            Creating High-Impact Cultures and a Robust Employer Brands
+            Building Strong Corporate Brands & Workplace Experiences
           </h2>
 
           <p className="text-black max-w-7xl mb-12 leading-relaxed">
-            We are an outcome-focused employer branding agency committed to
-            delivering measurable results rooted in data and real business
-            value. Working closely with you, we address your biggest challenges
-            across culture, employer branding, and recruitment marketing—always
-            with a forward-thinking approach.
+            At Vedant Innovision, we help organizations strengthen their
+            corporate brand by aligning culture, communication, and design. Our
+            approach focuses on creating a consistent and engaging brand
+            experience across all touchpoints—internally and externally.
           </p>
 
           {/* Grid */}

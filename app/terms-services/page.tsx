@@ -13,7 +13,7 @@ export default function Terms() {
 
           {/* Intro */}
           <p className="text-black text-sm sm:text-base leading-relaxed mb-6 max-w-3xl">
-            At Velocitta Brand Consultants, safeguarding the privacy of our
+            At Vedant Innnovision Brand Consultants, safeguarding the privacy of our
             website visitors and clients is our top priority. This Privacy
             Policy elucidates the types of personal information we collect and
             how we employ it.

@@ -27,22 +27,28 @@ export default function InternalCommunication() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
-              Corporate Communication
+              Corporate Communication Solutions
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
-              Crafting Connections: Elevate Your Corporate Communication
-              Experience. At the heart of every thriving organization lies
-              seamless and inspiring communication. Introducing our Internal
-              Communication Design service, where we transform mere information
-              into engaging stories, fostering unity, understanding, and
-              motivation throughout your team. Elevate your communication,
-              ignite your team’s spirit, and watch your organization flourish.
+              Effective communication is at the core of every successful
+              organization. At Vedant Innovision, we help businesses streamline
+              and strengthen their corporate communication—ensuring clarity,
+              consistency, and alignment across all touchpoints.
             </p>
 
             <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
-              Here’s a glimpse of our track record in helping clients showcase
-              their unique brand narratives.
+              We transform complex information into clear, engaging, and
+              structured communication that supports your brand, improves
+              internal alignment, and enhances overall organizational
+              efficiency.
+            </p>
+
+            <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
+              From internal communication systems to external brand messaging,
+              we ensure your communication reflects your values, connects with
+              your audience, and drives better understanding across teams and
+              stakeholders.
             </p>
           </div>
         </div>

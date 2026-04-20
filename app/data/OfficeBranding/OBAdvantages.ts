@@ -7,23 +7,23 @@ import {
 
 export const OBAdvantages = [
       {
-      title: "Concept and Messaging",
-      desc: "Be inspired every day with the right words and sentiments that leap off the wall every time you walk in.",
+      title: "Strategy & Brand Communication",
+      desc: "We define the right messaging and visual direction to ensure your space communicates your brand clearly and effectively.",
       icon: Lightbulb,
     },
     {
-      title: "Space Identification",
-      desc: "We analyse and understand what your space needs to say to create art that engages with your audience.",
+      title: "Space Analysis & Planning",
+      desc: "We assess your industrial or office environment to identify key branding opportunities that enhance visibility and usability.",
       icon:   Palette,
     },
     {
-      title: "Interactive Spaces",
-      desc: "Booths, opinion walls, innovation corners. When people engage with a space, they feel seen and inspired.",
+      title: "Industrial & Workplace Branding Solutions",
+      desc: "From factory branding and safety visuals to office environments and interactive spaces, we create functional and engaging brand experiences.",
       icon:   Briefcase,
     },
     {
-      title: "Printing and Execution",
-      desc: "We design, produce, print and install your artwork on time. We’ll coordinate with vendors to bring your office to life.",
+      title: "Production & On-Site Execution",
+      desc: "We manage end-to-end execution—including printing, fabrication, and installation—ensuring precision, durability, and consistency across all locations.",
       icon:  FileText,
     },
 ];

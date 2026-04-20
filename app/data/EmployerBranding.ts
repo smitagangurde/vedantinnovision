@@ -1,44 +1,38 @@
 export const EmployerBrandingGrid = [
   {
-    title: "Creating your EVP",
+    title: "Brand Strategy & Development",
     description:
-      "We can help you create, and articulate your Employer Value Propositions, that projects you as an employer of choice in the minds of prospect talent.",
+      "We define your brand foundation, positioning, and messaging to create a clear and consistent corporate identity.",
     icon: "/icons/evp.svg",
   },
   {
-    title: "Conceptualizing EVP Campaign",
+    title: "Brand Communication & Campaigns.",
     description:
-      "Creative messaging for your EVP, so it becomes intuitive for your current employees and prospect talent. Our well-rounded EVP creation process ensures your identity stands unique.",
+      "We design communication strategies and campaigns that effectively represent your brand across platforms.",
     icon: "/icons/campaign.svg",
   },
   {
     title: "Office Branding",
     description:
-      "Cubicles? Plain blank walls? No more. Your office space needs to burst with art, expression and inspiration, that reflects your vibe.",
+      "We create branded environments that reflect your corporate identity and enhance employee and visitor experience.",
     icon: "/icons/branding.svg",
   },
   {
-    title: "Campus Engagement",
+    title: "Corporate Engagement Initiatives",
     description:
-      "We take your culture to young talented minds, with the most fun, engaging, and visually-stunning campus engagement initiatives.",
+      "We develop initiatives that strengthen brand perception across teams, partners, and stakeholders.",
     icon: "/icons/campus.svg",
   },
   {
-    title: "Social Media Marketing",
+    title: "Digital & Social Media Branding",
     description:
-      "Leverage the power of social media to project your internal culture to the outside world. Attract the right talent and meet recruitment goals with our data-backed intelligence.",
+      "We extend your corporate brand across digital platforms with consistent and engaging content.",
     icon: "/icons/social.svg",
   },
   {
-    title: "Corporate Communication",
+    title: "IT Solutions & Digital Infrastructure",
     description:
-      "Connecting with your internal talent and giving them a first-hand experience of your EVP, will strengthen your reputation as a Great place to work.",
+      "We develop and implement custom software solutions including ERP systems, LMS platforms, and web/mobile applications—ensuring seamless integration, scalability, and performance across devices like kiosks, tablets, and desktops.",
     icon: "/icons/internal.svg",
-  },
-  {
-    title: "Recruitment Marketing",
-    description:
-      "‘Hiring Now’ signs aren’t enough. That’s why, we design and deliver unique recruitment marketing campaigns that keep you on top of every prospect employee.",
-    icon: "/icons/hiring.svg",
   },
 ];

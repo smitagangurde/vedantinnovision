@@ -8,17 +8,25 @@ export default function OBPortfolioSection() {
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-xl md:text-2xl font-semibold text-purple-700 mb-3">
-            Proven Excellence: Portfolio of Our Office Branding Agency
+            Proven Execution: Our Industrial Branding Work
           </h2>
         </div>
 
         {/* Description */}
         <p className="text-sm sm:text-base text-black leading-relaxed mb-8 sm:mb-12">
-          Our portfolio is a visual testament to how Vedant Innovision Brands, a
-          premier office branding agency, transforms mundane workspaces into
-          magnetic brand experiences. As a strategic workplace branding agency,
-          we deliver custom office branding that goes beyond aesthetics to
-          motivate teams and communicate your core values instantly.
+          Our portfolio reflects our expertise in transforming workplaces into
+          impactful brand environments. At Vedant Innovision, we go beyond
+          design—delivering end-to-end industrial and spatial branding solutions
+          that combine strategy, creativity, and execution across factory
+          branding, safety communication systems, signage solutions, and
+          large-scale installations.
+        </p>
+
+        <p className="text-sm sm:text-base text-black leading-relaxed mb-8 sm:mb-12">
+          From factory floors to corporate offices, we create spaces that
+          communicate your brand clearly, improve functionality, and leave a
+          lasting impression—ensuring every element is executed with precision,
+          consistency, and on-ground expertise.
         </p>
 
         {/* Grid */}

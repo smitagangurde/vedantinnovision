@@ -14,20 +14,23 @@ export default function SocialMediaServicesSection() {
             id="social-media-services-heading"
             className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-700 leading-snug mb-4"
           >
-            Full-Suite Employer Brand & Recruitment Social Media Services That
-            Build a World-Class Talent Presence
+            Full-Suite Brand Promotion & Outreach Services That Build Strong
+            Market Presence
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
-            Vedant Innovision Brand Consultants delivers comprehensive
-            employer-branding social media solutions tailored to elevate your
-            reputation as a top workplace. Our data-driven approach does more
-            than increase visibility; we shape a compelling talent narrative
-            that reflects your culture, values, and employee experience. Through
-            strategic storytelling, refined visual identity, and consistent
-            employer brand positioning, we help you attract high-quality
-            candidates with credibility, authenticity, and long-term talent
-            impact.
+            Vedant Innovision delivers comprehensive brand promotion and
+            outreach solutions designed to enhance your visibility, strengthen
+            brand perception, and drive consistent engagement across platforms.
+            Our approach goes beyond just increasing reach—we build a clear and
+            compelling brand narrative aligned with your business goals,
+            audience, and market positioning.
+          </p>
+
+          <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+            Through strategic content, consistent communication, and data-driven
+            execution, we help your brand connect with the right audience, build
+            credibility, and create long-term impact in a competitive landscape.
           </p>
         </header>
 

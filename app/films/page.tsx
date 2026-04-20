@@ -61,15 +61,20 @@ export default function Films() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
-              Films / Corporate Videos
+              Visual Stories
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
-              Engaging videos and films remain a favorite among audiences and
-              serve as a potent communication tool for brands. Whether it’s
-              corporate films, advertisements, TV commercials, social media
-              videos, or interactive content, we specialize in crafting
-              emotionally resonant and unforgettable brand narratives.
+              We create videos and animations that communicate clearly and serve
+              real business needs. Our services include corporate video
+              production, 2D–3D animation, and digital content creation designed
+              to improve engagement and brand visibility.
+            </p>
+
+            <p className="text-sm sm:text-base text-black leading-relaxed">
+              From induction videos and safety LMS animations to event videos
+              and branded content, we focus on delivering clear, engaging, and
+              functional communication.
             </p>
           </div>
         </div>

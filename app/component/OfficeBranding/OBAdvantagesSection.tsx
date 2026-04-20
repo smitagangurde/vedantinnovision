@@ -13,13 +13,15 @@ export default function BiComprehensive() {
             id="services-heading"
             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700"
           >
-            The Vedant Innovision Advantage: Your Expert Office Branding Company
+            The Vedant Innovision Advantage: Industrial & Spatial Branding
+            Solutions
           </h2>
 
           <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
-            As an established <strong>office branding company</strong>, we
-            provide a “Concept to Execution” model that eliminates the stress of
-            vendor management:
+            As an experienced industrial and spatial branding partner, we offer
+            a complete Concept-to-Execution approach—ensuring seamless
+            coordination, consistent quality, and hassle-free implementation
+            across all your branding requirements.
           </p>
         </header>
 

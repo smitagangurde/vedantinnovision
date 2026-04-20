@@ -28,16 +28,21 @@ export default function OfficeBranding() {
           {/* Content */}
           <div className="max-w-xl">
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700 leading-snug">
-              Spatial Branding Agency
+              Industrial & Spatial Branding Solutions
             </h1>
 
             <p className="text-sm sm:text-base text-black leading-relaxed">
-              At Vedant Innovision Brands, we believe your workspace should be
-              more than just a place to work; it should be a powerful physical
-              manifestation of your brand’s soul. As a leading office branding
-              agency, we specialize in turning corporate environments into
-              inspiring, high-performance hubs through strategic design and
-              storytelling.
+              At Vedant Innovision, we transform physical spaces into powerful
+              brand environments that enhance visibility, communication, and
+              experience. From industrial facilities to corporate offices, we
+              design and execute branding solutions that bring consistency,
+              clarity, and impact to your workspace.
+            </p>
+            <p className="text-sm sm:text-base text-black leading-relaxed">
+              We combine strategic thinking with on-ground execution to ensure
+              your brand is reflected across every physical touchpoint—creating
+              spaces that are not just functional, but also engaging and aligned
+              with your identity.
             </p>
           </div>
         </div>
@@ -47,17 +52,26 @@ export default function OfficeBranding() {
         <div className="max-w-7xl mx-auto text-center">
           {/* Heading */}
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug">
-            Why Choose a Specialized Workplace Branding Agency?
+            Why Choose Industrial Branding Solutions?
           </h2>
 
           {/* Description */}
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-5xl mx-auto">
-            In today’s competitive landscape, your office is your most
-            significant touchpoint for both employees and clients. Choosing a
-            dedicated <strong> workplace branding agency </strong> ensures that
-            every square inch of your office reinforces your company values,
-            boosts employee morale, and leaves a lasting impression on every
-            visitor.
+            In today’s competitive environment, your workspace is more than just
+            a functional area—it is a direct reflection of your brand. From
+            offices to industrial facilities, every physical touchpoint plays a
+            key role in shaping perception, improving communication, and
+            enhancing employee experience. With the right approach to factory &
+            industrial branding, signage & wayfinding systems, and safety &
+            compliance visuals, your space becomes a powerful communication
+            tool.
+          </p>
+
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-5xl mx-auto">
+            A well-executed branding strategy ensures consistency, strengthens
+            brand recall, and creates a more engaging and productive environment
+            for both employees and visitors—supported by seamless on-site
+            execution and installation across all touchpoints.
           </p>
         </div>
       </section>
