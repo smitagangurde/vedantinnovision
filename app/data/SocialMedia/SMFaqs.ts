@@ -1,39 +1,47 @@
 export const SMFaqs = [
   {
-    question:
-      "What is an annual report and why is it important for my business?",
+    question: "What does your company offer?",
     answer:
-      "An annual report is a comprehensive document that provides insights into a company’s financial performance, operations, and achievements over the past year. It is crucial for building transparency, trust, and credibility with stakeholders, including investors, clients, and regulatory bodies.",
+      "We provide branding, website development, and digital marketing services to help businesses grow online.",
   },
   {
-    question: "What is the difference between a logo and brand identity?",
+    question: "What is included in your branding services?",
     answer:
-      "A logo is a visual symbol, while brand identity includes colors, typography, tone, and overall perception of your brand.",
+      "We create complete brand identities including logo, colors, typography, and brand guidelines.",
   },
   {
-    question:
-      "What is an annual report and why is it important for my business?",
+    question: "Do you develop websites?",
     answer:
-      "An annual report is a comprehensive document that provides insights into a company’s financial performance, operations, and achievements over the past year. It is crucial for building transparency, trust, and credibility with stakeholders, including investors, clients, and regulatory bodies.",
+      "Yes, we build responsive, scalable, and user-friendly websites tailored to your business needs.",
   },
   {
-    question: "What is the difference between a logo and brand identity?",
+    question: "What digital marketing solutions do you provide?",
     answer:
-      "A logo is a visual symbol, while brand identity includes colors, typography, tone, and overall perception of your brand.",
+      "Our services include SEO, social media marketing, paid ads, and performance tracking.",
   },
   {
-    question: "How long does the branding process take?",
+    question: "How long does a project usually take?",
     answer:
-      "Typically, a branding project takes 3–6 weeks depending on scope and revisions.",
+      "Most projects are completed within 3–6 weeks depending on scope and requirements.",
   },
   {
-    question: "Will I own the copyrights to the designs?",
+    question: "Will I get ownership of the final deliverables?",
     answer:
-      "Yes. Upon completion and final payment, you receive full ownership and copyrights of all approved final designs.",
+      "Yes, full ownership of all approved designs and assets is transferred after final payment.",
   },
   {
-    question: "Do you offer rebranding services for established companies?",
+    question: "Do you support rebranding projects?",
     answer:
-      "Absolutely. We specialize in “Brand Evolution,” helping established companies modernize their look while preserving the equity they’ve built over the years.",
+      "Yes, we help businesses refresh their brand while maintaining their existing identity and value.",
+  },
+  {
+    question: "Do you provide ongoing support?",
+    answer:
+      "Yes, we offer continuous support, maintenance, and performance optimization.",
+  },
+  {
+    question: "How can I get started?",
+    answer:
+      "You can contact us through our website to schedule a consultation and discuss your requirements.",
   },
 ];

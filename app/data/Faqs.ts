@@ -1,22 +1,22 @@
 export const Faqs = [
   {
-    question: "What is the difference between a logo and brand identity ?",
+    question: "What distinguishes a logo from a brand identity?",
     answer:
-      "A logo is a visual symbol, while brand identity includes colors, typography, tone, and overall perception of your brand.",
+      "A logo is a visual mark, while brand identity includes colors, typography, and overall brand perception.",
   },
   {
-    question: "How long does the branding process take?",
+    question: "How much time does a branding project usually require?",
     answer:
-      "Typically, a branding project takes 3–6 weeks depending on scope and revisions.",
+      "Typically, 3–6 weeks depending on scope and revisions.",
   },
   {
-    question: "Will I own the copyrights to the designs?",
+    question: "Will I have full rights to the final designs?",
     answer:
-      "Yes. Upon completion and final payment, you receive full ownership and copyrights of all approved final designs.",
+      "Yes, full ownership is transferred after final payment.",
   },
   {
-    question: "Do you offer rebranding services for established companies?",
+    question: "Do you handle rebranding for existing businesses?",
     answer:
-      "Absolutely. We specialize in “Brand Evolution,” helping established companies modernize their look while preserving the equity they’ve built over the years.",
+      "Yes, we help modernize brands while retaining their existing value."
   },
 ];

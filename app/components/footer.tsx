@@ -12,7 +12,6 @@ import {
   CONTACT,
   EMPLOYERBRANDING,
   FILMS,
-  NEWS,
   PRIVACYPOLICY,
   TERMS,
 } from "../const/routes.const";
@@ -22,15 +21,13 @@ import {
   Briefcase,
   Phone,
   InfoIcon,
-  Newspaper,
   Instagram,
   Linkedin,
   Megaphone,
   Film,
   Building2,
-  Building,
+  Facebook,
 } from "lucide-react";
-import BrandConsulting from "../brand-consulting/page";
 
 export default function Footer() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
@@ -94,7 +91,7 @@ export default function Footer() {
                 Blog
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href={NEWS}
                 className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
@@ -102,7 +99,7 @@ export default function Footer() {
                 <Newspaper size={16} />
                 News & Awards
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href={CAREER}
@@ -134,7 +131,7 @@ export default function Footer() {
                 className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Megaphone size={16} />
-                Brand Communication
+                Brand Identity
               </Link>
             </li>
             <li>
@@ -143,7 +140,7 @@ export default function Footer() {
                 className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Building2 size={16} />
-                Organizational Brand
+                Organizational Branding
               </Link>
             </li>
             <li>
@@ -152,7 +149,7 @@ export default function Footer() {
                 className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
                 <Film size={16} />
-                Films
+                Visual Stories
               </Link>
             </li>
           </ul>
@@ -164,7 +161,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/vedant-innovision-912ba2324?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
                 className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
@@ -174,7 +171,17 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="https://instagram.com"
+                href="https://www.facebook.com/share/1aVpvAeBT7/"
+                target="_blank"
+                className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
+              >
+                <Facebook size={16} />
+                Facebook
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.instagram.com/vedant_innovision?igsh=bTNod3ZmcHJoZng4"
                 target="_blank"
                 className="hover:text-yellow-500 flex items-center gap-2 text-black transition"
               >
