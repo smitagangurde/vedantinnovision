@@ -10,51 +10,51 @@ import { useState, useEffect } from "react";
 const cultureData = [
   {
     id: 1,
-    title: "Ethics above everything",
+    title: "Do it right. Every time.",
     description:
-      "We’re honest in what we do and integrity matters to us. Always.",
+      "We operate with clarity, honesty, and accountability across every stage — from concept to execution. Our focus is on building trust through consistent and responsible delivery.",
     image: "/7.png",
-    tab: "Ethical",
+    tab: "Integrity First",
   },
   {
     id: 2,
-    title: "We are people people",
+    title: "Built on clarity and connection.",
     description:
-      "Work happens faster when done in teams. We like being around people, even the ones that like to annoy us.",
+      "We keep communication simple and direct. By working closely with our clients, we ensure alignment, faster decisions, and smoother execution across every project.",
     image: "/2.png",
-    tab: "Approachable",
+    tab: "Open Collaboration",
   },
   {
     id: 3,
-    title: "We own it, never own up",
+    title: "We own the outcome.",
     description:
-      "No job is too small or too big. If we’re asked to get something done, we own it and do it.",
+      "From strategy to final delivery, we take complete responsibility. Every detail matters, and we ensure the final result meets both creative and business expectations.",
     image: "/3.png",
-    tab: "Ownership",
+    tab: "Full Accountability",
   },
   {
     id: 4,
-    title: "Our superpower is staying hungry, staying foolish",
+    title: "Energy that reflects in every output.",
     description:
-      "We love pizzas and burgers and compliments. We love our work too. Sometimes. No—Always.",
+      "We approach every project with intent and focus — combining creativity, design, and technology to deliver work that is both impactful and meaningful.",
     image: "/4.png",
-    tab: "Passion",
+    tab: "Purpose-Driven Work",
   },
   {
     id: 5,
-    title: "We are always finding I’s to dot or T’s to cross.",
+    title: "Fast where it matters. Precise where it counts.",
     description:
-      "Too much to do and too little time, but we always find a way.",
+      "We balance speed with quality, ensuring timelines are met without cutting corners. Efficient workflows allow us to deliver consistently and reliably.",
     image: "/5.png",
-    tab: "Urgency",
+    tab: "Execution Speed",
   },
   {
     id: 6,
-    title: "Better today, than yesterday",
+    title: "Progress is part of the process.",
     description:
-      "There’s always a new and better way to do it, say it, design it. At least that’s what we like to think.",
+      "We adapt, improve, and refine with every project. By staying updated with design trends, technology, and industry shifts, we ensure our work remains relevant and effective.",
     image: "/6.png",
-    tab: "Growth",
+    tab: "Continuous Evolution",
   },
 ];
 
@@ -97,7 +97,8 @@ export default function AboutPage() {
             </h1>
 
             <h2 className="mt-3 text-black text-lg sm:text-xl md:text-2xl italic">
-              We collaborate with brands to influence what comes next.
+              End-to-end branding, design, and technology solutions built to
+              perform.
             </h2>
           </div>
 
@@ -112,40 +113,38 @@ export default function AboutPage() {
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
             <div className="space-y-6 max-w-xl">
               <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
-                In each project we embark upon, our mission is twofold: to
-                inspire and to be inspired. As seasoned experts in branding,
-                marketing communication, and employer branding, we take immense
-                pride in our 16 year legacy of serving our valued clients. Our
-                unique approach combines the resources of a larger agency with
-                the nimbleness of a startup, empowering businesses to spotlight
-                their core values and convey the significance of their work
-                through the captivating art of storytelling.
+                Vedant Innovision is a full-spectrum creative and technology
+                agency delivering integrated solutions across branding, design,
+                animation, print, production, hardware, and software. We partner
+                with businesses to transform ideas into tangible experiences —
+                from identity creation and visual storytelling to robust digital
+                and physical implementations.
               </p>
 
               <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
-                Yet, our commitment extends beyond delivering exceptional
-                results for our clients. We are equally dedicated to cultivating
-                a thriving, supportive, and inclusive work environment for our
-                team.
+                Our strength lies in connecting creativity with execution.
+                Whether it’s building a brand from the ground up, producing
+                high-impact visuals, or developing scalable tech solutions, we
+                ensure every output is aligned with business objectives and
+                built for long-term value.
               </p>
             </div>
 
             <div className="space-y-6 max-w-xl">
               <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
-                We firmly believe that the happiness and motivation of our
-                employees are fundamental to our success, and their unwavering
-                passion and dedication shine through in every endeavor.
+                We operate at the intersection of design, engineering, and
+                innovation. Our team brings together strategists, designers,
+                developers, and production experts to deliver solutions that are
+                not only visually compelling but also technically sound and
+                execution-ready.
               </p>
 
               <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
-                Within Vedant Innovision India, we’ve cultivated a culture that
-                not only places high value on our clients’ objectives but also
-                recognizes the profound importance of nurturing our internal
-                talent. We are more than just an advertising agency; we are a
-                close-knit community of creative minds driven by a collective
-                passion for excellence and a profound appreciation for those who
-                contribute to our shared success – both our cherished clients
-                and our exceptional team.
+                From concept to completion, Vedant Innovision functions as a
+                single-point partner — simplifying processes, maintaining
+                consistency, and ensuring quality across every touchpoint. We
+                focus on creating solutions that are practical, scalable, and
+                built to adapt as your business evolves.
               </p>
             </div>
           </div>

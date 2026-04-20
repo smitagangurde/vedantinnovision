@@ -19,119 +19,69 @@ type JobType = {
 export default function CareerPage() {
   const jobDetails: JobType[] = [
     {
-      title: "Client Engagement",
+      title: "Business Development Executive",
       location: "Pune",
       about:
-        "For over 4+ yearss, we have helped organizations define who they truly are and bring that identity to life from the inside out. We are a leading employer branding and communications agency, partnering with ambitious companies to shape authentic employer brands, align leadership narratives, and build engaged, high-performing cultures. From employer value propositions to change and leadership communications, we turn strategy into stories that people understand, believe, and act on. When people connect to a shared purpose, performance follows. We are strategy-led. Story-obsessed. Impact-focused. Join us to help build cultures that shape how people feel, how they show up, and how organizations are perceived by the people who power them.",
+        "We’re looking for someone who can drive business growth by identifying opportunities, building relationships, and converting conversations into long-term partnerships. This role sits at the intersection of strategy, communication, and execution.",
       responsibilities: [
-        "Build and maintain strong client relationships across ongoing branding and communication projects.",
-        "Understand client goals, gather briefs, and translate requirements into actionable creative and strategic plans.",
-        "Coordinate with internal teams to ensure timely and high-quality project delivery.",
-        "Manage project timelines, feedback loops, and approvals with clarity and professionalism.",
-        "Identify opportunities to grow existing accounts and add more value to client engagements.",
-        "Ensure all deliverables align with the brand, business objectives, and quality standards.",
+        "Identify and generate new business opportunities across branding, design, and technology services.",
+        "Build and manage client relationships from first interaction to closure.",
+        "Understand client requirements and align them with our service offerings.",
+        "Prepare proposals, presentations, and pitch decks.",
+        "Collaborate with internal teams to ensure smooth project onboarding.",
+        "Track leads, follow-ups, and conversions consistently.",
       ],
       perfectFor: [
-        "2–5+ years of experience in client servicing, account management, or brand communications.",
-        "Excellent written and verbal communication skills.",
-        "Strong coordination and multitasking ability across multiple projects.",
-        "Confidence in handling client conversations, feedback, and presentations.",
-        "Agency experience is preferred.",
-        "Comfortable working independently and closely with cross-functional teams.",
+        "1–3 years of experience in sales, marketing, or business development",
+        "Strong communication and negotiation skills.",
+        "Understanding of digital, branding, or IT services is a plus.",
+        "Self-driven, proactive, and target-oriented",
+        "Comfortable with client interactions and presentations.",
       ],
       note: "We would prefer individuals who can join immediately.",
       email: "amitkumar@vedantinnovision.com",
     },
     {
-      title: "Graphic Design",
+      title: "Animation & Video Production  ",
       location: "Pune",
       about:
-        "For over 4+ yearss, we have helped organizations define who they truly are and bring that identity to life from the inside out. We are a leading employer branding and communications agency, partnering with ambitious companies to shape authentic employer brands, align leadership narratives, and build engaged, high-performing cultures. From employer value propositions to change and leadership communications, we turn strategy into stories that people understand, believe, and act on. When people connect to a shared purpose, performance follows. We are strategy-led. Story-obsessed. Impact-focused. Join us to help build cultures that shape how people feel, how they show up, and how organizations are perceived by the people who power them.",
+        "We’re looking for a creative professional who can bring ideas to life through motion. From concept to final output, you’ll work on animations, video edits, and visual storytelling across multiple formats.",
       responsibilities: [
-        "Team up with client engagement leads, copywriters, and designers to spark bold ideas for campaigns and employer branding initiatives. You will not just execute visuals, you will help shape the thinking behind them.",
-        "Bring brands to life across print and digital. From high-impact marketing campaigns to internal communications, leadership decks, and employee engagement content, you will design work that people actually want to look at and engage with.",
-        "Turn complex, layered ideas into visual stories that feel simple, sharp, and powerful.",
-        "Dive into market, competitor, and audience research to strengthen your creative decisions. The more you understand the landscape, the stronger your design instinct becomes.",
-        "Own your timelines like a pro. Deliver great work on schedule without compromising on craft or concept.",
-        "Spot creative roadblocks before they become problems. Suggest smart, practical solutions that keep projects moving and standards high.",
-      ],
+        "Create 2D/3D animations and high-quality video content.",
+        "Edit videos for social media, presentations, and brand campaigns.",
+        "Work closely with the design and content teams to execute concepts.",
+        "Add motion graphics, transitions, and effects to enhance storytelling.",
+        "Manage timelines and deliver projects with consistency.",
+     ],
       perfectFor: [
-        "3–5+ years of experience in graphic design, preferably within an agency environment.",
-        "Strong portfolio showcasing a range of work across print and digital, including campaigns, editorial design, brand systems, and communication-led projects.",
-        "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign, etc.).",
-        "Exceptional eye for detail, typography, layout, and visual hierarchy, with the ability to maintain brand consistency across formats.",
-        "Strong conceptual thinking skills with the ability to turn ideas into sharp, purposeful design.",
-        "Comfortable working independently while collaborating closely within cross-functional teams.",
-        "Receptive to feedback, adaptable to evolving briefs, and capable of working under tight deadlines.",
+        "1–3 years of experience in animation and video production",
+        "Proficiency in tools like After Effects, Premiere Pro, Blender/Cinema 4D (or similar).",
+        "Strong sense of timing, motion, and visual storytelling.",
+        "Ability to handle multiple projects and meet deadlines",
+        "Attention to detail and creative problem-solving mindset.",
       ],
       note: "We would prefer individuals who can join immediately.",
       email: "amitkumar@vedantinnovision.com",
     },
     {
-      title: "Video Editing & Motion Graphics",
+      title: "Senior Graphic Designer",
       location: "Pune",
       about:
-        "We create content that informs, inspires, and engages. As part of our creative team, you will work on motion graphics, corporate films, social media videos, employer branding campaigns, and internal communication assets for leading brands.",
+        "We’re looking for a designer who can think beyond visuals and contribute to building strong, consistent brand identities. You’ll be involved in everything from concept development to final execution across digital and print.",
       responsibilities: [
-        "Edit videos for digital campaigns, social media, internal communication, and brand storytelling.",
-        "Create motion graphics that elevate visual narratives and communicate ideas clearly.",
-        "Work with designers, copywriters, and client teams to develop compelling video outputs.",
-        "Manage raw footage, assets, transitions, audio, and final export quality.",
-        "Ensure all video content aligns with brand tone and communication objectives.",
-        "Handle multiple projects while meeting quality and delivery timelines.",
+        "Develop branding, visual identities, and design systems.",
+        "Create creatives for digital platforms, campaigns, and print materials.",
+        "Translate ideas into clear, impactful visual communication.",
+        "Maintain consistency across all brand touchpoints.",
+        "Collaborate with animation, content, and tech teams.",
+        "Guide junior designers and ensure quality output.",
       ],
       perfectFor: [
-        "2–5+ years of experience in video editing and motion graphics.",
-        "Good command of Premiere Pro, After Effects, and related tools.",
-        "Strong storytelling sense, pacing, and visual composition.",
-        "Experience in agency or brand communication work is preferred.",
-        "Ability to handle feedback positively and improve outputs quickly.",
-      ],
-      note: "We would prefer individuals who can join immediately.",
-      email: "amitkumar@vedantinnovision.com",
-    },
-    {
-      title: "Copywriting",
-      location: "Pune",
-      about:
-        "Words shape how brands are understood and remembered. We are looking for a copywriter who can turn strategy into compelling narratives across employer branding, internal communication, leadership messaging, campaigns, and digital content.",
-      responsibilities: [
-        "Write clear, engaging, and brand-aligned copy across digital and print formats.",
-        "Translate briefs into concepts, headlines, campaign lines, scripts, and communication content.",
-        "Work closely with strategy, design, and client servicing teams.",
-        "Adapt tone and messaging for different audiences and communication goals.",
-        "Contribute to concept development and creative brainstorming.",
-        "Review and refine content for clarity, grammar, and impact.",
-      ],
-      perfectFor: [
-        "2–5+ years of experience in copywriting, preferably in an agency setup.",
-        "Excellent command of English and strong storytelling ability.",
-        "Experience writing for campaigns, internal communication, branding, or digital content.",
-        "Ability to think conceptually and write with purpose.",
-        "Comfortable working across multiple formats and fast timelines.",
-      ],
-      note: "We would prefer individuals who can join immediately.",
-      email: "amitkumar@vedantinnovision.com",
-    },
-    {
-      title: "Business Development",
-      location: "Pune",
-      about:
-        "We partner with ambitious organizations to shape authentic brands and build engaged cultures. We are looking for a business development professional who can identify opportunities, build relationships, and contribute to growth.",
-      responsibilities: [
-        "Identify potential clients and new business opportunities.",
-        "Build and nurture relationships with prospects and decision-makers.",
-        "Support pitch development, proposals, and presentations.",
-        "Coordinate with internal teams to align solutions with client needs.",
-        "Track leads, follow-ups, and conversion progress.",
-        "Represent the company professionally in meetings and discussions.",
-      ],
-      perfectFor: [
-        "2–5+ years of experience in business development, sales, or client acquisition.",
-        "Strong communication and relationship-building skills.",
-        "Experience in agency, branding, communication, or consulting environments is a plus.",
-        "Confident in presentations and negotiation conversations.",
-        "Self-driven, proactive, and target-oriented.",
+        "2–4 years of experience in graphic design.",
+        "Strong portfolio showcasing branding, digital, and print work.",
+        "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign).",
+        "Good understanding of layout, typography, and color.",
+        "Ability to handle projects independently with attention to detail.",
       ],
       note: "We would prefer individuals who can join immediately.",
       email: "amitkumar@vedantinnovision.com",
@@ -181,11 +131,12 @@ export default function CareerPage() {
           {/* HERO */}
           <div className="space-y-6 max-w-3xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-purple-700 italic">
-              Calling all creative minds!
+              Join the Minds That Build What’s Next
             </h1>
 
             <p className="text-gray-700 text-base sm:text-lg md:text-xl">
-              We’re always open to new ideas, new people & new experiences.
+              We’re always looking for people who think, create, and execute
+              beyond the obvious.
             </p>
 
             {/* BANNER */}
@@ -207,16 +158,23 @@ export default function CareerPage() {
             </h2>
 
             <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
-              Having a place where you are valued, nurtured and given the
-              freedom to stretch your creative boundaries is important. Velocita
-              strives to be that place for you!
+              At Vedant Innovision, you don’t just work on projects — you build
+              ideas into real-world outcomes. From branding and design to
+              technology, production, and execution, every project here is
+              hands-on, fast-moving, and meaningful.
             </p>
 
             <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
-              We welcome people who have a flair for creativity, a passion for
-              excellence and who can take projects to a whole new level. At
-              Velocita, we create a warm, nurturing environment where everyone
-              can grow their careers on their own terms.
+              We value people who take ownership, think independently, and bring
+              clarity to complexity. You’ll have the space to experiment, the
+              support to grow, and the responsibility to deliver work that makes
+              an impact.
+            </p>
+
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+              Our environment is collaborative, practical, and driven by
+              progress — where learning happens through doing, and growth comes
+              from pushing boundaries every day.
             </p>
           </div>
 
@@ -280,35 +238,40 @@ export default function CareerPage() {
             {/* LEFT */}
             <div className="max-w-xl space-y-5">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-700">
-                We’re learning every day
+                We learn. We evolve. We improve.
               </h2>
 
               <p className="text-black/70 text-sm sm:text-base md:text-lg leading-relaxed">
-                In the creative world, there’s always something new to learn,
-                explore and experience
-                <span className="italic"> (Thanks, Social Media!)</span>. Here
-                at Velocita, we believe in never growing up. We plan to remain
-                forever hungry for knowledge, full of wide-eyed curiosity
-                <span className="italic"> (giggles)</span> and imagination that
-                can never be put to rest. So we always encourage everyone to
-                lend each other a hand, but more importantly, give each other
-                the nudge to bring newer and crazier ideas into the meeting
-                rooms.
+                In the creative world, there’s always something new to learn, In
+                a fast-moving creative and technology space, staying static
+                isn’t an option. At Vedant Innovision, we continuously explore
+                new tools, ideas, and approaches — across design, animation, and
+                technology.
+              </p>
+
+              <p className="text-black/70 text-sm sm:text-base md:text-lg leading-relaxed">
+                We encourage curiosity, experimentation, and shared learning.
+                Every project is an opportunity to refine our thinking, upgrade
+                our skills, and deliver work that’s better than the last.
               </p>
             </div>
 
             {/* RIGHT */}
             <div className="max-w-xl space-y-5">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold italic text-purple-700">
-                We’re all for complete inclusivity
+                Built on openness and equal opportunity
               </h2>
 
               <p className="text-black/70 text-sm sm:text-base md:text-lg leading-relaxed">
-                Ideas can come from anywhere if you keep your hearts and minds
-                open to them. This is why we keep our doors ajar for people from
-                all walks of life. If your skills and abilities fit the job, we
-                make sure the rest just falls into place. At the end of the day,
-                creating impactful work for our clients is where our focus lies.
+                Great ideas don’t come from one background or one way of
+                thinking. We value diverse perspectives and create an
+                environment where everyone has the space to contribute.
+              </p>
+
+              <p className="text-black/70 text-sm sm:text-base md:text-lg leading-relaxed">
+                What matters here is your mindset, your skill, and your ability
+                to execute. We focus on creating impactful work — together, as a
+                team that respects, supports, and grows with each other.
               </p>
             </div>
           </div>
@@ -364,7 +327,7 @@ export default function CareerPage() {
 
                   <section>
                     <h4 className="font-semibold text-purple-400 mb-2">
-                      About Us
+                      About the Role
                     </h4>
                     <p className="text-sm sm:text-base leading-relaxed">
                       {selectedJob.about}
