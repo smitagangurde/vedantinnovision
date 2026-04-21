@@ -18,19 +18,37 @@ export default function ARFaqsSection() {
   return (
     <section
       aria-labelledby="faq-heading"
-      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white border-t border-gray-200 py-16 px-4 sm:px-6 md:px-10"
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+        borderTop: "1px solid var(--color-border-image)",
+      }}
+      className="w-full lg:px-16"
     >
-      <div className="max-w-7xl mx-auto">
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* Heading */}
         <h2
           id="faq-heading"
-          className="text-2xl md:text-3xl font-semibold text-purple-400 mb-10"
+          style={{
+            fontSize: "var(--text-heading-xl)",
+            fontWeight: "var(--font-weight-heading)",
+            color: "var(--color-brand-primary)",
+          }}
+          className="mb-10"
         >
-          FAQ’s
+          FAQ's
         </h2>
 
         {/* FAQ List */}
-        <div className="divide-y divide-black/10">
+        <div
+          style={{ borderColor: "var(--color-border-image)" }}
+          className="divide-y divide-black/10"
+        >
           {(ARFaqs as FAQ[]).map((faq, index: number) => {
             const isOpen = openIndex === index;
 
@@ -43,13 +61,20 @@ export default function ARFaqsSection() {
                   aria-controls={`faq-content-${index}`}
                   className="w-full flex items-center justify-between text-left"
                 >
-                  <h3 className="text-black text-base md:text-lg font-medium">
+                  <h3
+                    style={{
+                      color: "var(--color-text-body)",
+                      fontSize: "var(--text-body-base)",
+                      fontWeight: "var(--font-weight-heading)",
+                    }}
+                  >
                     {faq.question}
                   </h3>
 
                   {/* Icon */}
                   <span
-                    className={`ml-4 text-purple-400 text-xl transition-transform duration-300 ${
+                    style={{ color: "var(--color-brand-primary)" }}
+                    className={`ml-4 text-xl transition-transform duration-300 ${
                       isOpen ? "rotate-45" : ""
                     }`}
                   >
@@ -64,7 +89,13 @@ export default function ARFaqsSection() {
                     isOpen ? "max-h-40 mt-3" : "max-h-0"
                   }`}
                 >
-                  <p className="text-black text-sm md:text-base pr-6">
+                  <p
+                    style={{
+                      color: "var(--color-text-body)",
+                      fontSize: "var(--text-body-sm)",
+                    }}
+                    className="pr-6"
+                  >
                     {faq.answer}
                   </p>
                 </div>

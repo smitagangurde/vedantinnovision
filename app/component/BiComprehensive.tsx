@@ -3,19 +3,41 @@ import { BIComprehensive } from "../data/BIComprehensive";
 export default function BiComprehensive() {
   return (
     <section
-      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16"
       aria-labelledby="services-heading"
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+      }}
+      className="w-full lg:px-16"
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* Heading */}
-        <header className="max-w-5xl mb-12">
+        <header
+          style={{ maxWidth: "var(--hero-heading-max-width)" }}
+          className="mb-12"
+        >
           <h2
             id="services-heading"
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-600"
+            style={{
+              fontSize: "var(--text-heading-xl)",
+              fontWeight: "var(--font-weight-heading)",
+              color: "var(--color-brand-primary)",
+            }}
           >
             Complete Brand Strategy & Design Solutions Under One Roof
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-gray-800 leading-relaxed">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-base)",
+            }}
+            className="mt-4 leading-relaxed"
+          >
             We offer end-to-end branding and design solutions—from strategy to
             execution—ensuring every touchpoint, digital or physical, is
             consistent, impactful, and aligned with your brand identity.
@@ -29,15 +51,32 @@ export default function BiComprehensive() {
             return (
               <article
                 key={index}
-                className="border border-gray-300 rounded-xl p-6 hover:border-purple-600 transition duration-300 group"
+                style={{ borderColor: "var(--color-border-image)" }}
+                className="service-card border rounded-xl p-6 transition duration-300 group"
               >
-                <Icon className="w-8 h-8 text-purple-600 mb-4" />
+                <Icon
+                  className="w-8 h-8 mb-4"
+                  style={{ color: "var(--color-brand-primary)" }}
+                />
 
-                <h3 className="text-lg font-semibold text-purple-600 mb-2">
+                <h3
+                  style={{
+                    fontSize: "var(--text-heading-md)",
+                    fontWeight: "var(--font-weight-heading)",
+                    color: "var(--color-brand-primary)",
+                  }}
+                  className="mb-2"
+                >
                   {service.title}
                 </h3>
 
-                <p className="text-gray-800 text-sm leading-relaxed">
+                <p
+                  style={{
+                    color: "var(--color-text-body)",
+                    fontSize: "var(--text-body-sm)",
+                  }}
+                  className="leading-relaxed"
+                >
                   {service.desc}
                 </p>
               </article>

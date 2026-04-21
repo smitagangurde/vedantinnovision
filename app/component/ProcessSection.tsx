@@ -3,14 +3,29 @@ import { processSteps } from "../data/Process";
 export default function ProcessSection() {
   return (
     <section
-      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-6 sm:px-8 lg:px-16 border-t border-gray-300"
       aria-labelledby="process-heading"
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+        borderTop: "1px solid var(--color-border-image)",
+      }}
+      className="w-full lg:px-16"
     >
-      <div className="max-w-7xl mx-auto">
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* Heading */}
         <h2
           id="process-heading"
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-600 text-center mb-12"
+          style={{
+            fontSize: "var(--text-heading-xl)",
+            fontWeight: "var(--font-weight-heading)",
+            color: "var(--color-brand-primary)",
+          }}
+          className="text-center mb-12"
         >
           Our Brand Strategy & Execution Process
         </h2>
@@ -20,18 +35,37 @@ export default function ProcessSection() {
           {processSteps.map((step) => (
             <article
               key={step.id}
-              className="group rounded-xl border border-purple-600 bg-white p-6 sm:p-8 text-center hover:scale-[1.03] transition duration-300"
+              style={{ borderColor: "var(--color-brand-primary)" }}
+              className="service-card group rounded-xl border bg-white p-6 sm:p-8 text-center hover:scale-[1.03] transition duration-300"
             >
               {/* Icon */}
-              <div className="text-3xl mb-4 text-purple-600">{step.icon}</div>
+              <div
+                style={{ color: "var(--color-brand-primary)" }}
+                className="text-3xl mb-4"
+              >
+                {step.icon}
+              </div>
 
               {/* Title */}
-              <h3 className="text-base sm:text-lg font-semibold text-purple-600 mb-3 leading-snug">
+              <h3
+                style={{
+                  fontSize: "var(--text-heading-md)",
+                  fontWeight: "var(--font-weight-heading)",
+                  color: "var(--color-brand-primary)",
+                }}
+                className="mb-3 leading-snug"
+              >
                 {step.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
+              <p
+                style={{
+                  color: "var(--color-text-body)",
+                  fontSize: "var(--text-body-sm)",
+                }}
+                className="leading-relaxed"
+              >
                 {step.description}
               </p>
             </article>

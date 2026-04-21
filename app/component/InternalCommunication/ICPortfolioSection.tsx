@@ -4,15 +4,25 @@ import { ICPortfolio } from "@/app/data/InternalCommunication/ICPortfolio";
 export default function ICPortfolioSection() {
   return (
     <section
-      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-12 pb-6 md:pt-14 md:pb-8"
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+      }}
+      className="w-full lg:px-16"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {ICPortfolio.map((item, index) => (
             <article
               key={index}
-              className="relative group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+              style={{ borderColor: "var(--color-border-image)" }}
+              className="portfolio-card relative group overflow-hidden rounded-lg border bg-white shadow-sm"
             >
               {/* Image */}
               <div className="relative w-full h-64">
@@ -29,7 +39,10 @@ export default function ICPortfolioSection() {
 
               {/* Bottom Label */}
               <div className="absolute bottom-0 left-0 w-full px-4 py-3">
-                <p className="text-white text-sm md:text-base font-medium">
+                <p
+                  style={{ fontSize: "var(--text-body-sm)" }}
+                  className="text-white font-medium"
+                >
                   {item.title}
                 </p>
               </div>

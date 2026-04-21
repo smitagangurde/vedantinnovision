@@ -1,38 +1,195 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand Colors */
-  --brand-purple: #a855f7;
-  --brand-purple-light: #c084fc;
-  --brand-yellow: #facc15;
-  --brand-orange: #f97316;
+  /* ─── Brand / Primary ───────────────────────────────────────── */
+  --color-brand-primary: #4C1D95;
+  --color-brand-primary-hover: #6b21a8;
 
-  /* Background gradients */
-  --bg-gradient-header: linear-gradient(to bottom, #d1d5db, #f3f4f6, #ffffff);
-  --bg-gradient-hero: linear-gradient(to bottom, #d1d5db, #f3f4f6, #ffffff);
-  --bg-gradient-footer: linear-gradient(to bottom, #d1d5db, #f3f4f6, #ffffff);
-  --bg-gradient-button: linear-gradient(to right, var(--brand-yellow), var(--brand-orange));
-  --bg-gradient-contact-vertical: linear-gradient(to bottom, var(--brand-yellow), var(--brand-orange));
+  /* ─── CTA Button Gradient ───────────────────────────────────── */
+  --color-cta-from: #facc15;
+  --color-cta-to: #f97316;
+  --color-cta-text: #000000;
 
-  /* Text colors */
-  --text-black: #000000;
-  --text-black-light: #1f1f1f;
-  --text-white: #ffffff;
-  --text-purple: var(--brand-purple);
-  --text-purple-light: var(--brand-purple-light);
-  --text-yellow: var(--brand-yellow);
+  /* ─── Body / Text ───────────────────────────────────────────── */
+  --color-text-body: #000000;
+  --color-text-muted: #000000;
 
-  /* Footer link color */
-  --footer-link: #000000;
-  --footer-link-hover: var(--brand-yellow);
+  /* ─── Backgrounds ───────────────────────────────────────────── */
+  --color-bg-hero-from: #ffffff;
+  --color-bg-hero-via: #f3f4f6;
+  --color-bg-hero-to: #ffffff;
+
+  --color-bg-section-from: #ffffff;
+  --color-bg-section-via: #f3f4f6;
+  --color-bg-section-to: #ffffff;
+
+  /* ─── Borders / Outlines ────────────────────────────────────── */
+  --color-border-image: #e5e7eb;
+
+  /* ─── Fixed Sidebar Contact Button ─────────────────────────── */
+  --color-contact-btn-from: #facc15;
+  --color-contact-btn-to: #f97316;
+  --color-contact-btn-text: #000000;
+
+  /* ─── Contact Section ───────────────────────────────────────── */
+  --color-contact-section-bg: #ffffff;
+  --color-contact-section-text: #000000;
+  --color-contact-grad-from: #581c87;
+  --color-contact-grad-via: #f3f4f6;
+  --color-contact-label-text: #000000;
+  --color-contact-heading-text: #000000;
+  --color-contact-link-text: #000000;
+  --color-contact-link-hover: #facc15;
+  --color-contact-or-text: #000000;
+
+  /* ─── Font Sizes: Hero ──────────────────────────────────────── */
+  --text-hero-base: 1.5rem;
+  --text-hero-sm: 1.875rem;
+  --text-hero-md: 3rem;
+
+  /* ─── Font Sizes: Section Headings ─────────────────────────── */
+  --text-hero-page-heading: 2.5rem;
+  --text-heading-xl: 1.875rem;
+  --text-heading-lg: 1.5rem;
+  --text-heading-md: 1.5rem;
+
+  /* ─── Font Sizes: Body ──────────────────────────────────────── */
+  --text-body-base: 1rem;
+  --text-body-sm: 0.875rem;
+
+  /* ─── Font Sizes: Buttons ───────────────────────────────────── */
+  --text-btn: 0.75rem;
+
+  /* ─── Font Sizes: Contact Sidebar ──────────────────────────── */
+  --text-contact-btn-base: 0.75rem;
+  --text-contact-btn-md: 0.875rem;
+
+  /* ─── Font Weights ──────────────────────────────────────────── */
+  --font-weight-heading: 600;
+  --font-weight-btn: 700;
+  --font-weight-body: 400;
+
+  /* ─── Text Alignment ────────────────────────────────────────── */
+  --text-align-hero: left;
+  --text-align-section: justify;
+  --text-align-btn: left;
+
+  /* ─── Section Padding ───────────────────────────────────────── */
+  --section-px-base: 1rem;
+  --section-px-sm: 1.5rem;
+  --section-px-md: 2.5rem;
+  --section-px-lg: 4rem;
+
+  --section-py-base: 3rem;
+  --section-py-sm: 3.5rem;
+  --section-py-md: 4rem;
+  --section-py-lg: 5rem;
+
+  /* ─── Hero Spacing ──────────────────────────────────────────── */
+  --hero-pt-base: 2rem;
+  --hero-pt-md: 3rem;
+  --hero-pb: 4rem;
+
+  /* ─── Grid ──────────────────────────────────────────────────── */
+  --grid-gap-base: 2.5rem;
+  --grid-gap-md: 4rem;
+
+  /* ─── Max Widths ────────────────────────────────────────────── */
+  --content-max-width: 80rem;
+  --hero-heading-max-width: 64rem;
+  --body-copy-max-width: 36rem;
+
+  /* ─── Letter Spacing ────────────────────────────────────────── */
+  --tracking-contact-btn: 0.05em;
+  
+
+  /* ─── Career Page Sections ──────────────────────────────────── */
+--color-bg-career-values-from: #dfe619;
+--color-bg-career-values-via: #f3f4f6;
+--color-bg-career-values-to:  #ffffff;
+
+--color-bg-career-footer-from: #dcff2f;
+--color-bg-career-footer-via:  #f3f4f6;
+--color-bg-career-footer-to:   #ffffff;
 }
+
+/* ─── Mega Menu Link Hover ───────────────────────────────────── */
+.mega-menu-link:hover {
+  color: var(--color-brand-primary);
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  color: var(--color-cta-from);
+}
+
+/* ─── Footer Input Focus ─────────────────────────────────────── */
+.footer-input {
+  border: 1px solid var(--color-border-image);
+}
+
+.footer-input:focus {
+  border-color: var(--color-cta-from);
+}
+
+/* ─── Base ───────────────────────────────────────────────────── */
 body {
-  background: var(--brand-black);
-  color: white;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
+/* ─── Utility ────────────────────────────────────────────────── */
 .writing-mode-vertical {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
 
+/* ─── Contact ────────────────────────────────────────────────── */
+.contact-link:hover {
+  color: var(--color-contact-link-hover);
+}
+
+/* ─── Section Gradient ───────────────────────────────────────── */
+.section-gradient {
+  background: linear-gradient(
+    to right,
+    var(--color-bg-section-from),
+    var(--color-bg-section-via),
+    var(--color-bg-section-to)
+  );
+}
+
+/* ─── Section Padding ────────────────────────────────────────── */
+.section-padding {
+  padding-top: var(--section-py-base);
+  padding-bottom: var(--section-py-base);
+  padding-left: var(--section-px-base);
+  padding-right: var(--section-px-base);
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding-top: var(--section-py-sm);
+    padding-bottom: var(--section-py-sm);
+    padding-left: var(--section-px-sm);
+    padding-right: var(--section-px-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: var(--section-py-md);
+    padding-bottom: var(--section-py-md);
+    padding-left: var(--section-px-md);
+    padding-right: var(--section-px-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: var(--section-py-lg);
+    padding-bottom: var(--section-py-lg);
+    padding-left: var(--section-px-lg);
+    padding-right: var(--section-px-lg);
+  }
+}

@@ -14,44 +14,77 @@ import FaqSection from "@/app/component/FaqsSection";
 export default function BrandIdentitySection() {
   return (
     <main>
-      {/* Section #1 */}
+      {/* ── SECTION #1 (HERO STYLE) ───────────────────────── */}
       <section
         aria-labelledby="brand-identity-heading"
-        className="w-full bg-[var(--brand-black)] text-white border-t border-white/10 py-16 px-4 sm:px-6 lg:px-16 relative overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+          paddingTop: "var(--hero-pt-base)",
+          paddingBottom: "var(--hero-pb)",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="lg:px-16"
       >
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          {/* ===== LEFT SIDE (IMAGE + SHAPES) ===== */}
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+        >
+          {/* LEFT */}
           <div className="relative flex justify-center">
-            {/* Background Circle */}
-            <div className="absolute w-[320px] h-[320px] md:w-[420px] md:h-[420px] bg-[var(--brand-purple)]/10 rounded-full -z-10"></div>
+            <div
+              style={{
+                background: "var(--color-brand-primary)",
+                opacity: 0.1,
+              }}
+              className="absolute w-[320px] h-[320px] md:w-[420px] md:h-[420px] rounded-full -z-10"
+            />
 
-            {/* Main Image */}
             <div className="relative w-full max-w-md aspect-[4/3]">
               <Image
-                src="/branding-kit.png" // replace with your image
-                alt="Brand identity design mockups including brochure, business card, and notebook"
+                src="/branding-kit.png"
+                alt="Brand identity design mockups"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
 
-            {/* Decorative Circle */}
-            <div className="absolute bottom-0 left-10 w-28 h-28 bg-[var(--brand-purple)]/20 rounded-full -z-10"></div>
+            <div
+              style={{
+                background: "var(--color-brand-primary)",
+                opacity: 0.2,
+              }}
+              className="absolute bottom-0 left-10 w-28 h-28 rounded-full -z-10"
+            />
           </div>
 
-          {/* ===== RIGHT SIDE CONTENT ===== */}
-          <div className="max-w-xl">
+          {/* RIGHT */}
+          <div style={{ maxWidth: "var(--body-copy-max-width)" }}>
             <h1
               id="brand-identity-heading"
-              className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[var(--brand-purple)] leading-tight mb-6"
+              style={{
+                fontSize: "var(--text-hero-page-heading)",
+                fontWeight: "var(--font-weight-heading)",
+                color: "var(--color-brand-primary)",
+                textAlign:
+                  "var(--text-align-hero)" as React.CSSProperties["textAlign"],
+              }}
+              className="leading-tight sm:text-3xl md:text-5xl mb-6"
             >
               Brand Strategy & <br /> Identity Design Services
             </h1>
 
-            <p className="text-black text-base md:text-lg leading-relaxed mb-6">
-              Logos don’t build brands—strategy does. At Vedant Innovision
-              <strong></strong> we combine{" "}
+            <p
+              style={{
+                color: "var(--color-text-body)",
+                fontSize: "var(--text-body-sm)",
+              }}
+              className="leading-relaxed sm:text-base mb-6"
+            >
+              Logos don’t build brands—strategy does. At Vedant Innovision we
+              combine{" "}
               <strong>design and strategy to create brand identities</strong>{" "}
               that stand out, connect, and perform. With{" "}
               <strong>800+ projects delivered</strong>, we help you turn your
@@ -60,27 +93,61 @@ export default function BrandIdentitySection() {
           </div>
         </div>
       </section>
-      {/* Section #2x */}
-      <section className="w-full ">
-        <div className="bg-gradient-to-r from-purple-900 via-gray-100 py-10 sm:py-12 md:py-14 px-4 sm:px-6 lg:px-16 text-black">
-          <div className="max-w-7xl mx-auto">
+
+      {/* ── SECTION #2 ───────────────────────── */}
+      <section className="w-full">
+        <div
+          style={{
+            background:
+              "linear-gradient(to right, var(--color-bg-career-footer-from), var(--color-bg-career-footer-via), var(--color-bg-career-footer-to))",
+            paddingTop: "var(--section-py-base)",
+            paddingBottom: "var(--section-py-base)",
+            paddingLeft: "var(--section-px-sm)",
+            paddingRight: "var(--section-px-sm)",
+            color: "var(--color-text-body)",
+          }}
+          className="lg:px-16"
+        >
+          <div
+            style={{ maxWidth: "var(--content-max-width)" }}
+            className="mx-auto"
+          >
             {/* Heading */}
             <h2
               id="branding-why-heading"
-              className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug"
+              style={{
+                fontSize: "var(--text-heading-xl)",
+                fontWeight: "var(--font-weight-heading)",
+                color: "var(--color-brand-primary)",
+              }}
+              className="mb-6 italic leading-snug"
             >
               Brand Strategy & Identity Design Services
             </h2>
 
             {/* Content */}
-            <div className="space-y-4 text-sm sm:text-base md:text-lg">
-              <p className="leading-relaxed">
+            <div className="space-y-4">
+              <p
+                style={{
+                  fontSize: "var(--text-body-sm)",
+                  maxWidth: "var(--body-copy-max-width)",
+                  color: "var(--color-text-body)",
+                }}
+                className="leading-relaxed sm:text-base"
+              >
                 We create strategic and impactful brand identities that go
                 beyond visuals—helping your business stand out with clarity,
                 consistency, and strong market presence.
               </p>
 
-              <p className="leading-relaxed">
+              <p
+                style={{
+                  fontSize: "var(--text-body-sm)",
+                  maxWidth: "var(--body-copy-max-width)",
+                  color: "var(--color-text-body)",
+                }}
+                className="leading-relaxed sm:text-base"
+              >
                 We don’t just design logos—we build strong brand identities that
                 create lasting impact. As a creative brand identity partner with
                 4+ years of experience and 800+ projects delivered, Vedant
@@ -93,23 +160,25 @@ export default function BrandIdentitySection() {
       </section>
 
       <BiTrasnformedSection />
-
       <BiComprehensive />
-
       <BIDiscoverySection />
-
       <BrandSection />
-
       <Testimonial />
-
       <FaqSection />
-
       <ContactDiv />
 
+      {/* ── FIXED CONTACT BUTTON ───────────────────────── */}
       <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
         <Link
           href={CONTACT}
-          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--color-contact-btn-from), var(--color-contact-btn-to))",
+            color: "var(--color-contact-btn-text)",
+            fontSize: "var(--text-contact-btn-base)",
+            letterSpacing: "var(--tracking-contact-btn)",
+          }}
+          className="font-semibold md:text-sm px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
         >
           CONTACT
         </Link>

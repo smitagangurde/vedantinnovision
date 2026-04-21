@@ -4,20 +4,41 @@ import { FilmsPortfolio } from "@/app/data/Films/FilmsPortfolio";
 export default function FilmsPortfolioSection() {
   return (
     <section
-      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 md:px-10 lg:px-16"
       aria-labelledby="films-portfolio-heading"
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+      }}
+      className="w-full lg:px-16"
     >
-      <div className="max-w-7xl mx-auto">
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* ===== Heading ===== */}
         <div className="text-center mb-14">
           <h2
             id="films-portfolio-heading"
-            className="text-2xl md:text-3xl font-semibold text-purple-700 italic mb-4"
+            style={{
+              fontSize: "var(--text-heading-xl)",
+              fontWeight: "var(--font-weight-heading)",
+              color: "var(--color-brand-primary)",
+            }}
+            className="italic mb-4"
           >
             {FilmsPortfolio.heading}
           </h2>
 
-          <p className="text-black max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-base)",
+              maxWidth: "var(--hero-heading-max-width)",
+            }}
+            className="mx-auto leading-relaxed"
+          >
             {FilmsPortfolio.description}
           </p>
         </div>
@@ -27,7 +48,8 @@ export default function FilmsPortfolioSection() {
           {FilmsPortfolio.films.map((item, index) => (
             <article
               key={index}
-              className="border border-gray-200 bg-white hover:border-purple-400 hover:shadow-md transition overflow-hidden rounded-lg"
+              style={{ borderColor: "var(--color-border-image)" }}
+              className="portfolio-card border bg-white hover:shadow-md transition overflow-hidden rounded-lg"
             >
               {/* Image */}
               <div className="relative w-full h-[260px] md:h-[280px] lg:h-[300px] group">
@@ -43,7 +65,10 @@ export default function FilmsPortfolioSection() {
 
                 {/* Title */}
                 <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-white text-sm md:text-base font-medium">
+                  <h3
+                    style={{ fontSize: "var(--text-body-sm)" }}
+                    className="text-white font-medium"
+                  >
                     {item.title}
                   </h3>
                 </div>

@@ -70,16 +70,13 @@ export default function AboutPage() {
     setActiveIndex((prev) => (prev === cultureData.length - 1 ? 0 : prev + 1));
   };
 
-  // ✅ AUTO SLIDE (4 sec)
   useEffect(() => {
     if (isPaused) return;
-
     const interval = setInterval(() => {
       setActiveIndex((prev) =>
         prev === cultureData.length - 1 ? 0 : prev + 1,
       );
     }, 4000);
-
     return () => clearInterval(interval);
   }, [isPaused, cultureData.length]);
 
@@ -87,16 +84,43 @@ export default function AboutPage() {
 
   return (
     <main>
-      {/* HERO */}
-      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white px-4 sm:px-6 md:px-10 lg:px-16 py-12 text-black">
-        <div className="max-w-7xl mx-auto">
+      {/* ── HERO SECTION ─────────────────────────────────────── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+          color: "var(--color-text-body)",
+          paddingTop: "4rem",
+          paddingBottom: "4rem",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="w-full lg:px-16"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto"
+        >
           {/* Heading */}
-          <div className="max-w-3xl">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold italic text-purple-700">
+          <div style={{ maxWidth: "var(--body-copy-max-width)" }}>
+            <h1
+              style={{
+                fontSize: "var(--text-hero-page-heading)",
+                fontWeight: "var(--font-weight-heading)",
+                color: "var(--color-brand-primary)",
+              }}
+              className="italic"
+            >
               We are Vedant Innovision
             </h1>
 
-            <h2 className="mt-3 text-black text-lg sm:text-xl md:text-2xl italic">
+            <h2
+              style={{
+                color: "var(--color-text-body)",
+                fontSize: "var(--text-heading-lg)",
+              }}
+              className="mt-3 italic"
+            >
               End-to-end branding, design, and technology solutions built to
               perform.
             </h2>
@@ -111,8 +135,17 @@ export default function AboutPage() {
 
           {/* Content */}
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
-            <div className="space-y-6 max-w-xl">
-              <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+            <div
+              className="space-y-6"
+              style={{ maxWidth: "var(--body-copy-max-width)" }}
+            >
+              <p
+                style={{
+                  color: "var(--color-text-body)",
+                  fontSize: "var(--text-body-base)",
+                }}
+                className="leading-relaxed"
+              >
                 Vedant Innovision is a full-spectrum creative and technology
                 agency delivering integrated solutions across branding, design,
                 animation, print, production, hardware, and software. We partner
@@ -121,17 +154,32 @@ export default function AboutPage() {
                 and physical implementations.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+              <p
+                style={{
+                  color: "var(--color-text-body)",
+                  fontSize: "var(--text-body-base)",
+                }}
+                className="leading-relaxed"
+              >
                 Our strength lies in connecting creativity with execution.
-                Whether it’s building a brand from the ground up, producing
+                Whether it's building a brand from the ground up, producing
                 high-impact visuals, or developing scalable tech solutions, we
                 ensure every output is aligned with business objectives and
                 built for long-term value.
               </p>
             </div>
 
-            <div className="space-y-6 max-w-xl">
-              <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+            <div
+              className="space-y-6"
+              style={{ maxWidth: "var(--body-copy-max-width)" }}
+            >
+              <p
+                style={{
+                  color: "var(--color-text-body)",
+                  fontSize: "var(--text-body-base)",
+                }}
+                className="leading-relaxed"
+              >
                 We operate at the intersection of design, engineering, and
                 innovation. Our team brings together strategists, designers,
                 developers, and production experts to deliver solutions that are
@@ -139,7 +187,13 @@ export default function AboutPage() {
                 execution-ready.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+              <p
+                style={{
+                  color: "var(--color-text-body)",
+                  fontSize: "var(--text-body-base)",
+                }}
+                className="leading-relaxed"
+              >
                 From concept to completion, Vedant Innovision functions as a
                 single-point partner — simplifying processes, maintaining
                 consistency, and ensuring quality across every touchpoint. We
@@ -151,9 +205,30 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white px-4 sm:px-6 md:px-10 lg:px-16 py-16 text-black">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold text-purple-700">
+      {/* ── CULTURE SECTION ──────────────────────────────────── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+          color: "var(--color-text-body)",
+          paddingTop: "4rem",
+          paddingBottom: "4rem",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="w-full lg:px-16"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto"
+        >
+          <h2
+            style={{
+              fontSize: "var(--text-heading-xl)",
+              fontWeight: "var(--font-weight-heading)",
+              color: "var(--color-brand-primary)",
+            }}
+          >
             Our culture and values mean a lot to us
           </h2>
 
@@ -166,18 +241,31 @@ export default function AboutPage() {
                   transform: `translateX(-${activeIndex * 100}%)`,
                 }}
               >
-                {cultureData.map((item, index) => (
+                {cultureData.map((item) => (
                   <div
                     key={item.id}
                     className="w-full flex-shrink-0 grid lg:grid-cols-2 gap-12 items-center"
                   >
                     {/* TEXT */}
                     <div>
-                      <h3 className="text-3xl md:text-4xl font-semibold text-purple-700">
+                      <h3
+                        style={{
+                          fontSize: "var(--text-heading-xl)",
+                          fontWeight: "var(--font-weight-heading)",
+                          color: "var(--color-brand-primary)",
+                        }}
+                      >
                         {item.title}
                       </h3>
 
-                      <p className="mt-6 text-black text-base md:text-lg max-w-xl leading-relaxed">
+                      <p
+                        style={{
+                          color: "var(--color-text-body)",
+                          fontSize: "var(--text-body-base)",
+                          maxWidth: "var(--body-copy-max-width)",
+                        }}
+                        className="mt-6 leading-relaxed"
+                      >
                         {item.description}
                       </p>
                     </div>
@@ -202,11 +290,19 @@ export default function AboutPage() {
                 <button
                   key={item.id}
                   onClick={() => setActiveIndex(index)}
-                  className={`px-3 py-2 text-sm rounded-full transition ${
+                  style={
                     activeIndex === index
-                      ? "bg-purple-400 text-white"
-                      : "text-black hover:bg-purple-100 hover:text-purple-600"
-                  }`}
+                      ? {
+                          background: "var(--color-brand-primary)",
+                          color: "#ffffff",
+                          fontSize: "var(--text-body-sm)",
+                        }
+                      : {
+                          color: "var(--color-text-body)",
+                          fontSize: "var(--text-body-sm)",
+                        }
+                  }
+                  className="px-3 py-2 rounded-full transition hover:opacity-80"
                 >
                   {item.tab}
                 </button>
@@ -216,39 +312,88 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 md:px-10 lg:px-16">
-        <div className="max-w-7xl mx-auto text-center mb-14">
-          <p className="text-base italic text-purple-700 mb-8">
+      {/* ── STATS SECTION ────────────────────────────────────── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+          color: "var(--color-text-body)",
+          paddingTop: "4rem",
+          paddingBottom: "4rem",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="w-full lg:px-16"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto text-center mb-14"
+        >
+          <p
+            style={{
+              fontSize: "var(--text-body-base)",
+              color: "var(--color-brand-primary)",
+            }}
+            className="italic mb-8"
+          >
             The numbers say it all!
           </p>
 
           <div className="grid sm:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-3xl font-semibold text-black">4+</h3>
-              <p className="text-gray-600 text-sm">Years of experience</p>
-            </div>
-
-            <div className="sm:border-x sm:border-purple-200">
-              <h3 className="text-3xl font-semibold text-black">800+</h3>
-              <p className="text-gray-600 text-sm">Projects delivered</p>
-            </div>
-
-            <div>
-              <h3 className="text-3xl font-semibold text-black">40+</h3>
-              <p className="text-gray-600 text-sm">Satisfied clients</p>
-            </div>
+            {[
+              { value: "4+", label: "Years of experience", border: false },
+              { value: "800+", label: "Projects delivered", border: true },
+              { value: "40+", label: "Satisfied clients", border: false },
+            ].map((stat) => (
+              <div
+                key={stat.label}
+                style={
+                  stat.border
+                    ? { borderColor: "var(--color-brand-primary)" }
+                    : {}
+                }
+                className={stat.border ? "sm:border-x" : ""}
+              >
+                <h3
+                  style={{
+                    fontSize: "var(--text-heading-xl)",
+                    fontWeight: "var(--font-weight-heading)",
+                    color: "var(--color-text-body)",
+                  }}
+                >
+                  {stat.value}
+                </h3>
+                <p
+                  style={{
+                    fontSize: "var(--text-body-sm)",
+                    color: "var(--color-text-body)",
+                  }}
+                  className="opacity-70"
+                >
+                  {stat.label}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      <Testimonial />
 
+      <Testimonial />
       <ContactDiv />
 
+      {/* ── FIXED CONTACT BUTTON ─────────────────────────────── */}
       <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
         <Link
           href={CONTACT}
-          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--color-contact-btn-from), var(--color-contact-btn-to))",
+            color: "var(--color-contact-btn-text)",
+            fontSize: "var(--text-contact-btn-base)",
+            letterSpacing: "var(--tracking-contact-btn)",
+            fontWeight: "var(--font-weight-btn)",
+          }}
+          className="px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
         >
           CONTACT
         </Link>

@@ -27,10 +27,21 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white border-b border-gray-300 text-black relative z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
+    <header
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+        borderBottom: "1px solid var(--color-border-image)",
+        color: "var(--color-text-body)",
+      }}
+      className="w-full relative z-50"
+    >
+      <div
+        style={{ maxWidth: "var(--content-max-width)" }}
+        className="mx-auto px-4 sm:px-6 md:px-10"
+      >
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* ── Logo ── */}
           <Link href={HOME}>
             <Image
               src="/Vedant Innovation Logo.png"
@@ -40,11 +51,15 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-10">
+          {/* ── Desktop Menu ── */}
+          <nav
+            style={{ fontSize: "var(--text-body-base)" }}
+            className="hidden md:flex items-center gap-10"
+          >
             <Link
               href={BRANDCONSULTING}
-              className="hover:text-yellow-500 transition"
+              style={{ color: "var(--color-text-body)" }}
+              className="nav-link transition"
             >
               Brand Evolution
             </Link>
@@ -55,39 +70,51 @@ export default function Header() {
               onMouseEnter={() => handleMouseEnter("communication")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="hover:text-yellow-500 transition">
+              <button
+                style={{ color: "var(--color-text-body)" }}
+                className="nav-link transition"
+              >
                 Brand Strategy
               </button>
-
               {activeMenu === "communication" && <CommunicationMegaMenu />}
             </div>
 
-            {/* Organizational Brand */}
+            {/* Workplace Identity */}
             <div
               className="relative"
               onMouseEnter={() => handleMouseEnter("employer")}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="hover:text-yellow-500 transition">
-                {/* Organizational Brand */}
+              <button
+                style={{ color: "var(--color-text-body)" }}
+                className="nav-link transition"
+              >
                 Workplace Identity
               </button>
-
               {activeMenu === "employer" && <EmployerMegaMenu />}
             </div>
 
-            <Link href={FILMS} className="hover:text-yellow-500 transition">
+            <Link
+              href={FILMS}
+              style={{ color: "var(--color-text-body)" }}
+              className="nav-link transition"
+            >
               Visual Stories
             </Link>
 
-            <Link href={CONTACT} className="hover:text-yellow-500 transition">
+            <Link
+              href={CONTACT}
+              style={{ color: "var(--color-text-body)" }}
+              className="nav-link transition"
+            >
               Contact
             </Link>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* ── Mobile Menu Button ── */}
           <button
-            className="md:hidden text-black"
+            style={{ color: "var(--color-text-body)" }}
+            className="md:hidden"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={28} /> : <Menu size={28} />}
@@ -95,12 +122,25 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* ── Mobile Menu ── */}
       {open && (
-        <div className="md:hidden bg-gradient-to-b from-gray-300 via-gray-100 to-white border-t border-gray-300 px-6 py-6 space-y-4 text-black">
+        <div
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+            borderTop: "1px solid var(--color-border-image)",
+            color: "var(--color-text-body)",
+            paddingLeft: "var(--section-px-sm)",
+            paddingRight: "var(--section-px-sm)",
+            paddingTop: "1.5rem",
+            paddingBottom: "1.5rem",
+          }}
+          className="md:hidden space-y-4"
+        >
           <Link
             href={BRANDCONSULTING}
-            className="block hover:text-yellow-500"
+            style={{ color: "var(--color-text-body)" }}
+            className="block nav-link"
             onClick={() => setOpen(false)}
           >
             Brand Evolution
@@ -108,7 +148,8 @@ export default function Header() {
 
           <Link
             href="#"
-            className="block hover:text-yellow-500"
+            style={{ color: "var(--color-text-body)" }}
+            className="block nav-link"
             onClick={() => setOpen(false)}
           >
             Brand Strategy
@@ -116,15 +157,17 @@ export default function Header() {
 
           <Link
             href="#"
-            className="block hover:text-yellow-500"
+            style={{ color: "var(--color-text-body)" }}
+            className="block nav-link"
             onClick={() => setOpen(false)}
           >
-            Organizational Brand
+            Workplace Identity
           </Link>
 
           <Link
             href="#"
-            className="block hover:text-yellow-500"
+            style={{ color: "var(--color-text-body)" }}
+            className="block nav-link"
             onClick={() => setOpen(false)}
           >
             Visual Stories
@@ -132,7 +175,8 @@ export default function Header() {
 
           <Link
             href={CONTACT}
-            className="block hover:text-yellow-500"
+            style={{ color: "var(--color-text-body)" }}
+            className="block nav-link"
             onClick={() => setOpen(false)}
           >
             Contact

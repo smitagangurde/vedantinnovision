@@ -13,42 +13,75 @@ export default function SMFaqSection() {
   return (
     <section
       aria-labelledby="faq-heading"
-      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white py-16 px-4 sm:px-6 md:px-10"
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+      }}
+      className="w-full lg:px-16"
     >
-      <div className="max-w-7xl mx-auto">
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
+        {/* Heading */}
         <h2
           id="faq-heading"
-          className="text-2xl md:text-3xl font-semibold text-purple-700 mb-8"
+          style={{
+            fontSize: "var(--text-heading-xl)",
+            fontWeight: "var(--font-weight-heading)",
+            color: "var(--color-brand-primary)",
+          }}
+          className="mb-8"
         >
-          FAQ’s
+          FAQ's
         </h2>
 
-        <div className="divide-y divide-gray-200">
+        {/* FAQ List */}
+        <div className="divide-y divide-black/10">
           {SMFaqs.map((faq, index: number) => {
             const isOpen = openIndex === index;
 
             return (
               <article key={index} className="py-5">
+                {/* Question */}
                 <button
                   onClick={() => toggleFAQ(index)}
                   aria-expanded={isOpen}
                   className="w-full flex items-center justify-between text-left"
                 >
-                  <h3 className="text-black text-base md:text-lg font-medium">
+                  <h3
+                    style={{
+                      color: "var(--color-text-body)",
+                      fontSize: "var(--text-body-base)",
+                      fontWeight: "var(--font-weight-heading)",
+                    }}
+                  >
                     {faq.question}
                   </h3>
 
-                  <span className="ml-4 text-purple-700 text-xl transition-transform duration-300">
+                  <span
+                    style={{ color: "var(--color-brand-primary)" }}
+                    className="ml-4 text-xl transition-transform duration-300"
+                  >
                     {isOpen ? "−" : "+"}
                   </span>
                 </button>
 
+                {/* Answer */}
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
                     isOpen ? "max-h-40 mt-3" : "max-h-0"
                   }`}
                 >
-                  <p className="text-black text-sm md:text-base pr-6 leading-relaxed">
+                  <p
+                    style={{
+                      color: "var(--color-text-body)",
+                      fontSize: "var(--text-body-sm)",
+                    }}
+                    className="pr-6 leading-relaxed"
+                  >
                     {faq.answer}
                   </p>
                 </div>

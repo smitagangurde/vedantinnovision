@@ -3,8 +3,19 @@ import { Portfolio } from "../data/Portfolio";
 
 export default function PortfolioSection() {
   return (
-    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 lg:px-16">
-      <div className="max-w-7xl mx-auto">
+    <section
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "var(--section-py-base)",
+        paddingBottom: "var(--section-py-base)",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+      }}
+      className="w-full lg:px-16"
+    >
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {Portfolio.map((item, index) => (
@@ -22,10 +33,10 @@ export default function PortfolioSection() {
                 />
               </div>
 
-              {/* Light Overlay (adjusted to match theme) */}
+              {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-70 group-hover:opacity-80 transition duration-300" />
 
-              {/* Bottom Label */}
+              {/* Label */}
               <div className="absolute bottom-0 left-0 w-full px-4 py-3">
                 <p className="text-white text-sm md:text-base font-medium">
                   {item.title}

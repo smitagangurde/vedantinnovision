@@ -16,15 +16,31 @@ import { CONTACT } from "@/app/const/routes.const";
 export default function ServicesSection() {
   return (
     <main>
-      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-14 sm:py-14 md:py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+      {/* ── HERO SECTION ── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+          color: "var(--color-text-body)",
+          paddingTop: "3.5rem",
+          paddingBottom: "3.5rem",
+        }}
+        className="w-full lg:py-20"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto px-4 sm:px-6 md:px-10 lg:px-16"
+        >
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* LEFT SIDE */}
-            <div className="w-full max-w-md h-[320px] md:h-[420px] relative rounded-xl overflow-hidden bg-purple-100 border border-gray-200 mx-auto md:mx-0 shadow-sm">
-              {/* Background Glow */}
-              <div className="absolute inset-0 bg-purple-300 blur-2xl opacity-20"></div>
-
-              {/* Image */}
+            {/* ── LEFT SIDE ── */}
+            <div
+              style={{
+                backgroundColor: "#f3e8ff",
+                borderColor: "var(--color-border-image)",
+              }}
+              className="w-full max-w-md h-[320px] md:h-[420px] relative rounded-xl overflow-hidden border mx-auto md:mx-0 shadow-sm"
+            >
+              <div className="absolute inset-0 bg-purple-300 blur-2xl opacity-20" />
               <Image
                 src="/hero/laptop.png"
                 alt="Employer branding digital experience"
@@ -34,17 +50,37 @@ export default function ServicesSection() {
               />
             </div>
 
-            {/* RIGHT SIDE */}
-            <div className="max-w-xl">
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-700 mb-4 leading-snug">
+            {/* ── RIGHT SIDE ── */}
+            <div style={{ maxWidth: "var(--body-copy-max-width)" }}>
+              <h1
+                style={{
+                  color: "var(--color-brand-primary)",
+                  fontSize: "var(--text-heading-xl)",
+                  fontWeight: "var(--font-weight-heading)",
+                }}
+                className="mb-4 leading-snug sm:text-2xl md:text-3xl lg:text-4xl"
+              >
                 Corporate Branding Solutions
               </h1>
 
-              <h2 className="text-base sm:text-lg md:text-xl text-yellow-500 font-medium mb-4">
+              <h2
+                style={{
+                  color: "var(--color-cta-from)",
+                  fontSize: "var(--text-heading-md)",
+                  fontWeight: "var(--font-weight-heading)",
+                }}
+                className="mb-4 sm:text-lg md:text-xl"
+              >
                 Build a Strong, Consistent Corporate Identity
               </h2>
 
-              <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+              <p
+                style={{
+                  color: "var(--color-text-body)",
+                  fontSize: "var(--text-body-sm)",
+                }}
+                className="leading-relaxed mb-4 sm:text-base md:text-lg"
+              >
                 At Vedant Innovision, we help businesses create a strong
                 corporate brand that reflects their vision, values, and
                 professionalism. A well-defined corporate identity ensures
@@ -52,7 +88,13 @@ export default function ServicesSection() {
                 strengthens your market presence.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed">
+              <p
+                style={{
+                  color: "var(--color-text-body)",
+                  fontSize: "var(--text-body-sm)",
+                }}
+                className="leading-relaxed sm:text-base md:text-lg"
+              >
                 We focus on aligning your brand strategy, visual identity, and
                 communication to create a cohesive and impactful corporate
                 image-both internally and externally.
@@ -62,24 +104,56 @@ export default function ServicesSection() {
         </div>
       </section>
 
-      <section className="relative w-full bg-gradient-to-r from-purple-900 via-gray-100 py-14 sm:py-14 md:py-16 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-16 text-black">
-        <div className="max-w-7xl mx-auto text-center">
-          {/* Heading */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold italic mb-6 leading-snug">
+      {/* ── QUOTE SECTION ── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to right, var(--color-bg-career-footer-from), var(--color-bg-career-footer-via), var(--color-bg-career-footer-to))",
+          color: "var(--color-text-body)",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="relative w-full py-14 sm:py-14 md:py-16 lg:py-20 md:px-10 lg:px-16"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto text-center" // ✅ unchanged
+        >
+          <h2
+            style={{
+              color: "var(--color-brand-primary)", // optional but recommended for contrast
+              fontSize: "var(--text-heading-md)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="italic mb-6 leading-snug sm:text-2xl md:text-3xl lg:text-4xl"
+          >
             We collaborate with you to build a unified corporate brand across
             all touchpoints—combining strategic thinking, structured design
             systems, and consistent communication to enhance brand perception
             and business growth.
           </h2>
 
-          {/* Description */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-5xl mx-auto">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-sm)",
+              opacity: 0.7,
+            }}
+            className="leading-relaxed max-w-5xl mx-auto sm:text-base md:text-lg lg:text-xl"
+          >
             From brand positioning and visual identity to corporate
             communication and internal branding, we ensure your organization
             presents a clear, professional, and trusted image in the market.
           </p>
 
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-5xl mx-auto">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-sm)",
+              opacity: 0.7,
+            }}
+            className="leading-relaxed max-w-5xl mx-auto sm:text-base md:text-lg lg:text-xl"
+          >
             A strong corporate brand builds trust, improves recognition, and
             creates a consistent experience for clients, employees, and
             stakeholders—helping your business stand out and grow with
@@ -88,34 +162,63 @@ export default function ServicesSection() {
         </div>
       </section>
 
-      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 relative">
+      {/* ── MASONRY SECTION ── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+          color: "var(--color-text-body)",
+          paddingTop: "4rem",
+          paddingBottom: "4rem",
+        }}
+        className="w-full relative"
+      >
         <div className="max-w-6xl mx-auto px-6 text-center">
-          {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-purple-700 leading-snug max-w-4xl mx-auto">
+          <h2
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-heading-xl)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="leading-snug max-w-4xl mx-auto md:text-3xl"
+          >
             Build a Strong Corporate Brand Foundation
           </h2>
 
-          {/* Description */}
-          <p className="text-sm md:text-base text-black mt-4 max-w-4xl mx-auto leading-relaxed">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-sm)",
+            }}
+            className="mt-4 max-w-4xl mx-auto leading-relaxed sm:text-base"
+          >
             At Vedant Innovision, we believe a strong brand is built on clarity,
             consistency, and purpose. Your brand is more than just
-            communication—it reflects your organization’s values, culture, and
-            credibility in the market.
+            communication—it reflects your organization&apos;s values, culture,
+            and credibility in the market.
           </p>
 
-          <p className="text-sm md:text-base text-black mt-4 max-w-4xl mx-auto leading-relaxed">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-sm)",
+            }}
+            className="mt-4 max-w-4xl mx-auto leading-relaxed sm:text-base"
+          >
             We help you define and strengthen your brand foundation through
             strategic thinking, structured design, and consistent
             communication—ensuring your business attracts the right audience,
             builds trust, and sustains long-term growth.
           </p>
 
-          {/* MASONRY GRID */}
+          {/* ── MASONRY GRID ── */}
           <div className="mt-14 columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
             {EmployerEVP.map((item) => (
               <div key={item.id} className="break-inside-avoid group">
-                <div className="relative overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm">
-                  {/* Image */}
+                <div
+                  style={{ borderColor: "var(--color-border-image)" }}
+                  className="relative overflow-hidden rounded-md border bg-white shadow-sm"
+                >
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -123,8 +226,6 @@ export default function ServicesSection() {
                     height={400}
                     className="w-full h-auto object-cover group-hover:scale-105 transition duration-500"
                   />
-
-                  {/* Overlay Label */}
                   <div className="absolute bottom-0 left-0 w-full bg-black/70 px-4 py-2">
                     <p className="text-sm italic text-white">{item.title}</p>
                   </div>
@@ -135,21 +236,47 @@ export default function ServicesSection() {
         </div>
       </section>
 
-      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 lg:px-16">
-        <div className="max-w-7xl mx-auto">
-          {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-purple-700 font-semibold mb-4">
-            Building Strong Corporate Brands & Workplace Experiences
+      {/* ── GRID SECTION ── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+          color: "var(--color-text-body)",
+          paddingTop: "4rem",
+          paddingBottom: "4rem",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="w-full lg:px-16"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto"
+        >
+          <h2
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-heading-xl)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="mb-4 sm:text-3xl md:text-4xl"
+          >
+            Building Strong Corporate Brands &amp; Workplace Experiences
           </h2>
 
-          <p className="text-black max-w-7xl mb-12 leading-relaxed">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-sm)",
+            }}
+            className="mb-12 leading-relaxed sm:text-base"
+          >
             At Vedant Innovision, we help organizations strengthen their
             corporate brand by aligning culture, communication, and design. Our
             approach focuses on creating a consistent and engaging brand
             experience across all touchpoints—internally and externally.
           </p>
 
-          {/* Grid */}
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {EmployerBrandingGrid.map((EmployerBranding, index) => (
               <EmployerBrandingCard key={index} {...EmployerBranding} />
@@ -159,15 +286,21 @@ export default function ServicesSection() {
       </section>
 
       <BrandSection />
-
       <Testimonial />
-
       <ContactDiv />
 
+      {/* ── FIXED CONTACT BUTTON ── */}
       <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
         <Link
           href={CONTACT}
-          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--color-contact-btn-from), var(--color-contact-btn-to))",
+            color: "var(--color-contact-btn-text)",
+            fontSize: "var(--text-contact-btn-base)",
+            letterSpacing: "var(--tracking-contact-btn)",
+          }}
+          className="font-semibold md:text-sm px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
         >
           CONTACT
         </Link>

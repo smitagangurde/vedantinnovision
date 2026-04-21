@@ -1,34 +1,83 @@
 export default function ContactDiv() {
   return (
-    <section className="w-full  text-black">
-      <div className="bg-gradient-to-r from-purple-900 via-gray-100 py-10 sm:py-12 md:py-14 px-4 sm:px-6 md:px-10 lg:px-16">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-m  font-bold mb-3">Contact Us</p>
+    <section style={{ color: "var(--color-text-body)" }} className="w-full">
+      <div
+        style={{
+          background:
+            "linear-gradient(to right, var(--color-bg-career-footer-from), var(--color-bg-career-footer-via), var(--color-bg-career-footer-to))",
+          paddingTop: "2.5rem",
+          paddingBottom: "2.5rem",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="sm:py-12 md:py-14 lg:px-16"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto"
+        >
+          <p
+            style={{
+              fontSize: "var(--text-body-base)",
+              fontWeight: "var(--font-weight-btn)",
+              color: "var(--color-brand-primary)",
+            }}
+            className="mb-3"
+          >
+            Contact Us
+          </p>
 
-          <h2 className="text-lg sm:text-xl md:text-3xl font-semibold italic mb-6 leading-snug ">
+          <h2
+            style={{
+              fontSize: "var(--text-heading-md)",
+              fontWeight: "var(--font-weight-heading)",
+              color: "var(--color-brand-primary)",
+            }}
+            className="italic mb-6 leading-snug sm:text-xl md:text-3xl"
+          >
             Ideas are easy. Execution is everything.
           </h2>
 
-          <h2 className="text-lg sm:text-xl md:text-3xl font-semibold italic mb-6 leading-snug ">
-            Let’s build what your brand needs next!
+          <h2
+            style={{
+              fontSize: "var(--text-heading-md)",
+              fontWeight: "var(--font-weight-heading)",
+              color: "var(--color-brand-primary)",
+            }}
+            className="italic mb-6 leading-snug sm:text-xl md:text-3xl"
+          >
+            Let's build what your brand needs next!
           </h2>
 
-          <div className="space-y-3 text-sm sm:text-base md:text-lg ">
+          <div
+            style={{ fontSize: "var(--text-body-sm)" }}
+            className="space-y-3 sm:text-base md:text-lg"
+          >
             <p>
               <a
                 href="mailto:amitkumar@vedantinnovision.com"
-                className="underline hover:text-yellow-400 transition"
+                style={{ color: "var(--color-text-body)" }}
+                className="underline contact-link transition"
               >
                 amitkumar@vedantinnovision.com
               </a>
             </p>
 
-            <p className="text-xs opacity-70">Or</p>
+            <p
+              style={{
+                color: "var(--color-text-body)",
+                fontSize: "var(--text-body-sm)",
+              }}
+              className="opacity-70"
+            >
+              Or
+            </p>
 
             <p>
               <a
                 href="tel:+919307267992"
-                className="hover:text-yellow-400 transition"
+                style={{ color: "var(--color-text-body)" }}
+                className="contact-link transition"
               >
                 +91 9307267992
               </a>

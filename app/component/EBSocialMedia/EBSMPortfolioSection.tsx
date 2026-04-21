@@ -5,16 +5,38 @@ type PortfolioItem = {
   title: string;
   category: string;
   image: string;
-  bg?: string; // ✅ optional field added
+  bg?: string;
 };
 
 export default function EBSMPortfolioSection() {
   return (
-    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-12 pb-10 md:pt-14 md:pb-12 border-b border-purple-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
+    <section
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+        borderBottom: "1px solid var(--color-border-image)",
+      }}
+      className="w-full lg:px-16"
+    >
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-purple-700 mb-3">
+        <div
+          style={{ maxWidth: "var(--hero-heading-max-width)" }}
+          className="text-center mx-auto mb-12"
+        >
+          <h2
+            style={{
+              fontSize: "var(--text-heading-xl)",
+              fontWeight: "var(--font-weight-heading)",
+              color: "var(--color-brand-primary)",
+            }}
+            className="mb-3"
+          >
             Brands We Have Helped Strengthen Through Strategic Social Media
           </h2>
         </div>
@@ -24,7 +46,8 @@ export default function EBSMPortfolioSection() {
           {(EBSMPortfolio as PortfolioItem[]).map((item, index: number) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-purple-400 transition shadow-sm"
+              style={{ borderColor: "var(--color-border-image)" }}
+              className="portfolio-card group relative overflow-hidden rounded-xl bg-white border transition shadow-sm"
             >
               {/* Background Layer */}
               <div
@@ -46,7 +69,10 @@ export default function EBSMPortfolioSection() {
 
               {/* Bottom Label */}
               <div className="absolute bottom-0 left-0 w-full bg-black/70 px-3 py-2">
-                <p className="text-xs sm:text-sm font-medium text-white">
+                <p
+                  style={{ fontSize: "var(--text-body-sm)" }}
+                  className="font-medium text-white"
+                >
                   {item.title}
                 </p>
 

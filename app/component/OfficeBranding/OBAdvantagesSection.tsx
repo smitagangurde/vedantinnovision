@@ -3,21 +3,41 @@ import { OBAdvantages } from "@/app/data/OfficeBranding/OBAdvantages";
 export default function BiComprehensive() {
   return (
     <section
-      className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-16 px-4 sm:px-6 lg:px-10"
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+        color: "var(--color-text-body)",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+      }}
+      className="w-full lg:px-10"
       aria-labelledby="services-heading"
     >
-      <div className="max-w-7xl mx-auto">
-        {/* Heading */}
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
+        {/* ── Heading ── */}
         <header className="max-w-5xl mb-12">
           <h2
             id="services-heading"
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-700"
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-heading-xl)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="sm:text-3xl md:text-4xl"
           >
-            The Vedant Innovision Advantage: Industrial & Spatial Branding
+            The Vedant Innovision Advantage: Industrial &amp; Spatial Branding
             Solutions
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
+          <p
+            style={{
+              color: "var(--color-text-body)",
+              fontSize: "var(--text-body-sm)",
+            }}
+            className="mt-4 leading-relaxed sm:text-base"
+          >
             As an experienced industrial and spatial branding partner, we offer
             a complete Concept-to-Execution approach—ensuring seamless
             coordination, consistent quality, and hassle-free implementation
@@ -25,22 +45,37 @@ export default function BiComprehensive() {
           </p>
         </header>
 
-        {/* Grid */}
+        {/* ── Grid ── */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {OBAdvantages.map((service, index) => {
             const Icon = service.icon;
             return (
               <article
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl p-6 hover:border-purple-400 hover:shadow-md transition duration-300"
+                style={{ borderColor: "var(--color-border-image)" }}
+                className="service-card bg-white border rounded-xl p-6 transition duration-300 shadow-sm"
               >
-                <Icon className="w-8 h-8 text-purple-700 mb-4" />
-
-                <h3 className="text-lg font-semibold text-purple-700 mb-2">
+                <Icon
+                  style={{ color: "var(--color-brand-primary)" }}
+                  className="w-8 h-8 mb-4"
+                />
+                <h3
+                  style={{
+                    color: "var(--color-brand-primary)",
+                    fontSize: "var(--text-heading-md)",
+                    fontWeight: "var(--font-weight-heading)",
+                  }}
+                  className="mb-2"
+                >
                   {service.title}
                 </h3>
-
-                <p className="text-sm text-black leading-relaxed">
+                <p
+                  style={{
+                    color: "var(--color-text-body)",
+                    fontSize: "var(--text-body-sm)",
+                  }}
+                  className="leading-relaxed"
+                >
                   {service.desc}
                 </p>
               </article>

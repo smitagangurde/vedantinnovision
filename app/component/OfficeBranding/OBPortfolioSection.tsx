@@ -3,17 +3,39 @@ import { OBPortfolios } from "@/app/data/OfficeBranding/OBPortfolios";
 
 export default function OBPortfolioSection() {
   return (
-    <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black pt-12 pb-10 md:pt-14 md:pb-12 border-b border-purple-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
-        {/* Heading */}
+    <section
+      style={{
+        background:
+          "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+        color: "var(--color-text-body)",
+        borderBottom: "1px solid var(--color-brand-primary)",
+        paddingLeft: "var(--section-px-sm)",
+        paddingRight: "var(--section-px-sm)",
+      }}
+      className="w-full pt-12 pb-10 md:pt-14 md:pb-12 md:px-10"
+    >
+      <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
+        {/* ── Heading ── */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-purple-700 mb-3">
+          <h2
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-heading-md)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="mb-3 md:text-2xl"
+          >
             Proven Execution: Our Industrial Branding Work
           </h2>
         </div>
 
-        {/* Description */}
-        <p className="text-sm sm:text-base text-black leading-relaxed mb-8 sm:mb-12">
+        <p
+          style={{
+            color: "var(--color-text-body)",
+            fontSize: "var(--text-body-sm)",
+          }}
+          className="leading-relaxed mb-8 sm:mb-12 sm:text-base"
+        >
           Our portfolio reflects our expertise in transforming workplaces into
           impactful brand environments. At Vedant Innovision, we go beyond
           design—delivering end-to-end industrial and spatial branding solutions
@@ -22,26 +44,30 @@ export default function OBPortfolioSection() {
           large-scale installations.
         </p>
 
-        <p className="text-sm sm:text-base text-black leading-relaxed mb-8 sm:mb-12">
+        <p
+          style={{
+            color: "var(--color-text-body)",
+            fontSize: "var(--text-body-sm)",
+          }}
+          className="leading-relaxed mb-8 sm:mb-12 sm:text-base"
+        >
           From factory floors to corporate offices, we create spaces that
           communicate your brand clearly, improve functionality, and leave a
           lasting impression—ensuring every element is executed with precision,
           consistency, and on-ground expertise.
         </p>
 
-        {/* Grid */}
+        {/* ── Grid ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {OBPortfolios.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-purple-400 transition shadow-sm"
+              style={{ borderColor: "var(--color-border-image)" }}
+              className="portfolio-card group relative overflow-hidden rounded-xl bg-white border transition shadow-sm"
             >
-              {/* Background Layer */}
               <div
                 className={`absolute inset-0 ${"bg" in item ? item.bg : ""} opacity-90`}
               />
-
-              {/* Image */}
               <div className="relative p-5 sm:p-6">
                 <Image
                   src={item.image}
@@ -51,13 +77,10 @@ export default function OBPortfolioSection() {
                   className="w-full h-auto object-contain transform group-hover:scale-105 transition duration-300"
                 />
               </div>
-
-              {/* Bottom Label */}
               <div className="absolute bottom-0 left-0 w-full bg-black/70 px-3 py-2">
                 <p className="text-xs sm:text-sm font-medium text-white">
                   {item.title}
                 </p>
-
                 {item.category && (
                   <p className="text-[10px] sm:text-xs text-white/60 italic">
                     {item.category}

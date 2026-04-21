@@ -6,44 +6,26 @@ import { CONTACT } from "@/app/const/routes.const";
 import Image from "next/image";
 import Link from "next/link";
 
-const portfolioItems = [
-  {
-    title: "Suroj Buildcon",
-    image: "/brand1.jpg",
-    link: "/projects/suroj-buildcon",
-  },
-  {
-    title: "Excelity",
-    image: "/brand1.jpg",
-    link: "/projects/excelity",
-  },
-  {
-    title: "AEMA",
-    image: "/brand1.jpg",
-    link: "/projects/aema",
-  },
-  {
-    title: "Kreative Booking",
-    image: "/brand1.jpg",
-    link: "/projects/kreative-booking",
-  },
-];
-const brands = [
-  "/amazon.webp",
-  "/brand-2.png",
-  "/brand-3.png",
-  "/brand-4.png",
-  "/brand-5.png",
-  "/brand-6.png",
-];
-
 export default function WebsiteUiUxPage() {
   return (
     <main>
-      {/* Hero */}
-      <section className="w-full bg-gradient-to-b from-gray-300 via-gray-100 to-white text-black py-12 sm:py-14 md:py-16 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-16 border-b border-purple-200">
-        <div className="max-w-7xl mx-auto grid items-center gap-10 md:grid-cols-2">
-          {/* Image */}
+      {/* ── HERO SECTION ── */}
+      <section
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
+          color: "var(--color-text-body)",
+          borderBottom: "1px solid var(--color-brand-primary)",
+          paddingLeft: "var(--section-px-sm)",
+          paddingRight: "var(--section-px-sm)",
+        }}
+        className="w-full py-12 sm:py-14 md:py-16 lg:py-20 md:px-10 lg:px-16"
+      >
+        <div
+          style={{ maxWidth: "var(--content-max-width)" }}
+          className="mx-auto grid items-center gap-10 md:grid-cols-2"
+        >
+          {/* ── Image ── */}
           <div className="flex justify-center md:justify-start">
             <Image
               src="/uiux.png"
@@ -55,13 +37,26 @@ export default function WebsiteUiUxPage() {
             />
           </div>
 
-          {/* Content */}
-          <div className="max-w-xl">
-            <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-400 leading-snug">
-              Software & Digital Solutions
+          {/* ── Content ── */}
+          <div style={{ maxWidth: "var(--body-copy-max-width)" }}>
+            <h1
+              style={{
+                color: "var(--color-brand-primary)",
+                fontSize: "var(--text-heading-xl)",
+                fontWeight: "var(--font-weight-heading)",
+              }}
+              className="mb-4 leading-snug sm:text-3xl md:text-4xl"
+            >
+              Software &amp; Digital Solutions
             </h1>
 
-            <p className="text-sm sm:text-base text-black leading-relaxed">
+            <p
+              style={{
+                color: "var(--color-text-body)",
+                fontSize: "var(--text-body-sm)",
+              }}
+              className="leading-relaxed sm:text-base"
+            >
               At Vedant Innovision, we deliver end-to-end software and digital
               solutions designed to streamline operations and drive business
               efficiency. From industry-specific ERP systems to custom-built
@@ -69,7 +64,13 @@ export default function WebsiteUiUxPage() {
               requirements.
             </p>
 
-            <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
+            <p
+              style={{
+                color: "var(--color-text-body)",
+                fontSize: "var(--text-body-sm)",
+              }}
+              className="mt-4 leading-relaxed sm:text-base"
+            >
               Our expertise includes Hospital ERP, School ERP, and Learning
               Management Systems (LMS) that simplify management, improve
               workflows, and enhance user experience. We also design and develop
@@ -77,13 +78,25 @@ export default function WebsiteUiUxPage() {
               usability, and growth.
             </p>
 
-            <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
+            <p
+              style={{
+                color: "var(--color-text-body)",
+                fontSize: "var(--text-body-sm)",
+              }}
+              className="mt-4 leading-relaxed sm:text-base"
+            >
               We develop solutions compatible across devices—kiosks, tablets,
               desktops, and laptops—ensuring seamless accessibility and
               consistent functionality across all platforms.
             </p>
 
-            <p className="mt-4 text-sm sm:text-base text-black leading-relaxed">
+            <p
+              style={{
+                color: "var(--color-text-body)",
+                fontSize: "var(--text-body-sm)",
+              }}
+              className="mt-4 leading-relaxed sm:text-base"
+            >
               With a focus on reliability, integration, and user-centric design,
               we help businesses adopt digital solutions that are practical,
               efficient, and built to scale.
@@ -93,17 +106,22 @@ export default function WebsiteUiUxPage() {
       </section>
 
       <PortfolioSection />
-
       <BrandSection />
-
       <Testimonial />
-
       <ContactDiv />
 
+      {/* ── FIXED CONTACT BUTTON ── */}
       <div className="fixed right-0 top-2/4 -translate-y-1/2 z-50">
         <Link
           href={CONTACT}
-          className="bg-gradient-to-b from-yellow-400 to-orange-500 text-black text-xs md:text-sm font-semibold tracking-wide px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--color-contact-btn-from), var(--color-contact-btn-to))",
+            color: "var(--color-contact-btn-text)",
+            fontSize: "var(--text-contact-btn-base)",
+            letterSpacing: "var(--tracking-contact-btn)",
+          }}
+          className="font-semibold md:text-sm px-2 py-3 rounded-l-md shadow-md hover:opacity-90 transition writing-mode-vertical"
         >
           CONTACT
         </Link>
