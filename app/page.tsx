@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[540px] overflow-hidden border border-gray-200">
             <video
-              src="/Vedant_Video.mp4"
+              src="https://pub-7e5798500cc048ada514004eeaddf292.r2.dev/vedantinnovision/veantInnovision_main.mp4"
               poster="/fallback.jpg"
               className="w-full h-full object-cover"
               autoPlay
