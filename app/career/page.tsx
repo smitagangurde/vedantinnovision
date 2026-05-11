@@ -92,22 +92,28 @@ export default function CareerPage() {
 
   const testimonials = [
     {
-      text: `Honestly I don't look at Velocita as simply being our agency. They're more like partners who always have our best interests in mind. An excellent team, with fantastic support! Feels like an extension of our own team.`,
-      name: "Eshan Sharma",
-      role: "Marketing Manager",
-      logo: "/logo-bajaj-finserv.png",
+      text: `"Vedant Innovision did a fantastic job designing our posters and banners. Their designs were not only creative but also aligned perfectly with our brand's vision. Despite the distance, they ensured timely delivery to Dhule without any compromise on quality. Truly impressed with their professionalism!"`,
+      name: "Arashri infra Pvt. Ltd.",
+      role: "-",
+      logo: "/brands/bajaj.png",
     },
     {
-      text: `Thank you for all of your contributions in the difficult and condensed design effort. You did very well and hope to have the chance to work with you again.`,
-      name: "",
-      role: "",
-      logo: "/logo-bajaj-finserv.png",
+      text: `"They delivered a functional and well-structured website for our e commerce business. The design is clean, and the development process was smooth. The team demonstrated strong technical skills and met all the project requirements."`,
+      name: "Akash Dighe",
+      role: "-",
+      logo: "/brands/bcg.png",
     },
     {
-      text: `We've found our association with Velocita extremely fruitful for our communication needs. The passion and speed with which they work resonate well with our brand values.`,
-      name: "Yogesh Gandhi",
-      role: "Marketing & Communications Specialist",
-      logo: "/logo-bajaj-finserv.png",
+      text: `"Vedant Innovision's graphic design work is outstanding. Their designs, whether for digital campaigns or print, always stand out, effectively translating ideas into stunning visuals."`,
+      name: "Samarth Chaudhari",
+      role: "-",
+      logo: "/Amazon_logo.svg.png",
+    },
+    {
+      text: `"I recently worked with Vedatn Innovision these fantastic guys for my restaurant, they did an amazing job. They understood my idea gery well and completed the task in time. Really happy and will definitely recommend in my friends."`,
+      name: "Aniket Vispute",
+      role: "-",
+      logo: "/Amazon_logo.svg.png",
     },
   ];
 
@@ -778,7 +784,8 @@ export default function CareerPage() {
       {/* ── FOOTER CTA SECTION ───────────────────────────────────── */}
       <section
         style={{
-        background: "linear-gradient(to right, var(--color-bg-career-footer-from), var(--color-bg-career-footer-via), var(--color-bg-career-footer-to))",
+          background:
+            "linear-gradient(to right, var(--color-bg-career-footer-from), var(--color-bg-career-footer-via), var(--color-bg-career-footer-to))",
           color: "var(--color-text-body)",
           paddingTop: "1.25rem",
           paddingBottom: "1.25rem",

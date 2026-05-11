@@ -1,20 +1,26 @@
 export const testimonials = [
   {
-    text: `"Honestly I don’t look at Velocita as simply being our agency. They’re more like partners who always have our best interests in mind. An excellent team, with fantastic support! Feels like an extension of our own team. Love it and kudos to Samarth, Ankita, Gaurav & the rest of the team for making our experience so wonderful. I want to offer my congratulations once again to their team for the excellent realisation of our intentions with the design of our collaterals with rocket speed turnaround times. All the best!"`,
-    name: "Digvijay Patil",
-    role: "Marketing Manager",
+    text: `"Vedant Innovision did a fantastic job designing our posters and banners. Their designs were not only creative but also aligned perfectly with our brand's vision. Despite the distance, they ensured timely delivery to Dhule without any compromise on quality. Truly impressed with their professionalism!"`,
+    name: "Arashri infra Pvt. Ltd.",
+    role: "-",
     logo: "/brands/bajaj.png",
   },
   {
-    text: `"Thank you for all of your contributions in the difficult and condensed design effort. You did very well and hope to have the chance to work with you again. If ok, I may personally refer you to teams I work with in the future if you'd like to consider their design work."`,
-    name: "Smit Gangurde",
-    role: "Brand Lead",
+    text: `"They delivered a functional and well-structured website for our e commerce business. The design is clean, and the development process was smooth. The team demonstrated strong technical skills and met all the project requirements."`,
+    name: "Akash Dighe",
+    role: "-",
     logo: "/brands/bcg.png",
   },
   {
-    text: `"We've found our association with Velocita extremely fruitful for our communication needs. The passion and speed with which they work resonate well with our brand values. For an creative agency that can be best described as niche, they are quite a powerhouse with an ever widening portfolio of outstanding creative work."`,
-    name: "Vedant Mehtre",
-    role: "Product Head",
+    text: `"Vedant Innovision's graphic design work is outstanding. Their designs, whether for digital campaigns or print, always stand out, effectively translating ideas into stunning visuals."`,
+    name: "Samarth Chaudhari",
+    role: "-",
+    logo: "/Amazon_logo.svg.png",
+  },
+  {
+    text: `"I recently worked with Vedatn Innovision these fantastic guys for my restaurant, they did an amazing job. They understood my idea gery well and completed the task in time. Really happy and will definitely recommend in my friends."`,
+    name: "Aniket Vispute",
+    role: "-",
     logo: "/Amazon_logo.svg.png",
   },
 ];
