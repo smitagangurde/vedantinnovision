@@ -8,7 +8,6 @@ export default function SMPortfolioSection() {
         background:
           "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
         color: "var(--color-text-body)",
-        // borderBottom: "1px solid var(--color-brand-primary)",
         paddingLeft: "var(--section-px-sm)",
         paddingRight: "var(--section-px-sm)",
       }}
@@ -58,11 +57,6 @@ export default function SMPortfolioSection() {
                 <p className="text-xs sm:text-sm font-medium text-white">
                   {item.title}
                 </p>
-                {item.category && (
-                  <p className="text-[10px] sm:text-xs text-white/60 italic">
-                    {item.category}
-                  </p>
-                )}
               </div>
             </div>
           ))}
