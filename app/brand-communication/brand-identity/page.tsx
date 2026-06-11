@@ -43,7 +43,7 @@ export default function BrandIdentitySection() {
 
             <div className="relative w-full max-w-md aspect-[4/3]">
               <Image
-                src="/branding-kit.png"
+                src="/Brand-Identity/Identity Design Service.png"
                 alt="Brand identity design mockups"
                 fill
                 className="object-contain"

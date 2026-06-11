@@ -25,12 +25,12 @@ export default function SMPortfolioSection() {
             }}
             className="mb-3 md:text-2xl"
           >
-            See How We&apos;ve Helped Brands Grow with Data-Backed Strategies
+            See How We&apos;ve Helped Brands Grow with Data-Backend Strategies
           </h2>
         </div>
 
         {/* ── Grid ── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SMPortfolio.map((item, index) => (
             <div
               key={index}

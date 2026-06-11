@@ -17,18 +17,19 @@ export default function PortfolioSection() {
     >
       <div style={{ maxWidth: "var(--content-max-width)" }} className="mx-auto">
         {/* GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {Portfolio.map((item, index) => (
             <article
               key={index}
               className="relative group overflow-hidden rounded-lg border border-gray-300 bg-white hover:bg-gray-100 transition duration-300"
             >
               {/* Image */}
-              <div className="relative w-full h-64">
+              <div className="relative w-full aspect-[4/3]">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

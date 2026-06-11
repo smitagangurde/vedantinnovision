@@ -1,37 +1,26 @@
 export const SMPortfolio = [
   {
-    title: "Emami",
-    category: "Social Media",
-    image: "/images/social/emami.jpg",
+    title: "Life Care",
+    image: "/Social-Media-Marketing/Data-Backend Strategies 001.png",
   },
   {
-    title: "Summit Digitel",
-    category: "Social Media",
-    image: "/images/social/summit.jpg",
+    title: "GrassRoot Kreedakul",
+    image: "/Social-Media-Marketing/Data-Backend Strategies 002.png",
   },
   {
-    title: "Bajaj Housing Finance",
-    category: "Social Media",
-    image: "/images/social/bajaj.jpg",
+    title: "Group Surya",
+    image: "/Social-Media-Marketing/Data-Backend Strategies 006.png",
   },
   {
-    title: "Nayara",
-    category: "Social Media",
-    image: "/images/social/nayara.jpg",
+    title: "Atlas Spine",
+    image: "/Social-Media-Marketing/Data-Backend Strategies 004.png",
   },
   {
-    title: "Suroj",
-    category: "Social Media",
-    image: "/images/social/suroj.jpg",
+    title: "Hospital Life Care",
+    image: "/Social-Media-Marketing/Data-Backend Strategies 005.png",
   },
-  {
-    title: "Yale Locks",
-    category: "Social Media",
-    image: "/images/social/yale.jpg",
-  },
-  {
-    title: "Prione",
-    category: "Social Media",
-    image: "/images/social/prione.jpg",
-  },
+  // {
+  //   title: "Yale Locks",
+  //   image: "/Social-Media-Marketing/Data-Backend Strategies 003.png",
+  // },
 ];

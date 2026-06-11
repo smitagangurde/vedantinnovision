@@ -1,3 +1,5 @@
+import { Mail, Phone } from "lucide-react";
+
 export default function ContactDiv() {
   return (
     <section style={{ color: "var(--color-text-body)" }} className="w-full">
@@ -20,7 +22,7 @@ export default function ContactDiv() {
             style={{
               fontSize: "var(--text-body-base)",
               fontWeight: "var(--font-weight-btn)",
-              color: "var(--color-brand-primary)",
+              color: "var(--color-cpa-heading-text)",
             }}
             className="mb-3"
           >
@@ -31,7 +33,7 @@ export default function ContactDiv() {
             style={{
               fontSize: "var(--text-heading-md)",
               fontWeight: "var(--font-weight-heading)",
-              color: "var(--color-bg-section-to)",
+              color: "var(--color-cpa-primary-text)",
             }}
             className="italic mb-6 leading-snug sm:text-xl md:text-3xl"
           >
@@ -42,11 +44,11 @@ export default function ContactDiv() {
             style={{
               fontSize: "var(--text-heading-md)",
               fontWeight: "var(--font-weight-heading)",
-              color: "var(--color-bg-section-to)",
+              color: "var(--color-cpa-primary-text)",
             }}
             className="italic mb-6 leading-snug sm:text-xl md:text-3xl"
           >
-            Let's build what your brand needs next!
+            {"Let's build what your brand needs next!"}
           </h2>
 
           <div
@@ -56,14 +58,15 @@ export default function ContactDiv() {
             <p>
               <a
                 href="mailto:amitkumar@vedantinnovision.com"
-                style={{ color: "var(--color-text-body)" }}
-                className="underline contact-link transition"
+                style={{ color: "var(--color-cpa-primary-text)" }}
+                className="underline contact-link transition flex items-center gap-2"
               >
+                <Mail size={16} />
                 amitkumar@vedantinnovision.com
               </a>
             </p>
 
-            <p
+            {/* <p
               style={{
                 color: "var(--color-text-body)",
                 fontSize: "var(--text-body-sm)",
@@ -71,14 +74,15 @@ export default function ContactDiv() {
               className="opacity-70"
             >
               Or
-            </p>
+            </p> */}
 
             <p>
               <a
                 href="tel:+919307267992"
-                style={{ color: "var(--color-text-body)" }}
-                className="contact-link transition"
+                style={{ color: "var(--color-cpa-primary-text)" }}
+                className="contact-link transition flex items-center gap-2"
               >
+                <Phone size={16} />
                 +91 9307267992
               </a>
             </p>

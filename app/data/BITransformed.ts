@@ -1,9 +1,8 @@
 export const BITransformed = [
-  { name: "Nivas", image: "/brands/nivas.jpg" },
-  { name: "Altus", image: "/brands/altus.jpg" },
-  { name: "Coco Sattva", image: "/brands/coco.jpg" },
-  { name: "Global Insurance", image: "/brands/global.jpg" },
-  { name: "Suroj Buildcon", image: "/brands/suroj.jpg" },
-  { name: "Eblon", image: "/brands/eblon.jpg" },
-  { name: "Frubites", image: "/brands/frubites.jpg" },
+  { name: "Atlas Copco Group", image: "/Brand-Idenity/Brands We've Worked With 001.png" },
+  { name: "DanFuss", image: "/Brand-Idenity/Brands We've Worked With 002.png" },
+  { name: "JSW", image: "/Brand-Idenity/Brands We've Worked With 003.png" },
+  { name: "Life Care", image: "/Brand-Idenity/Brands We've Worked With 004.png" },
+  { name: "Atlas Copco", image: "/Brand-Idenity/Brands We've Worked With 005.png" },
+  { name: "Pencil Pod", image: "/Brand-Idenity/Brands We've Worked With 006.png" },
 ];

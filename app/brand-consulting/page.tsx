@@ -536,7 +536,7 @@ export default function BrandConsulting() {
                 </li>
               </ul>
 
-              <p
+              {/* <p
                 style={{
                   fontSize: "var(--text-body-sm)",
                   fontWeight: "var(--font-weight-heading)",
@@ -545,7 +545,7 @@ export default function BrandConsulting() {
                 className="mt-6 sm:text-base"
               >
                 Start Your Brand Transformation Today
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -691,7 +691,7 @@ export default function BrandConsulting() {
               className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
-                src="/Brand Evolution/Strategic-brand-positioning.png"
+                src="/Brand Evolution/career-growth.png"
                 alt="Vision Illustration"
                 fill
                 className="object-cover"

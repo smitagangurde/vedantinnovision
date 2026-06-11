@@ -28,7 +28,7 @@ export default function WebsiteUiUxPage() {
           {/* ── Image ── */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/uiux.png"
+              src="/IT-Solutions/IT And Digital Solution.png"
               alt="Website and UI UX design"
               width={900}
               height={650}

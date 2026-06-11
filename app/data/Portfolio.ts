@@ -1,34 +1,26 @@
 export const Portfolio = [
   {
-    title: "Housing.com",
-    image: "/images/portfolio/housing.jpg",
-  },
-  {
     title: "Bajaj Finserv Direct Limited",
-    image: "/images/portfolio/bajaj.jpg",
+    image: "/IT-Solutions/IT Digital Solution 001.png",
   },
   {
     title: "River",
-    image: "/images/portfolio/river.jpg",
+    image: "/IT-Solutions/IT Digital Solution 002.png",
   },
   {
     title: "Michelin",
-    image: "/images/portfolio/michelin.jpg",
+    image: "/IT-Solutions/IT Digital Solution 003.png",
   },
   {
     title: "Knight Frank",
-    image: "/images/portfolio/knight.jpg",
+    image: "/IT-Solutions/IT Digital Solution 004.png",
   },
   {
     title: "Abbott",
-    image: "/images/portfolio/abbott.jpg",
+    image: "/IT-Solutions/IT Digital Solution 005.png",
   },
   {
     title: "Gyproc",
-    image: "/images/portfolio/gyproc.jpg",
-  },
-  {
-    title: "Summit Digitel",
-    image: "/images/portfolio/summit.jpg",
+    image: "/IT-Solutions/IT Digital Solution 006.png",
   },
 ];

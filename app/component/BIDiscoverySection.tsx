@@ -82,22 +82,6 @@ export default function BIDiscoverySection() {
             );
           })}
         </div>
-
-        {/* PROJECT GRID */}
-        <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 mb-10">
-          {projects.map((project, i) => (
-            <div
-              key={i}
-              style={{
-                color: "var(--color-text-body)",
-                fontSize: "var(--text-body-sm)",
-              }}
-              className="bg-white/10 rounded-lg h-28 flex items-center justify-center hover:bg-white/20 transition"
-            >
-              {project.title}
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
