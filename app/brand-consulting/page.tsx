@@ -47,7 +47,7 @@ export default function BrandConsulting() {
             className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[540px] overflow-hidden border rounded-xl mb-8"
           >
             <Image
-              src="/vedant website brand Evolution Image.png"
+              src="/Brand Evolution/Brand-page_hero.png"
               alt="Brand storytelling team"
               fill
               sizes="(max-width: 768px) 100vw, 1200px"
@@ -115,10 +115,10 @@ export default function BrandConsulting() {
               className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
-                src="/Vision mission 596.5x518 px.png"
-                alt="Vision Illustration"
+                src="/Brand Evolution/Vision-mission.png"
+                alt="Vision mission"
                 fill
-                className="object-contain p-6"
+                className="object-cover"
               />
             </div>
 
@@ -389,10 +389,10 @@ export default function BrandConsulting() {
               className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
-                src="/binoculars.png"
+                src="/Brand Evolution/Strategic-brand-positioning.png"
                 alt="Vision Illustration"
                 fill
-                className="object-contain p-6"
+                className="object-cover"
               />
             </div>
           </div>
@@ -423,7 +423,7 @@ export default function BrandConsulting() {
               className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
-                src="/binoculars.png"
+                src="/Brand Evolution/EVP.png"
                 alt="Vision Illustration"
                 fill
                 className="object-contain p-6"
@@ -691,10 +691,10 @@ export default function BrandConsulting() {
               className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
-                src="/binoculars.png"
+                src="/Brand Evolution/Strategic-brand-positioning.png"
                 alt="Vision Illustration"
                 fill
-                className="object-contain p-6"
+                className="object-cover"
               />
             </div>
           </div>
