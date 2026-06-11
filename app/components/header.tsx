@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react";
 import CommunicationMegaMenu from "./communicationMegaMenu";
 import EmployerMegaMenu from "./employerMegaMenu";
 
-import { BRANDCONSULTING, CONTACT, FILMS, HOME } from "../const/routes.const";
+import { BRANDCONSULTING, CONTACT, FILMS, HOME, WEBSITEUIUX } from "../const/routes.const";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -62,6 +62,14 @@ export default function Header() {
               className="nav-link transition"
             >
               Brand Evolution
+            </Link>
+
+            <Link
+              href={WEBSITEUIUX}
+              style={{ color: "var(--color-text-body)" }}
+              className="nav-link transition"
+            >
+              IT &amp; Digital Solutions
             </Link>
 
             {/* Brand Strategy */}

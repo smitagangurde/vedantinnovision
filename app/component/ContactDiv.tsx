@@ -31,7 +31,7 @@ export default function ContactDiv() {
             style={{
               fontSize: "var(--text-heading-md)",
               fontWeight: "var(--font-weight-heading)",
-              color: "var(--color-brand-primary)",
+              color: "var(--color-bg-section-to)",
             }}
             className="italic mb-6 leading-snug sm:text-xl md:text-3xl"
           >
@@ -42,7 +42,7 @@ export default function ContactDiv() {
             style={{
               fontSize: "var(--text-heading-md)",
               fontWeight: "var(--font-weight-heading)",
-              color: "var(--color-brand-primary)",
+              color: "var(--color-bg-section-to)",
             }}
             className="italic mb-6 leading-snug sm:text-xl md:text-3xl"
           >

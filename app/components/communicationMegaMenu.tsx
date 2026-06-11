@@ -56,7 +56,7 @@ export default function CommunicationMegaMenu() {
             fontSize: "var(--text-body-sm)",
             fontWeight: "var(--font-weight-heading)",
           }}
-          className="mt-6 inline-block mega-menu-link"
+          className="mt-10 inline-block mega-menu-link"
         >
           Contact Us
         </Link>
@@ -127,7 +127,7 @@ export default function CommunicationMegaMenu() {
         </div>
 
         {/* IT & Digital Solutions */}
-        <div className="flex gap-4 items-start">
+        {/* <div className="flex gap-4 items-start">
           <Monitor
             style={{ color: "var(--color-brand-primary)" }}
             className="w-5 h-5 mt-1 shrink-0"
@@ -155,7 +155,7 @@ export default function CommunicationMegaMenu() {
               seamless user experience.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Social Media Management */}
         <div className="flex gap-4 items-start">

@@ -18,7 +18,7 @@ export default function Films() {
           background:
             "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
           color: "var(--color-text-body)",
-          borderBottom: "1px solid var(--color-brand-primary)",
+          // borderBottom: "1px solid var(--color-brand-primary)",
           paddingTop: "2rem",
           paddingBottom: "2.5rem",
         }}

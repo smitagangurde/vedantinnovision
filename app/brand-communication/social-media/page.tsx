@@ -17,7 +17,7 @@ export default function SocialMedia() {
           background:
             "linear-gradient(to bottom, var(--color-bg-hero-from), var(--color-bg-hero-via), var(--color-bg-hero-to))",
           color: "var(--color-text-body)",
-          borderBottom: "1px solid var(--color-brand-primary)",
+          // borderBottom: "1px solid var(--color-brand-primary)",
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
