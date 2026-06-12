@@ -110,7 +110,7 @@ export default function BrandIdentitySection() {
         >
           <div
             style={{ maxWidth: "var(--content-max-width)" }}
-            className="mx-auto"
+            className="mx-auto text-center" // ✅ added text-center
           >
             {/* Heading */}
             <h2
@@ -118,9 +118,9 @@ export default function BrandIdentitySection() {
               style={{
                 fontSize: "var(--text-heading-xl)",
                 fontWeight: "var(--font-weight-heading)",
-                color: "var(--color-brand-primary)",
+                color: "var(--color-cpa-primary-text)",
               }}
-              className="mb-6 italic leading-snug"
+              className="mb-6 italic leading-snug sm:text-2xl md:text-3xl lg:text-4xl" // ✅ added responsive sizes
             >
               Brand Strategy & Identity Design Services
             </h2>
@@ -130,10 +130,10 @@ export default function BrandIdentitySection() {
               <p
                 style={{
                   fontSize: "var(--text-body-sm)",
-                  maxWidth: "var(--body-copy-max-width)",
+                  opacity: 0.7, // ✅ matches reference
                   color: "var(--color-text-body)",
                 }}
-                className="leading-relaxed sm:text-base"
+                className="leading-relaxed max-w-5xl mx-auto sm:text-base md:text-lg lg:text-xl" // ✅ max-w-5xl mx-auto like reference
               >
                 We create strategic and impactful brand identities that go
                 beyond visuals—helping your business stand out with clarity,
@@ -143,12 +143,12 @@ export default function BrandIdentitySection() {
               <p
                 style={{
                   fontSize: "var(--text-body-sm)",
-                  maxWidth: "var(--body-copy-max-width)",
+                  opacity: 0.7, // ✅ matches reference
                   color: "var(--color-text-body)",
                 }}
-                className="leading-relaxed sm:text-base"
+                className="leading-relaxed max-w-5xl mx-auto sm:text-base md:text-lg lg:text-xl" // ✅ max-w-5xl mx-auto like reference
               >
-                We don’t just design logos—we build strong brand identities that
+                We don't just design logos—we build strong brand identities that
                 create lasting impact. As a creative brand identity partner with
                 4+ years of experience and 800+ projects delivered, Vedant
                 Innovision helps businesses stand out through strategic,

@@ -58,7 +58,7 @@ export default function EmployerMegaMenu() {
             fontSize: "var(--text-body-sm)",
             fontWeight: "var(--font-weight-heading)",
           }}
-          className="mt-6 inline-block mega-menu-link"
+          className="mt-50 inline-block mega-menu-link"
         >
           Contact Us
         </Link>

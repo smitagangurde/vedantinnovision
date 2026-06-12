@@ -113,7 +113,7 @@ export default function ContactPage() {
             <div>
               <h1
                 style={{
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                   fontSize: "var(--text-heading-lg)",
                   fontWeight: "var(--font-weight-heading)",
                 }}
@@ -125,7 +125,7 @@ export default function ContactPage() {
               </h1>
 
               <p
-                style={{ color: "var(--color-text-body)" }}
+                style={{ color: "var(--color-cpa-secondary-text)" }}
                 className="mt-6 text-sm md:text-base opacity-70"
               >
                 amitkumar@vedantinnovision.com
@@ -169,7 +169,7 @@ export default function ContactPage() {
             <div>
               <h2
                 style={{
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                   fontSize: "var(--text-heading-md)",
                   fontWeight: "var(--font-weight-heading)",
                 }}
@@ -179,7 +179,7 @@ export default function ContactPage() {
               </h2>
 
               <ul
-                style={{ color: "var(--color-text-body)" }}
+                style={{ color: "var(--color-cpa-secondary-text)" }}
                 className="space-y-3 text-sm md:text-base list-disc pl-5 opacity-70"
               >
                 <li>Embark on a Design Journey with Our Team</li>

@@ -28,7 +28,7 @@ export default function InternalCommunication() {
           {/* ── Image ── */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/uiux.png"
+              src="/Corporate-Communication-Solutions/Corporate Communication Solution.png"
               alt="Corporate Communication Solutions"
               width={900}
               height={650}

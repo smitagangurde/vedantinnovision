@@ -1,37 +1,34 @@
 export const OBPortfolios = [
   {
-    title: "Emami",
-    category: "Social Media",
-    image: "/images/social/emami.jpg",
+    title: "Atlas Copco",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 001.png",
   },
   {
-    title: "Summit Digitel",
-    category: "Social Media",
-    image: "/images/social/summit.jpg",
+    title: "Ferrero Rocher",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 002.png",
   },
   {
-    title: "Bajaj Housing Finance",
-    category: "Social Media",
-    image: "/images/social/bajaj.jpg",
+    title: "Nugos",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 003.png",
   },
   {
-    title: "Nayara",
-    category: "Social Media",
-    image: "/images/social/nayara.jpg",
+    title: "CPC Pumps",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 004.png",
   },
   {
-    title: "Suroj",
-    category: "Social Media",
-    image: "/images/social/suroj.jpg",
+    title: "Atlas Copco Safety",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 005.png",
   },
   {
-    title: "Yale Locks",
-    category: "Social Media",
-    image: "/images/social/yale.jpg",
+    title: "Atlas Copco Group",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 006.png",
   },
   {
-    title: "Prione",
-    category: "Social Media",
-    image: "/images/social/prione.jpg",
+    title: "OP Mobility",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 007.png",
+  },
+  {
+    title: "ACG",
+    image: "/Industrial-Spatial-Branding/Industrial SOlution 008.png",
   },
 ];

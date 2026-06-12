@@ -81,11 +81,6 @@ export default function OBPortfolioSection() {
                 <p className="text-xs sm:text-sm font-medium text-white">
                   {item.title}
                 </p>
-                {item.category && (
-                  <p className="text-[10px] sm:text-xs text-white/60 italic">
-                    {item.category}
-                  </p>
-                )}
               </div>
             </div>
           ))}

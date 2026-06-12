@@ -1,22 +1,18 @@
 export const EBSMPortfolio = [
   {
-    title: "Emami",
-    category: "Social Media",
-    image: "/images/social/emami.jpg",
+    title: "Group Surya",
+    image: "/Promotion-Outreach-Services/Promotion & Outreach Services 001.png",
   },
   {
-    title: "Summit Digitel",
-    category: "Social Media",
-    image: "/images/social/summit.jpg",
+    title: "GrassRoot Kreedakul",
+    image: "/Promotion-Outreach-Services/Promotion & Outreach Services 002.png",
   },
   {
-    title: "Bajaj Housing Finance",
-    category: "Social Media",
-    image: "/images/social/bajaj.jpg",
+    title: "Atlas Spine",
+    image: "/Promotion-Outreach-Services/Promotion & Outreach Services 003.png",
   },
   {
-    title: "Nayara",
-    category: "Social Media",
-    image: "/images/social/nayara.jpg",
+    title: "Pencil Pod",
+    image: "/Promotion-Outreach-Services/Promotion & Outreach Services 004.png",
   },
 ]

@@ -42,11 +42,11 @@ export default function ServicesSection() {
             >
               <div className="absolute inset-0 bg-purple-300 blur-2xl opacity-20" />
               <Image
-                src="/hero/laptop.png"
+                src="/Corporate-Branding/Corporate Branding Solutions.png"
                 alt="Employer branding digital experience"
                 fill
                 priority
-                className="object-contain p-6"
+                className="object-cover"
               />
             </div>
 
@@ -121,7 +121,7 @@ export default function ServicesSection() {
         >
           <h2
             style={{
-              color: "var(--color-brand-primary)", // optional but recommended for contrast
+              color: "var(--color-cpa-primary-text)", 
               fontSize: "var(--text-heading-md)",
               fontWeight: "var(--font-weight-heading)",
             }}
@@ -277,7 +277,7 @@ export default function ServicesSection() {
             experience across all touchpoints—internally and externally.
           </p>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {EmployerBrandingGrid.map((EmployerBranding, index) => (
               <EmployerBrandingCard key={index} {...EmployerBranding} />
             ))}

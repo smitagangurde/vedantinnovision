@@ -29,7 +29,7 @@ export default function OfficeBranding() {
           {/* ── Image ── */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/uiux.png"
+              src="/Industrial-Spatial-Branding/Industrial Solutions.png"
               alt="Industrial and Spatial Branding"
               width={900}
               height={650}
@@ -98,7 +98,7 @@ export default function OfficeBranding() {
         >
           <h2
             style={{
-              color: "var(--color-brand-primary)", // better contrast
+              color: "var(--color-cpa-primary-text)",
               fontSize: "var(--text-heading-md)",
               fontWeight: "var(--font-weight-heading)",
             }}

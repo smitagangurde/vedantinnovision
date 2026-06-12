@@ -334,7 +334,7 @@ export default function CareerPage() {
                 style={{
                   fontSize: "var(--text-heading-lg)",
                   fontWeight: "var(--font-weight-heading)",
-                  color: "var(--color-brand-primary)",
+                  color: "var(--color-cpa-secondary-text)",
                 }}
                 className="italic"
               >
@@ -374,7 +374,7 @@ export default function CareerPage() {
                 style={{
                   fontSize: "var(--text-heading-lg)",
                   fontWeight: "var(--font-weight-heading)",
-                  color: "var(--color-brand-primary)",
+                  color: "var(--color-cpa-secondary-text)",
                 }}
                 className="italic"
               >
@@ -801,7 +801,7 @@ export default function CareerPage() {
           <h2
             style={{
               fontWeight: "var(--font-weight-heading)",
-              color: "var(--color-text-body)",
+              color: "var(--color-cpa-primary-text)",
               fontSize: "var(--text-body-base)",
             }}
           >
@@ -810,14 +810,14 @@ export default function CareerPage() {
 
           <p
             style={{
-              color: "var(--color-text-muted)",
+              color: "var(--color-cpa-secondary-text)",
               fontSize: "var(--text-body-sm)",
             }}
           >
             Job/internship enquiries:{" "}
             <a
               href="mailto:amitkumar@vedantinnovision.com"
-              style={{ color: "var(--color-text-body)" }}
+              style={{ color: "var(--color-cpa-secondary-text)" }}
               className="underline contact-link transition"
             >
               amitkumar@vedantinnovision.com

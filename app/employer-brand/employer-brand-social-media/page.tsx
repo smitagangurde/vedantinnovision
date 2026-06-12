@@ -30,7 +30,7 @@ export default function EmployerBrandSocialMedia() {
           {/* ── Image ── */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/uiux.png"
+              src="/Promotion-Outreach-Services/Promtion & Outreach Services.png"
               alt="Brand Promotion and Outreach"
               width={900}
               height={650}
