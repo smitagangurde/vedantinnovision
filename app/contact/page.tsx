@@ -257,7 +257,7 @@ export default function ContactPage() {
       >
         <div className="max-w-5xl mx-auto text-center mb-10">
           <p
-            style={{ color: "var(--color-brand-primary)" }}
+            style={{ color: "var(--color-cpa-heading-text)" }}
             className="text-base italic mb-8"
           >
             The numbers say it all!

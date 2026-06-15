@@ -121,7 +121,7 @@ export default function ServicesSection() {
         >
           <h2
             style={{
-              color: "var(--color-cpa-primary-text)", 
+              color: "var(--color-cpa-heading-text)", 
               fontSize: "var(--text-heading-md)",
               fontWeight: "var(--font-weight-heading)",
             }}
@@ -135,7 +135,7 @@ export default function ServicesSection() {
 
           <p
             style={{
-              color: "var(--color-text-body)",
+              color: "var(--color-cpa-primary-text)",
               fontSize: "var(--text-body-sm)",
               opacity: 0.7,
             }}
@@ -148,7 +148,7 @@ export default function ServicesSection() {
 
           <p
             style={{
-              color: "var(--color-text-body)",
+              color: "var(--color-cpa-primary-text)",
               fontSize: "var(--text-body-sm)",
               opacity: 0.7,
             }}

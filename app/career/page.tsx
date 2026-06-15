@@ -801,7 +801,7 @@ export default function CareerPage() {
           <h2
             style={{
               fontWeight: "var(--font-weight-heading)",
-              color: "var(--color-cpa-primary-text)",
+              color: "var(--color-cpa-heading-text)",
               fontSize: "var(--text-body-base)",
             }}
           >

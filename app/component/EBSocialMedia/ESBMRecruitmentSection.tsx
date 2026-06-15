@@ -66,13 +66,13 @@ export default function SocialMediaServicesSection() {
               style={{ borderColor: "var(--color-border-image)" }}
               className="service-card bg-white border rounded-xl p-6 transition duration-300 shadow-sm"
             >
-              <div className="w-12 h-12 relative mb-4">
-                <Image
-                  src={service.icon}
-                  alt={service.title}
-                  fill
-                  className="object-contain"
-                />
+              <div className="mb-4">
+                <span
+                  style={{ color: "var(--color-brand-primary)" }}
+                  className="text-4xl"
+                >
+                  {service.icon}
+                </span>
               </div>
 
               <h3

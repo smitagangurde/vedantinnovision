@@ -59,13 +59,13 @@ export default function FilmsApproachSection() {
               className="service-card bg-white border rounded-xl p-6 text-center hover:shadow-md transition duration-300"
             >
               {/* Icon */}
-              <div className="w-14 h-14 relative mx-auto mb-4">
-                <Image
-                  src={card.icon}
-                  alt={card.title}
-                  fill
-                  className="object-contain"
-                />
+              <div className="mb-4">
+                <span
+                  style={{ color: "var(--color-brand-primary)" }}
+                  className="text-4xl"
+                >
+                  {card.icon}
+                </span>
               </div>
 
               {/* Title */}

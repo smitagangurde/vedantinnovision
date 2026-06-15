@@ -10,22 +10,22 @@ export const FilmsApproach = {
     {
       title: "Corporate Videos",
       desc: "Professional videos to showcase your company, processes, and brand communication effectively.",
-      icon: "/icons/corporate.png",
+      icon: "🎬",
     },
     {
       title: "Animation & LMS Content",
       desc: "2D–3D animations and training content including induction and safety modules for better understanding and engagement.",
-      icon: "/icons/employer.png",
+      icon: "✨",
     },
     {
       title: "Testimonial & Event Videos",
       desc: "Capturing real experiences, client stories, and events to build trust and brand credibility.",
-      icon: "/icons/testimonial.png",
+      icon: "🎥",
     },
     {
       title: "Branded Digital Content",
       desc: "Creative video content for marketing, social media, and digital platforms to improve visibility and engagement.",
-      icon: "/icons/brand.png",
+      icon: "📱",
     },
   ],
 };
