@@ -4,7 +4,7 @@ export const SMPortfolio = [
     image: "/Social-Media-Marketing/Data-Backend Strategies 001.png",
   },
   {
-    title: "GrassRoot Kreedakul",
+    title: "Grassroots Kreedakul",
     image: "/Social-Media-Marketing/Data-Backend Strategies 002.png",
   },
   {
@@ -16,7 +16,7 @@ export const SMPortfolio = [
     image: "/Social-Media-Marketing/Data-Backend Strategies 004.png",
   },
   {
-    title: "Hospital Life Care",
+    title: "Lifecare",
     image: "/Social-Media-Marketing/Data-Backend Strategies 005.png",
   },
   // {

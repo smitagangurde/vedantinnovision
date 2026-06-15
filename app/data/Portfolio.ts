@@ -1,26 +1,94 @@
 export const Portfolio = [
   {
-    title: "Bajaj Finserv Direct Limited",
-    image: "/IT-Solutions/IT Digital Solution 001.png",
+    title: "Securio Path Web App",
+    slug: "securio-path-web",
+    images: [
+      "/IT-Solutions/IT Digital Solution 001.png",
+      "/IT-Solutions/IT Digital Solution 002.png", 
+      "/IT-Solutions/IT Digital Solution 003.png", 
+    ],
+    tags: [
+      "BEHAVIOURAL TRACKING",
+      "ACCIDENT DETECTION",
+      "GPS TRACKING",
+      "OVERSPEED ALERT",
+      "EMERGENCY SOS",
+    ],
+    description:[
+      "The KnowUrRid is a mobile application designed to enhance the safety of employees who are working on-site or during travel by offering immediate assistance in case of emergencies or accidents. The application will be developed natively for both Android and iOS platforms.",
+      "Responsive, Interactive Admin Panel(Web Application) with graphical presentation along with statistics  to manage Securio Path App for employees.",
+      "Monitors driving patterns and behaviors over time, providing insights and feedback to help improve driver safety and performance",
+    ],
+    url: "",
   },
   {
-    title: "River",
-    image: "/IT-Solutions/IT Digital Solution 002.png",
+    title: "Securio Path Mobile App",
+    slug: "securio-path-mobile",
+    images: [
+      "/IT-Solutions/IT Digital Solution 001.png",
+      "/IT-Solutions/IT Digital Solution 002.png", 
+      "/IT-Solutions/IT Digital Solution 003.png", 
+    ],
+    tags: [
+      "BEHAVIOURAL TRACKING",
+      "ACCIDENT DETECTION",
+      "GPS TRACKING",
+      "OVERSPEED ALERT",
+      "EMERGENCY SOS",
+    ],
+    description:[
+      "The KnowUrRid is a mobile application designed to enhance the safety of employees who are working on-site or during travel by offering immediate assistance in case of emergencies or accidents. The application will be developed natively for both Android and iOS platforms.",
+      "Responsive, Interactive Admin Panel(Web Application) with graphical presentation along with statistics  to manage Securio Path App for employees.",
+      "Monitors driving patterns and behaviors over time, providing insights and feedback to help improve driver safety and performance",
+    ],
+     url: "",
   },
   {
-    title: "Michelin",
-    image: "/IT-Solutions/IT Digital Solution 003.png",
+    title: "Safe Edge",
+    slug: "safe-edge",
+    images: [
+      "/IT-Solutions/IT Digital Solution 002.png",
+      "/IT-Solutions/IT Digital Solution 003.png", 
+    ],
+    description:
+      "End-to-end School ERP covering admissions, attendance, fee management, and parent communication portals.",
+    tags: ["ERP", "Education", "Web App"],
+    url: "https://your-live-url.com/school-erp-system",
   },
   {
-    title: "Knight Frank",
-    image: "/IT-Solutions/IT Digital Solution 004.png",
+    title: "Matru-Mandir",
+    slug: "matru-mandir",
+    images: [
+      "/IT-Solutions/IT Digital Solution 003.png",
+      "/IT-Solutions/IT Digital Solution 003.png", // replace with real 2nd image
+    ],
+    description:
+      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
+    tags: ["LMS", "E-Learning", "Web App"],
+    url: "https://matrumandirvishwastsanstha.com/",
   },
   {
-    title: "Abbott",
-    image: "/IT-Solutions/IT Digital Solution 005.png",
+    title: "Kreeda-Kul Web App",
+    slug: "kreeda-kul-web-app",
+    images: [
+      "/IT-Solutions/IT Digital Solution 003.png",
+      "/IT-Solutions/IT Digital Solution 003.png", 
+    ],
+    description:
+      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
+    tags: ["LMS", "E-Learning", "Web App"],
+    url: "https://your-live-url.com/learning-management-system",
   },
   {
-    title: "Gyproc",
-    image: "/IT-Solutions/IT Digital Solution 006.png",
+    title: "Kreeda-Kul Mobile App",
+    slug: "kreed-kul-mobile",
+    images: [
+      "/IT-Solutions/IT Digital Solution 003.png",
+      "/IT-Solutions/IT Digital Solution 003.png", 
+    ],
+    description:
+      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
+    tags: ["LMS", "E-Learning", "Web App"],
+    url: "https://your-live-url.com/learning-management-system",
   },
 ];

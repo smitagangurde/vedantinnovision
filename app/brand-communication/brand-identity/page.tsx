@@ -118,7 +118,7 @@ export default function BrandIdentitySection() {
               style={{
                 fontSize: "var(--text-heading-xl)",
                 fontWeight: "var(--font-weight-heading)",
-                color: "var(--color-cpa-primary-text)",
+                color: "var(--color-cpa-heading-text)",
               }}
               className="mb-6 italic leading-snug sm:text-2xl md:text-3xl lg:text-4xl" // ✅ added responsive sizes
             >
@@ -131,7 +131,7 @@ export default function BrandIdentitySection() {
                 style={{
                   fontSize: "var(--text-body-sm)",
                   opacity: 0.7, // ✅ matches reference
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                 }}
                 className="leading-relaxed max-w-5xl mx-auto sm:text-base md:text-lg lg:text-xl" // ✅ max-w-5xl mx-auto like reference
               >
@@ -144,7 +144,7 @@ export default function BrandIdentitySection() {
                 style={{
                   fontSize: "var(--text-body-sm)",
                   opacity: 0.7, // ✅ matches reference
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                 }}
                 className="leading-relaxed max-w-5xl mx-auto sm:text-base md:text-lg lg:text-xl" // ✅ max-w-5xl mx-auto like reference
               >

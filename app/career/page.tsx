@@ -334,7 +334,7 @@ export default function CareerPage() {
                 style={{
                   fontSize: "var(--text-heading-lg)",
                   fontWeight: "var(--font-weight-heading)",
-                  color: "var(--color-cpa-secondary-text)",
+                  color: "var(--color-cpa-heading-text)",
                 }}
                 className="italic"
               >
@@ -343,7 +343,7 @@ export default function CareerPage() {
 
               <p
                 style={{
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                   fontSize: "var(--text-body-sm)",
                 }}
                 className="leading-relaxed sm:text-base md:text-lg"
@@ -357,7 +357,7 @@ export default function CareerPage() {
 
               <p
                 style={{
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                   fontSize: "var(--text-body-sm)",
                 }}
                 className="leading-relaxed sm:text-base md:text-lg"
@@ -374,7 +374,7 @@ export default function CareerPage() {
                 style={{
                   fontSize: "var(--text-heading-lg)",
                   fontWeight: "var(--font-weight-heading)",
-                  color: "var(--color-cpa-secondary-text)",
+                  color: "var(--color-cpa-heading-text)",
                 }}
                 className="italic"
               >
@@ -383,7 +383,7 @@ export default function CareerPage() {
 
               <p
                 style={{
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                   fontSize: "var(--text-body-sm)",
                 }}
                 className="leading-relaxed sm:text-base md:text-lg"
@@ -395,7 +395,7 @@ export default function CareerPage() {
 
               <p
                 style={{
-                  color: "var(--color-text-body)",
+                  color: "var(--color-cpa-primary-text)",
                   fontSize: "var(--text-body-sm)",
                 }}
                 className="leading-relaxed sm:text-base md:text-lg"

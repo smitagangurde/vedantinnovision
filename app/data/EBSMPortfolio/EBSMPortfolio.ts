@@ -4,7 +4,7 @@ export const EBSMPortfolio = [
     image: "/Promotion-Outreach-Services/Promotion & Outreach Services 001.png",
   },
   {
-    title: "GrassRoot Kreedakul",
+    title: "Grassroots Kreedakul",
     image: "/Promotion-Outreach-Services/Promotion & Outreach Services 002.png",
   },
   {

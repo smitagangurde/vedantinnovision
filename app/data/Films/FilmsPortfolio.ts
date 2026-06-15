@@ -11,8 +11,8 @@ export const FilmsPortfolio = {
     { title: "Suroj Buildcon", image: "/films/suroj.jpg" },
     { title: "Amdocs Blossom Marathon", image: "/films/amdocs.jpg" },
     { title: "Michelin", image: "/films/michelin.jpg" },
-    { title: "Brookfield", image: "/films/brookfield.jpg" },
-    { title: "Suroj Buildcon", image: "/films/suroj2.jpg" },
-    { title: "Yale", image: "/films/yale.jpg" },
+    // { title: "Brookfield", image: "/films/brookfield.jpg" },
+    // { title: "Suroj Buildcon", image: "/films/suroj2.jpg" },
+    // { title: "Yale", image: "/films/yale.jpg" },
   ],
 };

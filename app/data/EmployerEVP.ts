@@ -1,7 +1,7 @@
 export const EmployerEVP = [
   {
     id: 1,
-    title: "Ferrero Rocher",
+    title: "Ferrero",
     image: "/Corporate-Branding/Corporate Solution 001.png",
     bg: "bg-yellow-500",
   },
@@ -19,7 +19,7 @@ export const EmployerEVP = [
   },
   {
     id: 4,
-    title: "Op Mobility",
+    title: "OP Mobility",
     image: "/Corporate-Branding/Corporate Solution 002.png",
     bg: "bg-gray-300",
   },
@@ -43,7 +43,7 @@ export const EmployerEVP = [
   },
   {
     id: 8,
-    title: "Op Mobility",
+    title: "OP Mobility",
     image: "/Corporate-Branding/Corporate Solution 010.png",
     bg: "bg-purple-600",
   },

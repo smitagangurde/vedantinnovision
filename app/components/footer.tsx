@@ -2,10 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import {
   ABOUT,
-  BLOG,
   BRANDIDENTITY,
   CAREER,
   CONTACT,
@@ -16,7 +14,6 @@ import {
 } from "../const/routes.const";
 import {
   Home,
-  FileText,
   Briefcase,
   Phone,
   InfoIcon,
@@ -29,17 +26,6 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!captchaToken) {
-      alert("Please verify that you are not a robot.");
-      return;
-    }
-    alert("Form submitted successfully!");
-  };
-
   return (
     <footer
       style={{
@@ -52,10 +38,10 @@ export default function Footer() {
     >
       <div
         style={{ maxWidth: "var(--content-max-width)" }}
-        className="mx-auto px-6 grid md:grid-cols-5 gap-10"
+        className="mx-auto px-6 grid md:grid-cols-4 gap-10 justify-items-center"
       >
         {/* ── Logo ── */}
-        <div>
+        <div className="flex items-start justify-center">
           <Image
             src="/Vedant Innovation Logo.png"
             alt="Vedant Innovision"
@@ -65,21 +51,20 @@ export default function Footer() {
         </div>
 
         {/* ── Company ── */}
-        <nav>
+        <nav className="text-center md:text-left">
           <h3
             style={{
               color: "var(--color-brand-primary)",
               fontWeight: "var(--font-weight-heading)",
             }}
-            className="mb-4"
+            className="mb-4 text-sm"
           >
             Company
           </h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-sm">
             {[
               { href: "/", icon: <Home size={16} />, label: "Home" },
               { href: ABOUT, icon: <InfoIcon size={16} />, label: "About" },
-              // { href: BLOG, icon: <FileText size={16} />, label: "Blog" }, 
               { href: CAREER, icon: <Briefcase size={16} />, label: "Career" },
               { href: CONTACT, icon: <Phone size={16} />, label: "Contact" },
             ].map(({ href, icon, label }) => (
@@ -87,7 +72,7 @@ export default function Footer() {
                 <Link
                   href={href}
                   style={{ color: "var(--color-text-body)" }}
-                  className="nav-link flex items-center gap-2 transition"
+                  className="nav-link flex items-center justify-center md:justify-start gap-2 transition"
                 >
                   {icon}
                   {label}
@@ -98,17 +83,17 @@ export default function Footer() {
         </nav>
 
         {/* ── Work ── */}
-        <nav>
+        <nav className="text-center md:text-left">
           <h3
             style={{
               color: "var(--color-brand-primary)",
               fontWeight: "var(--font-weight-heading)",
             }}
-            className="mb-4"
+            className="mb-4 text-sm"
           >
             Work
           </h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-sm">
             {[
               {
                 href: BRANDIDENTITY,
@@ -130,7 +115,7 @@ export default function Footer() {
                 <Link
                   href={href}
                   style={{ color: "var(--color-text-body)" }}
-                  className="nav-link flex items-center gap-2 transition"
+                  className="nav-link flex items-center justify-center md:justify-start gap-2 transition"
                 >
                   {icon}
                   {label}
@@ -141,20 +126,20 @@ export default function Footer() {
         </nav>
 
         {/* ── Social ── */}
-        <nav>
+        <nav className="text-center md:text-left">
           <h3
             style={{
               color: "var(--color-brand-primary)",
               fontWeight: "var(--font-weight-heading)",
             }}
-            className="mb-4"
+            className="mb-4 text-sm"
           >
             Social
           </h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-sm">
             {[
               {
-                href: "https://www.linkedin.com/in/vedant-innovision-912ba2324",
+                href: "https://www.linkedin.com/company/vedant-innovision/",
                 icon: <Linkedin size={16} />,
                 label: "LinkedIn",
               },
@@ -174,7 +159,7 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   style={{ color: "var(--color-text-body)" }}
-                  className="nav-link flex items-center gap-2 transition"
+                  className="nav-link flex items-center justify-center md:justify-start gap-2 transition"
                 >
                   {icon}
                   {label}
@@ -183,82 +168,6 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
-
-        {/* ── Enquiry Form ── */}
-        <div>
-          <h3
-            style={{
-              color: "var(--color-brand-primary)",
-              fontWeight: "var(--font-weight-heading)",
-            }}
-            className="mb-4"
-          >
-            Enquiry
-          </h3>
-
-          <form className="space-y-3" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Name"
-              required
-              style={{
-                color: "var(--color-text-body)",
-                borderColor: "var(--color-border-image)",
-                fontSize: "var(--text-body-sm)",
-              }}
-              className="footer-input w-full bg-white px-3 py-2 rounded focus:outline-none"
-            />
-
-            <input
-              type="email"
-              placeholder="Email Id"
-              required
-              style={{
-                color: "var(--color-text-body)",
-                borderColor: "var(--color-border-image)",
-                fontSize: "var(--text-body-sm)",
-              }}
-              className="footer-input w-full bg-white px-3 py-2 rounded focus:outline-none"
-            />
-
-            <input
-              type="tel"
-              placeholder="Mobile No."
-              required
-              style={{
-                color: "var(--color-text-body)",
-                borderColor: "var(--color-border-image)",
-                fontSize: "var(--text-body-sm)",
-              }}
-              className="footer-input w-full bg-white px-3 py-2 rounded focus:outline-none"
-            />
-
-            <textarea
-              placeholder="Message"
-              required
-              style={{
-                color: "var(--color-text-body)",
-                borderColor: "var(--color-border-image)",
-                fontSize: "var(--text-body-sm)",
-              }}
-              className="footer-input w-full bg-white px-3 py-2 rounded focus:outline-none"
-            />
-
-            <button
-              type="submit"
-              style={{
-                background:
-                  "linear-gradient(to right, var(--color-cta-from), var(--color-cta-to))",
-                color: "var(--color-cta-text)",
-                fontSize: "var(--text-btn)",
-                fontWeight: "var(--font-weight-btn)",
-              }}
-              className="px-6 py-2 rounded hover:opacity-90 transition"
-            >
-              SUBMIT →
-            </button>
-          </form>
-        </div>
       </div>
 
       {/* ── Bottom Footer ── */}
@@ -275,7 +184,7 @@ export default function Footer() {
             fontSize: "var(--text-body-sm)",
             color: "var(--color-text-body)",
           }}
-          className="mx-auto px-6 flex flex-col md:flex-row justify-between"
+          className="mx-auto px-6 flex flex-col md:flex-row justify-between items-center"
         >
           <div className="space-x-4">
             <Link

@@ -3,7 +3,8 @@ import Testimonial from "@/app/component/Testimonial";
 import { CONTACT } from "@/app/const/routes.const";
 import Link from "next/link";
 import Image from "next/image";
-import PortfolioSection from "@/app/component/PortfolioSection";
+// import PortfolioSection from "@/app/component/PortfolioSection";
+import MarketingCommunicationSection from "@/app/component/MarketingCommunicationSection";
 import ContactDiv from "@/app/component/ContactDiv";
 
 export default function MarketingCommunication() {
@@ -104,7 +105,8 @@ export default function MarketingCommunication() {
         </div>
       </section>
 
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
+      <MarketingCommunicationSection/>
       <BrandSection />
       <Testimonial />
       <ContactDiv />

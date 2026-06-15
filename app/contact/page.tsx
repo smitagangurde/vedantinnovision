@@ -137,21 +137,23 @@ export default function ContactPage() {
               <form className="mt-10 space-y-6">
                 {["Name", "Email Id", "Mobile No."].map((field) => (
                   <input
+                    style={{ color: "var(--color-cpa-primary-text)" }}
                     key={field}
                     type="text"
                     placeholder={field}
-                    className="w-full bg-transparent border-b border-black/30 pb-2 text-sm placeholder:text-black/50 focus:outline-none focus:border-yellow-400 transition"
+                    className="w-full bg-transparent border-b border-black/30 pb-2 text-sm focus:outline-none focus:border-yellow-400 transition"
                   />
                 ))}
 
                 <textarea
+                  style={{ color: "var(--color-cpa-primary-text)" }}
                   placeholder="Message"
                   rows={2}
-                  className="w-full bg-transparent border-b border-black/30 pb-2 text-sm placeholder:text-black/50 focus:outline-none focus:border-yellow-400 transition resize-none"
+                  className="w-full bg-transparent border-b border-black/30 pb-2 text-sm  focus:outline-none focus:border-yellow-400 transition resize-none"
                 />
 
                 {/* CAPTCHA */}
-                <div className="w-full max-w-[280px] bg-white/60 border border-black/20 rounded p-3 flex items-center justify-between text-xs">
+                <div className="w-full max-w-[280px] bg-white/60 border-black/20 rounded p-3 flex items-center justify-between text-xs">
                   <div className="flex items-center gap-2">
                     <div className="w-4 h-4 border border-black/40" />
                     <span>I&apos;m not a robot</span>
@@ -179,7 +181,7 @@ export default function ContactPage() {
               </h2>
 
               <ul
-                style={{ color: "var(--color-cpa-secondary-text)" }}
+                style={{ color: "var(--color-cpa-primary-text)" }}
                 className="space-y-3 text-sm md:text-base list-disc pl-5 opacity-70"
               >
                 <li>Embark on a Design Journey with Our Team</li>
@@ -250,7 +252,7 @@ export default function ContactPage() {
             "linear-gradient(to right, var(--color-bg-career-footer-from), var(--color-bg-career-footer-via), var(--color-bg-career-footer-to))",
           color: "var(--color-text-body)",
         }}
-        className="w-full py-16 px-4 sm:px-6 lg:px-16"
+        className="w-full py-6 px-4 sm:px-6 lg:px-16"
         aria-labelledby="brands-heading"
       >
         <div className="max-w-5xl mx-auto text-center mb-10">
@@ -261,11 +263,16 @@ export default function ContactPage() {
             The numbers say it all!
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
             <div>
-              <h3 className="text-3xl font-semibold">4+</h3>
+              <h3
+                style={{ color: "var(--color-cpa-primary-text)" }}
+                className="text-3xl font-semibold"
+              >
+                4+
+              </h3>
               <p
-                style={{ color: "var(--color-text-body)" }}
+                style={{ color: "var(--color-cpa-primary-text)" }}
                 className="opacity-70 text-sm"
               >
                 Years of experience
@@ -273,9 +280,14 @@ export default function ContactPage() {
             </div>
 
             <div className="sm:border-x sm:border-purple-900">
-              <h3 className="text-3xl font-semibold">800+</h3>
+              <h3
+                style={{ color: "var(--color-cpa-primary-text)" }}
+                className="text-3xl font-semibold"
+              >
+                800+
+              </h3>
               <p
-                style={{ color: "var(--color-text-body)" }}
+                style={{ color: "var(--color-cpa-primary-text)" }}
                 className="opacity-70 text-sm"
               >
                 Projects delivered
@@ -283,9 +295,14 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold">40+</h3>
+              <h3
+                style={{ color: "var(--color-cpa-primary-text)" }}
+                className="text-3xl font-semibold "
+              >
+                40+
+              </h3>
               <p
-                style={{ color: "var(--color-text-body)" }}
+                style={{ color: "var(--color-cpa-primary-text)" }}
                 className="opacity-70 text-sm"
               >
                 Satisfied clients
