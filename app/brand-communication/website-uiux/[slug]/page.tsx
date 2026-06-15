@@ -20,6 +20,7 @@ export default async function PortfolioDetailPage({ params }: Props) {
 
   return (
     <main>
+      {/* ── Hero Section ── */}
       <section
         style={{
           background:
@@ -31,31 +32,18 @@ export default async function PortfolioDetailPage({ params }: Props) {
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
-          className="mx-auto grid items-center gap-10 md:grid-cols-2"
+          className="mx-auto grid items-start gap-10 md:grid-cols-2"
         >
-          {/* ── Carousel (client component) ── */}
-          <div className="flex justify-center">
+          {/* ── Carousel ── */}
+          <div className="flex justify-center sticky top-8">
             <DetailCarousel images={item.images} alt={item.title} />
           </div>
 
           {/* ── Content ── */}
-          <div style={{ maxWidth: "var(--body-copy-max-width)" }}>
-            {/* Tags */}
-            <div className="flex flex-wrap gap-2 mb-4">
-              {item.tags.map((tag) => (
-                <span
-                  key={tag}
-                  style={{
-                    background: "var(--color-brand-primary)",
-                    color: "var(--color-cpa-primary-text)",
-                  }}
-                  className="text-xs font-semibold px-3 py-1 rounded-full"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-
+          <div
+            style={{ maxWidth: "var(--body-copy-max-width)" }}
+            className="flex flex-col gap-6"
+          >
             {/* Title */}
             <h1
               style={{
@@ -63,13 +51,13 @@ export default async function PortfolioDetailPage({ params }: Props) {
                 fontSize: "var(--text-heading-xl)",
                 fontWeight: "var(--font-weight-heading)",
               }}
-              className="mb-4 leading-snug sm:text-3xl md:text-4xl"
+              className="leading-snug sm:text-3xl md:text-4xl"
             >
               {item.title}
             </h1>
 
             {/* Description */}
-            <ul className="space-y-2 mt-1">
+            <ul className="space-y-3">
               {(Array.isArray(item.description)
                 ? item.description
                 : [item.description]
@@ -84,7 +72,7 @@ export default async function PortfolioDetailPage({ params }: Props) {
                 >
                   <span
                     style={{ color: "var(--color-brand-primary)" }}
-                    className="mt-1 text-xs"
+                    className="mt-1 text-xs shrink-0"
                   >
                     ●
                   </span>
@@ -93,23 +81,86 @@ export default async function PortfolioDetailPage({ params }: Props) {
               ))}
             </ul>
 
+            {/* Divider */}
+            <hr style={{ borderColor: "var(--color-brand-primary)", opacity: 0.2 }} />
+
+            {/* Tags */}
+            <div>
+              <h2
+                style={{
+                  color: "var(--color-brand-primary)",
+                  fontSize: "var(--text-body-base)",
+                  fontWeight: "var(--font-weight-heading)",
+                }}
+                className="mb-3"
+              >
+                Features
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {item.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    style={{
+                      background: "var(--color-brand-primary)",
+                      color: "var(--color-cpa-primary-text)",
+                    }}
+                    className="text-xs font-semibold px-3 py-1 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Technologies Used */}
+            {item.technologies && item.technologies.length > 0 && (
+              <div>
+                <h2
+                  style={{
+                    color: "var(--color-brand-primary)",
+                    fontSize: "var(--text-body-base)",
+                    fontWeight: "var(--font-weight-heading)",
+                  }}
+                  className="mb-3"
+                >
+                  Technologies Used
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  {item.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      style={{
+                        color: "var(--color-brand-primary)",
+                        border: "1px solid var(--color-brand-primary)",
+                        fontSize: "var(--text-body-xs)",
+                        fontWeight: "var(--font-weight-heading)",
+                      }}
+                      className="px-3 py-1 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* CTA */}
-            <div className="flex items-center gap-4 mt-8">
-              {item.url && (
+            {item.url && (
+              <div className="pt-2">
                 <Link
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    border: "1px solid var(--color-brand-primary)",
-                    color: "var(--color-brand-primary)",
+                    background: "var(--color-brand-primary)",
+                    color: "var(--color-cpa-primary-text)",
                   }}
-                  className="px-6 py-3 rounded-md font-semibold hover:opacity-80 transition"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-semibold hover:opacity-80 transition"
                 >
                   View Live Project ↗
                 </Link>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

@@ -15,7 +15,7 @@ export const brands: Brand[] = [
   { id: 12, name: "Wikus", logo: "/Brand-logos/WikusLogo.png" },
   { id: 13, name: "Euro Kid", logo: "/Brand-logos/EuroKidLogo.png" },
   { id: 14, name: "Dnyan Prabhodini", logo: "/Brand-logos/DnyanPrabhodiniLogo.png" },
-  { id: 15, name: "Pencil Pod", logo: "/Brand-logos/PencilPodLogo.png" },
+  { id: 15, name: "Pencil Pod", logo: "/Brand-logos/Pencil-Pod-Logo123.jpeg" },
   { id: 16, name: "Grass Root", logo: "/Brand-logos/GrassRootLogo.png" },
   { id: 17, name: "Atlas Spine", logo: "/Brand-logos/AtlasSpineLogo.png" },
   { id: 18, name: "Knitcon", logo: "/Brand-logos/KnitconLogo.png" },

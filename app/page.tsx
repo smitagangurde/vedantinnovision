@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -13,6 +11,7 @@ import {
 import Testimonial from "./component/Testimonial";
 import BrandSection from "./component/BrandSection";
 import ContactDiv from "./component/ContactDiv";
+import AnimatedHeading from "./data/AnimatedHeading/page";
 
 export default function Home() {
   return (
@@ -34,7 +33,7 @@ export default function Home() {
           className="mx-auto"
         >
           {/* HERO HEADING */}
-          <h1
+          {/* <h1
             style={{
               fontSize: "var(--text-hero-page-heading)",
               fontWeight: "var(--font-weight-heading)",
@@ -46,7 +45,9 @@ export default function Home() {
             className="leading-tight sm:text-3xl md:text-5xl mb-8"
           >
             Infinite Solutions <br className="hidden md:block" />
-          </h1>
+          </h1> */}
+
+          <AnimatedHeading />
 
           <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[540px] overflow-hidden border border-gray-200">
             <video
