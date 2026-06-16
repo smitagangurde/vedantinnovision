@@ -30,7 +30,7 @@ export default function SocialMedia() {
           {/* ── Image ── */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/Social-Media-Marketing/Social Media Marketing.png"
+              src="/Social-Media-Marketing/Social Media Marketing Main.jpeg"
               alt="Social Media Marketing"
               width={900}
               height={650}

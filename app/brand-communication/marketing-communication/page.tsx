@@ -31,8 +31,8 @@ export default function MarketingCommunication() {
           <div className="relative flex justify-center md:justify-start">
             <div className="relative z-10 group">
               <Image
-                src="/images/billboard.png"
-                alt="Marketing Billboard"
+                src="/Marketing-communication/Marketing-Communication-main.png"
+                alt="Marketing Communication Image"
                 width={580}
                 height={420}
                 style={{ borderColor: "var(--color-border-image)" }}

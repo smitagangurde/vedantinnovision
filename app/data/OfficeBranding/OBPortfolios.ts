@@ -20,15 +20,15 @@ export const OBPortfolios = [
     image: "/Industrial-Spatial-Branding/Industrial Solution 005.png",
   },
   {
-    title: "Atlas Copco",
-    image: "/Industrial-Spatial-Branding/Industrial Solution 006.png",
+    title: "Ferrero",
+    image: "/Industrial-Spatial-Branding/Industrial Solution 006.jpeg",
   },
   {
     title: "OP Mobility",
     image: "/Industrial-Spatial-Branding/Industrial Solution 007.png",
   },
   {
-    title: "Atas Copco",
-    image: "/Industrial-Spatial-Branding/Industrial Solution 008.png",
+    title: "Ferrero",
+    image: "/Industrial-Spatial-Branding/Industrial Solution 008.jpeg",
   },
 ];

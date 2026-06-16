@@ -8,8 +8,8 @@ export const SMPortfolio = [
     image: "/Social-Media-Marketing/Data-Backend Strategies 002.png",
   },
   {
-    title: "Group Surya",
-    image: "/Social-Media-Marketing/Data-Backend Strategies 006.png",
+    title: "Pencil Pod",
+    image: "/Social-Media-Marketing/Data-Backend Strategies 003.jpeg",
   },
   {
     title: "Atlas Spine",
@@ -19,8 +19,8 @@ export const SMPortfolio = [
     title: "Lifecare",
     image: "/Social-Media-Marketing/Data-Backend Strategies 005.png",
   },
-  // {
-  //   title: "Yale Locks",
-  //   image: "/Social-Media-Marketing/Data-Backend Strategies 003.png",
-  // },
+   {
+    title: "Group Surya",
+    image: "/Social-Media-Marketing/Data-Backend Strategies 006.png",
+  },
 ];
