@@ -7,9 +7,9 @@ export const FilmsPortfolio = {
   ],
 
    films: [
-    { title: "Corporate Videos", video: "/Visual Stories/Visual-Stories-001.mp4", poster: "" },
-    { title: "Animation & LMS Content", video: "/Visual Stories/Visual-Stories-002.mp4", poster: "" },
-    { title: "Testimonial & Event Videos", video: "/Visual Stories/Visual-Stories-003.mp4", poster: "" },
-    { title: "Branded Digital Content", video: "/Visual Stories/Visual-Stories-004.mp4", poster: "" },
+    { title: "Corporate Videos", video: "https://pub-7e5798500cc048ada514004eeaddf292.r2.dev/vedantinnovision/Visual-Stories-001.mp4", poster: "" },
+    { title: "Animation & LMS Content", video: "https://pub-7e5798500cc048ada514004eeaddf292.r2.dev/vedantinnovision/Visual-Stories-002.mp4", poster: "" },
+    { title: "Testimonial & Event Videos", video: "https://pub-7e5798500cc048ada514004eeaddf292.r2.dev/vedantinnovision/Visual-Stories-003.mp4", poster: "" },
+    { title: "Branded Digital Content", video: "https://pub-7e5798500cc048ada514004eeaddf292.r2.dev/vedantinnovision/Visual-Stories-004.mp4", poster: "" },
   ],
 };
