@@ -262,8 +262,8 @@ export default function CareerPage() {
             <div className="md:col-span-7">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/scr1.jpg"
-                  alt="Team working"
+                  src="/"
+                  alt=""
                   width={1200}
                   height={800}
                   className="h-[300px] w-full object-cover md:h-[420px]"
@@ -274,8 +274,8 @@ export default function CareerPage() {
             <div className="md:col-span-5">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/scr1.jpg"
-                  alt="Team meeting"
+                  src="/"
+                  alt=""
                   width={800}
                   height={800}
                   className="h-[300px] w-full object-cover md:h-[420px]"
@@ -286,8 +286,8 @@ export default function CareerPage() {
             <div className="md:col-span-4 md:ml-10">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/scr1.jpg"
-                  alt="Phone usage"
+                  src="/"
+                  alt=""
                   width={800}
                   height={600}
                   className="h-[260px] w-full object-cover md:h-[320px]"
@@ -298,8 +298,8 @@ export default function CareerPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/scr1.jpg"
-                  alt="Office"
+                  src="/"
+                  alt=""
                   width={1200}
                   height={600}
                   className="h-[260px] w-full object-cover md:h-[320px]"

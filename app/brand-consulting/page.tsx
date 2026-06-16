@@ -63,7 +63,7 @@ export default function BrandConsulting() {
               maxWidth: "var(--hero-heading-max-width)",
               textAlign: "center",
             }}
-            className="leading-relaxed space-y-4 md:text-left md:text-base"
+            className="leading-relaxed space-y-4 mx-auto"
           >
             <p>
               At Vedant Innovision, we help businesses define and express their

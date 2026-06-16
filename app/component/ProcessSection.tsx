@@ -8,11 +8,11 @@ export default function ProcessSection() {
         background:
           "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
         color: "var(--color-text-body)",
-        paddingTop: "4rem",
-        paddingBottom: "4rem",
+        // paddingTop: "4rem",
+        // paddingBottom: "4rem",
         paddingLeft: "var(--section-px-sm)",
         paddingRight: "var(--section-px-sm)",
-        borderTop: "1px solid var(--color-border-image)",
+        // borderTop: "1px solid var(--color-border-image)",
       }}
       className="w-full lg:px-16"
     >
