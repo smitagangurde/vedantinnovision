@@ -6,13 +6,10 @@ export const FilmsPortfolio = {
     "From internal communication to marketing and digital platforms, we deliver content that is consistent, scalable, and result-oriented.",
   ],
 
-  films: [
-    { title: "Yale Zuri", image: "/films/yale-zuri.jpg" },
-    { title: "Suroj Buildcon", image: "/films/suroj.jpg" },
-    { title: "Amdocs Blossom Marathon", image: "/films/amdocs.jpg" },
-    { title: "Michelin", image: "/films/michelin.jpg" },
-    // { title: "Brookfield", image: "/films/brookfield.jpg" },
-    // { title: "Suroj Buildcon", image: "/films/suroj2.jpg" },
-    // { title: "Yale", image: "/films/yale.jpg" },
+   films: [
+    { title: "Corporate Videos", video: "/Visual Stories/Visual-Stories-001.mp4", poster: "" },
+    { title: "Animation & LMS Content", video: "/Visual Stories/Visual-Stories-002.mp4", poster: "" },
+    { title: "Testimonial & Event Videos", video: "/Visual Stories/Visual-Stories-003.mp4", poster: "" },
+    { title: "Branded Digital Content", video: "/Visual Stories/Visual-Stories-004.mp4", poster: "" },
   ],
 };

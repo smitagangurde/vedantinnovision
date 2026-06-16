@@ -31,7 +31,7 @@ export default function Films() {
           {/* ── Image ── */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/uiux.png"
+              src="/Visual Stories/Visual-Stories-image.jpeg"
               alt="Visual Stories"
               width={900}
               height={650}

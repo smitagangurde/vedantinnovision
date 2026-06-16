@@ -52,19 +52,23 @@ export default function FilmsPortfolioSection() {
               className="portfolio-card border bg-white hover:shadow-md transition overflow-hidden rounded-lg"
             >
               {/* Image */}
-              <div className="relative w-full h-[260px] md:h-[280px] lg:h-[300px] group">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+
+              <div className="relative w-full h-[260px] md:h-[280px] lg:h-[300px] group overflow-hidden">
+                <video
+                  src={item.video}
+                  poster={item.poster}
+                  muted
+                  autoPlay
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
 
                 {/* Title */}
-                <div className="absolute bottom-0 left-0 p-4">
+                <div className="absolute bottom-0 left-0 p-4 pointer-events-none">
                   <h3
                     style={{ fontSize: "var(--text-body-sm)" }}
                     className="text-white font-medium"

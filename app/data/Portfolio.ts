@@ -4,7 +4,7 @@ export interface PortfolioItem {
   images: string[];
   tags: string[];
   description: string[];
-  technologies: string[];   
+  technologies: string[];
   url: string;
 }
 
@@ -31,7 +31,7 @@ export const Portfolio = [
       "EMERGENCY SOS",
       "MOTION SPEED ANALYSIS",
     ],
-     technologies: [
+    technologies: [
       "React.js",
       "Node.js",
       "Express",
@@ -50,24 +50,24 @@ export const Portfolio = [
     ],
     url: "",
   },
-  {
-    title: "SAFEDGE 360",
-    slug: "safedge",
-    images: [
-      "/SafEdge/SafEdge.png",
-      "/SafEdge/SafEdge-001.png",
-      "/SafEdge/SafEdge-002.png",
-      "/SafEdge/SafEdge-003.png",
-      "/SafEdge/SafEdge-004.png",
-      "/SafEdge/SafEdge-005.png",
-      "/SafEdge/SafEdge-006.png",
-      "/SafEdge/SafEdge-007.png",
-    ],
-    description:
-      "End-to-end School ERP covering admissions, attendance, fee management, and parent communication portals.",
-    tags: ["ERP", "Education", "Web App"],
-    url: "",
-  },
+  // {
+  //   title: "SAFEDGE 360",
+  //   slug: "safedge",
+  //   images: [
+  //     "/SafEdge/SafEdge.png",
+  //     "/SafEdge/SafEdge-001.png",
+  //     "/SafEdge/SafEdge-002.png",
+  //     "/SafEdge/SafEdge-003.png",
+  //     "/SafEdge/SafEdge-004.png",
+  //     "/SafEdge/SafEdge-005.png",
+  //     "/SafEdge/SafEdge-006.png",
+  //     "/SafEdge/SafEdge-007.png",
+  //   ],
+  //   description:
+  //     "End-to-end School ERP covering admissions, attendance, fee management, and parent communication portals.",
+  //   tags: ["ERP", "Education", "Web App"],
+  //   url: "",
+  // },
   {
     title: "Matru-Mandir Vishwast Sanstha",
     slug: "matru-mandir-vishwast",
@@ -93,12 +93,22 @@ export const Portfolio = [
       "Express.js",
       "SharePoint",
     ],
-    description:
-      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
-    tags: ["LMS", "E-Learning", "Web App"],
+    description: [
+      "Developed full-stack application named Matrumandir Vishwast Sanstha, where digitization of school record management has been streamlined, concentrating primarily on the aspect of sports activities, achievements, and student participation tracking from multiple schools.",
+      "Designed and created a system allowing school management to easily record, manage and analyze the information about students' involvement in the sports events and their sport-wise performances, eliminating any need for paper-based systems.",
+      "Created user-friendly and aesthetically pleasing design with the help of ShadCN UI and React.js, providing a seamless experience for all screen types and devices.",
+      "Integrated Razorpay Payment Gateway within the project, providing secure payment of fees and registrations for all the parties involved, ensuring convenient and efficient transaction process for all users.",
+    ],
+    tags: [
+      "Student Sports Record Management",
+      "Real-time Data Handling",
+      "Role Management",
+      "User Authentication",
+      "School-wise Data Organization",
+    ],
     url: "https://matrumandirvishwastsanstha.com/",
   },
-   {
+  {
     title: "Maxcare Hospital Management",
     slug: "maxcare-hospital-management",
     images: [
@@ -106,33 +116,42 @@ export const Portfolio = [
       "/Hospital-Mangement/Hospital-Manage-001.png",
       "/Hospital-Mangement/Hospital-Manage-002.png",
       "/Hospital-Mangement/Hospital-Manage-003.png",
-      "/Hospital-Mangement/Hospital-Manage-004.png",    
+      "/Hospital-Mangement/Hospital-Manage-004.png",
     ],
-     technologies: [
+    technologies: [
       "Javascript",
       "Typescript",
-      "React",
-      "Redux Toolkit",
-      "Thunk",
-      "React Native",
-      "Tailwind",
-      "RAZORPAY",
-      "C#",
-      "Php",
+      "Bootstrap",
+      "MySQL",
+      "PHP",
+      "FullCalendar.js",
       "SQL Server Management Studio",
-      "GitAction",
+      "MVC Pattern (PHP based)",
     ],
-    description:
-      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
-    tags: ["LMS", "E-Learning", "Web App"],
+    description: [
+      "Designed and developed Maxcare Hospital, a comprehensive full-stack Hospital Management System (HMS) that digitizes and automates the complete operations of a hospital — from patient management and billing to staff administration and financial reporting.",
+      "Built a powerful real-time financial dashboard displaying income streams across OPD, IPD, Pharmacy, Pathology, Radiology, Operation Theatre, Blood Bank, and Ambulance departments, along with yearly income vs expense graphs and monthly income overview charts.",
+      "Engineered a fully integrated Staff Directory and HR module featuring card and list view of staff, attendance tracking, payroll management, leave management, and detailed staff profiles including personal info, bank details, qualifications, and work history.",
+      "Delivered the system to Maxcare Hospital as a fully operational platform, providing role-based access for Super Admin, Doctors, Accountants, Pharmacists, and other hospital staff with a clean and intuitive UI.",
+    ],
+    tags: [
+      "Dashboard & Analytics",
+      "Pharmacy",
+      "Pathology",
+      "Radiology",
+      "TPA Management",
+    ],
     url: "",
   },
   {
-    title: "Kreeda-Kul Web App",
+    title: "Kreeda-Kul App",
     slug: "kreeda-kul-web-app",
     images: [
-      "/IT-Solutions/IT Digital Solution 003.png",
-      "/IT-Solutions/IT Digital Solution 003.png",
+      "/Kreeda-Kul/Kreeda-Kul-main.jpeg",
+      "/Kreeda-Kul/Kreeda-Kul-001.jpeg",
+      "/Kreeda-Kul/Kreeda-Kul-002.jpeg",
+      "/Kreeda-Kul/Kreeda-Kul-003.jpeg",
+      "/Kreeda-Kul/Kreeda-Kul-004.jpeg",
     ],
     technologies: [
       "Javascript",
@@ -149,9 +168,13 @@ export const Portfolio = [
       "Docker",
       "GitAction",
     ],
-    description:
-      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
-    tags: ["LMS", "E-Learning", "Web App"],
+    description:[
+      "Designed the entire UI with a distinctive orange and white brand identity reflecting the energy and spirit of sports, delivering a visually appealing, clean, and professional interface built with React.js, TypeScript, ShadCN UI, Node.js, Express.js, and MongoDB as the core tech stack.",
+      "Delivered the platform as a fully responsive application accessible seamlessly across laptop, desktop, and mobile devices, ensuring administrators and students can access the system anytime, anywhere with a consistent and intuitive experience.",
+      "Built a robust Reports Module providing detailed sport-wise and student-wise result reports, giving administrators, teachers, and parents clear insights into student performance, progress, and rankings across all sports examinations and competitions.",
+      "Built a Sport Engine module to manage accommodation for student athletes participating in residential sports training programs and inter-school competitions."
+    ],
+    tags: ["Student Data Management", "Web App", "Mobile App", "Report","Sports Type","User Authentication","Role Management", "Sport test result"],
     url: "",
   },
   {
@@ -165,23 +188,33 @@ export const Portfolio = [
       "/Assets-Mangement/Asset-Management-004.png",
     ],
     technologies: [
-      "Javascript",
-      "Typescript",
-      "React",
-      "Redux",
-      "Tailwind",
-      "RAZORPAY",
-      "Redux Toolkit",
-      "Thunk",
-      "C#",
-      "ASP.NET",
-      "SQL Server Management Studio",
-      "Docker",
-      "GitAction",
+      "PHP 7.1.3+ ",
+      "Laravel",
+      "Bootstrap CSS",
+      "jQuery",
+      "MYSQL 5.1+",
+      "mod_rewrite Apache ",
+      "Mcrypt Extension",
+      "MBString Extension ",
+      "GD Extension ",
+      "MYSQLi Extension ",
+      "PHP File Info Extension ",
+      "PDO Extension",
+      "OpenSSL Extension ",
+      "Zip Extension",
     ],
-    description:
-      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
-    tags: ["LMS", "E-Learning", "Web App"],
+    description: [
+      "M-Assets is a powerful project management tool to track your asset easily. With M-Assets you can organize your company asset.",
+      "M-Assets comes fully featured with component asset management, asset management, maintenance management, tracking management, generate a label for your assets. and many more features.",
+      "Built on the robust Laravel framework with a clean Bootstrap-powered interface, M-Assets is designed to be straightforward to install on any standard cPanel hosting environment and easy to configure for different companies, currencies, languages, and date formats.",
+      "The system provides a centralized platform where businesses of all sizes can gain complete visibility into their asset inventory, monitor asset status in real time, and maintain a full audit trail of every asset's history including check-ins, check-outs, maintenance events, and file attachments.",
+    ],
+    tags: [
+      "Asset Management",
+      "Component Management",
+      "Maintenance Management",
+      "Attachment File Support",
+    ],
     url: "",
   },
   {
@@ -194,24 +227,30 @@ export const Portfolio = [
       "/Aid-doc/Aid-doc-003.png",
     ],
     technologies: [
-      "Javascript",
-      "Typescript",
-      "React",
-      "Redux",
-      "Tailwind",
+      "Bootstrap",
+      "Tooplate ",
+      "Yii2 PHP Framework",
+      "MySQL",
+      "Zoom API Integration",
       "RAZORPAY",
       "Redux Toolkit",
-      "Thunk",
-      "C#",
-      "ASP.NET",
-      "SQL Server Management Studio",
-      "Docker",
-      "GitAction",
+      "End-to-end encryption",
     ],
-    description:
-      "A scalable LMS enabling course creation, student tracking, live sessions, and certificate generation.",
-    tags: ["LMS", "E-Learning", "Web App"],
-    url: "",
+    description: [
+      "Designed and developed AidDoc, a cutting-edge, cloud-based Hospital Management System, delivering a comprehensive digital solution for hospitals and healthcare facilities of all sizes.",
+      "Built the platform to digitize and streamline complete hospital operations — covering everything from patient admissions, billing, and pharmacy management to staff coordination and reporting, reducing manual workload significantly.",
+      "Implemented end-to-end encryption and robust security protocols throughout the application to ensure full patient data privacy and compliance with healthcare data protection standards.",
+      "The system has been actively serving clients since March 2021, including multiple Life Care Multispeciality Hospital branches across Pune.",
+    ],
+    tags: [
+      "IPD Management",
+      "OPD Management",
+      "Billing Management",
+      "Patient Portal",
+      "Blood Management",
+      "Ambulance",
+      "Zoom Live Consultation",
+    ],
+    url: "https://technossplashhospitals.com/",
   },
-
 ];
