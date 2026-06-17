@@ -174,12 +174,12 @@ export default function CareerPage() {
           </p>
 
           {/* BANNER */}
-          <div className="w-full relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] rounded-md overflow-hidden mt-6 shadow-sm">
+          <div className="w-full relative aspect-[1600/903] rounded-md overflow-hidden mt-6 shadow-sm">
             <Image
-              src="/banner-awards.png"
+              src="/Career-Page/Career-Page-main.jpeg"
               alt="Banner"
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>
@@ -192,7 +192,7 @@ export default function CareerPage() {
           background:
             "linear-gradient(to bottom, var(--color-bg-section-from), var(--color-bg-section-via), var(--color-bg-section-to))",
           color: "var(--color-text-body)",
-          paddingTop: "4rem",
+          // paddingTop: "4rem",
           paddingBottom: "4rem",
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
@@ -262,8 +262,8 @@ export default function CareerPage() {
             <div className="md:col-span-7">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/"
-                  alt=""
+                  src="/Career-Page/Career-Page-001.jpeg"
+                  alt="fae"
                   width={1200}
                   height={800}
                   className="h-[300px] w-full object-cover md:h-[420px]"
@@ -274,7 +274,7 @@ export default function CareerPage() {
             <div className="md:col-span-5">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/"
+                  src="/Career-Page/Career-Page-002.jpeg"
                   alt=""
                   width={800}
                   height={800}
@@ -283,14 +283,14 @@ export default function CareerPage() {
               </div>
             </div>
 
-            <div className="md:col-span-4 md:ml-10">
+            <div className="md:col-span-4">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/"
+                  src="/Career-Page/Career-Page-003.jpeg"
                   alt=""
                   width={800}
                   height={600}
-                  className="h-[260px] w-full object-cover md:h-[320px]"
+                  className="h-[300px] w-full object-cover md:h-[420px]"
                 />
               </div>
             </div>
@@ -298,11 +298,11 @@ export default function CareerPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden rounded-xl shadow-sm">
                 <Image
-                  src="/"
+                  src="/Career-Page/Career-Page-004.jpeg"
                   alt=""
                   width={1200}
                   height={600}
-                  className="h-[260px] w-full object-cover md:h-[320px]"
+                  className="h-[300px] w-full object-cover md:h-[420px]"
                 />
               </div>
             </div>
@@ -802,7 +802,7 @@ export default function CareerPage() {
             style={{
               fontWeight: "var(--font-weight-heading)",
               color: "var(--color-cpa-heading-text)",
-              fontSize: "var(--text-body-base)",
+              fontSize: "var(--text-heading-lg)",
             }}
           >
             Want to join the team?

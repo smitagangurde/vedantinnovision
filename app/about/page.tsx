@@ -13,7 +13,7 @@ const cultureData = [
     title: "Do it right. Every time.",
     description:
       "We operate with clarity, honesty, and accountability across every stage — from concept to execution. Our focus is on building trust through consistent and responsible delivery.",
-    image: "/7.png",
+    image: "/About-Page/About-Pages-001.jpeg",
     tab: "Integrity First",
   },
   {
@@ -21,7 +21,7 @@ const cultureData = [
     title: "Built on clarity and connection.",
     description:
       "We keep communication simple and direct. By working closely with our clients, we ensure alignment, faster decisions, and smoother execution across every project.",
-    image: "/2.png",
+    image: "/About-Page/About-Pages-002.jpeg",
     tab: "Open Collaboration",
   },
   {
@@ -29,7 +29,7 @@ const cultureData = [
     title: "We own the outcome.",
     description:
       "From strategy to final delivery, we take complete responsibility. Every detail matters, and we ensure the final result meets both creative and business expectations.",
-    image: "/3.png",
+    image: "/About-Page/About-Pages-003.jpeg",
     tab: "Full Accountability",
   },
   {
@@ -37,7 +37,7 @@ const cultureData = [
     title: "Energy that reflects in every output.",
     description:
       "We approach every project with intent and focus — combining creativity, design, and technology to deliver work that is both impactful and meaningful.",
-    image: "/4.png",
+    image: "/About-Page/About-Pages-004.jpeg",
     tab: "Purpose-Driven Work",
   },
   {
@@ -45,7 +45,7 @@ const cultureData = [
     title: "Fast where it matters. Precise where it counts.",
     description:
       "We balance speed with quality, ensuring timelines are met without cutting corners. Efficient workflows allow us to deliver consistently and reliably.",
-    image: "/5.png",
+    image: "/About-Page/About-Pages-005.jpeg",
     tab: "Execution Speed",
   },
   {
@@ -53,7 +53,7 @@ const cultureData = [
     title: "Progress is part of the process.",
     description:
       "We adapt, improve, and refine with every project. By staying updated with design trends, technology, and industry shifts, we ensure our work remains relevant and effective.",
-    image: "/6.png",
+    image: "/About-Page/About-Pages-006.jpeg",
     tab: "Continuous Evolution",
   },
 ];
@@ -129,7 +129,7 @@ export default function AboutPage() {
           {/* Image */}
           <div className="mt-8">
             <div className="relative w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[520px] overflow-hidden rounded-md shadow-sm">
-              <Image src="/1.png" alt="Office" fill className="object-cover" />
+              <Image src="/About-Page/About-Page-main.jpeg" alt="Office" fill className="object-cover" />
             </div>
           </div>
 
