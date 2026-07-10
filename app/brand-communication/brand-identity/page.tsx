@@ -25,11 +25,11 @@ export default function BrandIdentitySection() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="lg:px-16"
+        className="md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
-          className="mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+          className="mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center"
         >
           {/* LEFT */}
           <div className="relative flex justify-center">

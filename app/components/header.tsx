@@ -36,6 +36,11 @@ export default function Header() {
     setMobileExpanded(null);
   };
 
+  const closeDesktopMenu = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setActiveMenu(null);
+  };
+
   return (
     <header
       style={{
@@ -95,7 +100,10 @@ export default function Header() {
                 Brand Strategy
               </button>
               {activeMenu === "communication" && (
-                <CommunicationMegaMenu variant="desktop" />
+                <CommunicationMegaMenu
+                  variant="desktop"
+                  onLinkClick={closeDesktopMenu}
+                />
               )}
             </div>
 
@@ -112,7 +120,10 @@ export default function Header() {
                 Workplace Identity
               </button>
               {activeMenu === "employer" && (
-                <EmployerMegaMenu variant="desktop" />
+                <EmployerMegaMenu
+                  variant="desktop"
+                  onLinkClick={closeDesktopMenu}
+                />
               )}
             </div>
 
@@ -194,7 +205,10 @@ export default function Header() {
             </button>
             {mobileExpanded === "communication" && (
               <div className="pl-2 pt-2 pb-2">
-                <CommunicationMegaMenu variant="mobile" />
+                <CommunicationMegaMenu
+                  variant="mobile"
+                  onLinkClick={closeMobileDrawer}
+                />
               </div>
             )}
           </div>
@@ -216,7 +230,10 @@ export default function Header() {
             </button>
             {mobileExpanded === "employer" && (
               <div className="pl-2 pt-2 pb-2">
-                <EmployerMegaMenu variant="mobile" />
+                <EmployerMegaMenu
+                  variant="mobile"
+                  onLinkClick={closeMobileDrawer}
+                />
               </div>
             )}
           </div>

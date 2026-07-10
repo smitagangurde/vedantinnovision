@@ -95,7 +95,7 @@ export default function AboutPage() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
@@ -128,13 +128,13 @@ export default function AboutPage() {
 
           {/* Image */}
           <div className="mt-8">
-            <div className="relative w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[520px] overflow-hidden rounded-md shadow-sm">
+            <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] overflow-hidden rounded-md shadow-sm">
               <Image src="/About-Page/About-Page-main.jpeg" alt="Office" fill className="object-cover" />
             </div>
           </div>
 
           {/* Content */}
-          <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
             <div
               className="space-y-6"
               style={{ maxWidth: "var(--body-copy-max-width)" }}
@@ -216,7 +216,7 @@ export default function AboutPage() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
@@ -244,7 +244,7 @@ export default function AboutPage() {
                 {cultureData.map((item) => (
                   <div
                     key={item.id}
-                    className="w-full flex-shrink-0 grid lg:grid-cols-2 gap-12 items-center"
+                    className="w-full flex-shrink-0 grid md:grid-cols-2 gap-12 items-center"
                   >
                     {/* TEXT */}
                     <div>
@@ -271,7 +271,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* IMAGE */}
-                    <div className="relative w-full h-[300px] md:h-[420px]">
+                    <div className="relative w-full aspect-[4/3] md:aspect-[16/10]">
                       <Image
                         src={item.image}
                         alt=""
@@ -285,7 +285,7 @@ export default function AboutPage() {
             </div>
 
             {/* TABS */}
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
               {cultureData.map((item, index) => (
                 <button
                   key={item.id}
@@ -323,7 +323,7 @@ export default function AboutPage() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}

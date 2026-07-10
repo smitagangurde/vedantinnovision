@@ -20,7 +20,7 @@ export default function BrandConsulting() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
@@ -44,7 +44,7 @@ export default function BrandConsulting() {
           {/* IMAGE */}
           <div
             style={{ borderColor: "var(--color-border-image)" }}
-            className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[540px] overflow-hidden border rounded-xl mb-8"
+            className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden border rounded-xl mb-8"
           >
             <Image
               src="/Brand Evolution/Brand-page_hero.png"
@@ -102,17 +102,17 @@ export default function BrandConsulting() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
           className="mx-auto"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* LEFT IMAGE */}
             <div
               style={{ borderColor: "var(--color-brand-primary)" }}
-              className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
+              className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
                 src="/Brand Evolution/Vision-mission.png"
@@ -239,13 +239,13 @@ export default function BrandConsulting() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
           className="mx-auto"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* LEFT CONTENT */}
             <div
               style={{ maxWidth: "var(--body-copy-max-width)" }}
@@ -386,7 +386,7 @@ export default function BrandConsulting() {
             {/* RIGHT IMAGE */}
             <div
               style={{ borderColor: "var(--color-brand-primary)" }}
-              className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
+              className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
                 src="/Brand Evolution/Strategic-brand-positioning.png"
@@ -410,17 +410,17 @@ export default function BrandConsulting() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
           className="mx-auto"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* IMAGE */}
             <div
               style={{ borderColor: "var(--color-brand-primary)" }}
-              className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
+              className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
                 src="/Brand Evolution/EVP.png"
@@ -562,13 +562,13 @@ export default function BrandConsulting() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="w-full lg:px-16"
+        className="w-full md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
           className="mx-auto"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* CONTENT */}
             <div
               style={{ maxWidth: "var(--body-copy-max-width)" }}
@@ -688,7 +688,7 @@ export default function BrandConsulting() {
             {/* IMAGE */}
             <div
               style={{ borderColor: "var(--color-brand-primary)" }}
-              className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden bg-purple-100/20 border"
+              className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden bg-purple-100/20 border"
             >
               <Image
                 src="/Brand Evolution/career-growth.png"

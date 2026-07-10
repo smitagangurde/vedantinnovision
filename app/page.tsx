@@ -26,7 +26,7 @@ export default function Home() {
           paddingLeft: "var(--section-px-sm)",
           paddingRight: "var(--section-px-sm)",
         }}
-        className="lg:px-16"
+        className="md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
@@ -76,11 +76,11 @@ export default function Home() {
           textAlign:
             "var(--text-align-section)" as React.CSSProperties["textAlign"],
         }}
-        className="lg:px-16"
+        className="md:px-16"
       >
         <div
           style={{ maxWidth: "var(--content-max-width)" }}
-          className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
+          className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
         >
           {/* ── LEFT COLUMN ──────────────────────────────────────── */}
           <div className="space-y-16">
@@ -133,7 +133,7 @@ export default function Home() {
             </div>
 
             {/* IMAGE */}
-            <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden">
               <Image
                 src="/Home-Page-02.jpg"
                 alt="Client visuals"
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
 
             {/* IMAGE */}
-            <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden">
               <Image
                 src="/Home-Page-04.jpg"
                 alt="Case study"
@@ -251,7 +251,7 @@ export default function Home() {
           {/* ── RIGHT COLUMN ─────────────────────────────────────── */}
           <div className="space-y-16">
             {/* IMAGE */}
-            <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden">
               <Image
                 src="/Home-Page-01.jpg"
                 alt="Branding"
@@ -306,7 +306,7 @@ export default function Home() {
             </div>
 
             {/* IMAGE */}
-            <div className="relative w-full h-[260px] sm:h-[350px] md:h-[480px] lg:h-[520px] rounded-xl overflow-hidden">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden">
               <Image
                 src="/Home-page-033.jpg"
                 alt="Employer branding"

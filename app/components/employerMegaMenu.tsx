@@ -12,13 +12,59 @@ import {
 
 interface EmployerMegaMenuProps {
   variant?: "desktop" | "mobile";
+  onLinkClick?: () => void;
 }
 
 export default function EmployerMegaMenu({
   variant = "desktop",
+  onLinkClick,
 }: EmployerMegaMenuProps) {
   const isMobile = variant === "mobile";
 
+  /* ── MOBILE — simple label list, same style as top-level nav links ── */
+  if (isMobile) {
+    return (
+      <div className="w-full space-y-1" role="menu" aria-label="Employer Brand Menu">
+        <Link
+          href={EMPLOYERBRANDING}
+          style={{ color: "var(--color-text-body)" }}
+          className="block nav-link py-2"
+          onClick={onLinkClick}
+        >
+          Corporate Branding
+        </Link>
+
+        <Link
+          href={OFFICEBRANDING}
+          style={{ color: "var(--color-text-body)" }}
+          className="block nav-link py-2"
+          onClick={onLinkClick}
+        >
+          Industrial &amp; Spatial Solutions
+        </Link>
+
+        <Link
+          href={INTERNALCOMMUNICATION}
+          style={{ color: "var(--color-text-body)" }}
+          className="block nav-link py-2"
+          onClick={onLinkClick}
+        >
+          Corporate Communication
+        </Link>
+
+        <Link
+          href={EMPLOYERBRANDSM}
+          style={{ color: "var(--color-text-body)" }}
+          className="block nav-link py-2"
+          onClick={onLinkClick}
+        >
+          Brand Promotion &amp; Outreach
+        </Link>
+      </div>
+    );
+  }
+
+  /* ── DESKTOP — full mega menu with icons and descriptions ── */
   return (
     <div
       role="menu"
@@ -29,13 +75,9 @@ export default function EmployerMegaMenu({
         color: "var(--color-text-body)",
         borderColor: "var(--color-border-image)",
       }}
-      className={
-        isMobile
-          ? "w-full rounded-xl p-4 grid grid-cols-1 gap-6"
-          : "absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] border rounded-2xl shadow-xl p-8 grid grid-cols-2 gap-8 z-50"
-      }
+      className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] border rounded-2xl shadow-xl p-8 grid grid-cols-2 gap-8 z-50"
     >
-      {/* ── LEFT SECTION — desktop only, hidden on mobile to save space ── */}
+      {/* ── LEFT SECTION ── */}
       {!isMobile && (
         <div
           style={{ borderColor: "var(--color-border-image)" }}
@@ -72,6 +114,7 @@ export default function EmployerMegaMenu({
               fontWeight: "var(--font-weight-heading)",
             }}
             className="mt-10 inline-block mega-menu-link"
+            onClick={onLinkClick}
           >
             Contact Us
           </Link>
@@ -95,6 +138,7 @@ export default function EmployerMegaMenu({
                 href={EMPLOYERBRANDING}
                 style={{ color: "var(--color-text-body)" }}
                 className="mega-menu-link"
+                onClick={onLinkClick}
               >
                 Corporate Branding
               </Link>
@@ -126,6 +170,7 @@ export default function EmployerMegaMenu({
                 href={OFFICEBRANDING}
                 style={{ color: "var(--color-text-body)" }}
                 className="mega-menu-link"
+                onClick={onLinkClick}
               >
                 Industrial &amp; Spatial Solutions
               </Link>
@@ -157,6 +202,7 @@ export default function EmployerMegaMenu({
                 href={INTERNALCOMMUNICATION}
                 style={{ color: "var(--color-text-body)" }}
                 className="mega-menu-link"
+                onClick={onLinkClick}
               >
                 Corporate Communication
               </Link>
@@ -188,6 +234,7 @@ export default function EmployerMegaMenu({
                 href={EMPLOYERBRANDSM}
                 style={{ color: "var(--color-text-body)" }}
                 className="mega-menu-link"
+                onClick={onLinkClick}
               >
                 Brand Promotion &amp; Outreach
               </Link>
@@ -203,21 +250,6 @@ export default function EmployerMegaMenu({
             </p>
           </div>
         </div>
-
-        {/* Mobile-only Contact CTA, since left intro block is hidden */}
-        {isMobile && (
-          <Link
-            href={CONTACT}
-            style={{
-              color: "var(--color-brand-primary)",
-              fontSize: "var(--text-body-sm)",
-              fontWeight: "var(--font-weight-heading)",
-            }}
-            className="inline-block mega-menu-link pt-2"
-          >
-            Contact Us
-          </Link>
-        )}
       </div>
     </div>
   );
