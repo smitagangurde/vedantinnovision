@@ -10,7 +10,15 @@ import {
   OFFICEBRANDING,
 } from "../const/routes.const";
 
-export default function EmployerMegaMenu() {
+interface EmployerMegaMenuProps {
+  variant?: "desktop" | "mobile";
+}
+
+export default function EmployerMegaMenu({
+  variant = "desktop",
+}: EmployerMegaMenuProps) {
+  const isMobile = variant === "mobile";
+
   return (
     <div
       role="menu"
@@ -21,50 +29,56 @@ export default function EmployerMegaMenu() {
         color: "var(--color-text-body)",
         borderColor: "var(--color-border-image)",
       }}
-      className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] border rounded-2xl shadow-xl p-8 grid grid-cols-2 gap-8 z-50"
+      className={
+        isMobile
+          ? "w-full rounded-xl p-4 grid grid-cols-1 gap-6"
+          : "absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] border rounded-2xl shadow-xl p-8 grid grid-cols-2 gap-8 z-50"
+      }
     >
-      {/* ── LEFT SECTION ── */}
-      <div
-        style={{ borderColor: "var(--color-border-image)" }}
-        className="md:pr-6 md:border-r"
-      >
-        <h3
-          style={{
-            color: "var(--color-brand-primary)",
-            fontSize: "var(--text-heading-lg)",
-            fontWeight: "var(--font-weight-heading)",
-          }}
-          className="mb-3 leading-snug md:text-xl"
+      {/* ── LEFT SECTION — desktop only, hidden on mobile to save space ── */}
+      {!isMobile && (
+        <div
+          style={{ borderColor: "var(--color-border-image)" }}
+          className="md:pr-6 md:border-r"
         >
-          Want to Explore Our Solutions?
-        </h3>
+          <h3
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-heading-lg)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="mb-3 leading-snug md:text-xl"
+          >
+            Want to Explore Our Solutions?
+          </h3>
 
-        <p
-          style={{
-            color: "var(--color-text-muted)",
-            fontSize: "var(--text-body-sm)",
-          }}
-          className="leading-relaxed"
-        >
-          From innovative concepts to complete execution, Vedant Innovision
-          delivers solutions that bring your brand vision to life with precision
-          and creativity.
-        </p>
+          <p
+            style={{
+              color: "var(--color-text-muted)",
+              fontSize: "var(--text-body-sm)",
+            }}
+            className="leading-relaxed"
+          >
+            From innovative concepts to complete execution, Vedant Innovision
+            delivers solutions that bring your brand vision to life with
+            precision and creativity.
+          </p>
 
-        <Link
-          href={CONTACT}
-          style={{
-            color: "var(--color-brand-primary)",
-            fontSize: "var(--text-body-sm)",
-            fontWeight: "var(--font-weight-heading)",
-          }}
-          className="mt-50 inline-block mega-menu-link"
-        >
-          Contact Us
-        </Link>
-      </div>
+          <Link
+            href={CONTACT}
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-body-sm)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="mt-10 inline-block mega-menu-link"
+          >
+            Contact Us
+          </Link>
+        </div>
+      )}
 
-      {/* ── RIGHT SECTION ── */}
+      {/* ── RIGHT SECTION — shown on both, stacked on mobile ── */}
       <div className="space-y-6">
         {/* Corporate Branding */}
         <div className="flex gap-4 items-start">
@@ -91,8 +105,8 @@ export default function EmployerMegaMenu() {
                 fontSize: "var(--text-body-sm)",
               }}
             >
-              Enhancing your brand presence through impactful corporate branding
-              solutions.
+              Enhancing your brand presence through impactful corporate
+              branding solutions.
             </p>
           </div>
         </div>
@@ -184,11 +198,26 @@ export default function EmployerMegaMenu() {
                 fontSize: "var(--text-body-sm)",
               }}
             >
-              Showcasing your brand through strategic marketing, campaigns, and
-              promotional activities.
+              Showcasing your brand through strategic marketing, campaigns,
+              and promotional activities.
             </p>
           </div>
         </div>
+
+        {/* Mobile-only Contact CTA, since left intro block is hidden */}
+        {isMobile && (
+          <Link
+            href={CONTACT}
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-body-sm)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="inline-block mega-menu-link pt-2"
+          >
+            Contact Us
+          </Link>
+        )}
       </div>
     </div>
   );

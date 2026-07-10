@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 import CommunicationMegaMenu from "./communicationMegaMenu";
 import EmployerMegaMenu from "./employerMegaMenu";
@@ -11,8 +11,9 @@ import EmployerMegaMenu from "./employerMegaMenu";
 import { BRANDCONSULTING, CONTACT, FILMS, HOME, WEBSITEUIUX } from "../const/routes.const";
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [open, setOpen] = useState(false); // mobile drawer open/close
+  const [activeMenu, setActiveMenu] = useState<string | null>(null); // desktop hover menu
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null); // mobile accordion
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = (menu: string) => {
@@ -24,6 +25,15 @@ export default function Header() {
     timeoutRef.current = setTimeout(() => {
       setActiveMenu(null);
     }, 200);
+  };
+
+  const toggleMobileSection = (menu: string) => {
+    setMobileExpanded((prev) => (prev === menu ? null : menu));
+  };
+
+  const closeMobileDrawer = () => {
+    setOpen(false);
+    setMobileExpanded(null);
   };
 
   return (
@@ -84,7 +94,9 @@ export default function Header() {
               >
                 Brand Strategy
               </button>
-              {activeMenu === "communication" && <CommunicationMegaMenu />}
+              {activeMenu === "communication" && (
+                <CommunicationMegaMenu variant="desktop" />
+              )}
             </div>
 
             {/* Workplace Identity */}
@@ -99,7 +111,9 @@ export default function Header() {
               >
                 Workplace Identity
               </button>
-              {activeMenu === "employer" && <EmployerMegaMenu />}
+              {activeMenu === "employer" && (
+                <EmployerMegaMenu variant="desktop" />
+              )}
             </div>
 
             <Link
@@ -143,40 +157,75 @@ export default function Header() {
             paddingTop: "1.5rem",
             paddingBottom: "1.5rem",
           }}
-          className="md:hidden space-y-4"
+          className="md:hidden space-y-2 max-h-[80vh] overflow-y-auto"
         >
           <Link
             href={BRANDCONSULTING}
             style={{ color: "var(--color-text-body)" }}
-            className="block nav-link"
-            onClick={() => setOpen(false)}
+            className="block nav-link py-2"
+            onClick={closeMobileDrawer}
           >
             Brand Evolution
           </Link>
 
           <Link
-            href="#"
+            href={WEBSITEUIUX}
             style={{ color: "var(--color-text-body)" }}
-            className="block nav-link"
-            onClick={() => setOpen(false)}
+            className="block nav-link py-2"
+            onClick={closeMobileDrawer}
           >
-            Brand Strategy
+            IT &amp; Digital Solutions
           </Link>
 
-          <Link
-            href="#"
-            style={{ color: "var(--color-text-body)" }}
-            className="block nav-link"
-            onClick={() => setOpen(false)}
-          >
-            Workplace Identity
-          </Link>
+          {/* Brand Strategy — mobile accordion */}
+          <div>
+            <button
+              style={{ color: "var(--color-text-body)" }}
+              className="flex items-center justify-between w-full nav-link py-2"
+              onClick={() => toggleMobileSection("communication")}
+              aria-expanded={mobileExpanded === "communication"}
+            >
+              <span>Brand Strategy</span>
+              <ChevronDown
+                size={18}
+                className={`transition-transform duration-200 ${mobileExpanded === "communication" ? "rotate-180" : ""
+                  }`}
+              />
+            </button>
+            {mobileExpanded === "communication" && (
+              <div className="pl-2 pt-2 pb-2">
+                <CommunicationMegaMenu variant="mobile" />
+              </div>
+            )}
+          </div>
+
+          {/* Workplace Identity — mobile accordion */}
+          <div>
+            <button
+              style={{ color: "var(--color-text-body)" }}
+              className="flex items-center justify-between w-full nav-link py-2"
+              onClick={() => toggleMobileSection("employer")}
+              aria-expanded={mobileExpanded === "employer"}
+            >
+              <span>Workplace Identity</span>
+              <ChevronDown
+                size={18}
+                className={`transition-transform duration-200 ${mobileExpanded === "employer" ? "rotate-180" : ""
+                  }`}
+              />
+            </button>
+            {mobileExpanded === "employer" && (
+              <div className="pl-2 pt-2 pb-2">
+                <EmployerMegaMenu variant="mobile" />
+              </div>
+            )}
+          </div>
 
           <Link
-            href="#"
+            href={FILMS}
             style={{ color: "var(--color-text-body)" }}
-            className="block nav-link"
-            onClick={() => setOpen(false)}
+            className="block nav-link py-2"
+            onClick={closeMobileDrawer}
           >
             Visual Stories
           </Link>
@@ -184,8 +233,8 @@ export default function Header() {
           <Link
             href={CONTACT}
             style={{ color: "var(--color-text-body)" }}
-            className="block nav-link"
-            onClick={() => setOpen(false)}
+            className="block nav-link py-2"
+            onClick={closeMobileDrawer}
           >
             Contact
           </Link>

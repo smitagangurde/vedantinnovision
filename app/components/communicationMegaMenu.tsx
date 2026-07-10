@@ -1,16 +1,23 @@
 "use client";
 
-import { PenTool, Megaphone, Monitor, MessageCircle } from "lucide-react";
+import { PenTool, Megaphone, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import {
   BRANDIDENTITY,
   CONTACT,
   MARKETINGCOMMUNICATION,
   SOCIALMEDIA,
-  WEBSITEUIUX,
 } from "../const/routes.const";
 
-export default function CommunicationMegaMenu() {
+interface CommunicationMegaMenuProps {
+  variant?: "desktop" | "mobile";
+}
+
+export default function CommunicationMegaMenu({
+  variant = "desktop",
+}: CommunicationMegaMenuProps) {
+  const isMobile = variant === "mobile";
+
   return (
     <div
       style={{
@@ -19,50 +26,56 @@ export default function CommunicationMegaMenu() {
         color: "var(--color-text-body)",
         borderColor: "var(--color-border-image)",
       }}
-      className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] border rounded-2xl shadow-xl p-8 grid grid-cols-2 gap-8 z-50"
+      className={
+        isMobile
+          ? "w-full rounded-xl p-4 grid grid-cols-1 gap-6"
+          : "absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[720px] border rounded-2xl shadow-xl p-8 grid grid-cols-2 gap-8 z-50"
+      }
     >
-      {/* ── LEFT SECTION ── */}
-      <div
-        style={{ borderColor: "var(--color-border-image)" }}
-        className="pr-6 border-r"
-      >
-        <h3
-          style={{
-            color: "var(--color-brand-primary)",
-            fontSize: "var(--text-heading-lg)",
-            fontWeight: "var(--font-weight-heading)",
-          }}
-          className="mb-3 md:text-xl"
+      {/* ── LEFT SECTION — desktop only, hidden on mobile to save space ── */}
+      {!isMobile && (
+        <div
+          style={{ borderColor: "var(--color-border-image)" }}
+          className="pr-6 border-r"
         >
-          Our Portfolio - <br /> Where innovation meets execution!
-        </h3>
+          <h3
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-heading-lg)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="mb-3 md:text-xl"
+          >
+            Our Portfolio - <br /> Where innovation meets execution!
+          </h3>
 
-        <p
-          style={{
-            color: "var(--color-text-muted)",
-            fontSize: "var(--text-body-sm)",
-          }}
-          className="leading-relaxed"
-        >
-          At Vedant Innovision, we turn ideas into impactful brand experiences.
-          Our solutions are crafted to enhance visibility, strengthen brand
-          presence, and deliver measurable results across every touchpoint.
-        </p>
+          <p
+            style={{
+              color: "var(--color-text-muted)",
+              fontSize: "var(--text-body-sm)",
+            }}
+            className="leading-relaxed"
+          >
+            At Vedant Innovision, we turn ideas into impactful brand experiences.
+            Our solutions are crafted to enhance visibility, strengthen brand
+            presence, and deliver measurable results across every touchpoint.
+          </p>
 
-        <Link
-          href={CONTACT}
-          style={{
-            color: "var(--color-brand-primary)",
-            fontSize: "var(--text-body-sm)",
-            fontWeight: "var(--font-weight-heading)",
-          }}
-          className="mt-10 inline-block mega-menu-link"
-        >
-          Contact Us
-        </Link>
-      </div>
+          <Link
+            href={CONTACT}
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-body-sm)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="mt-10 inline-block mega-menu-link"
+          >
+            Contact Us
+          </Link>
+        </div>
+      )}
 
-      {/* ── RIGHT SECTION ── */}
+      {/* ── RIGHT SECTION — shown on both, stacked on mobile ── */}
       <div className="space-y-6">
         {/* Brand Identity */}
         <div className="flex gap-4 items-start">
@@ -126,37 +139,6 @@ export default function CommunicationMegaMenu() {
           </div>
         </div>
 
-        {/* IT & Digital Solutions */}
-        {/* <div className="flex gap-4 items-start">
-          <Monitor
-            style={{ color: "var(--color-brand-primary)" }}
-            className="w-5 h-5 mt-1 shrink-0"
-          />
-          <div>
-            <h4
-              style={{ fontWeight: "var(--font-weight-heading)" }}
-              className="text-sm sm:text-base md:text-lg"
-            >
-              <Link
-                href={WEBSITEUIUX}
-                style={{ color: "var(--color-text-body)" }}
-                className="mega-menu-link"
-              >
-                IT &amp; Digital Solutions
-              </Link>
-            </h4>
-            <p
-              style={{
-                color: "var(--color-text-muted)",
-                fontSize: "var(--text-body-sm)",
-              }}
-            >
-              Building scalable websites, applications, and digital systems with
-              seamless user experience.
-            </p>
-          </div>
-        </div> */}
-
         {/* Social Media Management */}
         <div className="flex gap-4 items-start">
           <MessageCircle
@@ -187,6 +169,21 @@ export default function CommunicationMegaMenu() {
             </p>
           </div>
         </div>
+
+        {/* Mobile-only Contact CTA, since left intro block is hidden */}
+        {isMobile && (
+          <Link
+            href={CONTACT}
+            style={{
+              color: "var(--color-brand-primary)",
+              fontSize: "var(--text-body-sm)",
+              fontWeight: "var(--font-weight-heading)",
+            }}
+            className="inline-block mega-menu-link pt-2"
+          >
+            Contact Us
+          </Link>
+        )}
       </div>
     </div>
   );
